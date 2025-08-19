@@ -29,7 +29,7 @@ export default function Home() {
         
         {/* Round Gradient Decoration */}
         <div 
-          className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-bottom-right bg-no-repeat opacity-60 pointer-events-none z-10"
+          className="absolute bottom-0 right-0 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] bg-bottom-right bg-no-repeat opacity-60 pointer-events-none z-10"
           style={{ 
             backgroundImage: `url(${roundGradient})`,
             backgroundSize: '100% 100%'
@@ -37,14 +37,14 @@ export default function Home() {
         ></div>
         
         {/* Green Glow */}
-        <div className="absolute bottom-1/2 left-1/2 w-[400px] h-[400px] bg-green-500/10 rounded-full blur-3xl pointer-events-none z-5 transform -translate-x-1/2 -translate-y-1/2"></div>
-        <div className="mx-auto max-w-6xl px-4">
+        <div className="absolute bottom-1/2 left-1/2 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] bg-green-500/10 rounded-full blur-3xl pointer-events-none z-5 transform -translate-x-1/2 -translate-y-1/2"></div>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="flex min-h-screen items-center justify-center">
             <div className="text-center space-y-8 relative z-10">
               
               {/* Main Headline */}
               <h1 
-                className="font-bold text-white tracking-wide blacklisted-font"
+                className="font-bold text-white tracking-wide blacklisted-font text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
                 data-testid="hero-headline"
               >APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</h1>
 
@@ -75,11 +75,11 @@ export default function Home() {
 
       </main>
       {/* Pricing Section */}
-      <section id="pricing" className="relative bg-[#141414] pt-0 pb-12 px-4">
+      <section id="pricing" className="relative bg-[#141414] pt-0 pb-12 px-4 sm:px-6">
         {/* Background with green glow */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#141414] via-[#141414] to-[#141414]">
-          <div className="absolute top-0 left-1/4 w-64 h-64 bg-green-400/5 rounded-full blur-2xl"></div>
-          <div className="absolute bottom-32 left-1/3 w-80 h-80 bg-green-500/8 rounded-full blur-3xl"></div>
+          <div className="absolute top-0 left-1/4 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 bg-green-400/5 rounded-full blur-2xl"></div>
+          <div className="absolute bottom-32 left-1/3 w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 bg-green-500/8 rounded-full blur-3xl"></div>
         </div>
         
         <div className="relative max-w-7xl mx-auto">
@@ -88,23 +88,23 @@ export default function Home() {
             <p className="font-sans text-green-400 text-[12px] font-medium mb-4 animate-fade-in" data-testid="pricing-eyebrow">
               Precio simple y flexible
             </p>
-            <h2 className="font-sans text-[32px] font-bold text-white mb-6 animate-fade-in-up" data-testid="pricing-headline">
+            <h2 className="font-sans text-2xl sm:text-3xl md:text-[32px] font-bold text-white mb-6 animate-fade-in-up" data-testid="pricing-headline">
               Elige el plan que se adapta a tu camino.
             </h2>
-            <p className="font-sans text-white max-w-4xl mx-auto animate-fade-in-up-delay text-[14px]" data-testid="pricing-subtitle">Suscríbete de forma mensual o anual — sin cargos ocultos, sin contratos, sin rodeos.<br />
+            <p className="font-sans text-white max-w-4xl mx-auto animate-fade-in-up-delay text-sm md:text-[14px] px-4" data-testid="pricing-subtitle">Suscríbete de forma mensual o anual — sin cargos ocultos, sin contratos, sin rodeos.<br />
             Comienza hoy a operar con los que realmente están en el mercado.</p>
           </div>
 
           {/* Pricing Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto px-2 sm:px-0">
             
             {/* Pase Semanal */}
-            <div className="group relative bg-[linear-gradient(to_bottom,#151e19_0%,#141414_20%)] border border-green-500/10 rounded-3xl p-6 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-weekly">
+            <div className="group relative bg-[linear-gradient(to_bottom,#151e19_0%,#141414_20%)] border border-green-500/10 rounded-3xl p-4 sm:p-6 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-weekly">
               <div className="flex items-start justify-between mb-4">
-                <PlanCircle size={48} variant="neutral" />
+                <PlanCircle size={40} variant="neutral" className="sm:w-12 sm:h-12" />
               </div>
               
-              <h3 className="font-sans text-2xl font-bold text-white mb-2" data-testid="title-weekly">
+              <h3 className="font-sans text-xl sm:text-2xl font-bold text-white mb-2" data-testid="title-weekly">
                 Pase Semanal
               </h3>
               <p className="font-sans text-gray-400 mb-4 text-[12px] font-semibold" data-testid="subtitle-weekly">
@@ -112,11 +112,11 @@ export default function Home() {
               </p>
               
               <div className="mb-6 flex items-start gap-2">
-                <span className="font-sans text-[40px] font-semibold text-white" data-testid="price-weekly">$50</span>
-                <div className="font-sans text-gray-400 text-[16px] font-semibold pt-1">/ por semana</div>
+                <span className="font-sans text-3xl sm:text-[40px] font-semibold text-white" data-testid="price-weekly">$50</span>
+                <div className="font-sans text-gray-400 text-sm sm:text-[16px] font-semibold pt-1">/ por semana</div>
               </div>
               
-              <button className="font-sans w-full bg-gradient-to-b from-[#193b29] to-[#141d18] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6" data-testid="button-weekly">
+              <button className="font-sans w-full bg-gradient-to-b from-[#193b29] to-[#141d18] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6 text-sm sm:text-base" data-testid="button-weekly">
                 Iniciar ahora
               </button>
               
@@ -148,11 +148,11 @@ export default function Home() {
             </div>
 
             {/* Membresía Mensual - Most Popular */}
-            <div className="group relative bg-[linear-gradient(to_bottom,#183023_0%,#141414_50%)] border border-green-500/20 rounded-3xl p-6 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-monthly">
+            <div className="group relative bg-[linear-gradient(to_bottom,#183023_0%,#141414_50%)] border border-green-500/20 rounded-3xl p-4 sm:p-6 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-monthly">
               
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center">
-                  <PlanCircle size={48} variant="neutral" />
+                  <PlanCircle size={40} variant="neutral" className="sm:w-12 sm:h-12" />
                   <span className="font-sans text-white text-xs font-semibold px-3 py-1 rounded-full" data-testid="badge-popular">
                     Más popular
                   </span>
@@ -162,7 +162,7 @@ export default function Home() {
                 </span>
               </div>
               
-              <h3 className="font-sans text-2xl font-bold text-white mb-2" data-testid="title-monthly">
+              <h3 className="font-sans text-xl sm:text-2xl font-bold text-white mb-2" data-testid="title-monthly">
                 Membresía Mensual
               </h3>
               <p className="font-sans text-gray-400 mb-4 text-[12px] font-semibold" data-testid="subtitle-monthly">
@@ -170,11 +170,11 @@ export default function Home() {
               </p>
               
               <div className="mb-6 flex items-start gap-2">
-                <span className="font-sans text-[40px] font-semibold text-white" data-testid="price-monthly">$150</span>
-                <div className="font-sans text-gray-400 text-[16px] font-semibold pt-1">/ por mes</div>
+                <span className="font-sans text-3xl sm:text-[40px] font-semibold text-white" data-testid="price-monthly">$150</span>
+                <div className="font-sans text-gray-400 text-sm sm:text-[16px] font-semibold pt-1">/ por mes</div>
               </div>
               
-              <button className="font-sans w-full bg-gradient-to-b from-[#19422d] to-[#17231b] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6" data-testid="button-monthly">
+              <button className="font-sans w-full bg-gradient-to-b from-[#19422d] to-[#17231b] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6 text-sm sm:text-base" data-testid="button-monthly">
                 Iniciar ahora
               </button>
               
@@ -206,11 +206,11 @@ export default function Home() {
             </div>
 
             {/* Plan Pro Trimestral - Best Value */}
-            <div className="group relative bg-[linear-gradient(to_bottom,#183a2a_0%,#141414_80%)] border border-green-500/10 rounded-3xl p-6 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-quarterly">
+            <div className="group relative bg-[linear-gradient(to_bottom,#183a2a_0%,#141414_80%)] border border-green-500/10 rounded-3xl p-4 sm:p-6 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-quarterly">
               
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center">
-                  <PlanCircle size={48} variant="filled" />
+                  <PlanCircle size={40} variant="filled" className="sm:w-12 sm:h-12" />
                   <span className="font-sans text-xs font-semibold px-3 py-1 rounded-full text-[#59b964]" data-testid="badge-best-value">
                     Mejor valor
                   </span>
@@ -220,7 +220,7 @@ export default function Home() {
                 </span>
               </div>
               
-              <h3 className="font-sans text-2xl font-bold text-white mb-2" data-testid="title-quarterly">
+              <h3 className="font-sans text-xl sm:text-2xl font-bold text-white mb-2" data-testid="title-quarterly">
                 Plan Pro Trimestral
               </h3>
               <p className="font-sans text-gray-400 mb-4 text-[12px] font-semibold" data-testid="subtitle-quarterly">
@@ -228,11 +228,11 @@ export default function Home() {
               </p>
               
               <div className="mb-6 flex items-start gap-2">
-                <span className="font-sans text-[40px] font-semibold text-white" data-testid="price-quarterly">$350</span>
-                <div className="font-sans text-gray-400 text-[16px] font-semibold pt-1">/ por 3 meses</div>
+                <span className="font-sans text-3xl sm:text-[40px] font-semibold text-white" data-testid="price-quarterly">$350</span>
+                <div className="font-sans text-gray-400 text-sm sm:text-[16px] font-semibold pt-1">/ por 3 meses</div>
               </div>
               
-              <button className="font-sans w-full bg-gradient-to-b from-[#2ab46b] to-[#1b864e] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6" data-testid="button-quarterly">
+              <button className="font-sans w-full bg-gradient-to-b from-[#2ab46b] to-[#1b864e] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6 text-sm sm:text-base" data-testid="button-quarterly">
                 Iniciar ahora
               </button>
               
