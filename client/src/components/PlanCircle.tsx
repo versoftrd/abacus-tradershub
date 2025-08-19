@@ -39,10 +39,10 @@ export default function PlanCircle({
       <circle
         cx={center}
         cy={center}
-        r={variant === "filled" ? radius - (stroke * 4) / 2 : radius - stroke / 2}
+        r={variant === "filled" ? radius - (stroke * 8) / 2 : radius - stroke / 2}
         fill="none"
         stroke={variant === "accent" ? `url(#${gradientId})` : variant === "filled" ? "#E5E7EB" : "#E5E7EB"}
-        strokeWidth={variant === "filled" ? stroke * 4 : stroke}
+        strokeWidth={variant === "filled" ? stroke * 8 : stroke}
         opacity={variant === "neutral" ? 0.9 : 1}
       />
       
