@@ -107,7 +107,7 @@ export default function Home() {
               <h3 className="font-sans text-2xl font-bold text-white mb-2" data-testid="title-weekly">
                 Pase Semanal
               </h3>
-              <p className="font-sans text-gray-400 mb-6" data-testid="subtitle-weekly">
+              <p className="font-sans text-gray-400 mb-6 text-[14px] font-semibold" data-testid="subtitle-weekly">
                 Ideal para quienes prueban el trading por primera vez.
               </p>
               
