@@ -75,7 +75,7 @@ export default function Home() {
 
       </main>
       {/* Pricing Section */}
-      <section id="pricing" className="relative bg-[#141414] pt-0 pb-24 px-4">
+      <section id="pricing" className="relative bg-[#141414] pt-0 pb-12 px-4">
         {/* Background with green glow */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#141414] via-[#141414] to-[#141414]">
           <div className="absolute top-0 left-1/4 w-64 h-64 bg-green-400/5 rounded-full blur-2xl"></div>
@@ -84,7 +84,7 @@ export default function Home() {
         
         <div className="relative max-w-7xl mx-auto">
           {/* Headline Section */}
-          <div className="text-center mb-16 relative z-10">
+          <div className="text-center mb-8 relative z-10">
             <p className="font-sans text-green-400 text-sm font-medium mb-4 animate-fade-in" data-testid="pricing-eyebrow">
               Precio simple y flexible
             </p>
@@ -99,34 +99,34 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             
             {/* Pase Semanal */}
-            <div className="group relative bg-[linear-gradient(to_bottom,#151e19_0%,#141414_20%)] border border-green-500/10 rounded-3xl p-8 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-weekly">
-              <div className="flex items-start justify-between mb-6">
+            <div className="group relative bg-[linear-gradient(to_bottom,#151e19_0%,#141414_20%)] border border-green-500/10 rounded-3xl p-6 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-weekly">
+              <div className="flex items-start justify-between mb-4">
                 <PlanCircle size={48} variant="neutral" />
               </div>
               
               <h3 className="font-sans text-2xl font-bold text-white mb-2" data-testid="title-weekly">
                 Pase Semanal
               </h3>
-              <p className="font-sans text-gray-400 mb-6 text-xs sm:text-sm font-semibold" data-testid="subtitle-weekly">
+              <p className="font-sans text-gray-400 mb-4 text-xs sm:text-sm font-semibold" data-testid="subtitle-weekly">
                 Ideal para quienes prueban el trading por primera vez.
               </p>
               
-              <div className="mb-8 flex items-start gap-2">
+              <div className="mb-6 flex items-start gap-2">
                 <span className="font-sans text-[40px] font-semibold text-white" data-testid="price-weekly">$50</span>
                 <div className="font-sans text-gray-400 text-[16px] font-semibold pt-1">/ por semana</div>
               </div>
               
-              <button className="font-sans w-full bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold py-4 px-6 rounded-full hover:from-green-500 hover:to-green-400 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-8" data-testid="button-weekly">
+              <button className="font-sans w-full bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold py-3 px-6 rounded-full hover:from-green-500 hover:to-green-400 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6" data-testid="button-weekly">
                 Iniciar ahora
               </button>
               
-              <hr className="border-green-500/10 mb-6" />
+              <hr className="border-green-500/10 mb-4" />
               
               <div>
-                <h4 className="font-sans text-white font-semibold mb-4" data-testid="features-title-weekly">
+                <h4 className="font-sans text-white font-semibold mb-3" data-testid="features-title-weekly">
                   Que obtendrás:
                 </h4>
-                <ul className="space-y-3">
+                <ul className="space-y-2">
                   <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-1-weekly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Sesiones en vivo diarias
@@ -148,9 +148,9 @@ export default function Home() {
             </div>
 
             {/* Membresía Mensual - Most Popular */}
-            <div className="group relative bg-[linear-gradient(to_bottom,#183023_0%,#141414_50%)] border border-green-500/20 rounded-3xl p-8 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-monthly">
+            <div className="group relative bg-[linear-gradient(to_bottom,#183023_0%,#141414_50%)] border border-green-500/20 rounded-3xl p-6 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-monthly">
               
-              <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center">
                   <PlanCircle size={48} variant="neutral" />
                   <span className="font-sans text-white text-xs font-semibold px-3 py-1 rounded-full" data-testid="badge-popular">
@@ -165,26 +165,26 @@ export default function Home() {
               <h3 className="font-sans text-2xl font-bold text-white mb-2" data-testid="title-monthly">
                 Membresía Mensual
               </h3>
-              <p className="font-sans text-gray-400 mb-6 text-xs sm:text-sm font-semibold" data-testid="subtitle-monthly">
+              <p className="font-sans text-gray-400 mb-4 text-xs sm:text-sm font-semibold" data-testid="subtitle-monthly">
                 Perfecta para traders comprometidos con mejorar.
               </p>
               
-              <div className="mb-8 flex items-start gap-2">
+              <div className="mb-6 flex items-start gap-2">
                 <span className="font-sans text-[40px] font-semibold text-white" data-testid="price-monthly">$150</span>
                 <div className="font-sans text-gray-400 text-[16px] font-semibold pt-1">/ por mes</div>
               </div>
               
-              <button className="font-sans w-full bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold py-4 px-6 rounded-full hover:from-green-500 hover:to-green-400 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-8" data-testid="button-monthly">
+              <button className="font-sans w-full bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold py-3 px-6 rounded-full hover:from-green-500 hover:to-green-400 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6" data-testid="button-monthly">
                 Iniciar ahora
               </button>
               
-              <hr className="border-green-500/10 mb-6" />
+              <hr className="border-green-500/10 mb-4" />
               
               <div>
-                <h4 className="font-sans text-white font-semibold mb-4" data-testid="features-title-monthly">
+                <h4 className="font-sans text-white font-semibold mb-3" data-testid="features-title-monthly">
                   Que obtendrás:
                 </h4>
-                <ul className="space-y-3">
+                <ul className="space-y-2">
                   <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-1-monthly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Sesiones en vivo diarias
@@ -206,9 +206,9 @@ export default function Home() {
             </div>
 
             {/* Plan Pro Trimestral - Best Value */}
-            <div className="group relative bg-[linear-gradient(to_bottom,#183a2a_0%,#141414_80%)] border border-green-500/10 rounded-3xl p-8 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-quarterly">
+            <div className="group relative bg-[linear-gradient(to_bottom,#183a2a_0%,#141414_80%)] border border-green-500/10 rounded-3xl p-6 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-quarterly">
               
-              <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center">
                   <PlanCircle size={48} variant="filled" />
                   <span className="font-sans text-xs font-semibold px-3 py-1 rounded-full text-[#59b964]" data-testid="badge-best-value">
@@ -223,26 +223,26 @@ export default function Home() {
               <h3 className="font-sans text-2xl font-bold text-white mb-2" data-testid="title-quarterly">
                 Plan Pro Trimestral
               </h3>
-              <p className="font-sans text-gray-400 mb-6 text-xs sm:text-sm font-semibold" data-testid="subtitle-quarterly">
+              <p className="font-sans text-gray-400 mb-4 text-xs sm:text-sm font-semibold" data-testid="subtitle-quarterly">
                 Ideal para traders enfocados en el largo plazo.
               </p>
               
-              <div className="mb-8 flex items-start gap-2">
+              <div className="mb-6 flex items-start gap-2">
                 <span className="font-sans text-[40px] font-semibold text-white" data-testid="price-quarterly">$350</span>
                 <div className="font-sans text-gray-400 text-[16px] font-semibold pt-1">/ por 3 meses</div>
               </div>
               
-              <button className="font-sans w-full bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold py-4 px-6 rounded-full hover:from-green-500 hover:to-green-400 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-8" data-testid="button-quarterly">
+              <button className="font-sans w-full bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold py-3 px-6 rounded-full hover:from-green-500 hover:to-green-400 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6" data-testid="button-quarterly">
                 Iniciar ahora
               </button>
               
-              <hr className="border-green-500/10 mb-6" />
+              <hr className="border-green-500/10 mb-4" />
               
               <div>
-                <h4 className="font-sans text-white font-semibold mb-4" data-testid="features-title-quarterly">
+                <h4 className="font-sans text-white font-semibold mb-3" data-testid="features-title-quarterly">
                   Que obtendrás:
                 </h4>
-                <ul className="space-y-3">
+                <ul className="space-y-2">
                   <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-1-quarterly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Sesiones en vivo diarias
