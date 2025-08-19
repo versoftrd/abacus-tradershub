@@ -101,7 +101,7 @@ export default function Home() {
             {/* Pase Semanal */}
             <div className="group relative bg-gradient-to-b from-[#0F1A17] to-[#0A1512] border border-green-500/10 rounded-3xl p-8 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-weekly">
               <div className="flex items-start justify-between mb-6">
-                <PlanCircle size={48} variant="neutral" dotAngle={315} />
+                <PlanCircle size={48} variant="neutral" />
               </div>
               
               <h3 className="font-sans text-2xl font-bold text-white mb-2" data-testid="title-weekly">
@@ -159,7 +159,7 @@ export default function Home() {
               </div>
               
               <div className="flex items-start justify-between mb-6 mt-8">
-                <PlanCircle size={48} variant="accent" dotAngle={315} />
+                <PlanCircle size={48} variant="accent" />
               </div>
               
               <h3 className="font-sans text-2xl font-bold text-white mb-2" data-testid="title-monthly">
@@ -220,7 +220,7 @@ export default function Home() {
               </div>
               
               <div className="flex items-start justify-between mb-6 mt-8">
-                <PlanCircle size={48} variant="accent" dotAngle={315} />
+                <PlanCircle size={48} variant="accent" />
               </div>
               
               <h3 className="font-sans text-2xl font-bold text-white mb-2" data-testid="title-quarterly">
