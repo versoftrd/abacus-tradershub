@@ -12,7 +12,7 @@ export default function Home() {
         <Navbar />
       </div>
       {/* Hero Section */}
-      <main className="relative -mt-16">
+      <main className="relative -mt-16 overflow-hidden">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -21,6 +21,10 @@ export default function Home() {
         
         {/* Background overlay for depth */}
         <div className="absolute inset-0 bg-black/40 pointer-events-none"></div>
+        
+        {/* Gradient transition overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-t from-[#0B0F0E] via-[#0F1513]/30 to-transparent pointer-events-none"></div>
         
         {/* Round Gradient Decoration */}
         <div 
@@ -57,33 +61,60 @@ export default function Home() {
               </div>
 
               {/* Email Capture */}
-              <div className="pt-8">
+              <div className="pt-8 pb-20">
                 <EmailCta />
               </div>
 
             </div>
           </div>
         </div>
+        
+        {/* Curved Wave Transition */}
+        <div className="absolute bottom-0 left-0 right-0 z-20">
+          <svg 
+            viewBox="0 0 1440 120" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-full h-auto transform scale-110 wave-parallax"
+            style={{
+              filter: 'drop-shadow(0 -10px 20px rgba(0, 0, 0, 0.3))'
+            }}
+          >
+            <path 
+              d="M0,60 C360,120 720,0 1440,60 L1440,120 L0,120 Z" 
+              fill="url(#waveGradient)"
+            />
+            <defs>
+              <linearGradient id="waveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stopColor="rgba(15, 21, 19, 0.8)" />
+                <stop offset="50%" stopColor="rgba(11, 15, 14, 0.95)" />
+                <stop offset="100%" stopColor="#0B0F0E" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
 
       </main>
 
       {/* Pricing Section */}
-      <section className="relative py-24 px-4">
+      <section id="pricing" className="relative bg-[#0B0F0E] pt-20 md:pt-32 pb-24 px-4">
         {/* Background with green glow */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#0B0F0E] via-[#0F1513] to-[#0B0F0E]">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-green-500/10 rounded-full blur-3xl"></div>
+          <div className="absolute top-32 left-1/2 -translate-x-1/2 w-96 h-96 bg-green-500/10 rounded-full blur-3xl"></div>
+          <div className="absolute top-0 left-1/4 w-64 h-64 bg-green-400/5 rounded-full blur-2xl"></div>
+          <div className="absolute bottom-32 right-1/4 w-80 h-80 bg-green-500/8 rounded-full blur-3xl"></div>
         </div>
         
         <div className="relative max-w-7xl mx-auto">
           {/* Headline Section */}
-          <div className="text-center mb-16">
-            <p className="text-green-400 text-sm font-medium mb-4" data-testid="pricing-eyebrow">
+          <div className="text-center mb-16 relative z-10">
+            <p className="text-green-400 text-sm font-medium mb-4 animate-fade-in" data-testid="pricing-eyebrow">
               Precio simple y flexible
             </p>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6" data-testid="pricing-headline">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in-up" data-testid="pricing-headline">
               Elige el plan que se adapta a tu camino.
             </h2>
-            <p className="text-lg text-gray-400 max-w-4xl mx-auto" data-testid="pricing-subtitle">
+            <p className="text-lg text-gray-400 max-w-4xl mx-auto animate-fade-in-up-delay" data-testid="pricing-subtitle">
               Suscríbete de forma mensual o anual — sin cargos ocultos, sin contratos, sin rodeos. Comienza hoy a operar con los que realmente están en el mercado.
             </p>
           </div>

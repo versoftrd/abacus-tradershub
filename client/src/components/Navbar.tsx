@@ -22,6 +22,16 @@ export default function Navbar() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const handlePricingClick = (e: React.MouseEvent) => {
+    if (location === '/') {
+      e.preventDefault();
+      const pricingSection = document.getElementById('pricing');
+      if (pricingSection) {
+        pricingSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <nav className="sticky top-0 z-50">
       <div className="mx-auto max-w-6xl px-4">
@@ -44,6 +54,7 @@ export default function Navbar() {
                 <a
                   key={item.path}
                   href={item.path}
+                  onClick={item.name === 'Pricing' ? handlePricingClick : undefined}
                   className={`px-3 py-1.5 rounded-[10px] text-xs transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 text-white ${
                     isActive(item.path) ? "font-medium" : "font-light"
                   }`}
@@ -104,7 +115,12 @@ export default function Navbar() {
                     : "text-zinc-300 font-light hover:bg-tab-hover"
                 }`}
                 data-testid={`mobile-nav-link-${item.name.toLowerCase().replace(/\s+/g, "-")}`}
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={(e) => {
+                  if (item.name === 'Pricing') {
+                    handlePricingClick(e);
+                  }
+                  setIsMobileMenuOpen(false);
+                }}
               >
                 {item.name}
               </a>
