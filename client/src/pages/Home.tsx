@@ -150,7 +150,7 @@ export default function Home() {
             {/* Membresía Mensual - Most Popular */}
             <div className="group relative bg-[linear-gradient(to_bottom,#183023_0%,#141414_50%)] border border-green-500/20 rounded-3xl p-8 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-monthly">
               
-              <div className="flex items-center justify-between mb-6 mt-8">
+              <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center">
                   <PlanCircle size={48} variant="neutral" />
                   <span className="font-sans text-white text-xs font-semibold px-3 py-1 rounded-full" data-testid="badge-popular">
