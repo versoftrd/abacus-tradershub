@@ -45,7 +45,11 @@ export default function Navbar() {
                 <a
                   key={item.path}
                   href={item.path}
-                  className="px-3 py-1.5 rounded-full text-sm font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 text-white bg-[#393939]"
+                  className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 ${
+                    isActive(item.path)
+                      ? "text-white bg-tab-active"
+                      : "text-zinc-300 hover:bg-tab-hover"
+                  }`}
                   data-testid={`nav-link-${item.name.toLowerCase().replace(/\s+/g, "-")}`}
                 >
                   {item.name}
