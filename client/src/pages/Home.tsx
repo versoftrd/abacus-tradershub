@@ -157,7 +157,7 @@ export default function Home() {
                     Más popular
                   </span>
                 </div>
-                <span className="font-sans bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-medium px-2 py-1 rounded-full" data-testid="badge-discount-monthly">
+                <span className="font-sans bg-gradient-to-b from-[#227649] to-[#193829] text-green-400 text-xs font-medium px-2 py-1 rounded-full" data-testid="badge-discount-monthly">
                   35% de descuento
                 </span>
               </div>
