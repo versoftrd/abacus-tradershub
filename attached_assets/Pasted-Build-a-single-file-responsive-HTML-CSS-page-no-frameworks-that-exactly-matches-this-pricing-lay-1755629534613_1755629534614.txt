@@ -1,0 +1,99 @@
+Build a single-file responsive HTML + CSS page (no frameworks) that exactly matches this pricing layout:
+
+Overall
+
+Dark, elegant theme. Background: near-black with a subtle top-center green glow/radial gradient. Body uses Inter (Google Fonts).
+
+Max content width ~1180px, centered with generous top/bottom padding.
+
+Headline section:
+
+Small green eyebrow text: “Precio simple y flexible”
+
+Main H1 (very large, bold, centered): “Elige el plan que se adapta a tu camino.”
+
+Supporting line under it, centered, muted gray: “Suscríbete de forma mensual o anual — sin cargos ocultos, sin contratos, sin rodeos. Comienza hoy a operar con los que realmente están en el mercado.”
+
+Cards (3)
+
+Three pricing cards in a 3-column grid on desktop, stack vertically on mobile (smaller than 900px). Equal width, same height. Card corners: 24px radius, inner subtle green gradient, glass/dark green look with a 1px semi-transparent border and soft outer shadow for depth.
+
+Each card has: a circular green emblem icon at top-left, a plan title, a one-line subtitle, a big price line, a primary CTA button, a divider line, and a “Que obtendrás:” list with 4 bullet items (each with a small green check icon).
+
+Left Card (Pase Semanal)
+
+Title: “Pase Semanal”
+
+Subtitle: “Ideal para quienes prueban el trading por primera vez.”
+
+Price line: $50 in large bold white, followed by “/ por semana” in smaller muted gray on the same line.
+
+Button: “Iniciar ahora” — pill shape (full width), dark green to lighter green gradient, white text, hover slightly brighter, focus ring.
+
+Features list title: “Que obtendrás:”
+
+4 bullets:
+
+“Sesiones en vivo diarias”
+
+“Comunidad privada en Discord”
+
+“Material educativo exclusivo”
+
+“Ideas de trading y análisis de mercado”
+
+Middle Card (Membresía Mensual) — Most popular
+
+Add a small top-right pill badge: “Más popular” (green outline with a faint fill) and a smaller pill aligned to its right: “35% de descuento”.
+
+Title: “Membresía Mensual”
+
+Subtitle: “Perfecta para traders comprometidos con mejorar.”
+
+Price: $150 followed by “/ por mes”.
+
+Button text: “Iniciar ahora” (same style).
+
+Same “Que obtendrás:” section and bullet texts as left card.
+
+Right Card (Plan Pro Trimestral) — Best value
+
+Add a top-left pill badge with an icon: “Mejor valor” and, aligned to the right, a small pill: “45% de descuento”.
+
+Title: “Plan Pro Trimestral”
+
+Subtitle: “Ideal para traders enfocados en el largo plazo.”
+
+Price: $350 followed by “/ por 3 meses”.
+
+Button text: “Iniciar ahora” (same style).
+
+Same “Que obtendrás:” section and bullet texts as left card.
+
+Styling details
+
+Typography scale: H1 very large (~44–52px desktop), card titles ~24px, price numbers very large (~56–64px), subtitles and lists ~14–16px.
+
+Colors:
+
+Background: #0B0F0E to #0F1513 gradient glow center top.
+
+Card base: very dark green (#0F1A17) with subtle vertical gradient; border: 1px solid rgba(100, 255, 200, 0.06); shadow: soft, spread to simulate glass depth.
+
+Primary greens: buttons/badges use mid-green (#1DB954 to #27D07D range). Text mostly #EAF8F3; muted text #A5B7AF.
+
+Check icons and accent dots use bright green.
+
+Buttons: 14px/16px text, 52–56px height, full width, rounded-full, gradient fill, hover translate-y-[-1px], active translate-y-[0], focus visible outline.
+
+Badges: small rounded pills, uppercase or semi-bold, green border and faint fill; the discount pills are slimmer.
+
+Dividers: 1px horizontal line, very subtle (rgba white/green at ~0.08).
+
+Accessibility & behavior
+
+All interactive elements have :hover, :focus, :active states.
+
+Cards slightly scale up (1.01) on hover.
+
+Mobile: stack cards with 20–24px gap; reduce price and H1 sizes proportionally; buttons remain full width.
