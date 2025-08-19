@@ -51,13 +51,13 @@ export default function Home() {
               {/* Subtitle */}
               <div className="space-y-2 max-w-3xl mx-auto text-[13px]">
                 <p 
-                  className="text-sm md:text-base text-zinc-300 font-medium"
+                  className="text-[12px] md:text-base text-zinc-300 font-medium"
                   data-testid="hero-subtitle-1"
                 >
                   Acceso directo a la sala de trading de Abacus: 7 a 9 sesiones en vivo
                 </p>
                 <p 
-                  className="text-sm md:text-base text-zinc-300 font-medium"
+                  className="text-[12px] md:text-base text-zinc-300 font-medium"
                   data-testid="hero-subtitle-2"
                 >
                   semanales con mentores que operan y explican en tiempo real.
@@ -85,7 +85,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto">
           {/* Headline Section */}
           <div className="text-center mb-8 relative z-10">
-            <p className="font-sans text-green-400 text-sm font-medium mb-4 animate-fade-in" data-testid="pricing-eyebrow">
+            <p className="font-sans text-green-400 text-[12px] font-medium mb-4 animate-fade-in" data-testid="pricing-eyebrow">
               Precio simple y flexible
             </p>
             <h2 className="font-sans text-[32px] font-bold text-white mb-6 animate-fade-in-up" data-testid="pricing-headline">
@@ -107,7 +107,7 @@ export default function Home() {
               <h3 className="font-sans text-2xl font-bold text-white mb-2" data-testid="title-weekly">
                 Pase Semanal
               </h3>
-              <p className="font-sans text-gray-400 mb-4 text-xs sm:text-sm font-semibold" data-testid="subtitle-weekly">
+              <p className="font-sans text-gray-400 mb-4 text-[12px] font-semibold" data-testid="subtitle-weekly">
                 Ideal para quienes prueban el trading por primera vez.
               </p>
               
@@ -127,19 +127,19 @@ export default function Home() {
                   Que obtendrás:
                 </h4>
                 <ul className="space-y-2">
-                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-1-weekly">
+                  <li className="font-sans flex items-center text-gray-400 text-[12px] font-semibold" data-testid="feature-1-weekly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Sesiones en vivo diarias
                   </li>
-                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-2-weekly">
+                  <li className="font-sans flex items-center text-gray-400 text-[12px] font-semibold" data-testid="feature-2-weekly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Comunidad privada en Discord
                   </li>
-                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-3-weekly">
+                  <li className="font-sans flex items-center text-gray-400 text-[12px] font-semibold" data-testid="feature-3-weekly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Material educativo exclusivo
                   </li>
-                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-4-weekly">
+                  <li className="font-sans flex items-center text-gray-400 text-[12px] font-semibold" data-testid="feature-4-weekly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Ideas de trading y análisis de mercado
                   </li>
@@ -165,7 +165,7 @@ export default function Home() {
               <h3 className="font-sans text-2xl font-bold text-white mb-2" data-testid="title-monthly">
                 Membresía Mensual
               </h3>
-              <p className="font-sans text-gray-400 mb-4 text-xs sm:text-sm font-semibold" data-testid="subtitle-monthly">
+              <p className="font-sans text-gray-400 mb-4 text-[12px] font-semibold" data-testid="subtitle-monthly">
                 Perfecta para traders comprometidos con mejorar.
               </p>
               
@@ -185,19 +185,19 @@ export default function Home() {
                   Que obtendrás:
                 </h4>
                 <ul className="space-y-2">
-                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-1-monthly">
+                  <li className="font-sans flex items-center text-gray-400 text-[12px] font-semibold" data-testid="feature-1-monthly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Sesiones en vivo diarias
                   </li>
-                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-2-monthly">
+                  <li className="font-sans flex items-center text-gray-400 text-[12px] font-semibold" data-testid="feature-2-monthly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Comunidad privada en Discord
                   </li>
-                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-3-monthly">
+                  <li className="font-sans flex items-center text-gray-400 text-[12px] font-semibold" data-testid="feature-3-monthly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Material educativo exclusivo
                   </li>
-                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-4-monthly">
+                  <li className="font-sans flex items-center text-gray-400 text-[12px] font-semibold" data-testid="feature-4-monthly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Ideas de trading y análisis de mercado
                   </li>
@@ -223,7 +223,7 @@ export default function Home() {
               <h3 className="font-sans text-2xl font-bold text-white mb-2" data-testid="title-quarterly">
                 Plan Pro Trimestral
               </h3>
-              <p className="font-sans text-gray-400 mb-4 text-xs sm:text-sm font-semibold" data-testid="subtitle-quarterly">
+              <p className="font-sans text-gray-400 mb-4 text-[12px] font-semibold" data-testid="subtitle-quarterly">
                 Ideal para traders enfocados en el largo plazo.
               </p>
               
@@ -243,19 +243,19 @@ export default function Home() {
                   Que obtendrás:
                 </h4>
                 <ul className="space-y-2">
-                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-1-quarterly">
+                  <li className="font-sans flex items-center text-gray-400 text-[12px] font-semibold" data-testid="feature-1-quarterly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Sesiones en vivo diarias
                   </li>
-                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-2-quarterly">
+                  <li className="font-sans flex items-center text-gray-400 text-[12px] font-semibold" data-testid="feature-2-quarterly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Comunidad privada en Discord
                   </li>
-                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-3-quarterly">
+                  <li className="font-sans flex items-center text-gray-400 text-[12px] font-semibold" data-testid="feature-3-quarterly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Material educativo exclusivo
                   </li>
-                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-4-quarterly">
+                  <li className="font-sans flex items-center text-gray-400 text-[12px] font-semibold" data-testid="feature-4-quarterly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Ideas de trading y análisis de mercado
                   </li>
