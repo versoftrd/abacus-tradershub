@@ -29,10 +29,17 @@ export default function PlanCircle({
     >
       {(variant === "accent" || variant === "filled") && (
         <defs>
-          <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#34D399" />
-            <stop offset="100%" stopColor="#22C55E" />
-          </linearGradient>
+          {variant === "filled" ? (
+            <radialGradient id={gradientId} cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stopColor="#27b269" />
+              <stop offset="100%" stopColor="#2b6e4a" />
+            </radialGradient>
+          ) : (
+            <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#34D399" />
+              <stop offset="100%" stopColor="#22C55E" />
+            </linearGradient>
+          )}
         </defs>
       )}
       
@@ -41,7 +48,7 @@ export default function PlanCircle({
         cy={center}
         r={variant === "filled" ? radius - (stroke * 8) / 2 : radius - stroke / 2}
         fill="none"
-        stroke={variant === "accent" ? `url(#${gradientId})` : variant === "filled" ? "#E5E7EB" : "#E5E7EB"}
+        stroke={variant === "accent" ? `url(#${gradientId})` : variant === "filled" ? `url(#${gradientId})` : "#E5E7EB"}
         strokeWidth={variant === "filled" ? stroke * 8 : stroke}
         opacity={variant === "neutral" ? 0.9 : 1}
       />
