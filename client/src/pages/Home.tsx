@@ -16,9 +16,7 @@ export default function Home() {
               <h1 
                 className="font-bold text-white tracking-wide blacklisted-font"
                 data-testid="hero-headline"
-              >
-                APRENDE VIENDO, MEJORA HACIENDO, GANA ENTENDIENDO.
-              </h1>
+              >APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</h1>
 
               {/* Subtitle */}
               <div className="space-y-2 max-w-3xl mx-auto">
