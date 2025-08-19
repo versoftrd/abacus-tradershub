@@ -1,8 +1,9 @@
 import Navbar from "@/components/Navbar";
 import EmailCta from "@/components/EmailCta";
+import PlanCircle from "@/components/PlanCircle";
 import heroBackground from "@assets/Hero Background_1755619519675.png";
 import roundGradient from "@assets/Round Gradient_1755620690824.png";
-import { Check, Star, Trophy } from "lucide-react";
+import { Check } from "lucide-react";
 
 export default function Home() {
 
@@ -100,9 +101,7 @@ export default function Home() {
             {/* Pase Semanal */}
             <div className="group relative bg-gradient-to-b from-[#0F1A17] to-[#0A1512] border border-green-500/10 rounded-3xl p-8 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-weekly">
               <div className="flex items-start justify-between mb-6">
-                <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center">
-                  <Star className="w-6 h-6 text-green-400" />
-                </div>
+                <PlanCircle size={48} variant="neutral" dotAngle={315} />
               </div>
               
               <h3 className="font-sans text-2xl font-bold text-white mb-2" data-testid="title-weekly">
@@ -160,9 +159,7 @@ export default function Home() {
               </div>
               
               <div className="flex items-start justify-between mb-6 mt-8">
-                <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center">
-                  <Trophy className="w-6 h-6 text-green-400" />
-                </div>
+                <PlanCircle size={48} variant="accent" dotAngle={315} />
               </div>
               
               <h3 className="font-sans text-2xl font-bold text-white mb-2" data-testid="title-monthly">
@@ -221,9 +218,7 @@ export default function Home() {
               </div>
               
               <div className="flex items-start justify-between mb-6 mt-8">
-                <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center">
-                  <Star className="w-6 h-6 text-green-400" />
-                </div>
+                <PlanCircle size={48} variant="accent" dotAngle={315} />
               </div>
               
               <h3 className="font-sans text-2xl font-bold text-white mb-2" data-testid="title-quarterly">
