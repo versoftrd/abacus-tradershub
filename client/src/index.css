@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Blacklisted';
+  src: url('./assets/Blacklisted_1755610560146.ttf') format('truetype');
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
