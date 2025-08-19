@@ -48,7 +48,7 @@ export default function PlanCircle({
         cy={center}
         r={variant === "filled" ? radius - (stroke * 8) / 2 : radius - stroke / 2}
         fill="none"
-        stroke={variant === "accent" ? `url(#${gradientId})` : variant === "filled" ? `url(#${gradientId})` : "#E5E7EB"}
+        stroke={variant === "accent" ? `url(#${gradientId})` : variant === "filled" ? `url(#${gradientId})` : "rgba(255, 255, 255, 0.05)"}
         strokeWidth={variant === "filled" ? stroke * 8 : stroke}
         opacity={variant === "neutral" ? 0.9 : 1}
       />
