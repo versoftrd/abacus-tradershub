@@ -58,7 +58,7 @@ export default function Navbar() {
               
               {/* Login and Get Started buttons */}
               <button 
-                className="px-4 py-1.5 rounded-[10px] bg-login-bg text-zinc-200 hover:bg-login-hover transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 text-sm font-semibold"
+                className="px-4 py-1.5 rounded-[10px] bg-[#393939] text-zinc-200 hover:bg-[#4a4a4a] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 text-sm font-semibold"
                 data-testid="button-login"
               >
                 Login
@@ -112,7 +112,7 @@ export default function Navbar() {
             
             <div className="pt-4 space-y-2">
               <button 
-                className="w-full px-4 py-2 rounded-[10px] bg-login-bg text-zinc-200 hover:bg-login-hover transition-colors duration-200 text-sm font-semibold"
+                className="w-full px-4 py-2 rounded-[10px] bg-[#393939] text-zinc-200 hover:bg-[#4a4a4a] transition-colors duration-200 text-sm font-semibold"
                 data-testid="mobile-button-login"
               >
                 Login
