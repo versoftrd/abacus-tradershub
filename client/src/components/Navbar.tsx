@@ -44,8 +44,8 @@ export default function Navbar() {
                 <a
                   key={item.path}
                   href={item.path}
-                  className={`px-3 py-1.5 rounded-[10px] text-sm transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 text-white font-semibold ${
-                    isActive(item.path) ? "bg-[#393939]" : ""
+                  className={`px-3 py-1.5 rounded-[10px] text-sm transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 text-white ${
+                    isActive(item.path) ? "font-medium" : "font-light"
                   }`}
                   data-testid={`nav-link-${item.name.toLowerCase().replace(/\s+/g, "-")}`}
                 >
@@ -98,10 +98,10 @@ export default function Navbar() {
               <a
                 key={item.path}
                 href={item.path}
-                className={`block px-3 py-2 rounded-[10px] text-sm font-semibold transition-colors duration-200 ${
+                className={`block px-3 py-2 rounded-[10px] text-sm transition-colors duration-200 ${
                   isActive(item.path)
-                    ? "text-white bg-tab-active"
-                    : "text-zinc-300 hover:bg-tab-hover"
+                    ? "text-white font-medium"
+                    : "text-zinc-300 font-light hover:bg-tab-hover"
                 }`}
                 data-testid={`mobile-nav-link-${item.name.toLowerCase().replace(/\s+/g, "-")}`}
                 onClick={() => setIsMobileMenuOpen(false)}
