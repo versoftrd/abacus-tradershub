@@ -42,13 +42,13 @@ export default function Home() {
               {/* Subtitle */}
               <div className="space-y-2 max-w-3xl mx-auto text-[13px]">
                 <p 
-                  className="text-sm md:text-base text-zinc-300 font-medium"
+                  className="text-sm md:text-base text-zinc-300 font-medium blacklisted-font"
                   data-testid="hero-subtitle-1"
                 >
                   Acceso directo a la sala de trading de Abacus: 7 a 9 sesiones en vivo
                 </p>
                 <p 
-                  className="text-sm md:text-base text-zinc-300 font-medium"
+                  className="text-sm md:text-base text-zinc-300 font-medium blacklisted-font"
                   data-testid="hero-subtitle-2"
                 >
                   semanales con mentores que operan y explican en tiempo real.
