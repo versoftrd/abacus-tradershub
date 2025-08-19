@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 bg-navbar-bg backdrop-blur-md">
-      <div className="mx-auto max-w-6xl px-4">
+      <div className="mx-auto max-w-6xl px-4 bg-[#141414]">
         <div className="flex h-16 items-center justify-between gap-3">
           
           {/* Logo Section */}
