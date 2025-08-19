@@ -19,7 +19,7 @@ export default function Home() {
               >APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</h1>
 
               {/* Subtitle */}
-              <div className="space-y-2 max-w-3xl mx-auto">
+              <div className="space-y-2 max-w-3xl mx-auto text-[13px]">
                 <p 
                   className="text-lg md:text-xl text-zinc-300 font-medium"
                   data-testid="hero-subtitle-1"
