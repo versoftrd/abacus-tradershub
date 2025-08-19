@@ -113,7 +113,7 @@ export default function Home() {
               
               <div className="mb-8">
                 <span className="font-sans text-5xl md:text-6xl font-bold text-white" data-testid="price-weekly">$50</span>
-                <span className="font-sans text-gray-400 text-lg ml-2">/ por semana</span>
+                <span className="font-sans text-gray-400 text-lg ml-2 font-semibold">/ por semana</span>
               </div>
               
               <button className="font-sans w-full bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold py-4 px-6 rounded-full hover:from-green-500 hover:to-green-400 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-8" data-testid="button-weekly">
@@ -171,7 +171,7 @@ export default function Home() {
               
               <div className="mb-8">
                 <span className="font-sans text-5xl md:text-6xl font-bold text-white" data-testid="price-monthly">$150</span>
-                <span className="font-sans text-gray-400 text-lg ml-2">/ por mes</span>
+                <span className="font-sans text-gray-400 text-lg ml-2 font-semibold">/ por mes</span>
               </div>
               
               <button className="font-sans w-full bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold py-4 px-6 rounded-full hover:from-green-500 hover:to-green-400 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-8" data-testid="button-monthly">
@@ -232,7 +232,7 @@ export default function Home() {
               
               <div className="mb-8">
                 <span className="font-sans text-5xl md:text-6xl font-bold text-white" data-testid="price-quarterly">$350</span>
-                <span className="font-sans text-gray-400 text-lg ml-2">/ por 3 meses</span>
+                <span className="font-sans text-gray-400 text-lg ml-2 font-semibold">/ por 3 meses</span>
               </div>
               
               <button className="font-sans w-full bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold py-4 px-6 rounded-full hover:from-green-500 hover:to-green-400 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-8" data-testid="button-quarterly">
