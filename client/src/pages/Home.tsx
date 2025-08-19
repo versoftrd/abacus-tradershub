@@ -88,7 +88,7 @@ export default function Home() {
             <p className="font-sans text-green-400 text-sm font-medium mb-4 animate-fade-in" data-testid="pricing-eyebrow">
               Precio simple y flexible
             </p>
-            <h2 className="font-sans md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in-up text-[32px]" data-testid="pricing-headline">
+            <h2 className="font-sans text-[32px] font-bold text-white mb-6 animate-fade-in-up" data-testid="pricing-headline">
               Elige el plan que se adapta a tu camino.
             </h2>
             <p className="font-sans text-white max-w-4xl mx-auto animate-fade-in-up-delay text-[14px]" data-testid="pricing-subtitle">Suscríbete de forma mensual o anual — sin cargos ocultos, sin contratos, sin rodeos.<br />
