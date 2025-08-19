@@ -1,0 +1,76 @@
+Here’s a copy-paste prompt you can drop into Replit’s AI to generate the exact navbar from the screenshot:
+
+---
+
+**Prompt for Replit**
+
+Build a responsive, dark-themed navigation bar identical to this layout:
+
+* Left: a compact logo lockup reading **“TRADERS”** (bold white) with a small neon-green cursive **“Hub”** overlapping the bottom-right of the wordmark.
+* Center: a pill-style tabs menu with these items (left→right): **Home**, **Abacus Experience**, **Market Open**, **Campus Virtual**, **Traders Hub**, **Pricing**. The active tab has a subtle lighter pill background; inactive tabs are transparent with soft hover. All tabs are evenly spaced, small text (sm), medium weight.
+* Right: two buttons — **Login** (dark gray pill, subtle inner glow) and **Get Started** (rounded pill with a blue gradient, white text).
+
+Behavior/UX:
+
+* Sticky at the very top (`position: sticky; top: 0; z-50`) with a translucent dark backdrop and slight blur.
+* Desktop: center-aligned tabs group (not left/right justified). The whole bar uses a max-width container so it doesn’t stretch edge-to-edge on large screens.
+* Mobile: collapse the center tabs into a hamburger menu that opens a full-width sheet/drawer. “Login” and “Get Started” stack under the links when opened.
+* Active tab determined by current pathname.
+* Keyboard accessible: visible focus ring on tabs and buttons.
+* Smooth hover/focus transitions.
+
+Tech & styling:
+
+* **React + Vite** (or Next.js — choose what’s quickest here) and **Tailwind CSS**. No external UI library; write clean components.
+* Colors (approximate to screenshot):
+
+  * Page bg: `#0b0c0d`
+  * Navbar bg (translucent): `rgba(17, 17, 17, 0.7)` with `backdrop-blur-md` and a 1px border `#1f1f22`.
+  * Tab active pill: `#1f2226`
+  * Tab hover: `#15181b`
+  * Text default: `#d4d4d8`
+  * Muted text: `#9ca3af`
+  * Login button bg: `#1f2428` (hover `#242a2f`)
+  * Get Started gradient: from `#36a2ff` to `#7cc6ff`
+  * Neon “Hub” accent: `#6ef7a7`
+* Typography: system sans, tracking-tight, `text-sm` for tabs, `font-medium`.
+* Spacing: navbar height \~64px; tabs group in a rounded-full container with subtle inner shadow.
+* Icons: simple hamburger (`<svg>`) for mobile.
+
+Deliverables:
+
+1. `src/components/Navbar.jsx` exporting `<Navbar />`.
+2. `src/main.jsx` / `App.jsx` (or `_app.tsx`/`layout.tsx` if Next) that uses the navbar over a dark page to match the screenshot.
+3. Tailwind already configured; include classes only (no inline styles unless necessary).
+4. Utility to detect active route (use `useLocation()` in React Router or `usePathname()` in Next) and apply the active pill style.
+5. Mobile drawer implemented with pure React state — no dependency.
+6. Clean, production-ready code with comments explaining key bits.
+
+Exact class/style hints:
+
+* Wrapper: `sticky top-0 z-50 border-b border-[#1f1f22] bg-[rgba(17,17,17,0.7)] backdrop-blur-md`
+* Inner container: `mx-auto max-w-6xl px-4`
+* Bar layout: `flex h-16 items-center justify-between gap-3`
+* Center tabs container: `hidden md:flex`
+* Tabs group wrapper: `flex items-center gap-1 rounded-full bg-transparent`
+* Tab (default): `px-3 py-1.5 rounded-full text-sm font-medium text-zinc-300 hover:bg-[#15181b] focus:outline-none focus:ring-2 focus:ring-sky-500/50`
+* Tab (active): `bg-[#1f2226] text-white`
+* Login button: `px-4 py-1.5 rounded-full bg-[#1f2428] text-zinc-200 hover:bg-[#242a2f] focus:ring-2 focus:ring-sky-500/50`
+* Get Started button: `px-4 py-1.5 rounded-full bg-gradient-to-r from-[#36a2ff] to-[#7cc6ff] text-white shadow-sm hover:opacity-95 focus:ring-2 focus:ring-sky-300/60`
+* Mobile menu button: `md:hidden inline-flex items-center justify-center rounded-md p-2 hover:bg-[#15181b] focus:ring-2 focus:ring-sky-500/50`
+* Mobile panel: `md:hidden border-t border-[#1f1f22] bg-[#0e1012]`
+
+Please include a tiny inline SVG for the “Hub” neon script effect (just a small stroked path) positioned with `absolute` to overlap the logo’s bottom-right. If that’s too time-consuming, fake it with two spans: `TRADERS` (bold) and `Hub` (green cursive via `font-[cursive] italic text-[#6ef7a7] -ml-2 translate-y-1`).
+
+Link labels (use these exact strings and order):
+
+* Home
+* Abacus Experience
+* Market Open
+* Campus Virtual
+* Traders Hub
+* Pricing
+
+Make sure the result visually matches the screenshot proportions and spacing.
+
+---
