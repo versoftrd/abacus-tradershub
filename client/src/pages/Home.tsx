@@ -127,19 +127,19 @@ export default function Home() {
                   Que obtendrás:
                 </h4>
                 <ul className="space-y-3">
-                  <li className="font-sans flex items-center text-gray-300" data-testid="feature-1-weekly">
+                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-1-weekly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Sesiones en vivo diarias
                   </li>
-                  <li className="font-sans flex items-center text-gray-300" data-testid="feature-2-weekly">
+                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-2-weekly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Comunidad privada en Discord
                   </li>
-                  <li className="font-sans flex items-center text-gray-300" data-testid="feature-3-weekly">
+                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-3-weekly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Material educativo exclusivo
                   </li>
-                  <li className="font-sans flex items-center text-gray-300" data-testid="feature-4-weekly">
+                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-4-weekly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Ideas de trading y análisis de mercado
                   </li>
@@ -185,19 +185,19 @@ export default function Home() {
                   Que obtendrás:
                 </h4>
                 <ul className="space-y-3">
-                  <li className="font-sans flex items-center text-gray-300" data-testid="feature-1-monthly">
+                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-1-monthly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Sesiones en vivo diarias
                   </li>
-                  <li className="font-sans flex items-center text-gray-300" data-testid="feature-2-monthly">
+                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-2-monthly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Comunidad privada en Discord
                   </li>
-                  <li className="font-sans flex items-center text-gray-300" data-testid="feature-3-monthly">
+                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-3-monthly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Material educativo exclusivo
                   </li>
-                  <li className="font-sans flex items-center text-gray-300" data-testid="feature-4-monthly">
+                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-4-monthly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Ideas de trading y análisis de mercado
                   </li>
@@ -246,19 +246,19 @@ export default function Home() {
                   Que obtendrás:
                 </h4>
                 <ul className="space-y-3">
-                  <li className="font-sans flex items-center text-gray-300" data-testid="feature-1-quarterly">
+                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-1-quarterly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Sesiones en vivo diarias
                   </li>
-                  <li className="font-sans flex items-center text-gray-300" data-testid="feature-2-quarterly">
+                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-2-quarterly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Comunidad privada en Discord
                   </li>
-                  <li className="font-sans flex items-center text-gray-300" data-testid="feature-3-quarterly">
+                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-3-quarterly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Material educativo exclusivo
                   </li>
-                  <li className="font-sans flex items-center text-gray-300" data-testid="feature-4-quarterly">
+                  <li className="font-sans flex items-center text-gray-400 text-sm font-semibold" data-testid="feature-4-quarterly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Ideas de trading y análisis de mercado
                   </li>
