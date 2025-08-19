@@ -55,13 +55,11 @@ export default function Navbar() {
                   {item.name}
                 </a>
               ))}
-            </div>
-          </div>
-
-          {/* Right Section - Buttons */}
-          <div className="flex items-center gap-3">
-            {/* Desktop Buttons */}
-            <div className="hidden md:flex items-center gap-3">
+              
+              {/* Separator */}
+              <div className="w-px h-6 bg-white/10 mx-2"></div>
+              
+              {/* Login and Get Started buttons */}
               <button 
                 className="px-4 py-1.5 rounded-full bg-login-bg text-zinc-200 hover:bg-login-hover transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 text-sm font-medium"
                 data-testid="button-login"
@@ -75,11 +73,13 @@ export default function Navbar() {
                 Get Started
               </button>
             </div>
+          </div>
 
-            {/* Mobile Menu Button */}
+          {/* Mobile Menu Button */}
+          <div className="md:hidden">
             <button
               onClick={toggleMobileMenu}
-              className="md:hidden inline-flex items-center justify-center rounded-md p-2 hover:bg-tab-hover transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50"
+              className="inline-flex items-center justify-center rounded-md p-2 hover:bg-tab-hover transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50"
               data-testid="button-mobile-menu"
               aria-expanded={isMobileMenuOpen}
               aria-label="Toggle mobile menu"
