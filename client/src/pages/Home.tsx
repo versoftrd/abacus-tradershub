@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import EmailCta from "@/components/EmailCta";
 import heroBackground from "@assets/Hero Background_1755619519675.png";
+import roundGradient from "@assets/Round Gradient_1755620690824.png";
 
 export default function Home() {
 
@@ -19,6 +20,15 @@ export default function Home() {
         
         {/* Background overlay for depth */}
         <div className="absolute inset-0 bg-black/40 pointer-events-none"></div>
+        
+        {/* Round Gradient Decoration */}
+        <div 
+          className="absolute inset-0 bg-center bg-no-repeat opacity-60 pointer-events-none z-10"
+          style={{ 
+            backgroundImage: `url(${roundGradient})`,
+            backgroundSize: '800px 800px'
+          }}
+        ></div>
         <div className="mx-auto max-w-6xl px-4">
           <div className="flex min-h-screen items-center justify-center">
             <div className="text-center space-y-8 relative z-10">
