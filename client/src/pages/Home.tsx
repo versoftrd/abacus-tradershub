@@ -210,7 +210,7 @@ export default function Home() {
               
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center">
-                  <PlanCircle size={48} variant="neutral" />
+                  <PlanCircle size={48} variant="filled" />
                   <span className="font-sans text-xs font-semibold px-3 py-1 rounded-full text-[#59b964]" data-testid="badge-best-value">
                     Mejor valor
                   </span>

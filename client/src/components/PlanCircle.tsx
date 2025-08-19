@@ -2,7 +2,7 @@ interface PlanCircleProps {
   size?: number;
   stroke?: number;
   innerSize?: number;
-  variant?: "neutral" | "accent";
+  variant?: "neutral" | "accent" | "filled";
   className?: string;
 }
 
@@ -27,7 +27,7 @@ export default function PlanCircle({
       className={`drop-shadow-sm ${className}`}
       aria-hidden="true"
     >
-      {variant === "accent" && (
+      {(variant === "accent" || variant === "filled") && (
         <defs>
           <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#34D399" />
@@ -41,8 +41,8 @@ export default function PlanCircle({
         cy={center}
         r={radius - stroke / 2}
         fill="none"
-        stroke={variant === "accent" ? `url(#${gradientId})` : "#E5E7EB"}
-        strokeWidth={stroke}
+        stroke={variant === "accent" ? `url(#${gradientId})` : variant === "filled" ? "#E5E7EB" : "#E5E7EB"}
+        strokeWidth={variant === "filled" ? stroke * 3 : stroke}
         opacity={variant === "neutral" ? 0.9 : 1}
       />
       
@@ -50,9 +50,9 @@ export default function PlanCircle({
         cx={center}
         cy={center}
         r={innerRadius}
-        fill="none"
-        stroke={variant === "accent" ? "#22C55E" : "#FFFFFF"}
-        strokeWidth={6}
+        fill={variant === "filled" ? `url(#${gradientId})` : "none"}
+        stroke={variant === "accent" ? "#22C55E" : variant === "filled" ? "none" : "#FFFFFF"}
+        strokeWidth={variant === "filled" ? 0 : 6}
       />
     </svg>
   );
