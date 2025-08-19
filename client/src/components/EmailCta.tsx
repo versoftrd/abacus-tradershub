@@ -20,7 +20,7 @@ export default function EmailCta() {
             placeholder="Enter your email address"
             aria-label="Email"
             required
-            className="flex-1 bg-transparent text-zinc-100 placeholder:text-zinc-400 text-lg md:text-xl focus:outline-none"
+            className="flex-1 bg-[#1c1c1c] text-zinc-100 placeholder:text-zinc-400 text-lg md:text-xl focus:outline-none"
             data-testid="input-email"
           />
           <button
