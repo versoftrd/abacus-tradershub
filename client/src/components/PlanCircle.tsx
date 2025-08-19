@@ -52,7 +52,7 @@ export default function PlanCircle({
         r={innerRadius}
         fill="none"
         stroke={variant === "accent" ? "#22C55E" : "#FFFFFF"}
-        strokeWidth={2}
+        strokeWidth={6}
       />
     </svg>
   );
