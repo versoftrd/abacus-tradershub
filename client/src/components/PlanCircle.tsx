@@ -8,7 +8,7 @@ interface PlanCircleProps {
 
 export default function PlanCircle({
   size = 56,
-  stroke = 1.5,
+  stroke = 2.5,
   innerSize = 16,
   variant = "neutral",
   className = ""
@@ -50,7 +50,9 @@ export default function PlanCircle({
         cx={center}
         cy={center}
         r={innerRadius}
-        fill={variant === "accent" ? "#22C55E" : "#FFFFFF"}
+        fill="none"
+        stroke={variant === "accent" ? "#22C55E" : "#FFFFFF"}
+        strokeWidth={2}
       />
     </svg>
   );
