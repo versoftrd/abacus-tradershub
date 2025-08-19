@@ -1,0 +1,80 @@
+Create a React + Tailwind CSS component that renders a pill email capture bar centered on a dark page. The bar looks like a rounded dark capsule with a green gradient button on the right, identical to this description:
+
+Layout
+
+Outer container width: max-w-3xl (≈ 720–800px), full width on mobile.
+
+Height: 72px on desktop, 60px on mobile.
+
+Rounded corners: fully rounded (rounded-full).
+
+Inside the pill, left side is a text input (transparent), right side is a fixed-width CTA button.
+
+Use CSS grid or flex so the input fills all remaining space and the button keeps its size.
+
+Colors & effects
+
+Page background: #0b0c0d.
+
+Pill background: very dark, slightly translucent: #111417 at ~96% (can be bg-[#111417]).
+
+Pill border: 1px solid #2a2a2a with subtle outer drop shadow shadow-[0_0_0_1px_rgba(255,255,255,0.02)_inset].
+
+Inner soft highlight across the top of the pill: use before: pseudo element (absolute, top-0, left-0, right-0, h-[55%], rounded-full, bg-white/5, blur-md, pointer-events-none).
+
+Button gradient: left-to-right mint → green (from-[#98f7b0] via-[#79e39e] to-[#51b97f]) with a soft inner glow (use shadow-inner + outer shadow).
+
+Button text: white, bold.
+
+Typography & spacing
+
+Input and button font size: text-lg on mobile, text-xl on desktop.
+
+Pill padding: px-5 on mobile, px-6 on desktop.
+
+Button padding: px-8 py-4 (desktop), px-6 py-3 (mobile).
+
+Placeholder text color: text-zinc-400.
+
+Input text color: text-zinc-100.
+
+Accessibility & behavior
+
+Form element with onSubmit (prevent default and console.log the email).
+
+Input type email with aria-label="Email", required.
+
+Focus styles:
+
+Entire pill gets ring-2 ring-emerald-400/40 when any child is focused (focus-within).
+
+Button gets ring-2 ring-emerald-300/60 on keyboard focus.
+
+Hover: button opacity 95%.
+
+Mobile: full width with mx-4; stack height stays pill-shaped.
+
+Tailwind class hints (use these literally)
+
+Outer wrapper:
+relative mx-auto w-full max-w-3xl rounded-full border border-[#2a2a2a] bg-[#111417] px-6 py-2 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.02)] focus-within:ring-2 focus-within:ring-emerald-400/40
+
+Glare layer (before):
+before:absolute before:inset-x-2 before:top-1 before:h-1/2 before:rounded-full before:bg-white/5 before:blur-md before:content-['']
+
+Inner layout:
+flex items-center gap-3
+
+Input:
+flex-1 bg-transparent text-zinc-100 placeholder:text-zinc-400 text-lg md:text-xl focus:outline-none
+
+Button:
+rounded-full bg-gradient-to-r from-[#98f7b0] via-[#79e39e] to-[#51b97f] px-6 md:px-8 py-3 md:py-4 text-white font-semibold shadow hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-emerald-300/60
+
+Deliverables
+
+src/components/EmailCta.jsx exporting a <EmailCta /> that renders the pill form exactly as above.
+
+A simple page (App.jsx) with a dark background that centers <EmailCta /> vertically for demonstration.
+
+Tailwind already configured; no extra UI libraries.

@@ -1,10 +1,7 @@
 import Navbar from "@/components/Navbar";
+import EmailCta from "@/components/EmailCta";
 
 export default function Home() {
-  const handleJoinEmailList = () => {
-    // TODO: Implement email subscription logic
-    console.log("Join email list clicked");
-  };
 
   return (
     <div className="min-h-screen bg-page-bg">
@@ -12,7 +9,7 @@ export default function Home() {
       {/* Hero Section */}
       <main className="relative">
         <div className="mx-auto max-w-6xl px-4">
-          <div className="flex min-h-screen items-center justify-center bg-[#1b1b1b]">
+          <div className="flex min-h-screen items-center justify-center">
             <div className="text-center space-y-8">
               
               {/* Main Headline */}
@@ -39,15 +36,9 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* CTA Button */}
+              {/* Email Capture */}
               <div className="pt-8">
-                <button
-                  onClick={handleJoinEmailList}
-                  className="px-8 py-3 rounded-full bg-neon-green text-gray-900 font-semibold text-lg hover:bg-opacity-90 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-neon-green/60 shadow-lg"
-                  data-testid="button-join-email-list"
-                >
-                  Join our email list
-                </button>
+                <EmailCta />
               </div>
 
             </div>
