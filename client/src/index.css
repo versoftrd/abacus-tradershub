@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @font-face {
   font-family: 'Blacklisted';
   src: url('../attached_assets/Blacklisted_1755610560146.ttf') format('truetype');
@@ -128,7 +130,8 @@
   }
 
   body {
-    @apply font-sans antialiased;
+    @apply antialiased;
+    font-family: 'Inter', sans-serif;
     background-color: var(--page-bg);
     color: hsl(217 8% 83%);
   }
