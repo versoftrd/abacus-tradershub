@@ -9,7 +9,7 @@ interface PlanCircleProps {
 export default function PlanCircle({
   size = 56,
   stroke = 1,
-  innerSize = 24,
+  innerSize = 20,
   variant = "neutral",
   className = ""
 }: PlanCircleProps) {
