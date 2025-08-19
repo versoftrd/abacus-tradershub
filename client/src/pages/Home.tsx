@@ -35,8 +35,8 @@ export default function Home() {
           }}
         ></div>
         
-        {/* Green Glow spanning both sections */}
-        <div className="absolute -bottom-32 right-1/4 w-[800px] h-[800px] bg-green-500/15 rounded-full blur-3xl pointer-events-none z-5"></div>
+        {/* Green Glow */}
+        <div className="absolute bottom-1/2 left-1/2 w-[400px] h-[400px] bg-green-500/10 rounded-full blur-3xl pointer-events-none z-5 transform -translate-x-1/2 -translate-y-1/2"></div>
         <div className="mx-auto max-w-6xl px-4">
           <div className="flex min-h-screen items-center justify-center">
             <div className="text-center space-y-8 relative z-10">
