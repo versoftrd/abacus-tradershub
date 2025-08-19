@@ -116,7 +116,7 @@ export default function Home() {
                 <div className="font-sans text-gray-400 text-[16px] font-semibold pt-1">/ por semana</div>
               </div>
               
-              <button className="font-sans w-full bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold py-3 px-6 rounded-full hover:from-green-500 hover:to-green-400 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6" data-testid="button-weekly">
+              <button className="font-sans w-full bg-gradient-to-b from-[#193b29] to-[#141d18] text-white font-semibold py-3 px-6 rounded-full hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6" data-testid="button-weekly">
                 Iniciar ahora
               </button>
               
@@ -174,7 +174,7 @@ export default function Home() {
                 <div className="font-sans text-gray-400 text-[16px] font-semibold pt-1">/ por mes</div>
               </div>
               
-              <button className="font-sans w-full bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold py-3 px-6 rounded-full hover:from-green-500 hover:to-green-400 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6" data-testid="button-monthly">
+              <button className="font-sans w-full bg-gradient-to-b from-[#19422d] to-[#17231b] text-white font-semibold py-3 px-6 rounded-full hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6" data-testid="button-monthly">
                 Iniciar ahora
               </button>
               
@@ -232,7 +232,7 @@ export default function Home() {
                 <div className="font-sans text-gray-400 text-[16px] font-semibold pt-1">/ por 3 meses</div>
               </div>
               
-              <button className="font-sans w-full bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold py-3 px-6 rounded-full hover:from-green-500 hover:to-green-400 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6" data-testid="button-quarterly">
+              <button className="font-sans w-full bg-gradient-to-b from-[#2ab46b] to-[#1b864e] text-white font-semibold py-3 px-6 rounded-full hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6" data-testid="button-quarterly">
                 Iniciar ahora
               </button>
               
