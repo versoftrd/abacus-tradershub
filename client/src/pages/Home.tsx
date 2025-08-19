@@ -99,7 +99,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             
             {/* Pase Semanal */}
-            <div className="group relative bg-gradient-to-b from-[#151e19] to-[#141414] border border-green-500/10 rounded-3xl p-8 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-weekly">
+            <div className="group relative bg-[linear-gradient(to_bottom,#151e19_0%,#141414_20%)] border border-green-500/10 rounded-3xl p-8 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-weekly">
               <div className="flex items-start justify-between mb-6">
                 <PlanCircle size={48} variant="neutral" />
               </div>
@@ -148,7 +148,7 @@ export default function Home() {
             </div>
 
             {/* Membresía Mensual - Most Popular */}
-            <div className="group relative bg-gradient-to-b from-[#151e19] to-[#141414] border border-green-500/20 rounded-3xl p-8 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-monthly">
+            <div className="group relative bg-[linear-gradient(to_bottom,#151e19_0%,#141414_50%)] border border-green-500/20 rounded-3xl p-8 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-monthly">
               <div className="absolute top-4 right-4 flex gap-2">
                 <span className="font-sans bg-green-500/20 border border-green-500/40 text-green-400 text-xs font-semibold px-3 py-1 rounded-full" data-testid="badge-popular">
                   Más popular
@@ -206,7 +206,7 @@ export default function Home() {
             </div>
 
             {/* Plan Pro Trimestral - Best Value */}
-            <div className="group relative bg-gradient-to-b from-[#151e19] to-[#141414] border border-green-500/10 rounded-3xl p-8 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-quarterly">
+            <div className="group relative bg-[linear-gradient(to_bottom,#151e19_0%,#141414_80%)] border border-green-500/10 rounded-3xl p-8 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-quarterly">
               <div className="absolute top-4 left-4 flex gap-2">
                 <span className="font-sans bg-green-500/20 border border-green-500/40 text-green-400 text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1" data-testid="badge-best-value">
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
