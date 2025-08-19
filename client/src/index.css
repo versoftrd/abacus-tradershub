@@ -51,7 +51,7 @@
   --spacing: 0.25rem;
   
   /* Custom TRADERS Hub colors */
-  --page-bg: hsl(218 13% 4%);
+  --page-bg: #141414;
   --navbar-bg: rgba(17, 17, 17, 0.7);
   --tab-active: hsl(220 8% 12%);
   --tab-hover: hsl(217 12% 8%);
