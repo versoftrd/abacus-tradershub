@@ -39,7 +39,7 @@ export default function Navbar() {
 
           {/* Desktop Navigation Tabs */}
           <div className="hidden md:flex">
-            <div className="flex items-center gap-1 rounded-[16px] backdrop-blur-2xl bg-white/10 border border-white/30 px-2 py-1 shadow-[0_8px_32px_0_rgba(255,255,255,0.18)] ring-1 ring-white/20">
+            <div className="flex items-center gap-1 rounded-[16px] backdrop-blur-2xl bg-white/20 border border-white/30 px-2 py-1">
               {navigationItems.map((item) => (
                 <a
                   key={item.path}
