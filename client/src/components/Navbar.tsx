@@ -79,7 +79,7 @@ export default function Navbar() {
           <div className="md:hidden">
             <button
               onClick={toggleMobileMenu}
-              className="inline-flex items-center justify-center rounded-md p-2 hover:bg-tab-hover transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50"
+              className="inline-flex items-center justify-center rounded-[16px] p-2 hover:bg-tab-hover transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50"
               data-testid="button-mobile-menu"
               aria-expanded={isMobileMenuOpen}
               aria-label="Toggle mobile menu"
