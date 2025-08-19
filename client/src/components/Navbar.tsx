@@ -45,7 +45,7 @@ export default function Navbar() {
                 <a
                   key={item.path}
                   href={item.path}
-                  className={`px-3 py-1.5 rounded-[16px] text-sm font-semibold transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 ${
+                  className={`px-3 py-1.5 rounded-[10px] text-sm font-semibold transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 ${
                     isActive(item.path)
                       ? "text-white bg-tab-active"
                       : "text-zinc-300 hover:bg-tab-hover"
@@ -61,13 +61,13 @@ export default function Navbar() {
               
               {/* Login and Get Started buttons */}
               <button 
-                className="px-4 py-1.5 rounded-[16px] bg-login-bg text-zinc-200 hover:bg-login-hover transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 text-sm font-semibold"
+                className="px-4 py-1.5 rounded-[10px] bg-login-bg text-zinc-200 hover:bg-login-hover transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 text-sm font-semibold"
                 data-testid="button-login"
               >
                 Login
               </button>
               <button 
-                className="px-4 py-1.5 rounded-[16px] bg-gradient-to-r from-gradient-start to-gradient-end text-white shadow-sm hover:opacity-95 transition-opacity duration-200 focus:outline-none focus:ring-2 focus:ring-sky-300/60 text-sm font-semibold"
+                className="px-4 py-1.5 rounded-[10px] bg-gradient-to-r from-gradient-start to-gradient-end text-white shadow-sm hover:opacity-95 transition-opacity duration-200 focus:outline-none focus:ring-2 focus:ring-sky-300/60 text-sm font-semibold"
                 data-testid="button-get-started"
               >
                 Get Started
@@ -79,7 +79,7 @@ export default function Navbar() {
           <div className="md:hidden">
             <button
               onClick={toggleMobileMenu}
-              className="inline-flex items-center justify-center rounded-[16px] p-2 hover:bg-tab-hover transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50"
+              className="inline-flex items-center justify-center rounded-[10px] p-2 hover:bg-tab-hover transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50"
               data-testid="button-mobile-menu"
               aria-expanded={isMobileMenuOpen}
               aria-label="Toggle mobile menu"
@@ -101,7 +101,7 @@ export default function Navbar() {
               <a
                 key={item.path}
                 href={item.path}
-                className={`block px-3 py-2 rounded-[16px] text-sm font-semibold transition-colors duration-200 ${
+                className={`block px-3 py-2 rounded-[10px] text-sm font-semibold transition-colors duration-200 ${
                   isActive(item.path)
                     ? "text-white bg-tab-active"
                     : "text-zinc-300 hover:bg-tab-hover"
@@ -115,13 +115,13 @@ export default function Navbar() {
             
             <div className="pt-4 space-y-2">
               <button 
-                className="w-full px-4 py-2 rounded-[16px] bg-login-bg text-zinc-200 hover:bg-login-hover transition-colors duration-200 text-sm font-semibold"
+                className="w-full px-4 py-2 rounded-[10px] bg-login-bg text-zinc-200 hover:bg-login-hover transition-colors duration-200 text-sm font-semibold"
                 data-testid="mobile-button-login"
               >
                 Login
               </button>
               <button 
-                className="w-full px-4 py-2 rounded-[16px] bg-gradient-to-r from-gradient-start to-gradient-end text-white shadow-sm hover:opacity-95 transition-opacity duration-200 text-sm font-semibold"
+                className="w-full px-4 py-2 rounded-[10px] bg-gradient-to-r from-gradient-start to-gradient-end text-white shadow-sm hover:opacity-95 transition-opacity duration-200 text-sm font-semibold"
                 data-testid="mobile-button-get-started"
               >
                 Get Started
