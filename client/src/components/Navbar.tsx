@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
+import logoPath from "@assets/logo_1755607335061.png";
 
 const navigationItems = [
   { name: "Home", path: "/" },
@@ -28,14 +29,12 @@ export default function Navbar() {
           
           {/* Logo Section */}
           <div className="flex items-center">
-            <div className="relative">
-              <span className="text-xl font-bold text-white tracking-tight" data-testid="logo-traders">
-                TRADERS
-              </span>
-              <span className="absolute -bottom-1 -right-2 font-cursive italic text-neon-green text-sm translate-y-1 -ml-2" data-testid="logo-hub">
-                Hub
-              </span>
-            </div>
+            <img 
+              src={logoPath} 
+              alt="TRADERS Hub"
+              className="h-8 w-auto"
+              data-testid="logo-traders-hub"
+            />
           </div>
 
           {/* Desktop Navigation Tabs */}
