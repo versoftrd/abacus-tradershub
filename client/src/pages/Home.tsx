@@ -23,7 +23,7 @@ export default function Home() {
         
         {/* Round Gradient Decoration */}
         <div 
-          className="absolute bottom-0 right-0 w-96 h-96 bg-bottom-right bg-no-repeat opacity-60 pointer-events-none z-10"
+          className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-bottom-right bg-no-repeat opacity-60 pointer-events-none z-10"
           style={{ 
             backgroundImage: `url(${roundGradient})`,
             backgroundSize: '100% 100%'
