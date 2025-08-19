@@ -97,9 +97,9 @@ export default function Home() {
       </main>
 
       {/* Pricing Section */}
-      <section id="pricing" className="relative bg-[#0B0F0E] pt-20 md:pt-32 pb-24 px-4">
+      <section id="pricing" className="relative bg-[#141414] pt-20 md:pt-32 pb-24 px-4">
         {/* Background with green glow */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0B0F0E] via-[#0F1513] to-[#0B0F0E]">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#141414] via-[#141414] to-[#141414]">
           <div className="absolute top-32 left-1/2 -translate-x-1/2 w-96 h-96 bg-green-500/10 rounded-full blur-3xl"></div>
           <div className="absolute top-0 left-1/4 w-64 h-64 bg-green-400/5 rounded-full blur-2xl"></div>
           <div className="absolute bottom-32 right-1/4 w-80 h-80 bg-green-500/8 rounded-full blur-3xl"></div>
