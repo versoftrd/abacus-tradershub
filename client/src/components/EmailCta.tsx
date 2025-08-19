@@ -12,7 +12,7 @@ export default function EmailCta() {
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-lg mx-auto">
       <div className="mx-auto w-full max-w-lg bg-[#1c1c1c] px-4 md:px-6 py-2 rounded-[24px] border border-white/10">
-        <div className="flex items-center gap-3 h-14 md:h-16">
+        <div className="flex items-center gap-3 h-12 md:h-14">
           <input
             type="email"
             value={email}
@@ -25,7 +25,7 @@ export default function EmailCta() {
           />
           <button
             type="submit"
-            className="rounded-[16px] bg-gradient-to-r from-[#98f7b0] via-[#79e39e] to-[#51b97f] px-6 md:px-8 py-3 md:py-4 text-white font-semibold shadow hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-emerald-300/60 transition-opacity duration-200 text-sm md:text-base whitespace-nowrap"
+            className="rounded-[16px] bg-gradient-to-r from-[#98f7b0] via-[#79e39e] to-[#51b97f] px-6 md:px-8 py-2 md:py-3 text-white font-semibold shadow hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-emerald-300/60 transition-opacity duration-200 text-sm md:text-base whitespace-nowrap"
             data-testid="button-submit-email"
           >
             Join our email list
