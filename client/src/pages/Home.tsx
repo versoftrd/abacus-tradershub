@@ -10,7 +10,7 @@ export default function Home() {
       <main className="relative">
         <div className="mx-auto max-w-6xl px-4">
           <div className="flex min-h-screen items-center justify-center">
-            <div className="text-center space-y-8">
+            <div className="text-center space-y-8 relative z-10">
               
               {/* Main Headline */}
               <h1 
