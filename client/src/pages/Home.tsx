@@ -67,10 +67,13 @@ export default function Home() {
 
       </main>
 
+      {/* Transition Section */}
+      <div className="relative h-32 bg-gradient-to-b from-transparent via-black/60 to-[#141414]"></div>
+
       {/* Pricing Section */}
-      <section className="relative py-24 px-4">
+      <section className="relative py-24 px-4" style={{ backgroundColor: '#141414' }}>
         {/* Background with green glow */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0B0F0E] via-[#0F1513] to-[#0B0F0E]">
+        <div className="absolute inset-0">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-green-500/10 rounded-full blur-3xl"></div>
         </div>
         
