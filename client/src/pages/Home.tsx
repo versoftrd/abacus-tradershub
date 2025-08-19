@@ -150,9 +150,6 @@ export default function Home() {
             {/* Membresía Mensual - Most Popular */}
             <div className="group relative bg-[linear-gradient(to_bottom,#183023_0%,#141414_50%)] border border-green-500/20 rounded-3xl p-8 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-monthly">
               <div className="absolute top-4 right-4 flex gap-2">
-                <span className="font-sans text-white text-xs font-semibold px-3 py-1 rounded-full" data-testid="badge-popular">
-                  Más popular
-                </span>
                 <span className="font-sans bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-medium px-2 py-1 rounded-full" data-testid="badge-discount-monthly">
                   35% de descuento
                 </span>
@@ -160,6 +157,9 @@ export default function Home() {
               
               <div className="flex items-start justify-between mb-6 mt-8">
                 <PlanCircle size={48} variant="neutral" />
+                <span className="font-sans text-white text-xs font-semibold px-3 py-1 rounded-full" data-testid="badge-popular">
+                  Más popular
+                </span>
               </div>
               
               <h3 className="font-sans text-2xl font-bold text-white mb-2" data-testid="title-monthly">
