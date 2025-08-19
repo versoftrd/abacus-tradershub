@@ -23,8 +23,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-md bg-black/20">
-      <div className="mx-auto max-w-6xl px-4">
+    <nav className="sticky top-0 z-50 bg-navbar-bg backdrop-blur-md">
+      <div className="mx-auto max-w-6xl px-4 bg-[#141414]">
         <div className="flex h-16 items-center justify-between gap-3">
           
           {/* Logo Section */}
@@ -39,7 +39,7 @@ export default function Navbar() {
 
           {/* Desktop Navigation Tabs */}
           <div className="hidden md:flex">
-            <div className="flex items-center gap-1 rounded-[16px] backdrop-blur-md border border-white/10 px-2 py-1 bg-black/20">
+            <div className="flex items-center gap-1 rounded-[16px] backdrop-blur-sm border border-white/10 px-2 py-1 bg-[#1a1a1a]">
               {navigationItems.map((item) => (
                 <a
                   key={item.path}
