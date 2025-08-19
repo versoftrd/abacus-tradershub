@@ -9,11 +9,10 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-page-bg">
       <Navbar />
-      
       {/* Hero Section */}
       <main className="relative">
         <div className="mx-auto max-w-6xl px-4">
-          <div className="flex min-h-screen items-center justify-center">
+          <div className="flex min-h-screen items-center justify-center bg-[#1b1b1b]">
             <div className="text-center space-y-8">
               
               {/* Main Headline */}
