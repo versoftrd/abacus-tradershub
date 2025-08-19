@@ -30,10 +30,10 @@ export default function PlanCircle({
       {(variant === "accent" || variant === "filled") && (
         <defs>
           {variant === "filled" ? (
-            <radialGradient id={gradientId} cx="50%" cy="50%" r="50%">
+            <linearGradient id={gradientId} x1="0%" y1="0%" x2="0%" y2="100%">
               <stop offset="0%" stopColor="#27b269" />
               <stop offset="100%" stopColor="#2b6e4a" />
-            </radialGradient>
+            </linearGradient>
           ) : (
             <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="#34D399" />
