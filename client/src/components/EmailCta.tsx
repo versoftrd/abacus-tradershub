@@ -11,7 +11,7 @@ export default function EmailCta() {
 
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-lg mx-auto mt-[-16px] mb-[-16px]">
-      <div className="mx-auto w-full max-w-lg bg-black/10 backdrop-blur-xl px-4 md:px-6 py-2 rounded-[32px] border border-white/20 shadow-2xl shadow-black/30">
+      <div className="mx-auto w-full max-w-lg bg-white/5 backdrop-blur-2xl px-4 md:px-6 py-2 rounded-[40px] border-2 border-white/30 shadow-[0_8px_32px_0_rgba(255,255,255,0.18)] ring-1 ring-white/10">
         <div className="flex items-center gap-3 h-12 md:h-14">
           <input
             type="email"
@@ -20,7 +20,7 @@ export default function EmailCta() {
             placeholder="Enter your email address"
             aria-label="Email"
             required
-            className="flex-1 bg-[#1b1b1b] text-zinc-100 placeholder:text-zinc-400 text-lg md:text-xl focus:outline-none"
+            className="flex-1 bg-transparent text-zinc-100 placeholder:text-zinc-500 text-lg md:text-xl focus:outline-none backdrop-blur-sm"
             data-testid="input-email"
           />
           <button
