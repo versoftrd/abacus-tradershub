@@ -34,9 +34,6 @@ export default function Home() {
             backgroundSize: '100% 100%'
           }}
         ></div>
-        
-        {/* Green glow extending from hero to pricing */}
-        <div className="absolute top-20 right-0 w-[1000px] h-[1000px] bg-green-500/20 rounded-full blur-3xl pointer-events-none z-5 transform translate-x-1/3 -translate-y-1/4"></div>
         <div className="mx-auto max-w-6xl px-4">
           <div className="flex min-h-screen items-center justify-center">
             <div className="text-center space-y-8 relative z-10">
@@ -78,8 +75,9 @@ export default function Home() {
       <section id="pricing" className="relative bg-[#141414] pt-0 pb-24 px-4">
         {/* Background with green glow */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#141414] via-[#141414] to-[#141414]">
-          {/* Additional green glow in pricing section top right */}
-          <div className="absolute -top-40 right-0 w-[800px] h-[800px] bg-green-400/15 rounded-full blur-3xl transform translate-x-1/4"></div>
+          <div className="absolute top-32 left-1/2 -translate-x-1/2 w-96 h-96 bg-green-500/10 rounded-full blur-3xl"></div>
+          <div className="absolute top-0 left-1/4 w-64 h-64 bg-green-400/5 rounded-full blur-2xl"></div>
+          <div className="absolute bottom-32 right-1/4 w-80 h-80 bg-green-500/8 rounded-full blur-3xl"></div>
         </div>
         
         <div className="relative max-w-7xl mx-auto">
