@@ -207,20 +207,17 @@ export default function Home() {
 
             {/* Plan Pro Trimestral - Best Value */}
             <div className="group relative bg-[linear-gradient(to_bottom,#183a2a_0%,#141414_80%)] border border-green-500/10 rounded-3xl p-8 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-quarterly">
-              <div className="absolute top-4 left-4 flex gap-2">
-                <span className="font-sans bg-green-500/20 border border-green-500/40 text-green-400 text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1" data-testid="badge-best-value">
-                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M5.166 2.621v.858c-1.035.148-2.059.33-3.071.543a.75.75 0 0 0-.584.859 6.753 6.753 0 0 0 6.138 5.6 6.73 6.73 0 0 0 2.743 1.346A6.707 6.707 0 0 1 9.279 15H8.54c-1.036 0-1.875.84-1.875 1.875V19.5h2.709A8.954 8.954 0 0 0 20.5 10.375V8.625c0-1.036-.84-1.875-1.875-1.875h-.833a8.954 8.954 0 0 0-8.458-5.709A8.958 8.958 0 0 0 5.166 2.621Z" clipRule="evenodd" />
-                  </svg>
-                  Mejor valor
-                </span>
-                <span className="font-sans bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-medium px-2 py-1 rounded-full" data-testid="badge-discount-quarterly">
+              
+              <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center">
+                  <PlanCircle size={48} variant="neutral" />
+                  <span className="font-sans text-white text-xs font-semibold px-3 py-1 rounded-full" data-testid="badge-best-value">
+                    Mejor valor
+                  </span>
+                </div>
+                <span className="font-sans bg-gradient-to-b from-[#227649] to-[#193829] text-green-400 text-xs font-medium px-2 py-1 rounded-full" data-testid="badge-discount-quarterly">
                   45% de descuento
                 </span>
-              </div>
-              
-              <div className="flex items-start justify-between mb-6 mt-8">
-                <PlanCircle size={48} variant="accent" />
               </div>
               
               <h3 className="font-sans text-2xl font-bold text-white mb-2" data-testid="title-quarterly">
