@@ -14,7 +14,7 @@ export default function Home() {
               
               {/* Main Headline */}
               <h1 
-                className="font-bold text-white tracking-tight blacklisted-font"
+                className="font-bold text-white tracking-wide blacklisted-font"
                 data-testid="hero-headline"
               >
                 APRENDE VIENDO, MEJORA HACIENDO, GANA ENTENDIENDO.
