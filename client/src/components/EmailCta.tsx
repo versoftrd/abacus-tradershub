@@ -11,7 +11,7 @@ export default function EmailCta() {
 
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-3xl mx-auto">
-      <div className="relative mx-auto w-full max-w-3xl rounded-[15px] border border-[#2a2a2a] bg-[#1c1c1c] px-4 md:px-6 py-2">
+      <div className="mx-auto w-full max-w-3xl bg-[#1c1c1c] px-4 md:px-6 py-2">
         <div className="flex items-center gap-3 h-14 md:h-16">
           <input
             type="email"
