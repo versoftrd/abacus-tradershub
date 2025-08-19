@@ -1,13 +1,24 @@
 import Navbar from "@/components/Navbar";
 import EmailCta from "@/components/EmailCta";
+import heroBackground from "@assets/Hero Background_1755619519675.png";
 
 export default function Home() {
 
   return (
     <div className="min-h-screen bg-page-bg">
-      <Navbar />
+      <div className="relative z-50">
+        <Navbar />
+      </div>
       {/* Hero Section */}
-      <main className="relative">
+      <main className="relative -mt-16">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${heroBackground})` }}
+        ></div>
+        
+        {/* Background overlay for depth */}
+        <div className="absolute inset-0 bg-black/40 pointer-events-none"></div>
         <div className="mx-auto max-w-6xl px-4">
           <div className="flex min-h-screen items-center justify-center">
             <div className="text-center space-y-8 relative z-10">
@@ -43,8 +54,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Background overlay for depth */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-page-bg/20 to-page-bg pointer-events-none"></div>
       </main>
     </div>
   );
