@@ -1,11 +1,12 @@
 @font-face {
   font-family: 'Blacklisted';
-  src: url('/attached_assets/Blacklisted_1755610560146.ttf') format('truetype');
+  src: url('../attached_assets/Blacklisted_1755610560146.ttf') format('truetype');
   font-display: swap;
 }
 
 .blacklisted-font {
-  font-family: 'Blacklisted', Arial, sans-serif;
+  font-family: 'Blacklisted', Arial, sans-serif !important;
+  font-size: 30px !important;
 }
 
 @tailwind base;
