@@ -32,7 +32,7 @@ export default function Navbar() {
             <img 
               src={logoPath} 
               alt="TRADERS Hub"
-              className="h-8 w-auto"
+              className="h-[37px] w-auto"
               data-testid="logo-traders-hub"
             />
           </div>
