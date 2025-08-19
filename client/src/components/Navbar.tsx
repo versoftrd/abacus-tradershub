@@ -1,131 +1,136 @@
 import { useState } from "react";
 import { useLocation } from "wouter";
+import { Menu, X } from "lucide-react";
 
-const links = [
-  { href: "/", label: "Home" },
-  { href: "/abacus-experience", label: "Abacus Experience" },
-  { href: "/market-open", label: "Market Open" },
-  { href: "/campus-virtual", label: "Campus Virtual" },
-  { href: "/traders-hub", label: "Traders Hub" },
-  { href: "/pricing", label: "Pricing" },
+const navigationItems = [
+  { name: "Home", path: "/" },
+  { name: "Abacus Experience", path: "/abacus-experience" },
+  { name: "Market Open", path: "/market-open" },
+  { name: "Campus Virtual", path: "/campus-virtual" },
+  { name: "Traders Hub", path: "/traders-hub" },
+  { name: "Pricing", path: "/pricing" },
 ];
 
 export default function Navbar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [location] = useLocation();
-  const [open, setOpen] = useState(false);
+
+  const isActive = (path: string) => location === path;
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[#1f1f22] bg-[rgba(17,17,17,0.7)] backdrop-blur-md">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="flex h-20 items-center justify-between gap-6">
-          {/* LOGO */}
-          <a href="/" className="relative select-none" data-testid="logo">
-            <div className="text-2xl font-extrabold tracking-tight text-white leading-none" data-testid="logo-traders">
-              TRADERS
+    <nav className="sticky top-0 z-50 border-b border-border-subtle bg-navbar-bg backdrop-blur-md">
+      <div className="mx-auto max-w-6xl px-4">
+        <div className="flex h-16 items-center justify-between gap-3">
+          
+          {/* Logo Section */}
+          <div className="flex items-center">
+            <div className="relative">
+              <span className="text-xl font-bold text-white tracking-tight" data-testid="logo-traders">
+                TRADERS
+              </span>
+              <span className="absolute -bottom-1 -right-2 font-cursive italic text-neon-green text-sm translate-y-1 -ml-2" data-testid="logo-hub">
+                Hub
+              </span>
             </div>
-            <span className="absolute -bottom-2 left-[84px] text-[#6ef7a7] italic font-semibold text-xl" data-testid="logo-hub">
-              Hub
-            </span>
-          </a>
-
-          {/* CENTER TABS (desktop) */}
-          <nav className="hidden lg:flex items-center">
-            <ul className="flex items-center gap-2 rounded-full bg-transparent">
-              {links.map((l) => {
-                const active = location === l.href;
-                return (
-                  <li key={l.href}>
-                    <a
-                      href={l.href}
-                      className={[
-                        "px-5 py-3 rounded-full text-[18px] font-semibold tracking-tight transition",
-                        "hover:bg-[#15181b] focus:outline-none focus:ring-2 focus:ring-sky-500/50",
-                        active ? "bg-[#1f2226] text-white shadow-inner" : "text-zinc-200",
-                      ].join(" ")}
-                      data-testid={`nav-link-${l.label.toLowerCase().replace(/\s+/g, "-")}`}
-                    >
-                      {l.label}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          </nav>
-
-          {/* RIGHT CTAs */}
-          <div className="hidden md:flex items-center gap-4">
-            <a
-              href="/login"
-              className="px-6 py-3 rounded-full bg-[#1f2428] text-[18px] font-semibold text-zinc-200 hover:bg-[#242a2f] transition focus:ring-2 focus:ring-sky-500/50"
-              data-testid="button-login"
-            >
-              Login
-            </a>
-            <a
-              href="/get-started"
-              className="px-6 py-3 rounded-full bg-gradient-to-r from-[#36a2ff] to-[#7cc6ff] text-[18px] font-semibold text-white shadow hover:opacity-95 transition focus:ring-2 focus:ring-sky-300/60"
-              data-testid="button-get-started"
-            >
-              Get Started
-            </a>
           </div>
 
-          {/* MOBILE HAMBURGER */}
-          <button
-            className="md:hidden inline-flex items-center justify-center rounded-md p-3 hover:bg-[#15181b] focus:ring-2 focus:ring-sky-500/50"
-            onClick={() => setOpen((s) => !s)}
-            aria-label="Toggle menu"
-            data-testid="button-mobile-menu"
-          >
-            <svg width="24" height="24" fill="currentColor" className="text-zinc-200">
-              <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-            </svg>
-          </button>
+          {/* Desktop Navigation Tabs */}
+          <div className="hidden md:flex">
+            <div className="flex items-center gap-1 rounded-full bg-transparent">
+              {navigationItems.map((item) => (
+                <a
+                  key={item.path}
+                  href={item.path}
+                  className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 ${
+                    isActive(item.path)
+                      ? "text-white bg-tab-active"
+                      : "text-zinc-300 hover:bg-tab-hover"
+                  }`}
+                  data-testid={`nav-link-${item.name.toLowerCase().replace(/\s+/g, "-")}`}
+                >
+                  {item.name}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Right Section - Buttons */}
+          <div className="flex items-center gap-3">
+            {/* Desktop Buttons */}
+            <div className="hidden md:flex items-center gap-3">
+              <button 
+                className="px-4 py-1.5 rounded-full bg-login-bg text-zinc-200 hover:bg-login-hover transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 text-sm font-medium"
+                data-testid="button-login"
+              >
+                Login
+              </button>
+              <button 
+                className="px-4 py-1.5 rounded-full bg-gradient-to-r from-gradient-start to-gradient-end text-white shadow-sm hover:opacity-95 transition-opacity duration-200 focus:outline-none focus:ring-2 focus:ring-sky-300/60 text-sm font-medium"
+                data-testid="button-get-started"
+              >
+                Get Started
+              </button>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={toggleMobileMenu}
+              className="md:hidden inline-flex items-center justify-center rounded-md p-2 hover:bg-tab-hover transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50"
+              data-testid="button-mobile-menu"
+              aria-expanded={isMobileMenuOpen}
+              aria-label="Toggle mobile menu"
+            >
+              {isMobileMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* MOBILE PANEL */}
-      {open && (
-        <div className="md:hidden border-t border-[#1f1f22] bg-[#0e1012]" data-testid="mobile-menu-panel">
-          <div className="px-6 py-4 space-y-2">
-            {links.map((l) => {
-              const active = location === l.href;
-              return (
-                <a
-                  key={l.href}
-                  href={l.href}
-                  onClick={() => setOpen(false)}
-                  className={[
-                    "block px-4 py-3 rounded-xl text-base font-medium",
-                    active ? "bg-[#1f2226] text-white" : "text-zinc-200 hover:bg-[#15181b]",
-                  ].join(" ")}
-                  data-testid={`mobile-nav-link-${l.label.toLowerCase().replace(/\s+/g, "-")}`}
-                >
-                  {l.label}
-                </a>
-              );
-            })}
-            <div className="flex gap-3 pt-2">
+      {/* Mobile Menu Panel */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden border-t border-border-subtle bg-mobile-panel" data-testid="mobile-menu-panel">
+          <div className="px-4 py-4 space-y-2">
+            {navigationItems.map((item) => (
               <a
-                href="/login"
-                onClick={() => setOpen(false)}
-                className="flex-1 px-4 py-3 rounded-xl bg-[#1f2428] text-zinc-200 text-center"
+                key={item.path}
+                href={item.path}
+                className={`block px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                  isActive(item.path)
+                    ? "text-white bg-tab-active"
+                    : "text-zinc-300 hover:bg-tab-hover"
+                }`}
+                data-testid={`mobile-nav-link-${item.name.toLowerCase().replace(/\s+/g, "-")}`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {item.name}
+              </a>
+            ))}
+            
+            <div className="pt-4 space-y-2">
+              <button 
+                className="w-full px-4 py-2 rounded-full bg-login-bg text-zinc-200 hover:bg-login-hover transition-colors duration-200 text-sm font-medium"
                 data-testid="mobile-button-login"
               >
                 Login
-              </a>
-              <a
-                href="/get-started"
-                onClick={() => setOpen(false)}
-                className="flex-1 px-4 py-3 rounded-xl bg-gradient-to-r from-[#36a2ff] to-[#7cc6ff] text-white text-center"
+              </button>
+              <button 
+                className="w-full px-4 py-2 rounded-full bg-gradient-to-r from-gradient-start to-gradient-end text-white shadow-sm hover:opacity-95 transition-opacity duration-200 text-sm font-medium"
                 data-testid="mobile-button-get-started"
               >
                 Get Started
-              </a>
+              </button>
             </div>
           </div>
         </div>
       )}
-    </header>
+    </nav>
   );
 }
