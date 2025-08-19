@@ -112,7 +112,7 @@ export default function Home() {
               </p>
               
               <div className="mb-8">
-                <span className="font-sans text-5xl md:text-6xl font-bold text-white" data-testid="price-weekly">$50</span>
+                <span className="font-sans text-[40px] font-semibold text-white" data-testid="price-weekly">$50</span>
                 <span className="font-sans text-gray-400 text-lg ml-2 font-semibold">/ por semana</span>
               </div>
               
@@ -170,7 +170,7 @@ export default function Home() {
               </p>
               
               <div className="mb-8">
-                <span className="font-sans text-5xl md:text-6xl font-bold text-white" data-testid="price-monthly">$150</span>
+                <span className="font-sans text-[40px] font-semibold text-white" data-testid="price-monthly">$150</span>
                 <span className="font-sans text-gray-400 text-lg ml-2 font-semibold">/ por mes</span>
               </div>
               
@@ -231,7 +231,7 @@ export default function Home() {
               </p>
               
               <div className="mb-8">
-                <span className="font-sans text-5xl md:text-6xl font-bold text-white" data-testid="price-quarterly">$350</span>
+                <span className="font-sans text-[40px] font-semibold text-white" data-testid="price-quarterly">$350</span>
                 <span className="font-sans text-gray-400 text-lg ml-2 font-semibold">/ por 3 meses</span>
               </div>
               
