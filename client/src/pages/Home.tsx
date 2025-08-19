@@ -159,7 +159,7 @@ export default function Home() {
               </div>
               
               <div className="flex items-start justify-between mb-6 mt-8">
-                <PlanCircle size={48} variant="accent" />
+                <PlanCircle size={48} variant="neutral" />
               </div>
               
               <h3 className="font-sans text-2xl font-bold text-white mb-2" data-testid="title-monthly">
