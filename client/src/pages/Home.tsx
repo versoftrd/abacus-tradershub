@@ -155,7 +155,7 @@ export default function Home() {
                 </span>
               </div>
               
-              <div className="flex items-start justify-between mb-6 mt-8">
+              <div className="flex items-start gap-3 mb-6 mt-8">
                 <PlanCircle size={48} variant="neutral" />
                 <span className="font-sans text-white text-xs font-semibold px-3 py-1 rounded-full" data-testid="badge-popular">
                   Más popular
