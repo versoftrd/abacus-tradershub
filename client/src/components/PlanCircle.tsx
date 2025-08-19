@@ -1,8 +1,7 @@
 interface PlanCircleProps {
   size?: number;
   stroke?: number;
-  dotSize?: number;
-  dotAngle?: number;
+  innerSize?: number;
   variant?: "neutral" | "accent";
   className?: string;
 }
@@ -10,18 +9,13 @@ interface PlanCircleProps {
 export default function PlanCircle({
   size = 56,
   stroke = 3,
-  dotSize = 10,
-  dotAngle = 315,
+  innerSize = 16,
   variant = "neutral",
   className = ""
 }: PlanCircleProps) {
   const radius = size / 2;
-  const innerRadius = radius - stroke / 2;
   const center = size / 2;
-  
-  const angleInRadians = (dotAngle * Math.PI) / 180;
-  const dotX = center + innerRadius * Math.cos(angleInRadians);
-  const dotY = center + innerRadius * Math.sin(angleInRadians);
+  const innerRadius = innerSize / 2;
   
   const gradientId = `gradient-${Math.random().toString(36).substr(2, 9)}`;
   
@@ -53,9 +47,9 @@ export default function PlanCircle({
       />
       
       <circle
-        cx={dotX}
-        cy={dotY}
-        r={dotSize / 2}
+        cx={center}
+        cy={center}
+        r={innerRadius}
         fill={variant === "accent" ? "#22C55E" : "#FFFFFF"}
       />
     </svg>
