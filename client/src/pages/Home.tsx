@@ -90,7 +90,7 @@ export default function Home() {
             <h2 className="font-sans md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in-up text-[30px]" data-testid="pricing-headline">
               Elige el plan que se adapta a tu camino.
             </h2>
-            <p className="font-sans text-white max-w-4xl mx-auto animate-fade-in-up-delay text-[14px]" data-testid="pricing-subtitle">Suscríbete de forma mensual o anual — sin cargos ocultos, sin contratos, sin rodeos. 
+            <p className="font-sans text-white max-w-4xl mx-auto animate-fade-in-up-delay text-[14px]" data-testid="pricing-subtitle">Suscríbete de forma mensual o anual — sin cargos ocultos, sin contratos, sin rodeos.<br />
             Comienza hoy a operar con los que realmente están en el mercado.</p>
           </div>
 
