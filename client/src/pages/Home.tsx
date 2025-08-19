@@ -102,6 +102,7 @@ export default function Home() {
             <div className="group relative bg-[linear-gradient(to_bottom,#151e19_0%,#141414_20%)] border border-green-500/10 rounded-3xl p-8 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-weekly">
               <div className="flex items-start justify-between mb-6">
                 <PlanCircle size={48} variant="neutral" />
+                <span className="font-sans text-gray-400 text-lg font-semibold">/ por semana</span>
               </div>
               
               <h3 className="font-sans text-2xl font-bold text-white mb-2" data-testid="title-weekly">
@@ -113,7 +114,6 @@ export default function Home() {
               
               <div className="mb-8">
                 <span className="font-sans text-[40px] font-semibold text-white" data-testid="price-weekly">$50</span>
-                <span className="font-sans text-gray-400 text-lg ml-2 font-semibold">/ por semana</span>
               </div>
               
               <button className="font-sans w-full bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold py-4 px-6 rounded-full hover:from-green-500 hover:to-green-400 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-8" data-testid="button-weekly">
@@ -160,6 +160,7 @@ export default function Home() {
               
               <div className="flex items-start justify-between mb-6 mt-8">
                 <PlanCircle size={48} variant="accent" />
+                <span className="font-sans text-gray-400 text-lg font-semibold">/ por mes</span>
               </div>
               
               <h3 className="font-sans text-2xl font-bold text-white mb-2" data-testid="title-monthly">
@@ -171,7 +172,6 @@ export default function Home() {
               
               <div className="mb-8">
                 <span className="font-sans text-[40px] font-semibold text-white" data-testid="price-monthly">$150</span>
-                <span className="font-sans text-gray-400 text-lg ml-2 font-semibold">/ por mes</span>
               </div>
               
               <button className="font-sans w-full bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold py-4 px-6 rounded-full hover:from-green-500 hover:to-green-400 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-8" data-testid="button-monthly">
@@ -221,6 +221,7 @@ export default function Home() {
               
               <div className="flex items-start justify-between mb-6 mt-8">
                 <PlanCircle size={48} variant="accent" />
+                <span className="font-sans text-gray-400 text-lg font-semibold">/ por 3 meses</span>
               </div>
               
               <h3 className="font-sans text-2xl font-bold text-white mb-2" data-testid="title-quarterly">
@@ -232,7 +233,6 @@ export default function Home() {
               
               <div className="mb-8">
                 <span className="font-sans text-[40px] font-semibold text-white" data-testid="price-quarterly">$350</span>
-                <span className="font-sans text-gray-400 text-lg ml-2 font-semibold">/ por 3 meses</span>
               </div>
               
               <button className="font-sans w-full bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold py-4 px-6 rounded-full hover:from-green-500 hover:to-green-400 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-8" data-testid="button-quarterly">
