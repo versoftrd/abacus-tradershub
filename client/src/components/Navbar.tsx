@@ -44,7 +44,9 @@ export default function Navbar() {
                 <a
                   key={item.path}
                   href={item.path}
-                  className="px-3 py-1.5 rounded-[10px] text-sm transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 text-white bg-tab-active font-normal"
+                  className={`px-3 py-1.5 rounded-[10px] text-sm transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 text-white font-semibold ${
+                    isActive(item.path) ? "bg-[#393939]" : ""
+                  }`}
                   data-testid={`nav-link-${item.name.toLowerCase().replace(/\s+/g, "-")}`}
                 >
                   {item.name}
