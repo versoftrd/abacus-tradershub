@@ -14,8 +14,7 @@ export default function Home() {
               
               {/* Main Headline */}
               <h1 
-                className="md:text-6xl lg:text-7xl font-bold text-white tracking-tight text-[30px]"
-                style={{ fontFamily: 'Blacklisted, sans-serif' }}
+                className="md:text-6xl lg:text-7xl font-bold text-white tracking-tight text-[30px] blacklisted-font"
                 data-testid="hero-headline"
               >
                 APRENDE VIENDO, MEJORA HACIENDO, GANA ENTENDIENDO.
