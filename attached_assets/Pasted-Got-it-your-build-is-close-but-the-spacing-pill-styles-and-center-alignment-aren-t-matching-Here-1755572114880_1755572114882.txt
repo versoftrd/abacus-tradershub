@@ -1,0 +1,148 @@
+Got it—your build is close, but the spacing, pill styles, and center alignment aren’t matching. Here’s a **drop-in Navbar component** (React + Tailwind) that will render like your target screenshot. Replace your current navbar with this exactly.
+
+```jsx
+// src/components/Navbar.jsx
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+
+const links = [
+  { href: "/", label: "Home" },
+  { href: "/abacus-experience", label: "Abacus Experience" },
+  { href: "/market-open", label: "Market Open" },
+  { href: "/campus-virtual", label: "Campus Virtual" },
+  { href: "/traders-hub", label: "Traders Hub" },
+  { href: "/pricing", label: "Pricing" },
+];
+
+export default function Navbar() {
+  const { pathname } = useLocation();
+  const [open, setOpen] = useState(false);
+
+  return (
+    <header className="sticky top-0 z-50 border-b border-[#1f1f22] bg-[rgba(17,17,17,0.7)] backdrop-blur-md">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="flex h-20 items-center justify-between gap-6">
+          {/* LOGO */}
+          <Link to="/" className="relative select-none">
+            <div className="text-2xl font-extrabold tracking-tight text-white leading-none">
+              TRADERS
+            </div>
+            <span className="absolute -bottom-2 left-[84px] text-[#6ef7a7] italic font-semibold text-xl">
+              Hub
+            </span>
+          </Link>
+
+          {/* CENTER TABS (desktop) */}
+          <nav className="hidden lg:flex items-center">
+            <ul className="flex items-center gap-2 rounded-full bg-transparent">
+              {links.map((l) => {
+                const active = pathname === l.href;
+                return (
+                  <li key={l.href}>
+                    <Link
+                      to={l.href}
+                      className={[
+                        "px-5 py-3 rounded-full text-[18px] font-semibold tracking-tight transition",
+                        "hover:bg-[#15181b] focus:outline-none focus:ring-2 focus:ring-sky-500/50",
+                        active ? "bg-[#1f2226] text-white shadow-inner" : "text-zinc-200",
+                      ].join(" ")}
+                    >
+                      {l.label}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
+
+          {/* RIGHT CTAs */}
+          <div className="hidden md:flex items-center gap-4">
+            <Link
+              to="/login"
+              className="px-6 py-3 rounded-full bg-[#1f2428] text-[18px] font-semibold text-zinc-200 hover:bg-[#242a2f] transition focus:ring-2 focus:ring-sky-500/50"
+            >
+              Login
+            </Link>
+            <Link
+              to="/get-started"
+              className="px-6 py-3 rounded-full bg-gradient-to-r from-[#36a2ff] to-[#7cc6ff] text-[18px] font-semibold text-white shadow hover:opacity-95 transition focus:ring-2 focus:ring-sky-300/60"
+            >
+              Get Started
+            </Link>
+          </div>
+
+          {/* MOBILE HAMBURGER */}
+          <button
+            className="md:hidden inline-flex items-center justify-center rounded-md p-3 hover:bg-[#15181b] focus:ring-2 focus:ring-sky-500/50"
+            onClick={() => setOpen((s) => !s)}
+            aria-label="Toggle menu"
+          >
+            <svg width="24" height="24" fill="currentColor" className="text-zinc-200">
+              <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" strokeWidth="2" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {/* MOBILE PANEL */}
+      {open && (
+        <div className="md:hidden border-t border-[#1f1f22] bg-[#0e1012]">
+          <div className="px-6 py-4 space-y-2">
+            {links.map((l) => {
+              const active = pathname === l.href;
+              return (
+                <Link
+                  key={l.href}
+                  to={l.href}
+                  onClick={() => setOpen(false)}
+                  className={[
+                    "block px-4 py-3 rounded-xl text-base font-medium",
+                    active ? "bg-[#1f2226] text-white" : "text-zinc-200 hover:bg-[#15181b]",
+                  ].join(" ")}
+                >
+                  {l.label}
+                </Link>
+              );
+            })}
+            <div className="flex gap-3 pt-2">
+              <Link
+                to="/login"
+                onClick={() => setOpen(false)}
+                className="flex-1 px-4 py-3 rounded-xl bg-[#1f2428] text-zinc-200 text-center"
+              >
+                Login
+              </Link>
+              <Link
+                to="/get-started"
+                onClick={() => setOpen(false)}
+                className="flex-1 px-4 py-3 rounded-xl bg-gradient-to-r from-[#36a2ff] to-[#7cc6ff] text-white text-center"
+              >
+                Get Started
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
+    </header>
+  );
+}
+```
+
+**Tailwind config / page wrapper checklist**
+
+* Ensure your page background is dark like the screenshot:
+
+```html
+<body class="bg-[#0b0c0d] text-zinc-200">
+```
+
+* Put the navbar inside a max width so tabs don’t hug the edges. This component already uses `max-w-7xl px-6`.
+
+**Why your version looked off**
+
+* Tabs likely weren’t in a **rounded-full** container with proper **padding** (`px-5 py-3`) and **font-size** (`text-[18px] font-semibold`), so they felt small.
+* Missing **active pill** color (`bg-[#1f2226]`) and **hover** (`#15181b`).
+* CTAs didn’t have the **dark pill** and **gradient** styles.
+* The logo overlapped text without absolute positioning; the “Hub” tag here is positioned precisely under “TRADERS”.
+
+If you’re not using React Router, replace `Link`/`useLocation` with plain `<a>` and manually set the active link.
