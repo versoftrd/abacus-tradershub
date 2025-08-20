@@ -402,7 +402,7 @@ export default function Home() {
         </div>
       </section>
       {/* Resultados Expertos Section */}
-      <section className="relative bg-[#141414] py-16 px-4 sm:px-6">
+      <section className="relative bg-[#141414] py-8 px-4 sm:px-6">
         {/* Line Gradient Background Image */}
         <div 
           className="absolute inset-0 bg-no-repeat opacity-40 pointer-events-none"
@@ -421,7 +421,7 @@ export default function Home() {
 
         <div className="relative max-w-7xl mx-auto">
           {/* Header Section */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-6">
             <p className="font-sans text-green-400 text-sm font-medium mb-4 uppercase tracking-wide" data-testid="resultados-eyebrow">
               Resultados Expertos
             </p>
@@ -434,14 +434,14 @@ export default function Home() {
           </div>
 
           {/* Main Stats Card */}
-          <div className="max-w-6xl mx-auto mt-8">
-            <div className="relative border border-white/10 rounded-2xl p-6 shadow-2xl" style={{ 
+          <div className="max-w-6xl mx-auto">
+            <div className="relative border border-white/10 rounded-2xl p-3 shadow-2xl" style={{ 
               background: 'linear-gradient(135deg, rgba(27, 27, 27, 0.9) 0%, rgba(34, 34, 34, 0.8) 50%, rgba(27, 27, 27, 0.9) 100%)',
               backdropFilter: 'blur(10px)'
             }}>
               
               {/* Chart Container */}
-              <div className="relative mb-6">
+              <div className="relative mb-2">
                 {/* +61% Metric */}
                 <div className="absolute top-0 right-4 sm:right-8 md:right-12 z-10">
                   <div className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-green-400" style={{ filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))' }}>
@@ -450,7 +450,7 @@ export default function Home() {
                 </div>
 
                 {/* Chart SVG */}
-                <div className="h-[28rem] sm:h-[32rem] md:h-[36rem] lg:h-[40rem] xl:h-[44rem] w-full group cursor-pointer flex items-center justify-center p-2">
+                <div className="h-[20rem] sm:h-[24rem] md:h-[28rem] lg:h-[32rem] xl:h-[36rem] w-full group cursor-pointer flex items-center justify-center">
                   <svg viewBox="0 40 800 320" className="w-full h-full overflow-hidden" preserveAspectRatio="xMidYMid meet">
                     {/* Grid lines */}
                     <defs>
