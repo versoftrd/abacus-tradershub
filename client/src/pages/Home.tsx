@@ -451,8 +451,8 @@ export default function Home() {
                 </div>
 
                 {/* Chart SVG */}
-                <div className="h-[45rem] w-full rounded-xl p-6 group cursor-pointer">
-                  <svg viewBox="0 0 800 480" className="w-full h-full overflow-visible">
+                <div className="h-[45rem] w-full rounded-xl p-6 group cursor-pointer flex items-center justify-center">
+                  <svg viewBox="0 0 800 480" className="w-full h-4/5 overflow-visible">
                     {/* Grid lines */}
                     <defs>
                       <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
