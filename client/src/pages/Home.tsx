@@ -443,15 +443,15 @@ export default function Home() {
               {/* Chart Container */}
               <div className="relative mb-8 -mt-8">
                 {/* +61% Metric */}
-                <div className="absolute top-4 right-12 z-10">
-                  <div className="font-bold text-[72px] text-[#ffffff] pt-[0px] pb-[0px] mt-[-24px] mb-[-24px]" style={{ filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))' }}>
+                <div className="absolute top-2 right-4 sm:top-4 sm:right-8 md:right-12 z-10">
+                  <div className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-green-400" style={{ filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))' }}>
                     +61%
                   </div>
                 </div>
 
                 {/* Chart SVG */}
-                <div className="h-[50rem] w-full group cursor-pointer flex items-start justify-center">
-                  <svg viewBox="40 40 720 320" className="w-full h-full overflow-visible">
+                <div className="h-[30rem] sm:h-[35rem] md:h-[40rem] lg:h-[45rem] xl:h-[50rem] w-full group cursor-pointer flex items-start justify-center px-2 sm:px-4">
+                  <svg viewBox="40 40 720 320" className="w-full h-full overflow-visible" preserveAspectRatio="xMidYMid meet">
                     {/* Grid lines */}
                     <defs>
                       <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -467,10 +467,10 @@ export default function Home() {
                     <line x1="60" y1="280" x2="740" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
 
                     {/* Y-axis labels */}
-                    <text x="50" y="285" fill="#fff" fontSize="14" textAnchor="end">$0</text>
-                    <text x="50" y="215" fill="#fff" fontSize="14" textAnchor="end">US$1,000</text>
-                    <text x="50" y="145" fill="#fff" fontSize="14" textAnchor="end">US$2,000</text>
-                    <text x="50" y="75" fill="#fff" fontSize="14" textAnchor="end">US$3,000</text>
+                    <text x="50" y="285" fill="#fff" fontSize="10" textAnchor="end" className="text-xs sm:text-sm">$0</text>
+                    <text x="50" y="215" fill="#fff" fontSize="10" textAnchor="end" className="text-xs sm:text-sm">US$1,000</text>
+                    <text x="50" y="145" fill="#fff" fontSize="10" textAnchor="end" className="text-xs sm:text-sm">US$2,000</text>
+                    <text x="50" y="75" fill="#fff" fontSize="10" textAnchor="end" className="text-xs sm:text-sm">US$3,000</text>
 
                     {/* Chart line with area fill */}
                     <path
@@ -511,14 +511,14 @@ export default function Home() {
                     </g>
 
                     {/* X-axis labels */}
-                    <text x="60" y="305" fill="#9CA3AF" fontSize="12" textAnchor="middle" className="group-hover:fill-green-300 transition-colors">Ago 1</text>
-                    <text x="120" y="305" fill="#9CA3AF" fontSize="12" textAnchor="middle" className="group-hover:fill-green-300 transition-colors">Ago 3</text>
-                    <text x="180" y="305" fill="#9CA3AF" fontSize="12" textAnchor="middle" className="group-hover:fill-green-300 transition-colors">Ago 5</text>
-                    <text x="240" y="305" fill="#9CA3AF" fontSize="12" textAnchor="middle" className="group-hover:fill-green-300 transition-colors">Ago 7</text>
-                    <text x="300" y="305" fill="#9CA3AF" fontSize="12" textAnchor="middle" className="group-hover:fill-green-300 transition-colors">Ago 9</text>
-                    <text x="360" y="305" fill="#9CA3AF" fontSize="12" textAnchor="middle" className="group-hover:fill-green-300 transition-colors">Ago 11</text>
-                    <text x="420" y="305" fill="#9CA3AF" fontSize="12" textAnchor="middle" className="group-hover:fill-green-300 transition-colors">Ago 13</text>
-                    <text x="480" y="305" fill="#9CA3AF" fontSize="12" textAnchor="middle" className="group-hover:fill-green-300 transition-colors">Ago 15</text>
+                    <text x="60" y="305" fill="#9CA3AF" fontSize="8" textAnchor="middle" className="group-hover:fill-green-300 transition-colors text-[6px] sm:text-[8px] md:text-xs">Ago 1</text>
+                    <text x="120" y="305" fill="#9CA3AF" fontSize="8" textAnchor="middle" className="group-hover:fill-green-300 transition-colors text-[6px] sm:text-[8px] md:text-xs">Ago 3</text>
+                    <text x="180" y="305" fill="#9CA3AF" fontSize="8" textAnchor="middle" className="group-hover:fill-green-300 transition-colors text-[6px] sm:text-[8px] md:text-xs">Ago 5</text>
+                    <text x="240" y="305" fill="#9CA3AF" fontSize="8" textAnchor="middle" className="group-hover:fill-green-300 transition-colors text-[6px] sm:text-[8px] md:text-xs">Ago 7</text>
+                    <text x="300" y="305" fill="#9CA3AF" fontSize="8" textAnchor="middle" className="group-hover:fill-green-300 transition-colors text-[6px] sm:text-[8px] md:text-xs">Ago 9</text>
+                    <text x="360" y="305" fill="#9CA3AF" fontSize="8" textAnchor="middle" className="group-hover:fill-green-300 transition-colors text-[6px] sm:text-[8px] md:text-xs">Ago 11</text>
+                    <text x="420" y="305" fill="#9CA3AF" fontSize="8" textAnchor="middle" className="group-hover:fill-green-300 transition-colors text-[6px] sm:text-[8px] md:text-xs">Ago 13</text>
+                    <text x="480" y="305" fill="#9CA3AF" fontSize="8" textAnchor="middle" className="group-hover:fill-green-300 transition-colors text-[6px] sm:text-[8px] md:text-xs">Ago 15</text>
                   </svg>
                 </div>
 
