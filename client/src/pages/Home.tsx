@@ -596,10 +596,14 @@ export default function Home() {
           <div className="relative max-w-6xl mx-auto mt-16">
             {/* Gradient Overlay on top of the cards */}
             <div 
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat pointer-events-none z-50"
+              className="absolute bg-cover bg-center bg-no-repeat pointer-events-none z-50"
               style={{ 
                 backgroundImage: `url(${backgroundGradient})`,
-                borderRadius: '1rem'
+                borderRadius: '1rem',
+                top: '-20px',
+                left: '0',
+                right: '0',
+                bottom: '0'
               }}
             ></div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
