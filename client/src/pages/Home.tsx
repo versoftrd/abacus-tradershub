@@ -891,6 +891,94 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      {/* Call-to-Action Section */}
+      <section className="relative bg-[#0a0a0a] py-20 px-4 sm:px-6">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500/3 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="relative max-w-4xl mx-auto">
+          {/* CTA Card */}
+          <div 
+            className="relative rounded-3xl p-8 sm:p-12 shadow-2xl border border-white/10 text-center overflow-hidden"
+            style={{
+              background: `
+                linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(99, 102, 241, 0.08) 25%, rgba(168, 85, 247, 0.06) 50%, rgba(59, 130, 246, 0.08) 75%, rgba(99, 102, 241, 0.1) 100%),
+                linear-gradient(45deg, rgba(255, 255, 255, 0.02) 0%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.02) 100%)
+              `,
+              backdropFilter: 'blur(20px)',
+              boxShadow: '0 0 60px rgba(59, 130, 246, 0.15), 0 20px 40px rgba(0, 0, 0, 0.3)'
+            }}
+            data-testid="cta-card"
+          >
+            {/* Financial Chart Pattern Background */}
+            <div 
+              className="absolute inset-0 opacity-10 pointer-events-none"
+              style={{
+                background: `
+                  repeating-linear-gradient(
+                    45deg,
+                    transparent,
+                    transparent 10px,
+                    rgba(59, 130, 246, 0.1) 10px,
+                    rgba(59, 130, 246, 0.1) 11px
+                  ),
+                  repeating-linear-gradient(
+                    -45deg,
+                    transparent,
+                    transparent 15px,
+                    rgba(99, 102, 241, 0.08) 15px,
+                    rgba(99, 102, 241, 0.08) 16px
+                  )
+                `,
+                filter: 'blur(1px)'
+              }}
+            ></div>
+            
+            <div className="relative z-10">
+              {/* Heading */}
+              <h2 
+                className="font-sans text-white font-bold mb-6 leading-tight"
+                style={{ fontSize: '36px' }}
+                data-testid="cta-heading"
+              >
+                Invierte con confianza, aprende en tiempo real
+              </h2>
+              
+              {/* Subheading */}
+              <p 
+                className="font-sans text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed"
+                style={{ fontSize: '18px' }}
+                data-testid="cta-subheading"
+              >
+                Accede al hub de trading más completo en español y transforma la forma en que entiendes e inviertes en la bolsa de valores.
+              </p>
+              
+              {/* CTA Button */}
+              <button 
+                className="font-sans font-bold text-white px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl active:scale-95 focus:outline-none focus:ring-4 focus:ring-blue-500/50"
+                style={{
+                  background: 'linear-gradient(135deg, #60A5FA 0%, #3B82F6 50%, #2563EB 100%)',
+                  boxShadow: '0 8px 24px rgba(59, 130, 246, 0.3)'
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.background = 'linear-gradient(135deg, #3B82F6 0%, #2563EB 50%, #1D4ED8 100%)';
+                  e.target.style.boxShadow = '0 12px 32px rgba(59, 130, 246, 0.4)';
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.background = 'linear-gradient(135deg, #60A5FA 0%, #3B82F6 50%, #2563EB 100%)';
+                  e.target.style.boxShadow = '0 8px 24px rgba(59, 130, 246, 0.3)';
+                }}
+                data-testid="cta-button"
+              >
+                Quiero mi acceso a TradersHub 🔥
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
