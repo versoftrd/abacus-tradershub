@@ -11,6 +11,7 @@ import lineGradient from "@assets/line gradient_1755651923504.png";
 import logo from "@assets/logo_1755607335061.png";
 import candlestickIcon from "@assets/Candlestick Chart_1755658217886.png";
 import conflictIcon from "@assets/Conflict_1755658277781.png";
+import circleChartIcon from "@assets/Circle Chart_1755658307230.png";
 import { Check, ArrowLeftRight, Zap, PieChart, TrendingUp } from "lucide-react";
 
 export default function Home() {
@@ -359,7 +360,7 @@ export default function Home() {
                 </div>
                 <div className="w-full lg:w-1/2 text-center lg:text-left">
                   <div className="flex justify-center lg:justify-start mb-4">
-                    <PieChart className="w-8 h-8 text-green-400" />
+                    <img src={circleChartIcon} alt="Portfolio Chart" className="w-8 h-8" />
                   </div>
                   <h3 className="font-sans text-white mb-4 font-semibold" style={{ fontSize: '24px' }}>
                     Portafolio & Wealth con Ernesto Yunes
