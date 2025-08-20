@@ -915,7 +915,7 @@ export default function Home() {
               
               {/* Heading */}
               <h2 
-                className="font-sans text-white mb-4 sm:mb-6 sm:text-3xl lg:text-4xl xl:text-5xl max-w-2xl text-[32px] font-semibold"
+                className="font-sans text-white mb-4 sm:mb-6 sm:text-3xl lg:text-4xl xl:text-5xl max-w-2xl font-semibold text-[29px]"
                 data-testid="cta-heading"
               >
                 Invierte con confianza, aprende en tiempo real
