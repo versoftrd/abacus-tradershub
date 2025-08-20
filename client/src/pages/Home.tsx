@@ -318,9 +318,7 @@ export default function Home() {
                   <h3 className="font-sans text-white mb-4 font-semibold" style={{ fontSize: '24px' }}>
                     Live Trading con Jorge Valet
                   </h3>
-                  <p className="font-sans text-gray-400 text-base mb-6 leading-relaxed" style={{ fontSize: '14px' }}>
-                    Sesiones diarias de trading en vivo donde Jorge opera su propia cuenta mientras explica cada decisión. No teoría: trading real con dinero real en tiempo real.
-                  </p>
+                  <p className="font-sans text-gray-400 text-base mb-6 leading-relaxed" style={{ fontSize: '14px' }}>Acompaña a Jorge en sesiones de trading en vivo, donde analiza el mercado, ejecuta operaciones y explica paso a paso su proceso de decisión. Aprende a identificar oportunidades reales y a gestionar el riesgo mientras observas la acción del mercado minuto a minuto.</p>
                   <p className="font-sans text-green-400 font-semibold text-lg">
                     Aprende mirando. Crece operando.
                   </p>
