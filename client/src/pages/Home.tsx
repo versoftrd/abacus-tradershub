@@ -715,7 +715,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
       {/* Student Results/Testimonial Section */}
       <section className="relative bg-[#141414] py-16 px-4 sm:px-6 overflow-hidden">
         {/* Green Gradient Background */}
@@ -768,7 +767,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
       {/* Feature Highlights Section */}
       <section className="relative bg-[#0a0a0a] py-16 px-4 sm:px-6">
         {/* Background decorative elements */}
@@ -892,7 +890,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
       {/* Call-to-Action Section */}
       <section className="relative bg-[#0a0a0a] py-16 px-4 sm:px-6">
         {/* Background decorative elements */}
@@ -918,7 +915,7 @@ export default function Home() {
               
               {/* Heading */}
               <h2 
-                className="font-sans font-bold text-white mb-4 sm:mb-6 leading-tight text-2xl sm:text-3xl lg:text-4xl xl:text-5xl max-w-2xl"
+                className="font-sans text-white mb-4 sm:mb-6 sm:text-3xl lg:text-4xl xl:text-5xl max-w-2xl text-[32px] font-semibold"
                 data-testid="cta-heading"
               >
                 Invierte con confianza, aprende en tiempo real
