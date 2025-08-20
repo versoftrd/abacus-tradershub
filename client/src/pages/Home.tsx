@@ -11,8 +11,10 @@ import lineGradient from "@assets/line gradient_1755651923504.png";
 import img1 from "@assets/img1_1755720550863.png";
 import img2 from "@assets/img2_1755720550861.png";
 import img3 from "@assets/img3_1755720550856.png";
-
-// Note: img4 not provided in attached assets, will create placeholder
+import exampleImg from "@assets/example_1755728132421.png";
+import img7 from "@assets/Image 7-16-25 at 10.03 AM_1755728146437.png";
+import img0209 from "@assets/IMG_0209_1755728146437.png";
+import img0222 from "@assets/IMG_0222_1755728146438.png";
 import logo from "@assets/logo_1755607335061.png";
 import candlestickIcon from "@assets/Candlestick Chart_1755658217886.png";
 import conflictIcon from "@assets/Conflict_1755658277781.png";
@@ -653,11 +655,42 @@ export default function Home() {
                     (Resultados de trades de Carlos Amec Gutiérrez en 15 días)
                   </p>
                   
-                  {/* Trading Positions Summary - Placeholder for img4 */}
-                  <div className="relative mb-4 rounded-xl overflow-hidden bg-gray-900/50 p-4 border border-gray-700/50">
-                    <div className="text-center text-gray-400">
-                      <p className="text-sm font-mono">Trading Positions Summary</p>
-                      <p className="text-xs mt-2">Swing Trades Dashboard</p>
+                  {/* Trading Positions Summary - Jean Vizón Results */}
+                  <div className="space-y-4">
+                    {/* Main Trading Dashboard */}
+                    <div className="relative mb-4 rounded-xl overflow-hidden">
+                      <img 
+                        src={exampleImg} 
+                        alt="Jean Vizón Trading Dashboard" 
+                        className="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    
+                    {/* Additional Trading Data */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                      <div className="relative rounded-xl overflow-hidden">
+                        <img 
+                          src={img7} 
+                          alt="P/L Performance" 
+                          className="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
+                        />
+                      </div>
+                      <div className="relative rounded-xl overflow-hidden">
+                        <img 
+                          src={img0209} 
+                          alt="Single Position Details" 
+                          className="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
+                        />
+                      </div>
+                    </div>
+                    
+                    {/* Portfolio Summary */}
+                    <div className="relative rounded-xl overflow-hidden">
+                      <img 
+                        src={img0222} 
+                        alt="Portfolio Summary" 
+                        className="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
+                      />
                     </div>
                   </div>
                   
