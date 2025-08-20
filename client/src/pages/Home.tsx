@@ -479,7 +479,7 @@ export default function Home() {
                     {/* Y-axis labels - Four main values */}
                     <text x="55" y="285" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">$0</text>
                     <text x="55" y="215" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">US$1,000</text>
-                    <text x="55" y="145" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">$2,000</text>
+                    <text x="55" y="145" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">US$2,000</text>
                     <text x="55" y="75" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">US$3,000</text>
 
                     {/* Chart line with area fill - Proportional to actual data */}
