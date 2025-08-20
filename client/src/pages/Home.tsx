@@ -745,7 +745,7 @@ export default function Home() {
             <h2 className="font-sans text-white mb-6 font-semibold" style={{ fontSize: '32px' }} data-testid="student-results-headline">
               Lo que aprendes aquí se convierte en resultados reales
             </h2>
-            <p className="font-sans text-gray-300 max-w-4xl mx-auto px-4 text-[16px]" data-testid="student-results-description">
+            <p className="font-sans text-gray-300 max-w-4xl mx-auto px-4 text-[14px]" data-testid="student-results-description">
               Conoce a estudiantes que, tras capacitarse con nuestros mentores, ya están aplicando lo aprendido en el mercado.
             </p>
           </div>
