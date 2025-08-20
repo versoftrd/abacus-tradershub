@@ -914,7 +914,7 @@ export default function Home() {
             data-testid="cta-card"
           >
             {/* Content overlay */}
-            <div className="relative z-10 px-8 py-16 sm:px-12 sm:py-20 text-center">
+            <div className="relative z-10 flex flex-col items-center justify-center min-h-[400px] px-8 py-16 sm:px-12 sm:py-20 text-center">
               
               {/* Heading */}
               <h2 
@@ -937,19 +937,11 @@ export default function Home() {
               {/* CTA Button */}
               <div className="flex justify-center">
                 <button 
-                  className="group font-sans font-bold text-white px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-sky-400/30"
+                  className="group font-sans font-bold text-white px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-sky-400/30 hover:bg-gradient-to-br hover:from-sky-600 hover:to-blue-600 hover:shadow-[0_8px_30px_rgba(56,189,248,0.5)]"
                   style={{
                     background: 'linear-gradient(135deg, #7dd3fc 0%, #38bdf8 100%)',
                     fontSize: '18px',
                     boxShadow: '0 4px 20px rgba(56, 189, 248, 0.3)'
-                  }}
-                  onMouseEnter={(e) => {
-                    e.target.style.background = 'linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%)';
-                    e.target.style.boxShadow = '0 8px 30px rgba(56, 189, 248, 0.5)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.target.style.background = 'linear-gradient(135deg, #7dd3fc 0%, #38bdf8 100%)';
-                    e.target.style.boxShadow = '0 4px 20px rgba(56, 189, 248, 0.3)';
                   }}
                   data-testid="cta-button"
                 >
