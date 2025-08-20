@@ -914,7 +914,7 @@ export default function Home() {
             data-testid="cta-card"
           >
             {/* Content overlay */}
-            <div className="relative z-10 flex flex-col items-center justify-center min-h-[480px] text-center">
+            <div className="relative z-10 flex flex-col items-start justify-center min-h-[480px] text-left px-8">
               
               {/* Heading */}
               <h2 
@@ -927,7 +927,7 @@ export default function Home() {
               
               {/* Subheading */}
               <p 
-                className="font-sans text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed"
+                className="font-sans text-gray-300 mb-10 max-w-3xl leading-relaxed"
                 style={{ fontSize: '18px' }}
                 data-testid="cta-subheading"
               >
@@ -935,7 +935,7 @@ export default function Home() {
               </p>
               
               {/* CTA Button */}
-              <div className="flex justify-center">
+              <div className="flex justify-start">
                 <button 
                   className="group font-sans font-bold text-white px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-sky-400/30 hover:bg-gradient-to-br hover:from-sky-600 hover:to-blue-600 hover:shadow-[0_8px_30px_rgba(56,189,248,0.5)]"
                   style={{
