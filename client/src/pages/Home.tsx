@@ -422,7 +422,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-6">
-            <p className="font-sans text-green-400 text-sm font-medium mb-4 uppercase tracking-wide" data-testid="resultados-eyebrow">
+            <p className="font-sans text-green-400 text-sm font-medium mb-4 tracking-wide" data-testid="resultados-eyebrow">
               Resultados Expertos
             </p>
             <h2 className="font-sans text-white mb-6 font-semibold" style={{ fontSize: '32px' }} data-testid="resultados-headline">
