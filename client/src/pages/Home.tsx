@@ -15,6 +15,7 @@ import exampleImg from "@assets/example_1755728132421.png";
 import img7 from "@assets/image7_1755728146437.png";
 import img0209 from "@assets/img0209_1755728146437.png";
 import img0222 from "@assets/img0222_1755728146438.png";
+import backgroundGradient from "@assets/Background gradient_1755728624523.png";
 import logo from "@assets/logo_1755607335061.png";
 import candlestickIcon from "@assets/Candlestick Chart_1755658217886.png";
 import conflictIcon from "@assets/Conflict_1755658277781.png";
@@ -408,6 +409,17 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      {/* Gradient Overlay between sections */}
+      <div 
+        className="relative w-full h-96 bg-cover bg-center bg-no-repeat pointer-events-none z-50"
+        style={{ 
+          backgroundImage: `url(${backgroundGradient})`,
+          marginTop: '-6rem',
+          marginBottom: '-6rem'
+        }}
+      ></div>
+      
       {/* Resultados Expertos Section */}
       <section className="relative bg-[#141414] py-8 px-4 sm:px-6">
         {/* Line Gradient Background Image */}
