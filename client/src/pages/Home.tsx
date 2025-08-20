@@ -20,11 +20,12 @@ import gree from "@assets/gree_1755729513904.png";
 import boxes from "@assets/boxes_1755729518901.png";
 import chart from "@assets/chart_1755730233734.png";
 import logo from "@assets/logo_1755607335061.png";
+import abacusLogo from "@assets/abacus_1755732410058.png";
 import candlestickIcon from "@assets/Candlestick Chart_1755658217886.png";
 import conflictIcon from "@assets/Conflict_1755658277781.png";
 import circleChartIcon from "@assets/Circle Chart_1755658307230.png";
 import stocksIcon from "@assets/Stocks_1755658381592.png";
-import { Check, ArrowLeftRight, Zap, PieChart, TrendingUp } from "lucide-react";
+import { Check, ArrowLeftRight, Zap, PieChart, TrendingUp, Twitter, MessageCircle, Instagram, Facebook, MessageSquare } from "lucide-react";
 
 export default function Home() {
 
@@ -1181,6 +1182,141 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      {/* Footer Section */}
+      <footer className="relative bg-[#080808] pt-16 pb-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          
+          {/* Main Footer Content */}
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 mb-12">
+            
+            {/* Logo Section */}
+            <div className="lg:col-span-1">
+              <img 
+                src={abacusLogo} 
+                alt="Abacus Logo" 
+                className="h-12 w-auto mb-4"
+                data-testid="footer-logo"
+              />
+            </div>
+            
+            {/* Navigation Columns */}
+            <div className="lg:col-span-3">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                
+                {/* Column 1 - Abacus */}
+                <div data-testid="footer-column-abacus">
+                  <h3 className="font-sans text-white font-semibold text-lg mb-4">Abacus</h3>
+                  <ul className="space-y-3">
+                    <li><a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-link-home">Home</a></li>
+                    <li><a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-link-videos">Videos</a></li>
+                    <li><a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-link-reviews">Reviews</a></li>
+                    <li><a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-link-testimonials">Testimonials</a></li>
+                  </ul>
+                </div>
+                
+                {/* Column 2 - Aprende */}
+                <div data-testid="footer-column-aprende">
+                  <h3 className="font-sans text-white font-semibold text-lg mb-4">Aprende</h3>
+                  <ul className="space-y-3">
+                    <li><a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-link-experience">Abacus Experience</a></li>
+                    <li><a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-link-campus">Campus Virtual</a></li>
+                    <li><a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-link-market">Market Open</a></li>
+                  </ul>
+                </div>
+                
+                {/* Column 3 - Conoce más */}
+                <div data-testid="footer-column-conoce">
+                  <h3 className="font-sans text-white font-semibold text-lg mb-4">Conoce más</h3>
+                  <ul className="space-y-3">
+                    <li><a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-link-tradestation">TradeStation</a></li>
+                    <li><a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-link-tradersync">TraderSync</a></li>
+                  </ul>
+                </div>
+                
+                {/* Column 4 - Ayuda */}
+                <div data-testid="footer-column-ayuda">
+                  <h3 className="font-sans text-white font-semibold text-lg mb-4">Ayuda</h3>
+                  <ul className="space-y-3">
+                    <li><a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-link-contact">Contáctanos</a></li>
+                    <li><a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-link-refer">Refiere a un Amigo</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+            
+            {/* Right Section - Register Button */}
+            <div className="lg:col-span-1 flex justify-start lg:justify-end">
+              <button 
+                className="font-sans font-semibold text-white px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_30px_rgba(34,197,94,0.4)] focus:outline-none focus:ring-4 focus:ring-green-400/30"
+                style={{
+                  background: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)',
+                  boxShadow: '0 4px 20px rgba(34, 197, 94, 0.2)'
+                }}
+                data-testid="footer-register-button"
+              >
+                Regístrate
+              </button>
+            </div>
+            
+          </div>
+          
+          {/* Headquarters Info */}
+          <div className="text-center mb-8">
+            <p className="font-sans text-gray-300">
+              <span className="font-bold text-white">Headquarters:</span>{" "}
+              <span className="text-gray-400">Toronto, ON, Canada | Santo Domingo, Dominican Republic</span>
+            </p>
+          </div>
+          
+          {/* Divider Line */}
+          <div className="border-t border-gray-800 mb-8"></div>
+          
+          {/* Bottom Section */}
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            
+            {/* Left - Copyright */}
+            <div>
+              <p className="font-sans text-gray-400 text-sm" data-testid="footer-copyright">
+                © 2025 Abacus Exchange. All rights reserved.
+              </p>
+            </div>
+            
+            {/* Center - Privacy Links */}
+            <div className="flex space-x-4">
+              <a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200 text-sm" data-testid="footer-privacy">
+                Política de Privacidad
+              </a>
+              <span className="text-gray-600">|</span>
+              <a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200 text-sm" data-testid="footer-terms">
+                Términos y Condiciones
+              </a>
+            </div>
+            
+            {/* Right - Social Media Icons */}
+            <div className="flex space-x-4">
+              <a href="#" className="text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-twitter">
+                <Twitter className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-discord">
+                <MessageCircle className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-instagram">
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-facebook">
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-whatsapp">
+                <MessageSquare className="w-5 h-5" />
+              </a>
+            </div>
+            
+          </div>
+          
+        </div>
+      </footer>
     </div>
   );
 }
