@@ -441,7 +441,7 @@ export default function Home() {
             }}>
               
               {/* Chart Container */}
-              <div className="relative mb-8 -mt-16">
+              <div className="relative mb-8 -mt-96">
                 {/* +61% Metric */}
                 <div className="absolute top-2 right-4 sm:top-4 sm:right-8 md:right-12 z-10">
                   <div className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-green-400" style={{ filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))' }}>
