@@ -600,7 +600,7 @@ export default function Home() {
               style={{ 
                 backgroundImage: `url(${backgroundGradient})`,
                 borderRadius: '1rem',
-                top: '-50%',
+                top: '-75%',
                 left: '0',
                 right: '0',
                 height: '200%'
