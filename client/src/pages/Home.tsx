@@ -784,7 +784,7 @@ export default function Home() {
             <h2 className="font-sans text-white mb-6 font-semibold" style={{ fontSize: '32px' }} data-testid="features-headline">
               Características exclusivas de TradersHub
             </h2>
-            <p className="font-sans text-gray-400 max-w-4xl mx-auto px-4 text-[16px]" data-testid="features-description">
+            <p className="font-sans text-gray-400 max-w-4xl mx-auto px-4 text-[14px]" data-testid="features-description">
               Desde sesiones en vivo hasta comunidad y análisis en tiempo real, todo está pensado para que aprendas practicando.
             </p>
           </div>
