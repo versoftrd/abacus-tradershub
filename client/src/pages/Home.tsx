@@ -441,17 +441,17 @@ export default function Home() {
             }}>
               
               {/* Chart Container */}
-              <div className="relative mb-8 -mt-4">
+              <div className="relative mb-8 -mt-8">
                 {/* +61% Metric */}
-                <div className="absolute top-8 right-16 z-10">
+                <div className="absolute top-4 right-12 z-10">
                   <div className="font-bold text-[72px] text-[#ffffff] pt-[0px] pb-[0px] mt-[-24px] mb-[-24px]" style={{ filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))' }}>
                     +61%
                   </div>
                 </div>
 
                 {/* Chart SVG */}
-                <div className="h-[63rem] w-full rounded-xl p-6 group cursor-pointer flex items-center justify-center pl-[24px] pr-[24px] ml-[24px] mr-[24px]">
-                  <svg viewBox="0 0 800 480" className="w-full h-4/5 overflow-visible">
+                <div className="h-[50rem] w-full group cursor-pointer flex items-start justify-center">
+                  <svg viewBox="40 40 720 320" className="w-full h-full overflow-visible">
                     {/* Grid lines */}
                     <defs>
                       <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
