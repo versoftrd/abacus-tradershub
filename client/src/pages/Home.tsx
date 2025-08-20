@@ -1261,7 +1261,7 @@ export default function Home() {
           </div>
           
           {/* Headquarters Info */}
-          <div className="flex justify-center items-center mb-8 space-x-6">
+          <div className="flex justify-center items-center mb-8 space-x-12">
             <p className="font-sans text-[12px] text-[#9da3ae]">
               <span className="font-bold text-[#9da3a9]">Headquarters:</span>{" "}
               <span className="text-gray-400">Toronto, ON, Canada | Santo Domingo, Dominican Republic</span>
