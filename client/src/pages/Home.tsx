@@ -1206,40 +1206,40 @@ export default function Home() {
                 
                 {/* Column 1 - Abacus */}
                 <div data-testid="footer-column-abacus">
-                  <h3 className="font-sans text-white font-semibold text-lg mb-4">Abacus</h3>
+                  <h3 className="font-sans text-gray-400 font-semibold text-lg mb-4">Abacus</h3>
                   <ul className="space-y-3">
-                    <li><a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-link-home">Home</a></li>
-                    <li><a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-link-videos">Videos</a></li>
-                    <li><a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-link-reviews">Reviews</a></li>
-                    <li><a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-link-testimonials">Testimonials</a></li>
+                    <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" data-testid="footer-link-home">Home</a></li>
+                    <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" data-testid="footer-link-videos">Videos</a></li>
+                    <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" data-testid="footer-link-reviews">Reviews</a></li>
+                    <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" data-testid="footer-link-testimonials">Testimonials</a></li>
                   </ul>
                 </div>
                 
                 {/* Column 2 - Aprende */}
                 <div data-testid="footer-column-aprende">
-                  <h3 className="font-sans text-white font-semibold text-lg mb-4">Aprende</h3>
+                  <h3 className="font-sans text-gray-400 font-semibold text-lg mb-4">Aprende</h3>
                   <ul className="space-y-3">
-                    <li><a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-link-experience">Abacus Experience</a></li>
-                    <li><a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-link-campus">Campus Virtual</a></li>
-                    <li><a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-link-market">Market Open</a></li>
+                    <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" data-testid="footer-link-experience">Abacus Experience</a></li>
+                    <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" data-testid="footer-link-campus">Campus Virtual</a></li>
+                    <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" data-testid="footer-link-market">Market Open</a></li>
                   </ul>
                 </div>
                 
                 {/* Column 3 - Conoce más */}
                 <div data-testid="footer-column-conoce">
-                  <h3 className="font-sans text-white font-semibold text-lg mb-4">Conoce más</h3>
+                  <h3 className="font-sans text-gray-400 font-semibold text-lg mb-4">Conoce más</h3>
                   <ul className="space-y-3">
-                    <li><a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-link-tradestation">TradeStation</a></li>
-                    <li><a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-link-tradersync">TraderSync</a></li>
+                    <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" data-testid="footer-link-tradestation">TradeStation</a></li>
+                    <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" data-testid="footer-link-tradersync">TraderSync</a></li>
                   </ul>
                 </div>
                 
                 {/* Column 4 - Ayuda */}
                 <div data-testid="footer-column-ayuda">
-                  <h3 className="font-sans text-white font-semibold text-lg mb-4">Ayuda</h3>
+                  <h3 className="font-sans text-gray-400 font-semibold text-lg mb-4">Ayuda</h3>
                   <ul className="space-y-3">
-                    <li><a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-link-contact">Contáctanos</a></li>
-                    <li><a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-link-refer">Refiere a un Amigo</a></li>
+                    <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" data-testid="footer-link-contact">Contáctanos</a></li>
+                    <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" data-testid="footer-link-refer">Refiere a un Amigo</a></li>
                   </ul>
                 </div>
                 
