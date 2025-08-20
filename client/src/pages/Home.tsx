@@ -441,7 +441,7 @@ export default function Home() {
             }}>
               
               {/* Chart Container */}
-              <div className="relative mb-8 -mt-8">
+              <div className="relative mb-8">
                 {/* +61% Metric */}
                 <div className="absolute top-2 right-4 sm:top-4 sm:right-8 md:right-12 z-10">
                   <div className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-green-400" style={{ filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))' }}>
@@ -450,8 +450,8 @@ export default function Home() {
                 </div>
 
                 {/* Chart SVG */}
-                <div className="h-[30rem] sm:h-[35rem] md:h-[40rem] lg:h-[45rem] xl:h-[50rem] w-full group cursor-pointer flex items-start justify-center px-2 sm:px-4">
-                  <svg viewBox="40 40 720 320" className="w-full h-full overflow-visible" preserveAspectRatio="xMidYMid meet">
+                <div className="h-[30rem] sm:h-[35rem] md:h-[40rem] lg:h-[45rem] xl:h-[50rem] w-full group cursor-pointer flex items-center justify-center p-4">
+                  <svg viewBox="40 40 720 320" className="w-full h-full overflow-hidden" preserveAspectRatio="xMidYMid meet">
                     {/* Grid lines */}
                     <defs>
                       <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
