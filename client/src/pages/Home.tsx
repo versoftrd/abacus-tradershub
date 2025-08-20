@@ -16,6 +16,8 @@ import img7 from "@assets/image7_1755728146437.png";
 import img0209 from "@assets/img0209_1755728146437.png";
 import img0222 from "@assets/img0222_1755728146438.png";
 import backgroundGradient from "@assets/Background gradient_1755728624523.png";
+import gree from "@assets/gree_1755729513904.png";
+import boxes from "@assets/boxes_1755729518901.png";
 import logo from "@assets/logo_1755607335061.png";
 import candlestickIcon from "@assets/Candlestick Chart_1755658217886.png";
 import conflictIcon from "@assets/Conflict_1755658277781.png";
@@ -708,6 +710,59 @@ export default function Home() {
                 </div>
               </div>
               
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Student Results/Testimonial Section */}
+      <section className="relative bg-[#141414] py-16 px-4 sm:px-6 overflow-hidden">
+        {/* Green Gradient Background */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30 pointer-events-none"
+          style={{ 
+            backgroundImage: `url(${gree})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        ></div>
+        
+        {/* Additional dark gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#141414]/80 via-transparent to-[#141414]/80 pointer-events-none"></div>
+        
+        {/* Background decorative elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-green-500/3 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-green-400/5 rounded-full blur-2xl"></div>
+        </div>
+
+        <div className="relative max-w-7xl mx-auto">
+          {/* Header Section */}
+          <div className="text-center mb-16">
+            <p className="font-sans text-green-400 text-sm font-medium mb-4 tracking-wide" data-testid="student-results-eyebrow">
+              Resultados de Estudiantes
+            </p>
+            <h2 className="font-sans text-white mb-6 font-semibold" style={{ fontSize: '32px' }} data-testid="student-results-headline">
+              Lo que aprendes aquí se convierte en resultados reales
+            </h2>
+            <p className="font-sans text-gray-300 max-w-4xl mx-auto px-4 text-[16px]" data-testid="student-results-description">
+              Conoce a estudiantes que, tras capacitarse con nuestros mentores, ya están aplicando lo aprendido en el mercado.
+            </p>
+          </div>
+
+          {/* Results Boxes Image */}
+          <div className="flex justify-center">
+            <div className="relative max-w-6xl mx-auto">
+              <img 
+                src={boxes} 
+                alt="Student Trading Results" 
+                className="w-full h-auto transition-transform duration-300 hover:scale-[1.02]"
+                style={{
+                  filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 20px rgba(34, 197, 94, 0.1))',
+                  maxWidth: '100%'
+                }}
+                data-testid="student-results-boxes"
+              />
             </div>
           </div>
         </div>
