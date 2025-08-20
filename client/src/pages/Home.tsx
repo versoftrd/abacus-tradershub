@@ -293,7 +293,7 @@ export default function Home() {
               Nuestras sesiones
             </p>
             <h2 className="font-sans sm:text-4xl md:text-5xl text-white mb-6 flex items-start justify-center gap-4 font-semibold text-[32px]" data-testid="nucleos-headline">
-              Los 4 núcleos del <img src={logo} alt="Traders Hub Logo" className="h-10 sm:h-14 md:h-16 inline-block" />
+              Los 4 núcleos del <img src={logo} alt="Traders Hub Logo" className="h-10 sm:h-14 md:h-16 inline-block mt-[-3px] mb-[-3px]" />
             </h2>
             <p className="font-sans text-gray-300 max-w-4xl mx-auto sm:text-lg px-4 text-[14px]" data-testid="nucleos-description">No son clases: son 7 a 9 sesiones de trading en vivo cada semana, donde literalmente operas junto a nuestros mentores y observas su operativa en tiempo real.  Es la parte más práctica de todo el Abacus Experience, diseñada para que la comunidad siga, aprenda y ejecute exactamente lo que hacemos dentro del mercado. Se divide de en 4 núcleos.</p>
           </div>
