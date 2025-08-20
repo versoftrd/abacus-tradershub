@@ -18,6 +18,7 @@ import img0222 from "@assets/img0222_1755728146438.png";
 import backgroundGradient from "@assets/Background gradient_1755728624523.png";
 import gree from "@assets/gree_1755729513904.png";
 import boxes from "@assets/boxes_1755729518901.png";
+import chart from "@assets/chart_1755730233734.png";
 import logo from "@assets/logo_1755607335061.png";
 import candlestickIcon from "@assets/Candlestick Chart_1755658217886.png";
 import conflictIcon from "@assets/Conflict_1755658277781.png";
@@ -887,6 +888,75 @@ export default function Home() {
                 </div>
                 
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Call-to-Action Section */}
+      <section className="relative bg-[#0a0a0a] py-16 px-4 sm:px-6">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500/2 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="relative max-w-5xl mx-auto">
+          {/* CTA Card */}
+          <div 
+            className="relative rounded-3xl overflow-hidden shadow-2xl border border-blue-500/10"
+            style={{
+              backgroundImage: `url(${chart})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              boxShadow: '0 0 60px rgba(59, 130, 246, 0.15), 0 20px 40px rgba(0, 0, 0, 0.3)'
+            }}
+            data-testid="cta-card"
+          >
+            {/* Content overlay */}
+            <div className="relative z-10 px-8 py-16 sm:px-12 sm:py-20 text-center">
+              
+              {/* Heading */}
+              <h2 
+                className="font-sans font-bold text-white mb-6 leading-tight"
+                style={{ fontSize: '36px' }}
+                data-testid="cta-heading"
+              >
+                Invierte con confianza, aprende en tiempo real
+              </h2>
+              
+              {/* Subheading */}
+              <p 
+                className="font-sans text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed"
+                style={{ fontSize: '18px' }}
+                data-testid="cta-subheading"
+              >
+                Accede al hub de trading más completo en español y transforma la forma en que entiendes e inviertes en la bolsa de valores.
+              </p>
+              
+              {/* CTA Button */}
+              <div className="flex justify-center">
+                <button 
+                  className="group font-sans font-bold text-white px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-sky-400/30"
+                  style={{
+                    background: 'linear-gradient(135deg, #7dd3fc 0%, #38bdf8 100%)',
+                    fontSize: '18px',
+                    boxShadow: '0 4px 20px rgba(56, 189, 248, 0.3)'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.target.style.background = 'linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%)';
+                    e.target.style.boxShadow = '0 8px 30px rgba(56, 189, 248, 0.5)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.target.style.background = 'linear-gradient(135deg, #7dd3fc 0%, #38bdf8 100%)';
+                    e.target.style.boxShadow = '0 4px 20px rgba(56, 189, 248, 0.3)';
+                  }}
+                  data-testid="cta-button"
+                >
+                  Quiero mi acceso a TradersHub 🔥
+                </button>
+              </div>
+              
             </div>
           </div>
         </div>
