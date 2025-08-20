@@ -657,14 +657,7 @@ export default function Home() {
                   
                   {/* Trading Positions Summary - Jean Vizón Results */}
                   <div className="space-y-4">
-                    {/* Main Trading Dashboard */}
-                    <div className="relative mb-4 rounded-xl overflow-hidden">
-                      <img 
-                        src={exampleImg} 
-                        alt="Jean Vizón Trading Dashboard" 
-                        className="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
-                      />
-                    </div>
+                    
                     
                     {/* Additional Trading Data */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
