@@ -295,7 +295,7 @@ export default function Home() {
             <h2 className="font-sans sm:text-4xl md:text-5xl font-bold text-white mb-6 flex items-center justify-center gap-4 text-[36px]" data-testid="nucleos-headline">
               Los 4 núcleos del <img src={logo} alt="Traders Hub Logo" className="h-8 sm:h-10 md:h-12 inline-block" />
             </h2>
-            <p className="font-sans text-gray-300 max-w-4xl mx-auto text-base sm:text-lg leading-relaxed px-4" data-testid="nucleos-description">
+            <p className="font-sans text-gray-300 max-w-4xl mx-auto sm:text-lg px-4 text-[14px]" data-testid="nucleos-description">
               No son clases: son 7 a 9 sesiones de trading en vivo cada semana donde mentores de verdad operan mientras enseñan. Acceso total a las pantallas, las decisiones y la mentalidad de traders profesionales.
             </p>
           </div>
