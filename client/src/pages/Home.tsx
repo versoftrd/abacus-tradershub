@@ -450,7 +450,7 @@ export default function Home() {
                 </div>
 
                 {/* Chart SVG */}
-                <div className="h-[30rem] sm:h-[35rem] md:h-[40rem] lg:h-[45rem] xl:h-[50rem] w-full group cursor-pointer flex items-center justify-center p-4">
+                <div className="h-[30rem] sm:h-[35rem] md:h-[40rem] lg:h-[45rem] xl:h-[50rem] w-full group cursor-pointer flex items-start justify-center p-4 pt-0">
                   <svg viewBox="40 40 720 320" className="w-full h-full overflow-hidden" preserveAspectRatio="xMidYMid meet">
                     {/* Grid lines */}
                     <defs>
