@@ -444,15 +444,15 @@ export default function Home() {
               {/* Chart Container */}
               <div className="relative mb-8">
                 {/* +61% Metric */}
-                <div className="absolute top-4 right-4 z-10">
-                  <div className="text-4xl font-bold text-green-400" style={{ filter: 'drop-shadow(0 0 8px rgba(34, 197, 94, 0.3))' }}>
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2 z-10">
+                  <div className="text-5xl font-bold text-green-400" style={{ filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))' }}>
                     +61%
                   </div>
                 </div>
 
                 {/* Chart SVG */}
-                <div className="h-96 w-full bg-gradient-to-b from-green-500/5 to-transparent rounded-xl p-6 group cursor-pointer">
-                  <svg viewBox="0 0 800 360" className="w-full h-full overflow-visible">
+                <div className="h-[32rem] w-full bg-gradient-to-b from-green-500/5 to-transparent rounded-xl p-6 group cursor-pointer">
+                  <svg viewBox="0 0 800 480" className="w-full h-full overflow-visible">
                     {/* Grid lines */}
                     <defs>
                       <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
