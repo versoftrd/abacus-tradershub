@@ -7,6 +7,7 @@ import image1 from "@assets/image1_1755651733674.png";
 import image2 from "@assets/image2_1755651733676.png";
 import image3 from "@assets/image3_1755651733676.png";
 import image4 from "@assets/image4_1755651733677.png";
+import lineGradient from "@assets/line gradient_1755651923504.png";
 import { Check, ArrowLeftRight, Zap, PieChart, TrendingUp } from "lucide-react";
 
 export default function Home() {
@@ -273,6 +274,12 @@ export default function Home() {
 
       {/* Los 4 núcleos del Traders Hub Section */}
       <section className="relative bg-gradient-to-b from-[#141414] via-[#1a1a1a] to-[#0f1f13] py-16 px-4 sm:px-6">
+        {/* Line Gradient Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60 pointer-events-none"
+          style={{ backgroundImage: `url(${lineGradient})` }}
+        ></div>
+        
         {/* Background decorative elements */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 right-1/3 w-64 h-64 bg-green-500/5 rounded-full blur-3xl"></div>
