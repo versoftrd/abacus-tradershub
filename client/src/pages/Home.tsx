@@ -8,6 +8,11 @@ import image2 from "@assets/image2_1755651733676.png";
 import image3 from "@assets/image3_1755651733676.png";
 import image4 from "@assets/image4_1755651733677.png";
 import lineGradient from "@assets/line gradient_1755651923504.png";
+import img1 from "@assets/img1_1755720550863.png";
+import img2 from "@assets/img2_1755720550861.png";
+import img3 from "@assets/img3_1755720550856.png";
+
+// Note: img4 not provided in attached assets, will create placeholder
 import logo from "@assets/logo_1755607335061.png";
 import candlestickIcon from "@assets/Candlestick Chart_1755658217886.png";
 import conflictIcon from "@assets/Conflict_1755658277781.png";
@@ -580,6 +585,93 @@ export default function Home() {
                 </p>
               </div>
 
+            </div>
+          </div>
+
+          {/* Modern Trading Dashboard - Two Frames */}
+          <div className="relative max-w-7xl mx-auto mt-16 px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              
+              {/* Left Panel - Frame 1934 */}
+              <div className="group relative">
+                <div 
+                  className="relative border border-white/20 rounded-2xl p-6 shadow-2xl backdrop-blur-lg transition-all duration-300 hover:border-green-400/40 hover:shadow-green-400/20"
+                  style={{ 
+                    background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(16, 32, 16, 0.6) 50%, rgba(0, 0, 0, 0.8) 100%)',
+                    backdropFilter: 'blur(20px)',
+                    boxShadow: '0 0 30px rgba(34, 197, 94, 0.1)'
+                  }}
+                >
+                  {/* Frame Title */}
+                  <h3 className="text-white font-bold text-xl mb-6">Frame 1934</h3>
+                  
+                  {/* Trading Table - img1 */}
+                  <div className="relative mb-6 rounded-xl overflow-hidden">
+                    <img 
+                      src={img1} 
+                      alt="Trading Portfolio Table" 
+                      className="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
+                    />
+                  </div>
+                  
+                  {/* Growth Chart - img2 */}
+                  <div className="relative mb-4 rounded-xl overflow-hidden">
+                    <img 
+                      src={img2} 
+                      alt="Portfolio Growth Chart" 
+                      className="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
+                    />
+                  </div>
+                  
+                  {/* Caption */}
+                  <p className="text-center text-gray-500 text-sm">
+                    (Portafolios de Ernesto Yunes, en 1 año)
+                  </p>
+                </div>
+              </div>
+
+              {/* Right Panel - Frame 1933 */}
+              <div className="group relative">
+                <div 
+                  className="relative border border-white/20 rounded-2xl p-6 shadow-2xl backdrop-blur-lg transition-all duration-300 hover:border-purple-400/40 hover:shadow-purple-400/20"
+                  style={{ 
+                    background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(32, 16, 32, 0.6) 50%, rgba(0, 0, 0, 0.8) 100%)',
+                    backdropFilter: 'blur(20px)',
+                    boxShadow: '0 0 30px rgba(147, 51, 234, 0.1)'
+                  }}
+                >
+                  {/* Frame Title */}
+                  <h3 className="text-white font-bold text-xl mb-6">Frame 1933</h3>
+                  
+                  {/* Trading Chart - img3 */}
+                  <div className="relative mb-4 rounded-xl overflow-hidden">
+                    <img 
+                      src={img3} 
+                      alt="Trading Results Chart" 
+                      className="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
+                    />
+                  </div>
+                  
+                  {/* Caption for img3 */}
+                  <p className="text-center text-gray-500 text-sm mb-6">
+                    (Resultados de trades de Carlos Amec Gutiérrez en 15 días)
+                  </p>
+                  
+                  {/* Trading Positions Summary - Placeholder for img4 */}
+                  <div className="relative mb-4 rounded-xl overflow-hidden bg-gray-900/50 p-4 border border-gray-700/50">
+                    <div className="text-center text-gray-400">
+                      <p className="text-sm font-mono">Trading Positions Summary</p>
+                      <p className="text-xs mt-2">Swing Trades Dashboard</p>
+                    </div>
+                  </div>
+                  
+                  {/* Caption for img4 */}
+                  <p className="text-center text-gray-500 text-sm">
+                    (Resultados de Swing Trades con Opciones de Jean Vizón, 2025)
+                  </p>
+                </div>
+              </div>
+              
             </div>
           </div>
         </div>
