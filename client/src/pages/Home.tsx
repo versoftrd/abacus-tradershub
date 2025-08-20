@@ -420,6 +420,19 @@ export default function Home() {
         </div>
 
         <div className="relative max-w-7xl mx-auto">
+          {/* Header Section */}
+          <div className="text-center mb-16">
+            <p className="font-sans text-green-400 text-sm font-medium mb-4 uppercase tracking-wide" data-testid="resultados-eyebrow">
+              Resultados Expertos
+            </p>
+            <h2 className="font-sans text-white mb-6 font-semibold" style={{ fontSize: '32px' }} data-testid="resultados-headline">
+              Resultados que hablan por sí solos
+            </h2>
+            <p className="font-sans text-gray-300 max-w-4xl mx-auto px-4" style={{ fontSize: '16px' }} data-testid="resultados-description">
+              Nuestros mentores no solo enseñan, operan en vivo y demuestran sus estrategias con resultados reales en el mercado.
+            </p>
+          </div>
+
           {/* Main Stats Card */}
           <div className="max-w-6xl mx-auto">
             <div className="relative border border-white/10 rounded-2xl p-8 shadow-2xl" style={{ 
