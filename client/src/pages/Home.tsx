@@ -401,7 +401,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Resultados Expertos Section */}
       <section className="relative bg-[#141414] py-16 px-4 sm:px-6">
         {/* Line Gradient Background Image */}
@@ -451,7 +450,7 @@ export default function Home() {
                 </div>
 
                 {/* Chart SVG */}
-                <div className="h-[45rem] w-full rounded-xl p-6 group cursor-pointer flex items-center justify-center">
+                <div className="h-[45rem] w-full rounded-xl p-6 group cursor-pointer flex items-center justify-center pl-[24px] pr-[24px] ml-[24px] mr-[24px]">
                   <svg viewBox="0 0 800 480" className="w-full h-4/5 overflow-visible">
                     {/* Grid lines */}
                     <defs>
