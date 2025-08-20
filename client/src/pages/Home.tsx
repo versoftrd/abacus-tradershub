@@ -410,16 +410,6 @@ export default function Home() {
         </div>
       </section>
       
-      {/* Gradient Overlay between sections */}
-      <div 
-        className="relative w-full h-96 bg-cover bg-center bg-no-repeat pointer-events-none z-50"
-        style={{ 
-          backgroundImage: `url(${backgroundGradient})`,
-          marginTop: '-6rem',
-          marginBottom: '-6rem'
-        }}
-      ></div>
-      
       {/* Resultados Expertos Section */}
       <section className="relative bg-[#141414] py-8 px-4 sm:px-6">
         {/* Line Gradient Background Image */}
@@ -604,6 +594,14 @@ export default function Home() {
 
           {/* Modern Trading Dashboard - Two Frames */}
           <div className="relative max-w-6xl mx-auto mt-16">
+            {/* Gradient Overlay on top of the cards */}
+            <div 
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat pointer-events-none z-50"
+              style={{ 
+                backgroundImage: `url(${backgroundGradient})`,
+                borderRadius: '1rem'
+              }}
+            ></div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               
               {/* Left Panel - Frame 1934 */}
