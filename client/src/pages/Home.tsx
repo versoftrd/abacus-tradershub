@@ -315,7 +315,7 @@ export default function Home() {
                   <div className="flex justify-center lg:justify-start mb-4">
                     <ArrowLeftRight className="w-8 h-8 text-green-400" />
                   </div>
-                  <h3 className="font-sans text-white mb-4 font-semibold" style={{ fontSize: '28px' }}>
+                  <h3 className="font-sans text-white mb-4 font-semibold" style={{ fontSize: '24px' }}>
                     Live Trading con Jorge Valet
                   </h3>
                   <p className="font-sans text-gray-400 text-base mb-6 leading-relaxed" style={{ fontSize: '14px' }}>
@@ -339,7 +339,7 @@ export default function Home() {
                   <div className="flex justify-center lg:justify-start mb-4">
                     <Zap className="w-8 h-8 text-green-400" />
                   </div>
-                  <h3 className="font-sans text-white mb-4 font-semibold" style={{ fontSize: '28px' }}>
+                  <h3 className="font-sans text-white mb-4 font-semibold" style={{ fontSize: '24px' }}>
                     Opciones Avanzadas con Carlos Amec
                   </h3>
                   <p className="font-sans text-gray-400 text-base mb-6 leading-relaxed" style={{ fontSize: '14px' }}>
@@ -363,7 +363,7 @@ export default function Home() {
                   <div className="flex justify-center lg:justify-start mb-4">
                     <PieChart className="w-8 h-8 text-green-400" />
                   </div>
-                  <h3 className="font-sans text-white mb-4 font-semibold" style={{ fontSize: '28px' }}>
+                  <h3 className="font-sans text-white mb-4 font-semibold" style={{ fontSize: '24px' }}>
                     Portafolio & Wealth con Ernesto Yunes
                   </h3>
                   <p className="font-sans text-gray-400 text-base mb-6 leading-relaxed" style={{ fontSize: '14px' }}>
@@ -387,7 +387,7 @@ export default function Home() {
                   <div className="flex justify-center lg:justify-start mb-4">
                     <TrendingUp className="w-8 h-8 text-green-400" />
                   </div>
-                  <h3 className="font-sans text-white mb-4 font-semibold" style={{ fontSize: '28px' }}>
+                  <h3 className="font-sans text-white mb-4 font-semibold" style={{ fontSize: '24px' }}>
                     Charting de la Semana con Jean Vizón
                   </h3>
                   <p className="font-sans text-gray-400 text-base mb-6 leading-relaxed" style={{ fontSize: '14px' }}>
