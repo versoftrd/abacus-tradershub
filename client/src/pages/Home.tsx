@@ -276,8 +276,12 @@ export default function Home() {
       <section className="relative bg-[#141414] py-16 px-4 sm:px-6">
         {/* Line Gradient Background Image */}
         <div 
-          className="absolute inset-0 bg-cover bg-no-repeat opacity-60 pointer-events-none"
-          style={{ backgroundImage: `url(${lineGradient})`, backgroundPosition: 'center 30%' }}
+          className="absolute inset-0 bg-no-repeat opacity-60 pointer-events-none"
+          style={{ 
+            backgroundImage: `url(${lineGradient})`, 
+            backgroundPosition: 'center 30%',
+            backgroundSize: '100% 60%'
+          }}
         ></div>
         
         {/* Background decorative elements */}
