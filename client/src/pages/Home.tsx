@@ -906,7 +906,7 @@ export default function Home() {
             className="relative"
             style={{
               backgroundImage: `url(${chart})`,
-              backgroundSize: '100% 100%',
+              backgroundSize: '80% 100%',
               backgroundPosition: 'center center',
               backgroundRepeat: 'no-repeat',
               filter: 'drop-shadow(0 0 60px rgba(59, 130, 246, 0.15)) drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3))'
