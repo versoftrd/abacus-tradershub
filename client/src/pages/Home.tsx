@@ -430,7 +430,7 @@ export default function Home() {
               {/* Chart Container */}
               <div className="relative mb-8">
                 {/* +61% Metric */}
-                <div className="absolute top-4 right-4 z-10">
+                <div className="absolute top-16 right-16 z-10">
                   <div className="text-5xl font-bold text-green-400" style={{ filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))' }}>
                     +61%
                   </div>
