@@ -589,7 +589,7 @@ export default function Home() {
           </div>
 
           {/* Modern Trading Dashboard - Two Frames */}
-          <div className="relative max-w-7xl mx-auto mt-16 px-4">
+          <div className="relative max-w-6xl mx-auto mt-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               
               {/* Left Panel - Frame 1934 */}
