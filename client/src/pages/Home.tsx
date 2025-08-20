@@ -1263,7 +1263,7 @@ export default function Home() {
           {/* Headquarters Info */}
           <div className="text-center mb-8">
             <p className="font-sans text-[12px] text-[#9da3ae]">
-              <span className="font-bold text-white">Headquarters:</span>{" "}
+              <span className="font-bold text-[#9da3a9]">Headquarters:</span>{" "}
               <span className="text-gray-400">Toronto, ON, Canada | Santo Domingo, Dominican Republic</span>
             </p>
           </div>
