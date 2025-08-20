@@ -600,10 +600,10 @@ export default function Home() {
               style={{ 
                 backgroundImage: `url(${backgroundGradient})`,
                 borderRadius: '1rem',
-                top: '-20px',
+                top: '-50%',
                 left: '0',
                 right: '0',
-                bottom: '0'
+                height: '200%'
               }}
             ></div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
