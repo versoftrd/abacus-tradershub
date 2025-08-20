@@ -903,7 +903,7 @@ export default function Home() {
         <div className="relative max-w-4xl mx-auto">
           {/* CTA Card */}
           <div 
-            className="relative mx-8"
+            className="relative"
             style={{
               backgroundImage: `url(${chart})`,
               backgroundSize: '100% 100%',
