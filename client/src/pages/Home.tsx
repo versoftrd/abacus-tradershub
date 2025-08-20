@@ -279,7 +279,7 @@ export default function Home() {
           className="absolute inset-0 bg-no-repeat opacity-60 pointer-events-none"
           style={{ 
             backgroundImage: `url(${lineGradient})`, 
-            backgroundPosition: 'center 30%',
+            backgroundPosition: 'center 15%',
             backgroundSize: '100% 60%'
           }}
         ></div>
