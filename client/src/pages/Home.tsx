@@ -409,7 +409,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
       {/* Resultados Expertos Section */}
       <section className="relative bg-[#141414] py-8 px-4 sm:px-6">
         {/* Line Gradient Background Image */}
@@ -703,7 +702,7 @@ export default function Home() {
                   </div>
                   
                   {/* Caption for img4 */}
-                  <p className="text-center text-gray-500 text-sm">
+                  <p className="text-center text-gray-500 text-sm mt-[16px] mb-[16px]">
                     (Resultados de Swing Trades con Opciones de Jean Vizón, 2025)
                   </p>
                 </div>
