@@ -602,8 +602,6 @@ export default function Home() {
                     boxShadow: '0 0 30px rgba(34, 197, 94, 0.1)'
                   }}
                 >
-                  {/* Frame Title */}
-                  <h3 className="text-white font-bold text-xl mb-6">Frame 1934</h3>
                   
                   {/* Trading Table - img1 */}
                   <div className="relative mb-6 rounded-xl overflow-hidden">
@@ -640,8 +638,6 @@ export default function Home() {
                     boxShadow: '0 0 30px rgba(147, 51, 234, 0.1)'
                   }}
                 >
-                  {/* Frame Title */}
-                  <h3 className="text-white font-bold text-xl mb-6">Frame 1933</h3>
                   
                   {/* Trading Chart - img3 */}
                   <div className="relative mb-4 rounded-xl overflow-hidden">
