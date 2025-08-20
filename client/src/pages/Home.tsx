@@ -9,6 +9,7 @@ import image3 from "@assets/image3_1755651733676.png";
 import image4 from "@assets/image4_1755651733677.png";
 import lineGradient from "@assets/line gradient_1755651923504.png";
 import logo from "@assets/logo_1755607335061.png";
+import candlestickIcon from "@assets/Candlestick Chart_1755658217886.png";
 import { Check, ArrowLeftRight, Zap, PieChart, TrendingUp } from "lucide-react";
 
 export default function Home() {
@@ -313,7 +314,7 @@ export default function Home() {
                 </div>
                 <div className="w-full lg:w-1/2 text-center lg:text-left">
                   <div className="flex justify-center lg:justify-start mb-4">
-                    <ArrowLeftRight className="w-8 h-8 text-green-400" />
+                    <img src={candlestickIcon} alt="Candlestick Chart" className="w-8 h-8" />
                   </div>
                   <h3 className="font-sans text-white mb-4 font-semibold" style={{ fontSize: '24px' }}>
                     Live Trading con Jorge Valet
