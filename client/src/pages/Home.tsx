@@ -3,7 +3,11 @@ import EmailCta from "@/components/EmailCta";
 import PlanCircle from "@/components/PlanCircle";
 import heroBackground from "@assets/Hero Background_1755619519675.png";
 import roundGradient from "@assets/Round Gradient_1755620690824.png";
-import { Check } from "lucide-react";
+import image1 from "@assets/image1_1755651733674.png";
+import image2 from "@assets/image2_1755651733676.png";
+import image3 from "@assets/image3_1755651733676.png";
+import image4 from "@assets/image4_1755651733677.png";
+import { Check, ArrowLeftRight, Zap, PieChart, TrendingUp } from "lucide-react";
 
 export default function Home() {
 
@@ -263,6 +267,127 @@ export default function Home() {
               </div>
             </div>
             
+          </div>
+        </div>
+      </section>
+
+      {/* Los 4 núcleos del Traders Hub Section */}
+      <section className="relative bg-gradient-to-b from-[#141414] via-[#1a1a1a] to-[#0f1f13] py-16 px-4 sm:px-6">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 right-1/3 w-64 h-64 bg-green-500/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-green-400/8 rounded-full blur-2xl"></div>
+        </div>
+
+        <div className="relative max-w-7xl mx-auto">
+          {/* Header Section */}
+          <div className="text-center mb-16">
+            <p className="font-sans text-green-400 text-sm font-medium mb-4" data-testid="sessions-eyebrow">
+              Nuestras sesiones
+            </p>
+            <h2 className="font-sans text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6" data-testid="nucleos-headline">
+              Los 4 núcleos del <span className="font-bold">TRADERS</span> <span className="italic">Hub</span>
+            </h2>
+            <p className="font-sans text-gray-300 max-w-4xl mx-auto text-base sm:text-lg leading-relaxed px-4" data-testid="nucleos-description">
+              No son clases: son 7 a 9 sesiones de trading en vivo cada semana donde mentores de verdad operan mientras enseñan. Acceso total a las pantallas, las decisiones y la mentalidad de traders profesionales.
+            </p>
+          </div>
+
+          {/* Content Cards */}
+          <div className="space-y-8 max-w-6xl mx-auto">
+            
+            {/* Card 1 - Live Trading con Jorge Valet */}
+            <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl hover:shadow-green-500/10 hover:border-green-500/20 transition-all duration-300" data-testid="card-jorge-valet">
+              <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
+                <div className="w-full lg:w-1/2 flex-shrink-0">
+                  <img src={image1} alt="Jorge Valet trading session" className="w-full h-64 lg:h-80 object-cover rounded-2xl" />
+                </div>
+                <div className="w-full lg:w-1/2 text-center lg:text-left">
+                  <div className="flex justify-center lg:justify-start mb-4">
+                    <ArrowLeftRight className="w-8 h-8 text-green-400" />
+                  </div>
+                  <h3 className="font-sans text-2xl sm:text-3xl font-bold text-white mb-4">
+                    Live Trading con Jorge Valet
+                  </h3>
+                  <p className="font-sans text-gray-400 text-base sm:text-lg mb-6 leading-relaxed">
+                    Sesiones diarias de trading en vivo donde Jorge opera su propia cuenta mientras explica cada decisión. No teoría: trading real con dinero real en tiempo real.
+                  </p>
+                  <p className="font-sans text-green-400 font-semibold text-lg">
+                    Aprende mirando. Crece operando.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 2 - Opciones Avanzadas con Carlos Amec */}
+            <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl hover:shadow-green-500/10 hover:border-green-500/20 transition-all duration-300" data-testid="card-carlos-amec">
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-6 lg:gap-8">
+                <div className="w-full lg:w-1/2 flex-shrink-0">
+                  <img src={image2} alt="Carlos Amec options session" className="w-full h-64 lg:h-80 object-cover rounded-2xl" />
+                </div>
+                <div className="w-full lg:w-1/2 text-center lg:text-left">
+                  <div className="flex justify-center lg:justify-start mb-4">
+                    <Zap className="w-8 h-8 text-green-400" />
+                  </div>
+                  <h3 className="font-sans text-2xl sm:text-3xl font-bold text-white mb-4">
+                    Opciones Avanzadas con Carlos Amec
+                  </h3>
+                  <p className="font-sans text-gray-400 text-base sm:text-lg mb-6 leading-relaxed">
+                    Estrategias avanzadas de opciones en vivo. Carlos comparte técnicas institucionales y estructuras complejas mientras las ejecuta en el mercado.
+                  </p>
+                  <p className="font-sans text-green-400 font-semibold text-lg">
+                    Expande tu visión. Crea impacto.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 3 - Portafolio & Wealth con Ernesto Yunes */}
+            <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl hover:shadow-green-500/10 hover:border-green-500/20 transition-all duration-300" data-testid="card-ernesto-yunes">
+              <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
+                <div className="w-full lg:w-1/2 flex-shrink-0">
+                  <img src={image3} alt="Ernesto Yunes portfolio session" className="w-full h-64 lg:h-80 object-cover rounded-2xl" />
+                </div>
+                <div className="w-full lg:w-1/2 text-center lg:text-left">
+                  <div className="flex justify-center lg:justify-start mb-4">
+                    <PieChart className="w-8 h-8 text-green-400" />
+                  </div>
+                  <h3 className="font-sans text-2xl sm:text-3xl font-bold text-white mb-4">
+                    Portafolio & Wealth con Ernesto Yunes
+                  </h3>
+                  <p className="font-sans text-gray-400 text-base sm:text-lg mb-6 leading-relaxed">
+                    Construcción de patrimonio a largo plazo. Ernesto muestra cómo gestionar portfolios institucionales y crear riqueza sostenible con disciplina.
+                  </p>
+                  <p className="font-sans text-green-400 font-semibold text-lg">
+                    Invierte con lógica. Crece con disciplina.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 4 - Charting de la Semana con Jean Vizón */}
+            <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl hover:shadow-green-500/10 hover:border-green-500/20 transition-all duration-300" data-testid="card-jean-vizon">
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-6 lg:gap-8">
+                <div className="w-full lg:w-1/2 flex-shrink-0">
+                  <img src={image4} alt="Jean Vizón charting session" className="w-full h-64 lg:h-80 object-cover rounded-2xl" />
+                </div>
+                <div className="w-full lg:w-1/2 text-center lg:text-left">
+                  <div className="flex justify-center lg:justify-start mb-4">
+                    <TrendingUp className="w-8 h-8 text-green-400" />
+                  </div>
+                  <h3 className="font-sans text-2xl sm:text-3xl font-bold text-white mb-4">
+                    Charting de la Semana con Jean Vizón
+                  </h3>
+                  <p className="font-sans text-gray-400 text-base sm:text-lg mb-6 leading-relaxed">
+                    Análisis técnico profundo de los mercados. Jean desglosa los charts semanales y identifica oportunidades antes que el resto del mercado.
+                  </p>
+                  <p className="font-sans text-green-400 font-semibold text-lg">
+                    Lee los charts. Anticipa el mercado.
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
