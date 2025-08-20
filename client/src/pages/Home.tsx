@@ -903,13 +903,13 @@ export default function Home() {
         <div className="relative">
           {/* CTA Card */}
           <div 
-            className="relative rounded-3xl overflow-hidden shadow-2xl border border-blue-500/10"
+            className="relative rounded-3xl overflow-hidden border border-blue-500/10"
             style={{
               backgroundImage: `url(${chart})`,
               backgroundSize: '100% 100%',
               backgroundPosition: 'center center',
               backgroundRepeat: 'no-repeat',
-              boxShadow: '0 0 60px rgba(59, 130, 246, 0.15), 0 20px 40px rgba(0, 0, 0, 0.3)'
+              filter: 'drop-shadow(0 0 60px rgba(59, 130, 246, 0.15)) drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3))'
             }}
             data-testid="cta-card"
           >
