@@ -340,9 +340,7 @@ export default function Home() {
                   <h3 className="font-sans text-white mb-4 font-semibold" style={{ fontSize: '24px' }}>
                     Opciones Avanzadas con Carlos Amec
                   </h3>
-                  <p className="font-sans text-gray-400 text-base mb-6 leading-relaxed" style={{ fontSize: '14px' }}>
-                    Estrategias avanzadas de opciones en vivo. Carlos comparte técnicas institucionales y estructuras complejas mientras las ejecuta en el mercado.
-                  </p>
+                  <p className="font-sans text-gray-400 mb-6 text-[14px]" style={{ fontSize: '14px' }}>Domina las estrategias que usan los profesionales. Carlos te guía en el mundo de las opciones con tácticas avanzadas como covered calls, puts y spreads. Descubre cómo generar ingresos consistentes y proteger tu portafolio en distintos escenarios de mercado.</p>
                   <p className="font-sans text-green-400 font-semibold text-lg">
                     Expande tu visión. Crea impacto.
                   </p>
