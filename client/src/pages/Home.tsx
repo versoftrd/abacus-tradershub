@@ -300,7 +300,7 @@ export default function Home() {
 
           {/* Content Cards - Combined */}
           <div className="max-w-6xl mx-auto">
-            <div className="group bg-[#1b1b1b] border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl hover:shadow-green-500/10 hover:border-green-500/20 transition-all duration-300">
+            <div className="group border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl hover:shadow-green-500/10 hover:border-green-500/20 transition-all duration-300" style={{ background: 'linear-gradient(to bottom, transparent 0%, rgba(27, 27, 27, 0.3) 10%, rgba(27, 27, 27, 1) 15%, rgba(27, 27, 27, 1) 100%)' }}>
               
               {/* Card 1 - Live Trading con Jorge Valet */}
               <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 mb-12" data-testid="card-jorge-valet">
