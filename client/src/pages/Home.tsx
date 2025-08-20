@@ -401,6 +401,158 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Resultados Expertos Section */}
+      <section className="relative bg-[#141414] py-16 px-4 sm:px-6">
+        {/* Line Gradient Background Image */}
+        <div 
+          className="absolute inset-0 bg-no-repeat opacity-40 pointer-events-none"
+          style={{ 
+            backgroundImage: `url(${lineGradient})`, 
+            backgroundPosition: 'center 20%',
+            backgroundSize: '100% 50%'
+          }}
+        ></div>
+        
+        {/* Background decorative elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-green-500/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-green-400/8 rounded-full blur-2xl"></div>
+        </div>
+
+        <div className="relative max-w-5xl mx-auto">
+          {/* Header Section */}
+          <div className="text-center mb-16">
+            <p className="font-sans text-green-400 text-sm font-medium mb-4 uppercase tracking-wide" data-testid="resultados-eyebrow">
+              Resultados Expertos
+            </p>
+            <h2 className="font-sans text-white mb-6 font-semibold" style={{ fontSize: '32px' }} data-testid="resultados-headline">
+              Resultados que hablan por sí solos
+            </h2>
+            <p className="font-sans text-gray-300 max-w-4xl mx-auto px-4" style={{ fontSize: '16px' }} data-testid="resultados-description">
+              Nuestros mentores no solo enseñan, operan en vivo y demuestran sus estrategias con resultados reales en el mercado.
+            </p>
+          </div>
+
+          {/* Main Stats Card */}
+          <div className="max-w-4xl mx-auto">
+            <div className="relative border border-white/10 rounded-2xl p-8 shadow-2xl" style={{ 
+              background: 'linear-gradient(135deg, rgba(27, 27, 27, 0.9) 0%, rgba(34, 34, 34, 0.8) 50%, rgba(27, 27, 27, 0.9) 100%)',
+              backdropFilter: 'blur(10px)'
+            }}>
+              
+              {/* Chart Container */}
+              <div className="relative mb-8">
+                {/* +61% Metric */}
+                <div className="absolute top-4 right-4 z-10">
+                  <div className="text-4xl font-bold text-green-400" style={{ filter: 'drop-shadow(0 0 8px rgba(34, 197, 94, 0.3))' }}>
+                    +61%
+                  </div>
+                </div>
+
+                {/* Chart SVG */}
+                <div className="h-80 w-full bg-gradient-to-b from-green-500/5 to-transparent rounded-xl p-6">
+                  <svg viewBox="0 0 800 300" className="w-full h-full">
+                    {/* Grid lines */}
+                    <defs>
+                      <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stopColor="rgb(34, 197, 94)" stopOpacity="0.3"/>
+                        <stop offset="100%" stopColor="rgb(34, 197, 94)" stopOpacity="0"/>
+                      </linearGradient>
+                    </defs>
+                    
+                    {/* Horizontal grid lines */}
+                    <line x1="60" y1="60" x2="740" y2="60" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="60" y1="120" x2="740" y2="120" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="60" y1="180" x2="740" y2="180" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="60" y1="240" x2="740" y2="240" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+
+                    {/* Y-axis labels */}
+                    <text x="50" y="245" fill="#fff" fontSize="12" textAnchor="end">$0</text>
+                    <text x="50" y="185" fill="#fff" fontSize="12" textAnchor="end">US$1,000</text>
+                    <text x="50" y="125" fill="#fff" fontSize="12" textAnchor="end">US$2,000</text>
+                    <text x="50" y="65" fill="#fff" fontSize="12" textAnchor="end">US$3,000</text>
+
+                    {/* Chart line with area fill */}
+                    <path
+                      d="M 60,180 L 120,165 L 180,165 L 240,135 L 300,120 L 360,120 L 420,111 L 480,96 L 540,102 L 600,78 L 660,78 L 720,72"
+                      fill="none"
+                      stroke="rgb(34, 197, 94)"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M 60,180 L 120,165 L 180,165 L 240,135 L 300,120 L 360,120 L 420,111 L 480,96 L 540,102 L 600,78 L 660,78 L 720,72 L 720,240 L 60,240 Z"
+                      fill="url(#chartGradient)"
+                    />
+
+                    {/* X-axis labels */}
+                    <text x="60" y="265" fill="#9CA3AF" fontSize="10" textAnchor="middle">Ago 1</text>
+                    <text x="150" y="265" fill="#9CA3AF" fontSize="10" textAnchor="middle">Ago 3</text>
+                    <text x="240" y="265" fill="#9CA3AF" fontSize="10" textAnchor="middle">Ago 5</text>
+                    <text x="330" y="265" fill="#9CA3AF" fontSize="10" textAnchor="middle">Ago 7</text>
+                    <text x="420" y="265" fill="#9CA3AF" fontSize="10" textAnchor="middle">Ago 9</text>
+                    <text x="510" y="265" fill="#9CA3AF" fontSize="10" textAnchor="middle">Ago 11</text>
+                    <text x="600" y="265" fill="#9CA3AF" fontSize="10" textAnchor="middle">Ago 13</text>
+                    <text x="690" y="265" fill="#9CA3AF" fontSize="10" textAnchor="middle">Ago 15</text>
+                  </svg>
+                </div>
+
+                {/* Chart Caption */}
+                <p className="text-center text-gray-500 text-xs mt-2">
+                  (Valor de la cuenta de Jorge Valet en 15 días)
+                </p>
+              </div>
+
+              {/* Stats Panel */}
+              <div className="border border-white/10 rounded-xl p-6 bg-black/20">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  
+                  {/* Left Column - Win/Loss Ratio */}
+                  <div>
+                    <h3 className="text-white font-semibold mb-4 text-lg">Win/Loss Ratio</h3>
+                    <div className="space-y-3">
+                      <div className="flex justify-between items-center">
+                        <span className="text-gray-400">Pérdidas</span>
+                        <span className="text-red-400 font-medium">2</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-gray-400">Ganancias</span>
+                        <span className="text-green-400 font-medium">10</span>
+                      </div>
+                      <hr className="border-white/10"/>
+                      <div className="flex justify-between items-center">
+                        <span className="text-white font-medium">Total</span>
+                        <span className="text-white font-medium">12</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Right Column - Win Rate */}
+                  <div className="text-center">
+                    <h3 className="text-white font-semibold mb-6 text-lg">Win Rate</h3>
+                    <div className="text-6xl font-bold text-green-400 mb-2" style={{ filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))' }}>
+                      83%
+                    </div>
+                    <div className="text-right">
+                      <span className="text-xs text-gray-500 bg-gray-800/50 px-2 py-1 rounded">
+                        Resultados de 1 semana
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Panel Caption */}
+                <p className="text-center text-gray-500 text-xs mt-6">
+                  (Win Rate de Jorge Valet en una semana)
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

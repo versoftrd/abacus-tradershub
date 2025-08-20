@@ -1,0 +1,64 @@
+Create a modern, dark-themed stats section titled “Resultados Expertos” with a subtle green aura/glow. Use a centered, narrow container. Typography: white titles, muted gray body, neon-green highlights.
+
+Top area
+
+Small green eyebrow text: “Resultados Expertos” (uppercase, letter-spaced).
+
+Main H1 centered: “Resultados que hablan por sí solos”.
+
+Subhead centered in muted gray:
+“Nuestros mentores no solo enseñan, operan en vivo y demuestran sus estrategias con resultados reales en el mercado.”
+
+Main card (glass, rounded-2xl, soft green gradient background, inner shadow)
+
+Inside the card, place a line/area chart (neon-green line with translucent green fill).
+
+Add a large floating metric on the top-right of the chart: “+61%” with a soft outer glow.
+
+Y-axis (left): $0, US$1,000, US$2,000, US$3,000 (white labels).
+
+X-axis (bottom): “Agosto 1, Agosto 3, Agosto 5, Agosto 7, Agosto 9, Agosto 11, Agosto 13, Agosto 15”.
+
+Tiny caption centered under the chart in gray: “(Valor de la cuenta de Jorge Valet en 15 días)”.
+
+Chart data (plot as example)
+
+Points (USD): [1800, 1900, 1900, 2100, 2250, 2250, 2300, 2400, 2350, 2550, 2550, 2600]
+
+Smooth curve, rounded stroke caps.
+
+Grid lines very faint.
+
+Secondary stats panel (inside same card, below chart)
+
+Rounded rectangle with subtle border/outline; two columns:
+
+Left column (table, title: “Win/Loss Ratio”)
+
+Row 1: “Pérdidas” — value 2 (value in neon-green if positive context is desired; or red-muted).
+
+Row 2: “Ganancias” — value 10 (neon-green).
+
+Row 3 (divider top): “Total” — value 12 (white).
+
+Right column (title: “Win Rate”)
+
+Center a huge glowing number: 83.3333333333%
+
+Tiny tooltip-style note on bottom-right corner: “Resultados de 1 semana” (muted).
+
+Small gray caption centered under the panel: “(Win/Rate de Jorge Valet en una semana)”.
+
+Styling notes
+
+Background of the whole page: near-black with a radial green gradient in corners.
+
+Cards: glassmorphism (semi-transparent dark layer), soft shadows, 20–28px radius, 24–32px padding.
+
+Green color range: use one neon for highlights and a darker emerald for fills; add outer glow to the +61% and the win-rate number.
+
+Animations: gentle fade-in and slight upward motion on load; chart draws from left to right.
+
+Accessibility
+
+Ensure sufficient contrast for text; add aria-labels for chart and stats.
