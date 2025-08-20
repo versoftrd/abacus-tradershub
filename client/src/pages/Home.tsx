@@ -1171,7 +1171,7 @@ export default function Home() {
                   </span>
                 </button>
                 <div id="faq-content-5" className="pb-4 pl-0">
-                  <p className="font-sans text-gray-400 text-base leading-relaxed">
+                  <p className="font-sans text-gray-400 text-[14px]">
                     Absolutamente. No hay compromisos a largo plazo ni penalizaciones por cancelación. Puedes cancelar tu membresía en cualquier momento desde tu panel de usuario, y mantendrás acceso hasta el final de tu período de facturación actual.
                   </p>
                 </div>
