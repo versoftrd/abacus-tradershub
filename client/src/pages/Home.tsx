@@ -8,6 +8,7 @@ import image2 from "@assets/image2_1755651733676.png";
 import image3 from "@assets/image3_1755651733676.png";
 import image4 from "@assets/image4_1755651733677.png";
 import lineGradient from "@assets/line gradient_1755651923504.png";
+import logo from "@assets/logo_1755607335061.png";
 import { Check, ArrowLeftRight, Zap, PieChart, TrendingUp } from "lucide-react";
 
 export default function Home() {
@@ -292,8 +293,8 @@ export default function Home() {
             <p className="font-sans text-green-400 text-sm font-medium mb-4" data-testid="sessions-eyebrow">
               Nuestras sesiones
             </p>
-            <h2 className="font-sans text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6" data-testid="nucleos-headline">
-              Los 4 núcleos del <span className="font-bold">TRADERS</span> <span className="italic">Hub</span>
+            <h2 className="font-sans text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 flex items-center justify-center gap-4" data-testid="nucleos-headline">
+              Los 4 núcleos del <img src={logo} alt="Traders Hub Logo" className="h-8 sm:h-10 md:h-12 inline-block" />
             </h2>
             <p className="font-sans text-gray-300 max-w-4xl mx-auto text-base sm:text-lg leading-relaxed px-4" data-testid="nucleos-description">
               No son clases: son 7 a 9 sesiones de trading en vivo cada semana donde mentores de verdad operan mientras enseñan. Acceso total a las pantallas, las decisiones y la mentalidad de traders profesionales.
