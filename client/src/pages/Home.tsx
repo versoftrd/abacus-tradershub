@@ -318,7 +318,7 @@ export default function Home() {
                   <h3 className="font-sans text-2xl sm:text-3xl font-bold text-white mb-4">
                     Live Trading con Jorge Valet
                   </h3>
-                  <p className="font-sans text-gray-400 text-base sm:text-lg mb-6 leading-relaxed">
+                  <p className="font-sans text-gray-400 text-base mb-6 leading-relaxed" style={{ fontSize: '16px' }}>
                     Sesiones diarias de trading en vivo donde Jorge opera su propia cuenta mientras explica cada decisión. No teoría: trading real con dinero real en tiempo real.
                   </p>
                   <p className="font-sans text-green-400 font-semibold text-lg">
@@ -342,7 +342,7 @@ export default function Home() {
                   <h3 className="font-sans text-2xl sm:text-3xl font-bold text-white mb-4">
                     Opciones Avanzadas con Carlos Amec
                   </h3>
-                  <p className="font-sans text-gray-400 text-base sm:text-lg mb-6 leading-relaxed">
+                  <p className="font-sans text-gray-400 text-base mb-6 leading-relaxed" style={{ fontSize: '16px' }}>
                     Estrategias avanzadas de opciones en vivo. Carlos comparte técnicas institucionales y estructuras complejas mientras las ejecuta en el mercado.
                   </p>
                   <p className="font-sans text-green-400 font-semibold text-lg">
@@ -366,7 +366,7 @@ export default function Home() {
                   <h3 className="font-sans text-2xl sm:text-3xl font-bold text-white mb-4">
                     Portafolio & Wealth con Ernesto Yunes
                   </h3>
-                  <p className="font-sans text-gray-400 text-base sm:text-lg mb-6 leading-relaxed">
+                  <p className="font-sans text-gray-400 text-base mb-6 leading-relaxed" style={{ fontSize: '16px' }}>
                     Construcción de patrimonio a largo plazo. Ernesto muestra cómo gestionar portfolios institucionales y crear riqueza sostenible con disciplina.
                   </p>
                   <p className="font-sans text-green-400 font-semibold text-lg">
@@ -390,7 +390,7 @@ export default function Home() {
                   <h3 className="font-sans text-2xl sm:text-3xl font-bold text-white mb-4">
                     Charting de la Semana con Jean Vizón
                   </h3>
-                  <p className="font-sans text-gray-400 text-base sm:text-lg mb-6 leading-relaxed">
+                  <p className="font-sans text-gray-400 text-base mb-6 leading-relaxed" style={{ fontSize: '16px' }}>
                     Análisis técnico profundo de los mercados. Jean desglosa los charts semanales y identifica oportunidades antes que el resto del mercado.
                   </p>
                   <p className="font-sans text-green-400 font-semibold text-lg">
