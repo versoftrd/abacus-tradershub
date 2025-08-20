@@ -280,7 +280,7 @@ export default function Home() {
           style={{ 
             backgroundImage: `url(${lineGradient})`, 
             backgroundPosition: 'center 15%',
-            backgroundSize: '100% 60%'
+            backgroundSize: '100% 72%'
           }}
         ></div>
         
