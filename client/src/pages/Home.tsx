@@ -610,9 +610,9 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               
               {/* Left Panel - Frame 1934 */}
-              <div className="group relative">
+              <div className="group relative h-full">
                 <div 
-                  className="relative border border-white/20 rounded-2xl p-6 shadow-2xl backdrop-blur-lg transition-all duration-300 hover:border-green-400/40 hover:shadow-green-400/20"
+                  className="relative border border-white/20 rounded-2xl p-6 shadow-2xl backdrop-blur-lg transition-all duration-300 hover:border-green-400/40 hover:shadow-green-400/20 h-full flex flex-col"
                   style={{ 
                     background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(16, 32, 16, 0.6) 50%, rgba(0, 0, 0, 0.8) 100%)',
                     backdropFilter: 'blur(20px)',
@@ -646,9 +646,9 @@ export default function Home() {
               </div>
 
               {/* Right Panel - Frame 1933 */}
-              <div className="group relative">
+              <div className="group relative h-full">
                 <div 
-                  className="relative border border-white/20 rounded-2xl p-6 shadow-2xl backdrop-blur-lg transition-all duration-300 hover:border-purple-400/40 hover:shadow-purple-400/20"
+                  className="relative border border-white/20 rounded-2xl p-6 shadow-2xl backdrop-blur-lg transition-all duration-300 hover:border-purple-400/40 hover:shadow-purple-400/20 h-full flex flex-col"
                   style={{ 
                     background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(32, 16, 32, 0.6) 50%, rgba(0, 0, 0, 0.8) 100%)',
                     backdropFilter: 'blur(20px)',
