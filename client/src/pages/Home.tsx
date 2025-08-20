@@ -475,7 +475,6 @@ export default function Home() {
                     <line x1="510" y1="70" x2="510" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
                     <line x1="600" y1="70" x2="600" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
                     <line x1="690" y1="70" x2="690" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="720" y1="70" x2="720" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
 
                     {/* Y-axis labels - Four main values */}
                     <text x="55" y="285" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">$0</text>
@@ -485,7 +484,7 @@ export default function Home() {
 
                     {/* Chart line with area fill - Proportional to actual data */}
                     <path
-                      d="M 60,245 L 150,240 L 240,240 L 330,210 L 420,195 L 510,195 L 600,190 L 690,175 L 720,170"
+                      d="M 60,245 L 150,240 L 240,240 L 330,210 L 420,195 L 510,195 L 600,190 L 690,175"
                       fill="none"
                       stroke="rgb(34, 197, 94)"
                       strokeWidth="4"
@@ -500,7 +499,7 @@ export default function Home() {
                       }}
                     />
                     <path
-                      d="M 60,245 L 150,240 L 240,240 L 330,210 L 420,195 L 510,195 L 600,190 L 690,175 L 720,170 L 720,280 L 60,280 Z"
+                      d="M 60,245 L 150,240 L 240,240 L 330,210 L 420,195 L 510,195 L 600,190 L 690,175 L 690,280 L 60,280 Z"
                       fill="url(#chartGradient)"
                       className="transition-all duration-300 group-hover:opacity-80"
                       style={{
@@ -519,7 +518,6 @@ export default function Home() {
                       <circle cx="510" cy="195" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,250" data-date="Aug 11"/>
                       <circle cx="600" cy="190" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,300" data-date="Aug 13"/>
                       <circle cx="690" cy="175" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,400" data-date="Aug 15"/>
-                      <circle cx="720" cy="170" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,500" data-date="Aug 17"/>
                     </g>
 
                     {/* X-axis labels - Proportionally spaced dates */}
@@ -531,7 +529,6 @@ export default function Home() {
                     <text x="510" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 11</text>
                     <text x="600" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 13</text>
                     <text x="690" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 15</text>
-                    <text x="720" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 17</text>
                   </svg>
                 </div>
 
