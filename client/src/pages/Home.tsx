@@ -461,30 +461,30 @@ export default function Home() {
                     </defs>
                     
                     {/* Horizontal grid lines */}
-                    <line x1="60" y1="280" x2="720" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="60" y1="210" x2="720" y2="210" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="60" y1="140" x2="720" y2="140" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="60" y1="70" x2="720" y2="70" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="85" y1="280" x2="740" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="85" y1="210" x2="740" y2="210" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="85" y1="140" x2="740" y2="140" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="85" y1="70" x2="740" y2="70" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
                     
                     {/* Vertical grid lines */}
-                    <line x1="60" y1="70" x2="60" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="150" y1="70" x2="150" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="240" y1="70" x2="240" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="330" y1="70" x2="330" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="420" y1="70" x2="420" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="510" y1="70" x2="510" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="600" y1="70" x2="600" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="690" y1="70" x2="690" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="85" y1="70" x2="85" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="175" y1="70" x2="175" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="265" y1="70" x2="265" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="355" y1="70" x2="355" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="445" y1="70" x2="445" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="535" y1="70" x2="535" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="625" y1="70" x2="625" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="715" y1="70" x2="715" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
 
                     {/* Y-axis labels - Four main values */}
-                    <text x="55" y="285" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">$0</text>
-                    <text x="55" y="215" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">US$1,000</text>
-                    <text x="55" y="145" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">US$2,000</text>
-                    <text x="55" y="75" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">US$3,000</text>
+                    <text x="80" y="285" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">$0</text>
+                    <text x="80" y="215" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">US$1,000</text>
+                    <text x="80" y="145" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">US$2,000</text>
+                    <text x="80" y="75" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">US$3,000</text>
 
                     {/* Chart line with area fill - Proportional to actual data */}
                     <path
-                      d="M 60,245 L 150,240 L 240,240 L 330,210 L 420,195 L 510,195 L 600,190 L 690,175"
+                      d="M 85,245 L 175,240 L 265,240 L 355,210 L 445,195 L 535,195 L 625,190 L 715,175"
                       fill="none"
                       stroke="rgb(34, 197, 94)"
                       strokeWidth="4"
@@ -499,7 +499,7 @@ export default function Home() {
                       }}
                     />
                     <path
-                      d="M 60,245 L 150,240 L 240,240 L 330,210 L 420,195 L 510,195 L 600,190 L 690,175 L 690,280 L 60,280 Z"
+                      d="M 85,245 L 175,240 L 265,240 L 355,210 L 445,195 L 535,195 L 625,190 L 715,175 L 715,280 L 85,280 Z"
                       fill="url(#chartGradient)"
                       className="transition-all duration-300 group-hover:opacity-80"
                       style={{
@@ -510,25 +510,25 @@ export default function Home() {
                     
                     {/* Interactive data points - Proportional positioning */}
                     <g className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <circle cx="60" cy="245" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$1,800" data-date="Aug 1"/>
-                      <circle cx="150" cy="240" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$1,900" data-date="Aug 3"/>
-                      <circle cx="240" cy="240" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$1,900" data-date="Aug 5"/>
-                      <circle cx="330" cy="210" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,100" data-date="Aug 7"/>
-                      <circle cx="420" cy="195" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,250" data-date="Aug 9"/>
-                      <circle cx="510" cy="195" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,250" data-date="Aug 11"/>
-                      <circle cx="600" cy="190" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,300" data-date="Aug 13"/>
-                      <circle cx="690" cy="175" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,400" data-date="Aug 15"/>
+                      <circle cx="85" cy="245" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$1,800" data-date="Aug 1"/>
+                      <circle cx="175" cy="240" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$1,900" data-date="Aug 3"/>
+                      <circle cx="265" cy="240" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$1,900" data-date="Aug 5"/>
+                      <circle cx="355" cy="210" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,100" data-date="Aug 7"/>
+                      <circle cx="445" cy="195" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,250" data-date="Aug 9"/>
+                      <circle cx="535" cy="195" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,250" data-date="Aug 11"/>
+                      <circle cx="625" cy="190" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,300" data-date="Aug 13"/>
+                      <circle cx="715" cy="175" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,400" data-date="Aug 15"/>
                     </g>
 
                     {/* X-axis labels - Proportionally spaced dates */}
-                    <text x="60" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 1</text>
-                    <text x="150" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 3</text>
-                    <text x="240" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 5</text>
-                    <text x="330" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 7</text>
-                    <text x="420" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 9</text>
-                    <text x="510" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 11</text>
-                    <text x="600" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 13</text>
-                    <text x="690" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 15</text>
+                    <text x="85" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 1</text>
+                    <text x="175" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 3</text>
+                    <text x="265" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 5</text>
+                    <text x="355" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 7</text>
+                    <text x="445" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 9</text>
+                    <text x="535" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 11</text>
+                    <text x="625" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 13</text>
+                    <text x="715" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 15</text>
                   </svg>
                 </div>
 
