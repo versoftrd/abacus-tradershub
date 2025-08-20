@@ -947,6 +947,240 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      {/* FAQ Section */}
+      <section className="relative bg-[#0a0a0a] py-16 px-4 sm:px-6">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-green-500/2 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-green-400/1 rounded-full blur-2xl"></div>
+        </div>
+
+        <div className="relative max-w-4xl mx-auto">
+          {/* Header Section */}
+          <div className="text-center mb-12">
+            <p className="font-sans text-green-400 text-sm font-medium mb-4 tracking-wide" data-testid="faq-eyebrow">
+              Preguntas Frecuentes
+            </p>
+            <h2 className="font-sans text-white mb-6 font-semibold text-2xl sm:text-3xl lg:text-4xl" data-testid="faq-headline">
+              ¿Tienes preguntas? Aquí están las respuestas.
+            </h2>
+          </div>
+
+          {/* FAQ Accordion Container */}
+          <div 
+            className="rounded-2xl p-6 sm:p-8 shadow-2xl border border-white/5"
+            style={{
+              background: 'linear-gradient(135deg, rgba(16, 16, 16, 0.95) 0%, rgba(24, 24, 24, 0.9) 50%, rgba(16, 16, 16, 0.95) 100%)',
+              boxShadow: '0 20px 40px rgba(0, 0, 0, 0.3)'
+            }}
+            data-testid="faq-container"
+          >
+            <div className="space-y-0">
+              
+              {/* FAQ Item 1 */}
+              <div className="group" data-testid="faq-item-1">
+                <button 
+                  className="w-full flex items-center justify-between py-6 text-left transition-colors duration-200 hover:text-green-400"
+                  onClick={() => {
+                    const content = document.getElementById('faq-content-1');
+                    const icon = document.getElementById('faq-icon-1');
+                    if (content && icon) {
+                      const isOpen = !content.classList.contains('hidden');
+                      if (isOpen) {
+                        content.classList.add('hidden');
+                        icon.style.transform = 'rotate(0deg)';
+                        icon.textContent = '+';
+                      } else {
+                        content.classList.remove('hidden');
+                        icon.style.transform = 'rotate(90deg)';
+                        icon.textContent = '–';
+                      }
+                    }
+                  }}
+                >
+                  <span className="font-sans text-white text-lg font-medium pr-4">
+                    ¿Qué incluye mi membresía a TradersHub?
+                  </span>
+                  <span 
+                    id="faq-icon-1"
+                    className="text-green-400 text-2xl font-bold transition-transform duration-300 flex-shrink-0"
+                    style={{ transform: 'rotate(0deg)' }}
+                  >
+                    +
+                  </span>
+                </button>
+                <div id="faq-content-1" className="hidden pb-4 pl-0">
+                  <p className="font-sans text-gray-400 text-base leading-relaxed">
+                    Tu membresía incluye acceso a 7-9 sesiones semanales en vivo, grabaciones completas, análisis de mercado en tiempo real, acceso a la comunidad exclusiva de traders, y mentorías directas con nuestros expertos Jorge Valet, Carlos Amec, Ernesto Yunes y Jean Vizón.
+                  </p>
+                </div>
+                <div className="border-b border-white/10"></div>
+              </div>
+
+              {/* FAQ Item 2 */}
+              <div className="group" data-testid="faq-item-2">
+                <button 
+                  className="w-full flex items-center justify-between py-6 text-left transition-colors duration-200 hover:text-green-400"
+                  onClick={() => {
+                    const content = document.getElementById('faq-content-2');
+                    const icon = document.getElementById('faq-icon-2');
+                    if (content && icon) {
+                      const isOpen = !content.classList.contains('hidden');
+                      if (isOpen) {
+                        content.classList.add('hidden');
+                        icon.style.transform = 'rotate(0deg)';
+                        icon.textContent = '+';
+                      } else {
+                        content.classList.remove('hidden');
+                        icon.style.transform = 'rotate(90deg)';
+                        icon.textContent = '–';
+                      }
+                    }
+                  }}
+                >
+                  <span className="font-sans text-white text-lg font-medium pr-4">
+                    ¿Necesito experiencia previa en trading?
+                  </span>
+                  <span 
+                    id="faq-icon-2"
+                    className="text-green-400 text-2xl font-bold transition-transform duration-300 flex-shrink-0"
+                    style={{ transform: 'rotate(0deg)' }}
+                  >
+                    +
+                  </span>
+                </button>
+                <div id="faq-content-2" className="hidden pb-4 pl-0">
+                  <p className="font-sans text-gray-400 text-base leading-relaxed">
+                    No es necesario tener experiencia previa. Nuestro programa está diseñado tanto para principiantes como para traders experimentados. Comenzamos desde lo básico y progresamos gradualmente, siempre con apoyo directo de nuestros mentores.
+                  </p>
+                </div>
+                <div className="border-b border-white/10"></div>
+              </div>
+
+              {/* FAQ Item 3 */}
+              <div className="group" data-testid="faq-item-3">
+                <button 
+                  className="w-full flex items-center justify-between py-6 text-left transition-colors duration-200 hover:text-green-400"
+                  onClick={() => {
+                    const content = document.getElementById('faq-content-3');
+                    const icon = document.getElementById('faq-icon-3');
+                    if (content && icon) {
+                      const isOpen = !content.classList.contains('hidden');
+                      if (isOpen) {
+                        content.classList.add('hidden');
+                        icon.style.transform = 'rotate(0deg)';
+                        icon.textContent = '+';
+                      } else {
+                        content.classList.remove('hidden');
+                        icon.style.transform = 'rotate(90deg)';
+                        icon.textContent = '–';
+                      }
+                    }
+                  }}
+                >
+                  <span className="font-sans text-white text-lg font-medium pr-4">
+                    ¿Cuánto capital necesito para empezar?
+                  </span>
+                  <span 
+                    id="faq-icon-3"
+                    className="text-green-400 text-2xl font-bold transition-transform duration-300 flex-shrink-0"
+                    style={{ transform: 'rotate(0deg)' }}
+                  >
+                    +
+                  </span>
+                </button>
+                <div id="faq-content-3" className="hidden pb-4 pl-0">
+                  <p className="font-sans text-gray-400 text-base leading-relaxed">
+                    Puedes comenzar con tan poco como $500-$1,000 para aplicar las estrategias que aprendes. Sin embargo, recomendamos tener al menos $2,000-$5,000 para una gestión de riesgo más cómoda y mejores oportunidades de diversificación.
+                  </p>
+                </div>
+                <div className="border-b border-white/10"></div>
+              </div>
+
+              {/* FAQ Item 4 */}
+              <div className="group" data-testid="faq-item-4">
+                <button 
+                  className="w-full flex items-center justify-between py-6 text-left transition-colors duration-200 hover:text-green-400"
+                  onClick={() => {
+                    const content = document.getElementById('faq-content-4');
+                    const icon = document.getElementById('faq-icon-4');
+                    if (content && icon) {
+                      const isOpen = !content.classList.contains('hidden');
+                      if (isOpen) {
+                        content.classList.add('hidden');
+                        icon.style.transform = 'rotate(0deg)';
+                        icon.textContent = '+';
+                      } else {
+                        content.classList.remove('hidden');
+                        icon.style.transform = 'rotate(90deg)';
+                        icon.textContent = '–';
+                      }
+                    }
+                  }}
+                >
+                  <span className="font-sans text-white text-lg font-medium pr-4">
+                    ¿Las sesiones están disponibles en horarios específicos?
+                  </span>
+                  <span 
+                    id="faq-icon-4"
+                    className="text-green-400 text-2xl font-bold transition-transform duration-300 flex-shrink-0"
+                    style={{ transform: 'rotate(0deg)' }}
+                  >
+                    +
+                  </span>
+                </button>
+                <div id="faq-content-4" className="hidden pb-4 pl-0">
+                  <p className="font-sans text-gray-400 text-base leading-relaxed">
+                    Sí, tenemos un horario establecido para las sesiones en vivo que coincide con los horarios de mercado más activos. Todas las sesiones quedan grabadas y disponibles para verlas cuando te sea conveniente si no puedes asistir en vivo.
+                  </p>
+                </div>
+                <div className="border-b border-white/10"></div>
+              </div>
+
+              {/* FAQ Item 5 - Open by default */}
+              <div className="group" data-testid="faq-item-5">
+                <button 
+                  className="w-full flex items-center justify-between py-6 text-left transition-colors duration-200 hover:text-green-400 text-green-400"
+                  onClick={() => {
+                    const content = document.getElementById('faq-content-5');
+                    const icon = document.getElementById('faq-icon-5');
+                    if (content && icon) {
+                      const isOpen = !content.classList.contains('hidden');
+                      if (isOpen) {
+                        content.classList.add('hidden');
+                        icon.style.transform = 'rotate(0deg)';
+                        icon.textContent = '+';
+                      } else {
+                        content.classList.remove('hidden');
+                        icon.style.transform = 'rotate(90deg)';
+                        icon.textContent = '–';
+                      }
+                    }
+                  }}
+                >
+                  <span className="font-sans text-white text-lg font-medium pr-4">
+                    ¿Puedo cancelar mi membresía en cualquier momento?
+                  </span>
+                  <span 
+                    id="faq-icon-5"
+                    className="text-green-400 text-2xl font-bold transition-transform duration-300 flex-shrink-0"
+                    style={{ transform: 'rotate(90deg)' }}
+                  >
+                    –
+                  </span>
+                </button>
+                <div id="faq-content-5" className="pb-4 pl-0">
+                  <p className="font-sans text-gray-400 text-base leading-relaxed">
+                    Absolutamente. No hay compromisos a largo plazo ni penalizaciones por cancelación. Puedes cancelar tu membresía en cualquier momento desde tu panel de usuario, y mantendrás acceso hasta el final de tu período de facturación actual.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
