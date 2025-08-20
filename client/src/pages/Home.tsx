@@ -386,9 +386,8 @@ export default function Home() {
                   <h3 className="font-sans text-white mb-4 font-semibold" style={{ fontSize: '24px' }}>
                     Charting de la Semana con Jean Vizón
                   </h3>
-                  <p className="font-sans text-gray-400 text-base mb-6 leading-relaxed" style={{ fontSize: '14px' }}>
-                    Análisis técnico profundo de los mercados. Jean desglosa los charts semanales y identifica oportunidades antes que el resto del mercado.
-                  </p>
+                  <p className="font-sans text-gray-400 mb-6 text-[14px]" style={{ fontSize: '14px' }}>Análisis técnico aplicado a lo que importa.  
+                  Jean revisa los gráficos más relevantes de la semana y te muestra cómo leer el mercado con precisión. Identifica patrones, zonas clave y posibles escenarios para estar siempre un paso adelante.</p>
                   <p className="font-sans text-green-400 font-semibold text-lg">
                     Lee los charts. Anticipa el mercado.
                   </p>
