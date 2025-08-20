@@ -903,7 +903,7 @@ export default function Home() {
         <div className="relative">
           {/* CTA Card */}
           <div 
-            className="relative rounded-3xl overflow-hidden border border-blue-500/10"
+            className="relative border border-blue-500/10"
             style={{
               backgroundImage: `url(${chart})`,
               backgroundSize: '100% 100%',
