@@ -272,7 +272,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Los 4 núcleos del Traders Hub Section */}
       <section className="relative bg-[#141414] py-16 px-4 sm:px-6">
         {/* Line Gradient Background Image */}
@@ -293,7 +292,7 @@ export default function Home() {
             <p className="font-sans text-green-400 text-sm font-medium mb-4" data-testid="sessions-eyebrow">
               Nuestras sesiones
             </p>
-            <h2 className="font-sans text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 flex items-center justify-center gap-4" data-testid="nucleos-headline">
+            <h2 className="font-sans sm:text-4xl md:text-5xl font-bold text-white mb-6 flex items-center justify-center gap-4 text-[36px]" data-testid="nucleos-headline">
               Los 4 núcleos del <img src={logo} alt="Traders Hub Logo" className="h-8 sm:h-10 md:h-12 inline-block" />
             </h2>
             <p className="font-sans text-gray-300 max-w-4xl mx-auto text-base sm:text-lg leading-relaxed px-4" data-testid="nucleos-description">
