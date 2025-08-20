@@ -1247,12 +1247,7 @@ export default function Home() {
             {/* Right Section - Register Button */}
             <div className="lg:col-span-1 flex justify-start lg:justify-end">
               <button 
-                className="font-sans font-medium text-white px-6 py-2 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-[0_6px_20px_rgba(34,197,94,0.3)] focus:outline-none focus:ring-2 focus:ring-green-400/30 mt-[86px] mb-[86px] bg-[#00ff20]"
-                style={{
-                  background: 'linear-gradient(135deg, #4ade80 0%, #22c55e 100%)',
-                  boxShadow: '0 2px 10px rgba(34, 197, 94, 0.15)',
-                  fontSize: '14px'
-                }}
+                className="font-sans bg-gradient-to-b from-[#2ab46b] to-[#1b864e] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 text-sm"
                 data-testid="footer-register-button"
               >
                 Regístrate
