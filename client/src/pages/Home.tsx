@@ -914,7 +914,7 @@ export default function Home() {
             data-testid="cta-card"
           >
             {/* Content overlay */}
-            <div className="relative z-10 flex flex-col items-center justify-center min-h-[400px] px-8 py-16 sm:px-12 sm:py-20 text-center">
+            <div className="relative z-10 flex flex-col items-center justify-center min-h-[400px] text-center">
               
               {/* Heading */}
               <h2 
