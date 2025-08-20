@@ -26,6 +26,7 @@ import conflictIcon from "@assets/Conflict_1755658277781.png";
 import circleChartIcon from "@assets/Circle Chart_1755658307230.png";
 import stocksIcon from "@assets/Stocks_1755658381592.png";
 import { Check, ArrowLeftRight, Zap, PieChart, TrendingUp, Twitter, MessageCircle, Instagram, Facebook, MessageSquare } from "lucide-react";
+import { SiWhatsapp } from "react-icons/si";
 
 export default function Home() {
 
@@ -1278,7 +1279,7 @@ export default function Home() {
                 <Facebook className="w-5 h-5" />
               </a>
               <a href="#" className="text-green-400 hover:text-green-500 transition-colors duration-200" data-testid="footer-whatsapp">
-                <MessageSquare className="w-5 h-5" />
+                <SiWhatsapp className="w-5 h-5" />
               </a>
             </div>
           </div>
