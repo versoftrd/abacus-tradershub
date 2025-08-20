@@ -923,7 +923,7 @@ export default function Home() {
               
               {/* Subheading */}
               <p 
-                className="font-sans text-gray-300 mb-6 sm:mb-10 leading-relaxed text-sm sm:text-base lg:text-lg max-w-xl lg:max-w-2xl"
+                className="font-sans text-gray-300 mb-6 sm:mb-10 sm:text-base lg:text-lg max-w-xl lg:max-w-2xl text-[16px]"
                 data-testid="cta-subheading"
               >
                 Accede al hub de trading más completo en español y transforma la forma en que entiendes e inviertes en la bolsa de valores.
