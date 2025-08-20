@@ -451,7 +451,7 @@ export default function Home() {
                 </div>
 
                 {/* Chart SVG */}
-                <div className="h-[32rem] w-full bg-gradient-to-b from-green-500/5 to-transparent rounded-xl p-6 group cursor-pointer">
+                <div className="h-[32rem] w-full rounded-xl p-6 group cursor-pointer">
                   <svg viewBox="0 0 800 480" className="w-full h-full overflow-visible">
                     {/* Grid lines */}
                     <defs>
