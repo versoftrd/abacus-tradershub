@@ -10,6 +10,7 @@ import image4 from "@assets/image4_1755651733677.png";
 import lineGradient from "@assets/line gradient_1755651923504.png";
 import logo from "@assets/logo_1755607335061.png";
 import candlestickIcon from "@assets/Candlestick Chart_1755658217886.png";
+import conflictIcon from "@assets/Conflict_1755658277781.png";
 import { Check, ArrowLeftRight, Zap, PieChart, TrendingUp } from "lucide-react";
 
 export default function Home() {
@@ -336,7 +337,7 @@ export default function Home() {
                 </div>
                 <div className="w-full lg:w-1/2 text-center lg:text-left">
                   <div className="flex justify-center lg:justify-start mb-4">
-                    <Zap className="w-8 h-8 text-green-400" />
+                    <img src={conflictIcon} alt="Options Strategy" className="w-8 h-8" />
                   </div>
                   <h3 className="font-sans text-white mb-4 font-semibold" style={{ fontSize: '24px' }}>
                     Opciones Avanzadas con Carlos Amec
