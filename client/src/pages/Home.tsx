@@ -451,8 +451,8 @@ export default function Home() {
                 </div>
 
                 {/* Chart SVG */}
-                <div className="h-80 w-full bg-gradient-to-b from-green-500/5 to-transparent rounded-xl p-6">
-                  <svg viewBox="0 0 800 300" className="w-full h-full">
+                <div className="h-96 w-full bg-gradient-to-b from-green-500/5 to-transparent rounded-xl p-6 group cursor-pointer">
+                  <svg viewBox="0 0 800 360" className="w-full h-full overflow-visible">
                     {/* Grid lines */}
                     <defs>
                       <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -462,40 +462,64 @@ export default function Home() {
                     </defs>
                     
                     {/* Horizontal grid lines */}
-                    <line x1="60" y1="60" x2="740" y2="60" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="60" y1="120" x2="740" y2="120" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="60" y1="180" x2="740" y2="180" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="60" y1="240" x2="740" y2="240" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="60" y1="70" x2="740" y2="70" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="60" y1="140" x2="740" y2="140" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="60" y1="210" x2="740" y2="210" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="60" y1="280" x2="740" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
 
                     {/* Y-axis labels */}
-                    <text x="50" y="245" fill="#fff" fontSize="12" textAnchor="end">$0</text>
-                    <text x="50" y="185" fill="#fff" fontSize="12" textAnchor="end">US$1,000</text>
-                    <text x="50" y="125" fill="#fff" fontSize="12" textAnchor="end">US$2,000</text>
-                    <text x="50" y="65" fill="#fff" fontSize="12" textAnchor="end">US$3,000</text>
+                    <text x="50" y="285" fill="#fff" fontSize="14" textAnchor="end">$0</text>
+                    <text x="50" y="215" fill="#fff" fontSize="14" textAnchor="end">US$1,000</text>
+                    <text x="50" y="145" fill="#fff" fontSize="14" textAnchor="end">US$2,000</text>
+                    <text x="50" y="75" fill="#fff" fontSize="14" textAnchor="end">US$3,000</text>
 
                     {/* Chart line with area fill */}
                     <path
-                      d="M 60,180 L 120,165 L 180,165 L 240,135 L 300,120 L 360,120 L 420,111 L 480,96 L 540,102 L 600,78 L 660,78 L 720,72"
+                      d="M 60,210 L 120,195 L 180,195 L 240,165 L 300,150 L 360,150 L 420,141 L 480,126 L 540,132 L 600,108 L 660,108 L 720,102"
                       fill="none"
                       stroke="rgb(34, 197, 94)"
-                      strokeWidth="3"
+                      strokeWidth="4"
                       strokeLinecap="round"
                       strokeLinejoin="round"
+                      className="transition-all duration-300 group-hover:stroke-green-300 group-hover:drop-shadow-lg"
+                      style={{
+                        filter: 'drop-shadow(0 0 4px rgba(34, 197, 94, 0.3))',
+                        strokeDasharray: '2000',
+                        strokeDashoffset: '2000',
+                        animation: 'drawLine 2s ease-out forwards'
+                      }}
                     />
                     <path
-                      d="M 60,180 L 120,165 L 180,165 L 240,135 L 300,120 L 360,120 L 420,111 L 480,96 L 540,102 L 600,78 L 660,78 L 720,72 L 720,240 L 60,240 Z"
+                      d="M 60,210 L 120,195 L 180,195 L 240,165 L 300,150 L 360,150 L 420,141 L 480,126 L 540,132 L 600,108 L 660,108 L 720,102 L 720,280 L 60,280 Z"
                       fill="url(#chartGradient)"
+                      className="transition-all duration-300 group-hover:opacity-80"
+                      style={{
+                        opacity: '0',
+                        animation: 'fillArea 2s ease-out 1s forwards'
+                      }}
                     />
+                    
+                    {/* Interactive data points */}
+                    <g className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <circle cx="60" cy="210" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$1,800" data-date="Ago 1"/>
+                      <circle cx="120" cy="195" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$1,900" data-date="Ago 3"/>
+                      <circle cx="180" cy="195" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$1,900" data-date="Ago 5"/>
+                      <circle cx="240" cy="165" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,100" data-date="Ago 7"/>
+                      <circle cx="300" cy="150" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,250" data-date="Ago 9"/>
+                      <circle cx="360" cy="150" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,250" data-date="Ago 11"/>
+                      <circle cx="420" cy="141" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,300" data-date="Ago 13"/>
+                      <circle cx="480" cy="126" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,400" data-date="Ago 15"/>
+                    </g>
 
                     {/* X-axis labels */}
-                    <text x="60" y="265" fill="#9CA3AF" fontSize="10" textAnchor="middle">Ago 1</text>
-                    <text x="150" y="265" fill="#9CA3AF" fontSize="10" textAnchor="middle">Ago 3</text>
-                    <text x="240" y="265" fill="#9CA3AF" fontSize="10" textAnchor="middle">Ago 5</text>
-                    <text x="330" y="265" fill="#9CA3AF" fontSize="10" textAnchor="middle">Ago 7</text>
-                    <text x="420" y="265" fill="#9CA3AF" fontSize="10" textAnchor="middle">Ago 9</text>
-                    <text x="510" y="265" fill="#9CA3AF" fontSize="10" textAnchor="middle">Ago 11</text>
-                    <text x="600" y="265" fill="#9CA3AF" fontSize="10" textAnchor="middle">Ago 13</text>
-                    <text x="690" y="265" fill="#9CA3AF" fontSize="10" textAnchor="middle">Ago 15</text>
+                    <text x="60" y="305" fill="#9CA3AF" fontSize="12" textAnchor="middle" className="group-hover:fill-green-300 transition-colors">Ago 1</text>
+                    <text x="120" y="305" fill="#9CA3AF" fontSize="12" textAnchor="middle" className="group-hover:fill-green-300 transition-colors">Ago 3</text>
+                    <text x="180" y="305" fill="#9CA3AF" fontSize="12" textAnchor="middle" className="group-hover:fill-green-300 transition-colors">Ago 5</text>
+                    <text x="240" y="305" fill="#9CA3AF" fontSize="12" textAnchor="middle" className="group-hover:fill-green-300 transition-colors">Ago 7</text>
+                    <text x="300" y="305" fill="#9CA3AF" fontSize="12" textAnchor="middle" className="group-hover:fill-green-300 transition-colors">Ago 9</text>
+                    <text x="360" y="305" fill="#9CA3AF" fontSize="12" textAnchor="middle" className="group-hover:fill-green-300 transition-colors">Ago 11</text>
+                    <text x="420" y="305" fill="#9CA3AF" fontSize="12" textAnchor="middle" className="group-hover:fill-green-300 transition-colors">Ago 13</text>
+                    <text x="480" y="305" fill="#9CA3AF" fontSize="12" textAnchor="middle" className="group-hover:fill-green-300 transition-colors">Ago 15</text>
                   </svg>
                 </div>
 
