@@ -461,10 +461,10 @@ export default function Home() {
                     </defs>
                     
                     {/* Horizontal grid lines */}
-                    <line x1="100" y1="280" x2="750" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="100" y1="210" x2="750" y2="210" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="100" y1="140" x2="750" y2="140" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="100" y1="70" x2="750" y2="70" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="60" y1="280" x2="720" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="60" y1="210" x2="720" y2="210" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="60" y1="140" x2="720" y2="140" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <line x1="60" y1="70" x2="720" y2="70" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
                     
                     {/* Vertical grid lines */}
                     <line x1="60" y1="70" x2="60" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
@@ -477,10 +477,10 @@ export default function Home() {
                     <line x1="690" y1="70" x2="690" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
 
                     {/* Y-axis labels - Four main values */}
-                    <text x="95" y="285" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">$0</text>
-                    <text x="95" y="215" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">US$1,000</text>
-                    <text x="95" y="145" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">$2,000</text>
-                    <text x="95" y="75" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">US$3,000</text>
+                    <text x="55" y="285" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">$0</text>
+                    <text x="55" y="215" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">US$1,000</text>
+                    <text x="55" y="145" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">$2,000</text>
+                    <text x="55" y="75" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">US$3,000</text>
 
                     {/* Chart line with area fill - Proportional to actual data */}
                     <path
