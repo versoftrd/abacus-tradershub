@@ -328,7 +328,7 @@ export default function Home() {
 
             {/* Card 2 - Opciones Avanzadas con Carlos Amec */}
             <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl hover:shadow-green-500/10 hover:border-green-500/20 transition-all duration-300" data-testid="card-carlos-amec">
-              <div className="flex flex-col lg:flex-row-reverse items-center gap-6 lg:gap-8">
+              <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
                 <div className="w-full lg:w-1/2 flex-shrink-0">
                   <img src={image2} alt="Carlos Amec options session" className="w-full h-64 lg:h-80 object-cover rounded-2xl" />
                 </div>
@@ -374,7 +374,7 @@ export default function Home() {
 
             {/* Card 4 - Charting de la Semana con Jean Vizón */}
             <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl hover:shadow-green-500/10 hover:border-green-500/20 transition-all duration-300" data-testid="card-jean-vizon">
-              <div className="flex flex-col lg:flex-row-reverse items-center gap-6 lg:gap-8">
+              <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
                 <div className="w-full lg:w-1/2 flex-shrink-0">
                   <img src={image4} alt="Jean Vizón charting session" className="w-full h-64 lg:h-80 object-cover rounded-2xl" />
                 </div>
