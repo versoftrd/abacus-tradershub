@@ -273,7 +273,7 @@ export default function Home() {
       </section>
 
       {/* Los 4 núcleos del Traders Hub Section */}
-      <section className="relative bg-gradient-to-b from-[#141414] via-[#1a1a1a] to-[#0f1f13] py-16 px-4 sm:px-6">
+      <section className="relative bg-[#141414] py-16 px-4 sm:px-6">
         {/* Line Gradient Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60 pointer-events-none"
