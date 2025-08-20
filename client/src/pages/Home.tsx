@@ -1011,7 +1011,7 @@ export default function Home() {
                   </span>
                 </button>
                 <div id="faq-content-1" className="hidden pb-4 pl-0">
-                  <p className="font-sans text-gray-400 text-base leading-relaxed">
+                  <p className="font-sans text-gray-400 text-[14px] leading-relaxed">
                     Tu membresía incluye acceso a 7-9 sesiones semanales en vivo, grabaciones completas, análisis de mercado en tiempo real, acceso a la comunidad exclusiva de traders, y mentorías directas con nuestros expertos Jorge Valet, Carlos Amec, Ernesto Yunes y Jean Vizón.
                   </p>
                 </div>
@@ -1051,7 +1051,7 @@ export default function Home() {
                   </span>
                 </button>
                 <div id="faq-content-2" className="hidden pb-4 pl-0">
-                  <p className="font-sans text-gray-400 text-base leading-relaxed">
+                  <p className="font-sans text-gray-400 text-[14px] leading-relaxed">
                     No es necesario tener experiencia previa. Nuestro programa está diseñado tanto para principiantes como para traders experimentados. Comenzamos desde lo básico y progresamos gradualmente, siempre con apoyo directo de nuestros mentores.
                   </p>
                 </div>
@@ -1091,7 +1091,7 @@ export default function Home() {
                   </span>
                 </button>
                 <div id="faq-content-3" className="hidden pb-4 pl-0">
-                  <p className="font-sans text-gray-400 text-base leading-relaxed">
+                  <p className="font-sans text-gray-400 text-[14px] leading-relaxed">
                     Puedes comenzar con tan poco como $500-$1,000 para aplicar las estrategias que aprendes. Sin embargo, recomendamos tener al menos $2,000-$5,000 para una gestión de riesgo más cómoda y mejores oportunidades de diversificación.
                   </p>
                 </div>
@@ -1131,7 +1131,7 @@ export default function Home() {
                   </span>
                 </button>
                 <div id="faq-content-4" className="hidden pb-4 pl-0">
-                  <p className="font-sans text-gray-400 text-base leading-relaxed">
+                  <p className="font-sans text-gray-400 text-[14px] leading-relaxed">
                     Sí, tenemos un horario establecido para las sesiones en vivo que coincide con los horarios de mercado más activos. Todas las sesiones quedan grabadas y disponibles para verlas cuando te sea conveniente si no puedes asistir en vivo.
                   </p>
                 </div>
