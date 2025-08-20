@@ -1247,7 +1247,7 @@ export default function Home() {
             {/* Right Section - Register Button */}
             <div className="lg:col-span-1 flex justify-start lg:justify-end">
               <button 
-                className="font-sans font-medium text-white px-8 py-2.5 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_6px_20px_rgba(34,197,94,0.3)] focus:outline-none focus:ring-2 focus:ring-green-400/30"
+                className="font-sans font-medium text-white px-8 py-1.5 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_6px_20px_rgba(34,197,94,0.3)] focus:outline-none focus:ring-2 focus:ring-green-400/30"
                 style={{
                   background: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)',
                   boxShadow: '0 2px 10px rgba(34, 197, 94, 0.15)',
