@@ -304,7 +304,7 @@ export default function Home() {
           <div className="space-y-8 max-w-6xl mx-auto">
             
             {/* Card 1 - Live Trading con Jorge Valet */}
-            <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl hover:shadow-green-500/10 hover:border-green-500/20 transition-all duration-300" data-testid="card-jorge-valet">
+            <div className="group bg-[#1b1b1b] border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl hover:shadow-green-500/10 hover:border-green-500/20 transition-all duration-300" data-testid="card-jorge-valet">
               <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
                 <div className="w-full lg:w-1/2 flex-shrink-0">
                   <img src={image1} alt="Jorge Valet trading session" className="w-full h-64 lg:h-80 object-cover rounded-2xl" />
@@ -327,7 +327,7 @@ export default function Home() {
             </div>
 
             {/* Card 2 - Opciones Avanzadas con Carlos Amec */}
-            <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl hover:shadow-green-500/10 hover:border-green-500/20 transition-all duration-300" data-testid="card-carlos-amec">
+            <div className="group bg-[#1b1b1b] border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl hover:shadow-green-500/10 hover:border-green-500/20 transition-all duration-300" data-testid="card-carlos-amec">
               <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
                 <div className="w-full lg:w-1/2 flex-shrink-0">
                   <img src={image2} alt="Carlos Amec options session" className="w-full h-64 lg:h-80 object-cover rounded-2xl" />
@@ -350,7 +350,7 @@ export default function Home() {
             </div>
 
             {/* Card 3 - Portafolio & Wealth con Ernesto Yunes */}
-            <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl hover:shadow-green-500/10 hover:border-green-500/20 transition-all duration-300" data-testid="card-ernesto-yunes">
+            <div className="group bg-[#1b1b1b] border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl hover:shadow-green-500/10 hover:border-green-500/20 transition-all duration-300" data-testid="card-ernesto-yunes">
               <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
                 <div className="w-full lg:w-1/2 flex-shrink-0">
                   <img src={image3} alt="Ernesto Yunes portfolio session" className="w-full h-64 lg:h-80 object-cover rounded-2xl" />
@@ -373,7 +373,7 @@ export default function Home() {
             </div>
 
             {/* Card 4 - Charting de la Semana con Jean Vizón */}
-            <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl hover:shadow-green-500/10 hover:border-green-500/20 transition-all duration-300" data-testid="card-jean-vizon">
+            <div className="group bg-[#1b1b1b] border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl hover:shadow-green-500/10 hover:border-green-500/20 transition-all duration-300" data-testid="card-jean-vizon">
               <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
                 <div className="w-full lg:w-1/2 flex-shrink-0">
                   <img src={image4} alt="Jean Vizón charting session" className="w-full h-64 lg:h-80 object-cover rounded-2xl" />
