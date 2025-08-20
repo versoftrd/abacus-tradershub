@@ -435,7 +435,7 @@ export default function Home() {
           </div>
 
           {/* Main Stats Card */}
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="relative border border-white/10 rounded-2xl p-8 shadow-2xl" style={{ 
               background: 'linear-gradient(135deg, rgba(27, 27, 27, 0.9) 0%, rgba(34, 34, 34, 0.8) 50%, rgba(27, 27, 27, 0.9) 100%)',
               backdropFilter: 'blur(10px)'
