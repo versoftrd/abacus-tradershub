@@ -1261,38 +1261,13 @@ export default function Home() {
           </div>
           
           {/* Headquarters Info */}
-          <div className="text-center mb-8">
+          <div className="flex justify-center items-center mb-8 space-x-6">
             <p className="font-sans text-[12px] text-[#9da3ae]">
               <span className="font-bold text-[#9da3a9]">Headquarters:</span>{" "}
               <span className="text-gray-400">Toronto, ON, Canada | Santo Domingo, Dominican Republic</span>
             </p>
-          </div>
-          
-          {/* Divider Line */}
-          <div className="border-t border-gray-800 mb-8"></div>
-          
-          {/* Bottom Section */}
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             
-            {/* Left - Copyright */}
-            <div>
-              <p className="font-sans text-gray-400 text-sm" data-testid="footer-copyright">
-                © 2025 Abacus Exchange. All rights reserved.
-              </p>
-            </div>
-            
-            {/* Center - Privacy Links */}
-            <div className="flex space-x-4">
-              <a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200 text-sm" data-testid="footer-privacy">
-                Política de Privacidad
-              </a>
-              <span className="text-gray-600">|</span>
-              <a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200 text-sm" data-testid="footer-terms">
-                Términos y Condiciones
-              </a>
-            </div>
-            
-            {/* Right - Social Media Icons */}
+            {/* Social Media Icons */}
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-twitter">
                 <Twitter className="w-5 h-5" />
@@ -1308,6 +1283,31 @@ export default function Home() {
               </a>
               <a href="#" className="text-gray-400 hover:text-green-400 transition-colors duration-200" data-testid="footer-whatsapp">
                 <MessageSquare className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+          
+          {/* Divider Line */}
+          <div className="border-t border-gray-800 mb-8"></div>
+          
+          {/* Bottom Section */}
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            
+            {/* Left - Copyright */}
+            <div>
+              <p className="font-sans text-gray-400 text-sm" data-testid="footer-copyright">
+                © 2025 Abacus Exchange. All rights reserved.
+              </p>
+            </div>
+            
+            {/* Right - Privacy Links */}
+            <div className="flex space-x-4">
+              <a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200 text-sm" data-testid="footer-privacy">
+                Política de Privacidad
+              </a>
+              <span className="text-gray-600">|</span>
+              <a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200 text-sm" data-testid="footer-terms">
+                Términos y Condiciones
               </a>
             </div>
             
