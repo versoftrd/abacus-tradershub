@@ -767,6 +767,130 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      {/* Feature Highlights Section */}
+      <section className="relative bg-[#0a0a0a] py-16 px-4 sm:px-6">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-green-500/3 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-green-400/2 rounded-full blur-2xl"></div>
+        </div>
+
+        <div className="relative max-w-5xl mx-auto">
+          {/* Header Section */}
+          <div className="text-center mb-12">
+            <p className="font-sans text-green-400 text-sm font-medium mb-4 tracking-wide" data-testid="features-eyebrow">
+              Lo que obtienes
+            </p>
+            <h2 className="font-sans text-white mb-6 font-semibold" style={{ fontSize: '32px' }} data-testid="features-headline">
+              Características exclusivas de TradersHub
+            </h2>
+            <p className="font-sans text-gray-400 max-w-4xl mx-auto px-4 text-[16px]" data-testid="features-description">
+              Desde sesiones en vivo hasta comunidad y análisis en tiempo real, todo está pensado para que aprendas practicando.
+            </p>
+          </div>
+
+          {/* Features Card */}
+          <div className="max-w-4xl mx-auto">
+            <div 
+              className="rounded-2xl p-8 shadow-2xl border border-green-500/10"
+              style={{
+                background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.08) 0%, rgba(16, 185, 129, 0.05) 50%, rgba(34, 197, 94, 0.08) 100%)',
+                boxShadow: '0 0 40px rgba(34, 197, 94, 0.1)'
+              }}
+              data-testid="features-card"
+            >
+              <div className="space-y-4">
+                
+                <div className="flex items-start space-x-4" data-testid="feature-1">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                  <p className="text-white text-[15px] leading-relaxed">
+                    Sesiones en vivo de trading en tiempo real con los mentores de Abacus
+                  </p>
+                </div>
+                
+                <div className="flex items-start space-x-4" data-testid="feature-2">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                  <p className="text-white text-[15px] leading-relaxed">
+                    7 a 9 sesiones semanales de práctica divididas en diferentes núcleos de especialización
+                  </p>
+                </div>
+                
+                <div className="flex items-start space-x-4" data-testid="feature-3">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                  <p className="text-white text-[15px] leading-relaxed">
+                    Live Day Trading con Jorge Valet: Aprende a leer y ejecutar operaciones intradía en vivo
+                  </p>
+                </div>
+                
+                <div className="flex items-start space-x-4" data-testid="feature-4">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                  <p className="text-white text-[15px] leading-relaxed">
+                    Opciones Avanzadas con Carlos Amec: Estrategias con opciones para rentabilizar tu portafolio
+                  </p>
+                </div>
+                
+                <div className="flex items-start space-x-4" data-testid="feature-5">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                  <p className="text-white text-[15px] leading-relaxed">
+                    Portafolio & Wealth con Ernesto Yunes: Construcción de portafolios diversificados a largo plazo
+                  </p>
+                </div>
+                
+                <div className="flex items-start space-x-4" data-testid="feature-6">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                  <p className="text-white text-[15px] leading-relaxed">
+                    Charting de la semana con Jean Vizón: Análisis técnico y estructuración de escenarios de mercado
+                  </p>
+                </div>
+                
+                <div className="flex items-start space-x-4" data-testid="feature-7">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                  <p className="text-white text-[15px] leading-relaxed">
+                    Acceso a grabaciones completas de todas las sesiones en español
+                  </p>
+                </div>
+                
+                <div className="flex items-start space-x-4" data-testid="feature-8">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                  <p className="text-white text-[15px] leading-relaxed">
+                    Metodología práctica: Aprendes mientras operas junto a traders expertos
+                  </p>
+                </div>
+                
+                <div className="flex items-start space-x-4" data-testid="feature-9">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                  <p className="text-white text-[15px] leading-relaxed">
+                    Acceso exclusivo a la comunidad de traders e inversionistas de Abacus
+                  </p>
+                </div>
+                
+                <div className="flex items-start space-x-4" data-testid="feature-10">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                  <p className="text-white text-[15px] leading-relaxed">
+                    Acompañamiento directo: Pregunta y recibe respuestas en vivo de los mentores
+                  </p>
+                </div>
+                
+                <div className="flex items-start space-x-4" data-testid="feature-11">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                  <p className="text-white text-[15px] leading-relaxed">
+                    Clases temáticas y actualizaciones constantes sobre tendencias y noticias del mercado
+                  </p>
+                </div>
+                
+                <div className="flex items-start space-x-4" data-testid="feature-12">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                  <p className="text-white text-[15px] leading-relaxed">
+                    Entorno de trading seguro y guiado, ideal para aplicar estrategias sin estar solo
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

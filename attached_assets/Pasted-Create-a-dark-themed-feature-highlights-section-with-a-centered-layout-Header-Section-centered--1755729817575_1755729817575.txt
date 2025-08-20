@@ -1,0 +1,58 @@
+Create a dark-themed feature highlights section with a centered layout.
+
+Header Section (centered):
+
+Small green eyebrow text: “Lo que obtienes”.
+
+Main white heading: “Características exclusivas de TradersHub”.
+
+Subheading in muted gray:
+“Desde sesiones en vivo hasta comunidad y análisis en tiempo real, todo está pensado para que aprendas practicando.”
+
+Features Box:
+
+Place a rounded rectangle card with a soft green gradient background.
+
+Inside, display a vertical list of feature items (12 total).
+
+Each feature line starts with a green checkmark icon followed by white text.
+
+Maintain equal spacing between items for a clean, readable look.
+
+Features List (text inside card):
+
+✅ Sesiones en vivo de trading en tiempo real con los mentores de Abacus
+
+✅ 7 a 9 sesiones semanales de práctica divididas en diferentes núcleos de especialización
+
+✅ Live Day Trading con Jorge Valet: Aprende a leer y ejecutar operaciones intradía en vivo
+
+✅ Opciones Avanzadas con Carlos Amec: Estrategias con opciones para rentabilizar tu portafolio
+
+✅ Portafolio & Wealth con Ernesto Yunes: Construcción de portafolios diversificados a largo plazo
+
+✅ Charting de la semana con Jean Vizón: Análisis técnico y estructuración de escenarios de mercado
+
+✅ Acceso a grabaciones completas de todas las sesiones en español
+
+✅ Metodología práctica: Aprendes mientras operas junto a traders expertos
+
+✅ Acceso exclusivo a la comunidad de traders e inversionistas de Abacus
+
+✅ Acompañamiento directo: Pregunta y recibe respuestas en vivo de los mentores
+
+✅ Clases temáticas y actualizaciones constantes sobre tendencias y noticias del mercado
+
+✅ Entorno de trading seguro y guiado, ideal para aplicar estrategias sin estar solo
+
+Style Notes:
+
+Background of entire section: dark (near black).
+
+Feature card: soft green gradient, rounded corners, subtle shadow.
+
+Checkmark icons: bright green, bold and consistent size.
+
+Text: white for main content, muted gray for subtitle.
+
+Responsive: stack text and card centered on mobile.
