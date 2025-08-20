@@ -603,7 +603,8 @@ export default function Home() {
                 top: '-75%',
                 left: '0',
                 right: '0',
-                height: '200%'
+                height: '200%',
+                opacity: 0.4
               }}
             ></div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
