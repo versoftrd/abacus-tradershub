@@ -428,7 +428,7 @@ export default function Home() {
             <h2 className="font-sans text-white mb-6 font-semibold" style={{ fontSize: '32px' }} data-testid="resultados-headline">
               Resultados que hablan por sí solos
             </h2>
-            <p className="font-sans text-gray-300 max-w-4xl mx-auto px-4" style={{ fontSize: '16px' }} data-testid="resultados-description">
+            <p className="font-sans text-gray-300 max-w-4xl mx-auto px-4 text-[14px]" style={{ fontSize: '16px' }} data-testid="resultados-description">
               Nuestros mentores no solo enseñan, operan en vivo y demuestran sus estrategias con resultados reales en el mercado.
             </p>
           </div>
