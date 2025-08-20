@@ -567,7 +567,7 @@ export default function Home() {
                     <h3 className="text-white font-semibold mb-6 text-lg">Win Rate</h3>
                     <div className="text-6xl font-bold text-green-400 mb-2" style={{ filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))' }}>83.333333%</div>
                     <div className="text-right">
-                      <span className="text-xs px-2 py-1 rounded bg-[#ffffff80] text-[#000000] relative z-10">
+                      <span className="text-xs px-2 py-1 rounded text-[#000000] relative z-10 bg-[#ffffff] font-bold">
                         Resultados de 1 semana
                       </span>
                     </div>
