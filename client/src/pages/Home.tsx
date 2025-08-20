@@ -914,12 +914,11 @@ export default function Home() {
             data-testid="cta-card"
           >
             {/* Content overlay */}
-            <div className="relative z-10 flex flex-col items-start justify-center min-h-[480px] text-left px-8">
+            <div className="relative z-10 flex flex-col items-start justify-center min-h-[480px] text-left px-4 sm:px-8 md:px-12 lg:px-16">
               
               {/* Heading */}
               <h2 
-                className="font-sans font-bold text-white mb-6 leading-tight"
-                style={{ fontSize: '36px' }}
+                className="font-sans font-bold text-white mb-4 sm:mb-6 leading-tight text-2xl sm:text-3xl lg:text-4xl xl:text-5xl max-w-2xl"
                 data-testid="cta-heading"
               >
                 Invierte con confianza, aprende en tiempo real
@@ -927,8 +926,7 @@ export default function Home() {
               
               {/* Subheading */}
               <p 
-                className="font-sans text-gray-300 mb-10 max-w-3xl leading-relaxed"
-                style={{ fontSize: '18px' }}
+                className="font-sans text-gray-300 mb-6 sm:mb-10 leading-relaxed text-sm sm:text-base lg:text-lg max-w-xl lg:max-w-2xl"
                 data-testid="cta-subheading"
               >
                 Accede al hub de trading más completo en español y transforma la forma en que entiendes e inviertes en la bolsa de valores.
@@ -937,10 +935,9 @@ export default function Home() {
               {/* CTA Button */}
               <div className="flex justify-start">
                 <button 
-                  className="group font-sans font-bold text-white px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-sky-400/30 hover:bg-gradient-to-br hover:from-sky-600 hover:to-blue-600 hover:shadow-[0_8px_30px_rgba(56,189,248,0.5)]"
+                  className="group font-sans font-bold text-white px-4 sm:px-6 lg:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-sky-400/30 hover:bg-gradient-to-br hover:from-sky-600 hover:to-blue-600 hover:shadow-[0_8px_30px_rgba(56,189,248,0.5)] text-sm sm:text-base lg:text-lg"
                   style={{
                     background: 'linear-gradient(135deg, #7dd3fc 0%, #38bdf8 100%)',
-                    fontSize: '18px',
                     boxShadow: '0 4px 20px rgba(56, 189, 248, 0.3)'
                   }}
                   data-testid="cta-button"
