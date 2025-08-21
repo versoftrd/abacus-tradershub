@@ -347,20 +347,20 @@ export default function Home() {
             <div className="group border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl hover:shadow-green-500/10 hover:border-green-500/20 transition-all duration-300" style={{ background: 'linear-gradient(to bottom, transparent 0%, rgba(27, 27, 27, 0.3) 10%, rgba(27, 27, 27, 1) 15%, rgba(27, 27, 27, 1) 100%)' }}>
               
               {/* Card 1 - Portafolio & Wealth con Ernesto Yunes */}
-              <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 mb-12" data-testid="card-ernesto-yunes">
-                <div className="w-full lg:w-1/2 flex-shrink-0">
-                  <img src={image3} alt="Ernesto Yunes portfolio session" className="w-full h-64 lg:h-80 object-cover rounded-2xl" />
+              <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 mb-12 group cursor-pointer transition-all duration-500 hover:bg-white/[0.02] hover:shadow-lg rounded-3xl p-4 -m-4" data-testid="card-ernesto-yunes">
+                <div className="w-full lg:w-1/2 flex-shrink-0 overflow-hidden rounded-2xl">
+                  <img src={image3} alt="Ernesto Yunes portfolio session" className="w-full h-64 lg:h-80 object-cover transition-transform duration-700 group-hover:scale-110" />
                 </div>
                 <div className="w-full lg:w-1/2 text-center lg:text-left">
                   <div className="flex justify-center lg:justify-start mb-4">
-                    <img src={circleChartIcon} alt="Portfolio Chart" className="w-8 h-8" />
+                    <img src={circleChartIcon} alt="Portfolio Chart" className="w-8 h-8 transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
                   </div>
-                  <h3 className="font-sans text-white mb-4 font-semibold" style={{ fontSize: '24px' }}>
+                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-green-100" style={{ fontSize: '24px' }}>
                     Portafolio & Wealth con Ernesto Yunes
                   </h3>
-                  <p className="font-sans text-gray-400 mb-6 text-[14px]" style={{ fontSize: '14px' }}>Construye un portafolio sólido y a largo plazo. 
+                  <p className="font-sans text-gray-400 mb-6 text-[14px] transition-colors duration-300 group-hover:text-gray-300" style={{ fontSize: '14px' }}>Construye un portafolio sólido y a largo plazo. 
                   Ernesto comparte su enfoque de inversión en valor, gestión de portafolios y estrategias para hacer crecer tu capital de manera sostenible. Aprende a tomar decisiones financieras con fundamentos y visión estratégica.</p>
-                  <p className="font-sans text-green-400 font-semibold text-lg">
+                  <p className="font-sans text-green-400 font-semibold text-lg transition-all duration-300 group-hover:text-green-300 group-hover:scale-105">
                     Invierte con lógica. Crece con disciplina.
                   </p>
                 </div>
@@ -370,19 +370,19 @@ export default function Home() {
               <hr className="border-white/10 mb-12" />
 
               {/* Card 2 - Live Trading con Jorge Valet */}
-              <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 mb-12" data-testid="card-jorge-valet">
-                <div className="w-full lg:w-1/2 flex-shrink-0">
-                  <img src={image1} alt="Jorge Valet trading session" className="w-full h-64 lg:h-80 object-cover rounded-2xl" />
+              <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 mb-12 group cursor-pointer transition-all duration-500 hover:bg-white/[0.02] hover:shadow-lg rounded-3xl p-4 -m-4" data-testid="card-jorge-valet">
+                <div className="w-full lg:w-1/2 flex-shrink-0 overflow-hidden rounded-2xl">
+                  <img src={image1} alt="Jorge Valet trading session" className="w-full h-64 lg:h-80 object-cover transition-transform duration-700 group-hover:scale-110" />
                 </div>
                 <div className="w-full lg:w-1/2 text-center lg:text-left">
                   <div className="flex justify-center lg:justify-start mb-4">
-                    <img src={candlestickIcon} alt="Candlestick Chart" className="w-8 h-8" />
+                    <img src={candlestickIcon} alt="Candlestick Chart" className="w-8 h-8 transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
                   </div>
-                  <h3 className="font-sans text-white mb-4 font-semibold" style={{ fontSize: '24px' }}>
+                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-green-100" style={{ fontSize: '24px' }}>
                     Live Trading con Jorge Valet
                   </h3>
-                  <p className="font-sans text-gray-400 mb-6 text-[14px]" style={{ fontSize: '14px' }}>Acompaña a Jorge en sesiones de trading en vivo, donde analiza el mercado, ejecuta operaciones y explica paso a paso su proceso de decisión. Aprende a identificar oportunidades reales y a gestionar el riesgo mientras observas la acción del mercado minuto a minuto.</p>
-                  <p className="font-sans text-green-400 font-semibold text-lg">
+                  <p className="font-sans text-gray-400 mb-6 text-[14px] transition-colors duration-300 group-hover:text-gray-300" style={{ fontSize: '14px' }}>Acompaña a Jorge en sesiones de trading en vivo, donde analiza el mercado, ejecuta operaciones y explica paso a paso su proceso de decisión. Aprende a identificar oportunidades reales y a gestionar el riesgo mientras observas la acción del mercado minuto a minuto.</p>
+                  <p className="font-sans text-green-400 font-semibold text-lg transition-all duration-300 group-hover:text-green-300 group-hover:scale-105">
                     Aprende mirando. Crece operando.
                   </p>
                 </div>
@@ -392,19 +392,19 @@ export default function Home() {
               <hr className="border-white/10 mb-12" />
 
               {/* Card 3 - Live Options Trading con Winston Cordero */}
-              <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 mb-12" data-testid="card-winston-cordero">
-                <div className="w-full lg:w-1/2 flex-shrink-0">
-                  <img src={winstonTradingImage} alt="Winston Cordero options trading session" className="w-full h-64 lg:h-80 object-cover rounded-2xl" />
+              <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 mb-12 group cursor-pointer transition-all duration-500 hover:bg-white/[0.02] hover:shadow-lg rounded-3xl p-4 -m-4" data-testid="card-winston-cordero">
+                <div className="w-full lg:w-1/2 flex-shrink-0 overflow-hidden rounded-2xl">
+                  <img src={winstonTradingImage} alt="Winston Cordero options trading session" className="w-full h-64 lg:h-80 object-cover transition-transform duration-700 group-hover:scale-110" />
                 </div>
                 <div className="w-full lg:w-1/2 text-center lg:text-left">
                   <div className="flex justify-center lg:justify-start mb-4">
-                    <img src={optionsIcon} alt="Options Trading Icon" className="w-8 h-8" />
+                    <img src={optionsIcon} alt="Options Trading Icon" className="w-8 h-8 transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
                   </div>
-                  <h3 className="font-sans text-white mb-4 font-semibold" style={{ fontSize: '24px' }}>
+                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-green-100" style={{ fontSize: '24px' }}>
                     Live Options Trading con Winston Cordero
                   </h3>
-                  <p className="font-sans text-gray-400 mb-6 text-[14px]" style={{ fontSize: '14px' }}>Winston te lleva al siguiente nivel en el manejo de opciones, combinando análisis de contexto, estructura del mercado y ejecución práctica. Aprende desde day trading, hasta cómo crear un portafolio flexible con opciones que se adapte al movimiento del mercado y potencie tu rendimiento con control de riesgo.</p>
-                  <p className="font-sans text-green-400 font-semibold text-lg">
+                  <p className="font-sans text-gray-400 mb-6 text-[14px] transition-colors duration-300 group-hover:text-gray-300" style={{ fontSize: '14px' }}>Winston te lleva al siguiente nivel en el manejo de opciones, combinando análisis de contexto, estructura del mercado y ejecución práctica. Aprende desde day trading, hasta cómo crear un portafolio flexible con opciones que se adapte al movimiento del mercado y potencie tu rendimiento con control de riesgo.</p>
+                  <p className="font-sans text-green-400 font-semibold text-lg transition-all duration-300 group-hover:text-green-300 group-hover:scale-105">
                     No solo aprendes a operar; aprenderás a pensar como un trader institucional.
                   </p>
                 </div>
@@ -414,19 +414,19 @@ export default function Home() {
               <hr className="border-white/10 mb-12" />
 
               {/* Card 4 - Opciones Avanzadas con Carlos Amec */}
-              <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 mb-12" data-testid="card-carlos-amec">
-                <div className="w-full lg:w-1/2 flex-shrink-0">
-                  <img src={image2} alt="Carlos Amec options session" className="w-full h-64 lg:h-80 object-cover rounded-2xl" />
+              <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 mb-12 group cursor-pointer transition-all duration-500 hover:bg-white/[0.02] hover:shadow-lg rounded-3xl p-4 -m-4" data-testid="card-carlos-amec">
+                <div className="w-full lg:w-1/2 flex-shrink-0 overflow-hidden rounded-2xl">
+                  <img src={image2} alt="Carlos Amec options session" className="w-full h-64 lg:h-80 object-cover transition-transform duration-700 group-hover:scale-110" />
                 </div>
                 <div className="w-full lg:w-1/2 text-center lg:text-left">
                   <div className="flex justify-center lg:justify-start mb-4">
-                    <img src={conflictIcon} alt="Options Strategy" className="w-8 h-8" />
+                    <img src={conflictIcon} alt="Options Strategy" className="w-8 h-8 transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
                   </div>
-                  <h3 className="font-sans text-white mb-4 font-semibold" style={{ fontSize: '24px' }}>
+                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-green-100" style={{ fontSize: '24px' }}>
                     Opciones Avanzadas con Carlos Amec
                   </h3>
-                  <p className="font-sans text-gray-400 mb-6 text-[14px]" style={{ fontSize: '14px' }}>Domina las estrategias que usan los profesionales. Carlos te guía en el mundo de las opciones con tácticas avanzadas como covered calls, puts y spreads. Descubre cómo generar ingresos consistentes y proteger tu portafolio en distintos escenarios de mercado.</p>
-                  <p className="font-sans text-green-400 font-semibold text-lg">
+                  <p className="font-sans text-gray-400 mb-6 text-[14px] transition-colors duration-300 group-hover:text-gray-300" style={{ fontSize: '14px' }}>Domina las estrategias que usan los profesionales. Carlos te guía en el mundo de las opciones con tácticas avanzadas como covered calls, puts y spreads. Descubre cómo generar ingresos consistentes y proteger tu portafolio en distintos escenarios de mercado.</p>
+                  <p className="font-sans text-green-400 font-semibold text-lg transition-all duration-300 group-hover:text-green-300 group-hover:scale-105">
                     Expande tu visión. Crea impacto.
                   </p>
                 </div>
@@ -436,20 +436,20 @@ export default function Home() {
               <hr className="border-white/10 mb-12" />
 
               {/* Card 5 - Charting de la Semana con Jean Vizón */}
-              <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8" data-testid="card-jean-vizon">
-                <div className="w-full lg:w-1/2 flex-shrink-0">
-                  <img src={image4} alt="Jean Vizón charting session" className="w-full h-64 lg:h-80 object-cover rounded-2xl" />
+              <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 group cursor-pointer transition-all duration-500 hover:bg-white/[0.02] hover:shadow-lg rounded-3xl p-4 -m-4" data-testid="card-jean-vizon">
+                <div className="w-full lg:w-1/2 flex-shrink-0 overflow-hidden rounded-2xl">
+                  <img src={image4} alt="Jean Vizón charting session" className="w-full h-64 lg:h-80 object-cover transition-transform duration-700 group-hover:scale-110" />
                 </div>
                 <div className="w-full lg:w-1/2 text-center lg:text-left">
                   <div className="flex justify-center lg:justify-start mb-4">
-                    <img src={stocksIcon} alt="Stock Analysis" className="w-8 h-8" />
+                    <img src={stocksIcon} alt="Stock Analysis" className="w-8 h-8 transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
                   </div>
-                  <h3 className="font-sans text-white mb-4 font-semibold" style={{ fontSize: '24px' }}>
+                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-green-100" style={{ fontSize: '24px' }}>
                     Charting de la Semana con Jean Vizón
                   </h3>
-                  <p className="font-sans text-gray-400 mb-6 text-[14px]" style={{ fontSize: '14px' }}>Análisis técnico aplicado a lo que importa.  
+                  <p className="font-sans text-gray-400 mb-6 text-[14px] transition-colors duration-300 group-hover:text-gray-300" style={{ fontSize: '14px' }}>Análisis técnico aplicado a lo que importa.  
                   Jean revisa los gráficos más relevantes de la semana y te muestra cómo leer el mercado con precisión. Identifica patrones, zonas clave y posibles escenarios para estar siempre un paso adelante.</p>
-                  <p className="font-sans text-green-400 font-semibold text-lg">
+                  <p className="font-sans text-green-400 font-semibold text-lg transition-all duration-300 group-hover:text-green-300 group-hover:scale-105">
                     Lee los charts. Anticipa el mercado.
                   </p>
                 </div>
