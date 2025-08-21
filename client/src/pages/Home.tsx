@@ -27,6 +27,8 @@ import circleChartIcon from "@assets/Circle Chart_1755658307230.png";
 import stocksIcon from "@assets/Stocks_1755658381592.png";
 import winstonTradingImage from "@assets/winston-cordero-new.png";
 import optionsIcon from "@assets/options-icon.png";
+import desktopLoopVideo from "@assets/Loop dekstop_1755737411238.mp4";
+import mobileLoopVideo from "@assets/Loop Movil_1755737411240.mp4";
 import { Check, ArrowLeftRight, Zap, PieChart, TrendingUp, Instagram, Facebook, MessageSquare } from "lucide-react";
 import { SiWhatsapp, SiDiscord, SiX } from "react-icons/si";
 
@@ -39,11 +41,30 @@ export default function Home() {
       </div>
       {/* Hero Section */}
       <main className="relative -mt-16 overflow-hidden">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroBackground})` }}
-        ></div>
+        {/* Background Video */}
+        <div className="absolute inset-0">
+          {/* Desktop Video */}
+          <video
+            className="absolute inset-0 w-full h-full object-cover hidden md:block"
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source src={desktopLoopVideo} type="video/mp4" />
+          </video>
+          
+          {/* Mobile Video */}
+          <video
+            className="absolute inset-0 w-full h-full object-cover block md:hidden"
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source src={mobileLoopVideo} type="video/mp4" />
+          </video>
+        </div>
         
         {/* Background overlay for depth */}
         <div className="absolute inset-0 bg-black/40 pointer-events-none"></div>
