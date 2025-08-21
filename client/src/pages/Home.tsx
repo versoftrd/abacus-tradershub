@@ -280,34 +280,10 @@ function AnimatedLineChart() {
     return path;
   };
 
-  // Calculate rocket position - positioned at the leading edge of the line
-  const getRocketPosition = () => {
-    if (animationProgress === 0) return { x: 85, y: 280 };
-    
-    // Calculate the exact position along the line progression
-    const totalProgress = animationProgress * (dataPoints.length - 1);
-    const currentSegmentIndex = Math.floor(totalProgress);
-    const segmentProgress = totalProgress - currentSegmentIndex;
-    
-    // Ensure we don't go beyond the available points
-    const fromIndex = Math.min(currentSegmentIndex, dataPoints.length - 2);
-    const toIndex = Math.min(fromIndex + 1, dataPoints.length - 1);
-    
-    const fromPoint = dataPoints[fromIndex];
-    const toPoint = dataPoints[toIndex];
-    
-    // Interpolate position for smooth rocket movement along the line
-    const x = fromPoint.x + (toPoint.x - fromPoint.x) * segmentProgress;
-    const y = fromPoint.y + (toPoint.y - fromPoint.y) * segmentProgress;
-    
-    return { x, y };
-  };
 
-  const rocketPosition = getRocketPosition();
-  const isAnimating = animationProgress > 0 && animationProgress < 1;
 
   return (
-    <div id="animated-chart" className="h-[20rem] sm:h-[24rem] md:h-[28rem] lg:h-[32rem] xl:h-[36rem] w-full group cursor-pointer flex items-center justify-center relative">
+    <div id="animated-chart" className="h-[20rem] sm:h-[24rem] md:h-[28rem] lg:h-[32rem] xl:h-[36rem] w-full group cursor-pointer flex items-center justify-center">
       <svg viewBox="0 40 800 320" className="w-full h-full overflow-hidden" preserveAspectRatio="xMidYMid meet">
         <defs>
           <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -383,21 +359,6 @@ function AnimatedLineChart() {
         <text x="625" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 13</text>
         <text x="715" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 15</text>
       </svg>
-      
-      {/* Rocket Loading Indicator */}
-      {isAnimating && (
-        <div 
-          className="absolute pointer-events-none transition-all duration-200"
-          style={{
-            left: `${(rocketPosition.x / 800) * 100}%`,
-            top: `${((rocketPosition.y - 40) / 320) * 100}%`,
-            transform: 'translate(-50%, -120%)', // Position rocket above the line
-            zIndex: 25
-          }}
-        >
-          <div className="text-2xl animate-bounce drop-shadow-lg">🚀</div>
-        </div>
-      )}
     </div>
   );
 }
