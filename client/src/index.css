@@ -74,6 +74,41 @@ img, video, iframe, svg {
   .sm\:h-17 { height: 4.25rem; }
 }
 
+/* Custom hero headline sizing */
+.hero-headline-xl {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 475px) {
+  .hero-headline-xl {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .hero-headline-xl {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-headline-xl {
+    font-size: 5.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-headline-xl {
+    font-size: 7rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-headline-xl {
+    font-size: 8rem;
+  }
+}
+
 @media (min-width: 768px) {
   .logo-responsive {
     height: 67px;
