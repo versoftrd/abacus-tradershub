@@ -53,7 +53,7 @@ export default function Navbar() {
               style={{ 
                 width: 'auto',
                 display: 'block',
-                marginTop: '2%'
+                marginTop: '5%'
               }}
               data-testid="logo-traders-hub"
             />
