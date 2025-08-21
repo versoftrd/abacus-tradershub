@@ -457,7 +457,7 @@ export default function Home() {
               <div className="relative mb-2">
                 {/* +61% Metric */}
                 <div className="absolute top-0 right-4 sm:right-8 md:right-12 z-10">
-                  <div className="font-bold sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mt-[132px] mb-[132px] text-[70px] text-[#ffffff]" style={{ filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))' }}>+150.8%</div>
+                  <div className="font-bold sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[70px] text-[#ffffff] mt-[55px] mb-[55px]" style={{ filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))' }}>+150.8%</div>
                 </div>
 
                 {/* Chart SVG */}
