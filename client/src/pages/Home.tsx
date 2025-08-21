@@ -97,10 +97,10 @@ function AnimatedChartPercentage() {
         entries.forEach((entry) => {
           if (entry.isIntersecting && !hasAnimated) {
             setHasAnimated(true);
-            // Show text immediately when chart completes (5s chart duration)
+            // Show text quickly after chart line completes drawing (4.2s)
             setTimeout(() => {
               setIsVisible(true);
-            }, 5000);
+            }, 4200);
           }
         });
       },
