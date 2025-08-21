@@ -367,11 +367,11 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-page-bg overflow-x-hidden">
-      <div className="relative z-50">
+      <div className="relative z-50 pt-12">
         <Navbar />
       </div>
       {/* Hero Section */}
-      <main className="relative -mt-16 overflow-hidden" role="banner" aria-label="TradersHub - Plataforma de Trading en Vivo">
+      <main className="relative overflow-hidden" role="banner" aria-label="TradersHub - Plataforma de Trading en Vivo">
         {/* Background Video */}
         <div className="absolute inset-0">
           {/* Desktop Video */}
