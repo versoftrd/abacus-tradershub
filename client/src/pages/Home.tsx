@@ -848,12 +848,12 @@ export default function Home() {
 
                 {/* Animated Chart */}
                 <AnimatedLineChart />
-
-                {/* Chart Caption */}
-                <p className="text-center text-gray-500 text-xs mt-2">
-                  (Valor de la cuenta de Jorge Valet en 15 días)
-                </p>
               </div>
+
+              {/* Chart Caption */}
+              <p className="text-center text-gray-500 text-xs mt-4 mb-4">
+                (Valor de la cuenta de Jorge Valet en 15 días)
+              </p>
 
               {/* Stats Panel */}
               <div className="border border-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-6 bg-black/20 relative z-[200]">
