@@ -40,7 +40,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="sticky top-[2%] z-50">
+    <nav className="sticky top-[6%] z-50">
       <div className="mx-auto max-w-6xl px-6 sm:px-8">
         <div className="flex h-12 xs:h-14 sm:h-17 items-center justify-between gap-1 xs:gap-2 sm:gap-4">
           
