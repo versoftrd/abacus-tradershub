@@ -1198,13 +1198,13 @@ export default function Home() {
         <div className="relative max-w-6xl mx-auto">
           {/* CTA Card */}
           <div 
-            className="relative group cursor-pointer transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_80px_rgba(59,130,246,0.25)] hover:drop-shadow-[0_0_80px_rgba(59,130,246,0.2)]"
+            className="relative group cursor-pointer transition-all duration-500 hover:scale-[1.02]"
             style={{
               backgroundImage: `url(${chart})`,
               backgroundSize: '100% 100%',
               backgroundPosition: 'center center',
               backgroundRepeat: 'no-repeat',
-              filter: 'drop-shadow(0 0 60px rgba(59, 130, 246, 0.15)) drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3))'
+              filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3))'
             }}
             data-testid="cta-card"
           >
