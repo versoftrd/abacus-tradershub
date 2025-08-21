@@ -25,6 +25,8 @@ import candlestickIcon from "@assets/Candlestick Chart_1755658217886.png";
 import conflictIcon from "@assets/Conflict_1755658277781.png";
 import circleChartIcon from "@assets/Circle Chart_1755658307230.png";
 import stocksIcon from "@assets/Stocks_1755658381592.png";
+import winstonTradingImage from "@assets/winston-trading.png";
+import optionsIcon from "@assets/options-icon.png";
 import { Check, ArrowLeftRight, Zap, PieChart, TrendingUp, Instagram, Facebook, MessageSquare } from "lucide-react";
 import { SiWhatsapp, SiDiscord, SiX } from "react-icons/si";
 
@@ -367,7 +369,29 @@ export default function Home() {
               {/* Separator */}
               <hr className="border-white/10 mb-12" />
 
-              {/* Card 3 - Portafolio & Wealth con Ernesto Yunes */}
+              {/* Card 3 - Live Options Trading con Winston Cordero */}
+              <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 mb-12" data-testid="card-winston-cordero">
+                <div className="w-full lg:w-1/2 flex-shrink-0">
+                  <img src={winstonTradingImage} alt="Winston Cordero options trading session" className="w-full h-64 lg:h-80 object-cover rounded-2xl" />
+                </div>
+                <div className="w-full lg:w-1/2 text-center lg:text-left">
+                  <div className="flex justify-center lg:justify-start mb-4">
+                    <img src={optionsIcon} alt="Options Trading Icon" className="w-8 h-8" />
+                  </div>
+                  <h3 className="font-sans text-white mb-4 font-semibold" style={{ fontSize: '24px' }}>
+                    Live Options Trading con Winston Cordero
+                  </h3>
+                  <p className="font-sans text-gray-400 mb-6 text-[14px]" style={{ fontSize: '14px' }}>Winston te lleva al siguiente nivel en el manejo de opciones, combinando análisis de contexto, estructura del mercado y ejecución práctica. Aprende desde day trading, hasta cómo crear un portafolio flexible con opciones que se adapte al movimiento del mercado y potencie tu rendimiento con control de riesgo.</p>
+                  <p className="font-sans text-green-400 font-semibold text-lg">
+                    No solo aprendes a operar; aprenderás a pensar como un trader institucional.
+                  </p>
+                </div>
+              </div>
+
+              {/* Separator */}
+              <hr className="border-white/10 mb-12" />
+
+              {/* Card 4 - Portafolio & Wealth con Ernesto Yunes */}
               <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 mb-12" data-testid="card-ernesto-yunes">
                 <div className="w-full lg:w-1/2 flex-shrink-0">
                   <img src={image3} alt="Ernesto Yunes portfolio session" className="w-full h-64 lg:h-80 object-cover rounded-2xl" />
