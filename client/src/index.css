@@ -14,11 +14,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Specific rule for mobile headline with Blacklisted font at 34px */
-@media (max-width: 639px) {
-  .blacklisted-font {
-    font-size: 34px !important;
-  }
+/* Specific rule for headline with Blacklisted font at 34px on all screen sizes */
+.blacklisted-font {
+  font-size: 34px !important;
 }
 
 @tailwind base;
