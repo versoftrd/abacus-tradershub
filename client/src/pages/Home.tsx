@@ -1210,7 +1210,7 @@ export default function Home() {
             data-testid="cta-card"
           >
             {/* Content overlay */}
-            <div className="absolute inset-0 z-10 flex flex-col items-start justify-center text-left pl-[20%] pr-6 py-6 sm:pl-[22%] sm:pr-8 sm:py-8 md:pl-[20%] md:pr-12 md:py-10 lg:pl-[20%] lg:pr-16 lg:py-12">
+            <div className="absolute inset-0 z-10 flex flex-col items-start justify-center text-left pl-[15%] pr-6 py-6 sm:pl-[15%] sm:pr-8 sm:py-8 md:pl-[15%] md:pr-12 md:py-10 lg:pl-[15%] lg:pr-16 lg:py-12">
               
               {/* Heading */}
               <h2 
