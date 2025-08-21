@@ -956,7 +956,7 @@ export default function Home() {
               {/* CTA Button */}
               <div className="flex justify-start">
                 <button 
-                  className="group font-sans font-bold text-white px-4 sm:px-6 lg:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-sky-400/30 hover:bg-gradient-to-br hover:from-sky-600 hover:to-blue-600 hover:shadow-[0_8px_30px_rgba(56,189,248,0.5)] text-sm sm:text-base lg:text-lg"
+                  className="group font-sans font-bold text-white px-4 sm:px-6 lg:px-8 py-3 sm:py-4 rounded-[20px] transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-sky-400/30 hover:bg-gradient-to-br hover:from-sky-600 hover:to-blue-600 hover:shadow-[0_8px_30px_rgba(56,189,248,0.5)] text-sm sm:text-base lg:text-lg"
                   onClick={() => {
                     const pricingSection = document.getElementById('pricing');
                     if (pricingSection) {
