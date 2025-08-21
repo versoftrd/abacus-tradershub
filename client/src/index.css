@@ -53,8 +53,16 @@ img, video, iframe, svg {
     height: 40px;
     max-height: 40px;
   }
+  .xs\:h-11 { height: 2.75rem; }
   .xs\:h-12 { height: 3rem; }
   .xs\:gap-2 { gap: 0.5rem; }
+  .xs\:px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
+  .xs\:px-4 { padding-left: 1rem; padding-right: 1rem; }
+  .xs\:py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+  .xs\:text-xs { font-size: 0.75rem; line-height: 1rem; }
+  .xs\:text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+  .xs\:rounded-\[14px\] { border-radius: 14px; }
+  .xs\:rounded-\[22px\] { border-radius: 22px; }
 }
 
 @media (min-width: 640px) {
