@@ -29,8 +29,8 @@ import winstonTradingImage from "@assets/winston-cordero-new.png";
 import optionsIcon from "@assets/options-icon.png";
 import desktopLoopVideo from "@assets/Loop dekstop_1755737411238.mp4";
 import mobileLoopVideo from "@assets/Loop Movil_1755737411240.mp4";
-import { Check, ArrowLeftRight, Zap, PieChart, TrendingUp, Instagram, Facebook, MessageSquare } from "lucide-react";
-import { SiWhatsapp, SiDiscord, SiX } from "react-icons/si";
+import { Check, ArrowLeftRight, Zap, PieChart, TrendingUp, Instagram, Facebook, MessageSquare, Youtube } from "lucide-react";
+import { SiWhatsapp, SiDiscord, SiX, SiTiktok, SiYoutube } from "react-icons/si";
 import { useState, useEffect } from "react";
 
 // Animated Counter Component
@@ -1707,20 +1707,26 @@ export default function Home() {
             
             {/* Social Media Icons */}
             <div className="flex items-center gap-4">
+              <a href="https://discord.gg/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-400 transition-colors duration-200" data-testid="footer-discord">
+                <SiDiscord className="w-5 h-5" />
+              </a>
+              <a href="https://facebook.com/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-400 transition-colors duration-200" data-testid="footer-facebook">
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a href="https://tiktok.com/@abacusexchange" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-400 transition-colors duration-200" data-testid="footer-tiktok">
+                <SiTiktok className="w-5 h-5" />
+              </a>
+              <a href="https://youtube.com/c/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-400 transition-colors duration-200" data-testid="footer-youtube">
+                <SiYoutube className="w-5 h-5" />
+              </a>
+              <a href="https://wa.me/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-400 transition-colors duration-200" data-testid="footer-whatsapp">
+                <SiWhatsapp className="w-5 h-5" />
+              </a>
               <a href="https://x.com/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-400 transition-colors duration-200" data-testid="footer-x">
                 <SiX className="w-5 h-5" />
               </a>
-              <a href="#" className="text-green-500 hover:text-green-400 transition-colors duration-200" data-testid="footer-discord">
-                <SiDiscord className="w-5 h-5" />
-              </a>
               <a href="https://instagram.com/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-400 transition-colors duration-200" data-testid="footer-instagram">
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-green-500 hover:text-green-400 transition-colors duration-200" data-testid="footer-facebook">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-green-500 hover:text-green-400 transition-colors duration-200" data-testid="footer-whatsapp">
-                <SiWhatsapp className="w-5 h-5" />
               </a>
             </div>
             
