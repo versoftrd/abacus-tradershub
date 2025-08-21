@@ -1214,9 +1214,9 @@ export default function Home() {
                   <h3 className="font-sans text-gray-400 font-semibold mb-4" style={{ fontSize: '14px' }}>Abacus</h3>
                   <ul className="space-y-3">
                     <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-home">Home</a></li>
-                    <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-videos">Videos</a></li>
-                    <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-reviews">Reviews</a></li>
-                    <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-testimonials">Testimonials</a></li>
+                    <li><a href="https://youtube.com/c/abacusexchange" target="_blank" rel="noopener noreferrer" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-videos">Videos</a></li>
+                    <li><a href="https://www.trustpilot.com/review/abacusexchange.org" target="_blank" rel="noopener noreferrer" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-reviews">Reviews</a></li>
+                    <li><a href="https://www.youtube.com/@TheDailyWinnerPodcast" target="_blank" rel="noopener noreferrer" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-testimonials">Testimonials</a></li>
                   </ul>
                 </div>
                 
@@ -1224,9 +1224,9 @@ export default function Home() {
                 <div data-testid="footer-column-aprende">
                   <h3 className="font-sans text-gray-400 font-semibold mb-4" style={{ fontSize: '14px' }}>Aprende</h3>
                   <ul className="space-y-3">
-                    <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-experience">Abacus Experience</a></li>
-                    <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-campus">Campus Virtual</a></li>
-                    <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-market">Market Open</a></li>
+                    <li><a href="https://abacusexchange.org" target="_blank" rel="noopener noreferrer" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-experience">Abacus Experience</a></li>
+                    <li><a href="https://campus.abacusexchange.org" target="_blank" rel="noopener noreferrer" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-campus">Campus Virtual</a></li>
+                    <li><a href="https://marketopen.ai" target="_blank" rel="noopener noreferrer" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-market">Market Open</a></li>
                   </ul>
                 </div>
                 
@@ -1234,8 +1234,8 @@ export default function Home() {
                 <div data-testid="footer-column-conoce">
                   <h3 className="font-sans text-gray-400 font-semibold mb-4" style={{ fontSize: '14px' }}>Conoce más</h3>
                   <ul className="space-y-3">
-                    <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-tradestation">TradeStation</a></li>
-                    <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-tradersync">TraderSync</a></li>
+                    <li><a href="https://abacusexchange.org/tradestation" target="_blank" rel="noopener noreferrer" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-tradestation">TradeStation</a></li>
+                    <li><a href="https://abacusexchange.org/tradersync" target="_blank" rel="noopener noreferrer" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-tradersync">TraderSync</a></li>
                   </ul>
                 </div>
                 
@@ -1243,8 +1243,8 @@ export default function Home() {
                 <div data-testid="footer-column-ayuda">
                   <h3 className="font-sans text-gray-400 font-semibold mb-4" style={{ fontSize: '14px' }}>Ayuda</h3>
                   <ul className="space-y-3">
-                    <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-contact">Contáctanos</a></li>
-                    <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-refer">Refiere a un Amigo</a></li>
+                    <li><a href="https://abacusexchange.org/calendly" target="_blank" rel="noopener noreferrer" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-contact">Contáctanos</a></li>
+                    <li><a href="https://abacusexchange.org/referral" target="_blank" rel="noopener noreferrer" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-refer">Refiere a un Amigo</a></li>
                   </ul>
                 </div>
                 
@@ -1305,7 +1305,7 @@ export default function Home() {
             
             {/* Right - Privacy Links */}
             <div className="flex space-x-4">
-              <a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200 text-sm" data-testid="footer-privacy">
+              <a href="https://abacusexchange.org/políticadeprivacidad" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200 text-sm" data-testid="footer-privacy">
                 Política de Privacidad
               </a>
               <span className="text-gray-600">|</span>
