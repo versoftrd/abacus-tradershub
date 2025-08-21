@@ -49,7 +49,7 @@ export default function Navbar() {
             <img 
               src={logoPath} 
               alt="TRADERS Hub"
-              className="h-2 xs:h-2.5 sm:h-3 md:h-[13.5px] w-auto mt-0.5 sm:mt-1"
+              className="h-6 xs:h-7 sm:h-8 md:h-9 w-auto mt-0.5 sm:mt-1"
               style={{ maxWidth: '100%', height: 'auto' }}
               data-testid="logo-traders-hub"
             />
