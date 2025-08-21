@@ -44,7 +44,7 @@ img, video, iframe, svg {
 
 /* Extra small breakpoint for logo and navbar responsiveness */
 @media (min-width: 475px) {
-  .xs\:h-7 { height: 1.75rem; }
+  .xs\:h-3\.5 { height: 0.875rem; }
   .xs\:h-12 { height: 3rem; }
   .xs\:gap-2 { gap: 0.5rem; }
 }
