@@ -118,7 +118,7 @@ function AnimatedChartPercentage() {
   return (
     <div 
       id="chart-percentage-trigger"
-      className={`font-bold sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[70px] text-[#ffffff] mt-[55px] mb-[55px] transition-all duration-700 ${
+      className={`font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#ffffff] mt-8 sm:mt-12 md:mt-[55px] mb-8 sm:mb-12 md:mb-[55px] transition-all duration-700 ${
         isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
       }`}
       style={{ 
@@ -366,7 +366,7 @@ function AnimatedLineChart() {
 export default function Home() {
 
   return (
-    <div className="min-h-screen bg-page-bg">
+    <div className="min-h-screen bg-page-bg overflow-x-hidden">
       <div className="relative z-50">
         <Navbar />
       </div>
@@ -406,7 +406,7 @@ export default function Home() {
         
         {/* Round Gradient Decoration */}
         <div 
-          className="absolute bottom-0 right-0 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] bg-bottom-right bg-no-repeat opacity-60 pointer-events-none z-10"
+          className="absolute bottom-0 right-0 w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] md:w-[450px] md:h-[450px] lg:w-[550px] lg:h-[550px] bg-bottom-right bg-no-repeat opacity-60 pointer-events-none z-10"
           style={{ 
             backgroundImage: `url(${roundGradient})`,
             backgroundSize: '100% 100%'
@@ -415,7 +415,7 @@ export default function Home() {
         
         {/* Green Glow */}
         <div className="absolute bottom-1/2 left-1/2 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] bg-green-500/10 rounded-full blur-3xl pointer-events-none z-5 transform -translate-x-1/2 -translate-y-1/2"></div>
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 w-full">
           <div className="flex min-h-screen items-center justify-center">
             <div className="text-center space-y-8 relative z-10">
               
@@ -832,7 +832,7 @@ export default function Home() {
               {/* Chart Container */}
               <div className="relative mb-2">
                 {/* +150.8% Metric - Animated */}
-                <div className="absolute top-0 right-4 sm:right-8 md:right-12 z-10">
+                <div className="absolute top-0 right-2 sm:right-4 md:right-8 lg:right-12 z-10">
                   <AnimatedChartPercentage />
                 </div>
 
@@ -1195,7 +1195,7 @@ export default function Home() {
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500/2 rounded-full blur-3xl"></div>
         </div>
 
-        <div className="relative max-w-6xl mx-auto">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
           {/* CTA Card */}
           <div 
             className="relative group cursor-pointer transition-all duration-500 hover:scale-[1.02]"
@@ -1209,11 +1209,11 @@ export default function Home() {
             data-testid="cta-card"
           >
             {/* Content overlay */}
-            <div className="relative z-10 flex flex-col items-start justify-center min-h-[480px] text-left pl-[15%] pr-4 sm:pr-8 md:pr-12 lg:pr-16">
+            <div className="relative z-10 flex flex-col items-start justify-center min-h-[400px] sm:min-h-[480px] text-left pl-4 sm:pl-8 md:pl-[12%] lg:pl-[15%] pr-4 sm:pr-8 md:pr-12 lg:pr-16">
               
               {/* Heading */}
               <h2 
-                className="font-sans text-white mb-4 sm:mb-6 sm:text-3xl lg:text-4xl xl:text-5xl max-w-2xl font-semibold text-[29px] group-hover:text-blue-50 transition-colors duration-300"
+                className="font-sans text-white mb-4 sm:mb-6 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl max-w-2xl font-semibold group-hover:text-blue-50 transition-colors duration-300"
                 data-testid="cta-heading"
               >
                 Invierte con confianza, aprende en tiempo real
@@ -1221,7 +1221,7 @@ export default function Home() {
               
               {/* Subheading */}
               <p 
-                className="font-sans text-gray-300 mb-6 sm:mb-10 sm:text-base lg:text-lg max-w-xl lg:max-w-2xl text-[18px] group-hover:text-gray-200 transition-colors duration-300"
+                className="font-sans text-gray-300 mb-6 sm:mb-10 text-sm sm:text-base lg:text-lg max-w-xl lg:max-w-2xl group-hover:text-gray-200 transition-colors duration-300"
                 data-testid="cta-subheading"
               >
                 Accede al hub de trading más completo en español y transforma la forma en que entiendes e inviertes en la bolsa de valores.
@@ -1562,8 +1562,8 @@ export default function Home() {
           </div>
           
           {/* Headquarters Info */}
-          <div className="flex justify-center items-center mb-8 space-x-12">
-            <p className="font-sans text-[12px] text-[#9da3ae]">
+          <div className="flex flex-col sm:flex-row justify-center items-center mb-8 space-y-4 sm:space-y-0 sm:space-x-12">
+            <p className="font-sans text-[12px] text-[#9da3ae] text-center">
               <span className="font-bold text-[#9da3a9]">Headquarters:</span>{" "}
               <span className="text-gray-400">Toronto, ON, Canada | Santo Domingo, Dominican Republic</span>
             </p>
