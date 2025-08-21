@@ -421,18 +421,16 @@ export default function Home() {
           <div className="flex min-h-screen items-center justify-center py-20 sm:py-24 md:py-0">
             <div className="text-center space-y-7 sm:space-y-10 relative z-10 w-full">
               
-              {/* Main Headline - 20% larger with Blacklisted font */}
+              {/* Main Headline with Blacklisted font at 34px on mobile */}
               <h1 
                 className="text-white tracking-wide px-2 font-normal mt-[0px] mb-[0px]"
                 style={{
-                  fontFamily: "'Blacklisted', 'Arial Black', sans-serif",
-                  fontSize: '64px',
                   lineHeight: '1.1',
                   fontWeight: 'normal'
                 }}
                 data-testid="hero-headline"
               >
-                <span className="block sm:hidden" style={{ fontSize: '34px', fontFamily: "'Blacklisted', 'Arial Black', sans-serif" }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
+                <span className="block sm:hidden blacklisted-font" style={{ fontSize: '34px !important', fontFamily: "'Blacklisted', sans-serif !important" }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
                 <span className="hidden sm:block md:hidden" style={{ fontSize: '48px', fontFamily: "'Blacklisted', 'Arial Black', sans-serif" }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
                 <span className="hidden md:block lg:hidden" style={{ fontSize: '64px', fontFamily: "'Blacklisted', 'Arial Black', sans-serif" }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
                 <span className="hidden lg:block xl:hidden" style={{ fontSize: '80px', fontFamily: "'Blacklisted', 'Arial Black', sans-serif" }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
