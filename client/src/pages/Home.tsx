@@ -1195,7 +1195,7 @@ export default function Home() {
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500/2 rounded-full blur-3xl"></div>
         </div>
 
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           {/* CTA Card */}
           <div 
             className="relative group cursor-pointer transition-all duration-500 hover:scale-[1.02] rounded-2xl overflow-hidden"
@@ -1205,12 +1205,13 @@ export default function Home() {
               backgroundPosition: 'center center',
               backgroundRepeat: 'no-repeat',
               filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3))',
-              aspectRatio: '16/9'
+              aspectRatio: '16/8',
+              minHeight: '400px'
             }}
             data-testid="cta-card"
           >
             {/* Content overlay */}
-            <div className="absolute inset-0 z-10 flex flex-col items-start justify-center text-left px-6 py-6 sm:px-8 sm:py-8 md:px-12 md:py-10 lg:px-16 lg:py-12">
+            <div className="absolute inset-8 sm:inset-12 md:inset-16 lg:inset-20 z-10 flex flex-col items-start justify-center text-left">
               
               {/* Heading */}
               <h2 
