@@ -371,7 +371,7 @@ export default function Home() {
         <Navbar />
       </div>
       {/* Hero Section */}
-      <main className="relative -mt-16 overflow-hidden">
+      <main className="relative -mt-16 overflow-hidden" role="banner" aria-label="TradersHub - Plataforma de Trading en Vivo">
         {/* Background Video */}
         <div className="absolute inset-0">
           {/* Desktop Video */}
@@ -462,7 +462,7 @@ export default function Home() {
 
       </main>
       {/* Pricing Section */}
-      <section id="pricing" className="relative bg-[#141414] pt-0 pb-12 px-4 sm:px-6">
+      <section id="pricing" className="relative bg-[#141414] pt-0 pb-12 px-4 sm:px-6" aria-labelledby="pricing-headline">
         {/* Background with green glow */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#141414] via-[#141414] to-[#141414]">
           <div className="absolute top-0 left-1/4 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 bg-green-400/5 rounded-full blur-2xl"></div>
@@ -653,8 +653,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Los 4 núcleos del Traders Hub Section */}
-      <section className="relative bg-[#141414] py-16 px-4 sm:px-6">
+      {/* Los 5 núcleos del Traders Hub Section */}
+      <section id="nucleos" className="relative bg-[#141414] py-16 px-4 sm:px-6" aria-labelledby="nucleos-headline">
         {/* Line Gradient Background Image */}
         <div 
           className="absolute inset-0 bg-no-repeat opacity-60 pointer-events-none"
@@ -801,7 +801,7 @@ export default function Home() {
         </div>
       </section>
       {/* Resultados Expertos Section */}
-      <section className="relative bg-[#141414] py-8 px-4 sm:px-6">
+      <section id="resultados" className="relative bg-[#141414] py-8 px-4 sm:px-6" aria-labelledby="resultados-headline">
         {/* Line Gradient Background Image */}
         <div 
           className="absolute inset-0 bg-no-repeat opacity-40 pointer-events-none"
@@ -1266,7 +1266,7 @@ export default function Home() {
         </div>
       </section>
       {/* FAQ Section */}
-      <section className="relative bg-[#0a0a0a] py-16 px-4 sm:px-6">
+      <section id="faq" className="relative bg-[#0a0a0a] py-16 px-4 sm:px-6" aria-labelledby="faq-headline">
         {/* Background decorative elements */}
         <div className="absolute inset-0">
           <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-green-500/2 rounded-full blur-3xl"></div>
