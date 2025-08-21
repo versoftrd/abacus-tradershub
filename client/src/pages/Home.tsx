@@ -465,7 +465,7 @@ export default function Home() {
             <p className="font-sans text-green-400 text-[12px] font-medium mb-4 animate-fade-in" data-testid="pricing-eyebrow">
               Precio simple y flexible
             </p>
-            <h2 className="font-sans text-2xl sm:text-3xl md:text-[32px] text-white mb-6 animate-fade-in-up font-semibold" data-testid="pricing-headline">
+            <h2 className="font-sans text-[24px] sm:text-3xl md:text-[32px] lg:text-[36px] text-white mb-6 animate-fade-in-up font-semibold" data-testid="pricing-headline">
               Elige el plan que se adapta a tu camino.
             </h2>
             <p className="font-sans text-white max-w-4xl mx-auto animate-fade-in-up-delay text-sm md:text-[14px] px-4" data-testid="pricing-subtitle">Suscríbete de forma mensual o anual — sin cargos ocultos, sin contratos, sin rodeos.<br />
@@ -1189,31 +1189,33 @@ export default function Home() {
         </div>
       </section>
       {/* Call-to-Action Section */}
-      <section className="relative bg-[#0a0a0a] py-16 px-4 sm:px-6">
+      <section className="relative bg-[#0a0a0a] py-8 sm:py-12 md:py-16 px-3 sm:px-4 md:px-6">
         {/* Background decorative elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500/2 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 bg-blue-500/2 rounded-full blur-3xl"></div>
         </div>
 
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="relative max-w-6xl mx-auto px-1 sm:px-2 md:px-4 lg:px-6">
           {/* CTA Card */}
           <div 
-            className="relative group cursor-pointer transition-all duration-500 hover:scale-[1.02]"
+            className="relative group cursor-pointer transition-all duration-500 hover:scale-[1.02] rounded-xl sm:rounded-2xl overflow-hidden w-full"
             style={{
               backgroundImage: `url(${chart})`,
-              backgroundSize: '100% 100%',
+              backgroundSize: 'cover',
               backgroundPosition: 'center center',
               backgroundRepeat: 'no-repeat',
-              filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3))'
+              filter: 'drop-shadow(0 8px 24px rgba(0, 0, 0, 0.3))',
+              aspectRatio: '16/7.4',
+              minHeight: '280px'
             }}
             data-testid="cta-card"
           >
             {/* Content overlay */}
-            <div className="relative z-10 flex flex-col items-start justify-center min-h-[400px] sm:min-h-[480px] text-left pl-4 sm:pl-8 md:pl-[12%] lg:pl-[15%] pr-4 sm:pr-8 md:pr-12 lg:pr-16">
+            <div className="absolute inset-0 z-10 flex flex-col items-start justify-center text-left px-4 py-6 sm:pl-[15%] sm:pr-8 sm:py-8 md:pl-[15%] md:pr-12 md:py-10 lg:pl-[15%] lg:pr-16 lg:py-12">
               
               {/* Heading */}
               <h2 
-                className="font-sans text-white mb-4 sm:mb-6 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl max-w-2xl font-semibold group-hover:text-blue-50 transition-colors duration-300"
+                className="font-sans text-white mb-2 sm:mb-3 md:mb-4 lg:mb-6 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl max-w-full sm:max-w-2xl font-semibold group-hover:text-blue-50 transition-colors duration-300 leading-tight"
                 data-testid="cta-heading"
               >
                 Invierte con confianza, aprende en tiempo real
@@ -1221,16 +1223,16 @@ export default function Home() {
               
               {/* Subheading */}
               <p 
-                className="font-sans text-gray-300 mb-6 sm:mb-10 text-sm sm:text-base lg:text-lg max-w-xl lg:max-w-2xl group-hover:text-gray-200 transition-colors duration-300"
+                className="font-sans text-gray-300 mb-3 sm:mb-4 md:mb-6 lg:mb-8 text-xs sm:text-sm md:text-base lg:text-lg max-w-full sm:max-w-xl lg:max-w-2xl group-hover:text-gray-200 transition-colors duration-300 leading-relaxed"
                 data-testid="cta-subheading"
               >
                 Accede al hub de trading más completo en español y transforma la forma en que entiendes e inviertes en la bolsa de valores.
               </p>
               
               {/* CTA Button */}
-              <div className="flex justify-start">
+              <div className="flex justify-start w-full">
                 <button 
-                  className="group/button font-sans font-bold text-white px-4 sm:px-6 lg:px-8 py-3 sm:py-4 rounded-[20px] transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-sky-400/30 hover:bg-gradient-to-br hover:from-sky-500 hover:to-blue-500 hover:shadow-[0_12px_40px_rgba(56,189,248,0.6)] text-sm sm:text-base lg:text-lg transform hover:-translate-y-1"
+                  className="group/button font-sans font-bold text-white px-3 sm:px-4 md:px-6 lg:px-8 py-2 sm:py-2.5 md:py-3 lg:py-4 rounded-[14px] sm:rounded-[16px] md:rounded-[20px] transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-sky-400/30 hover:bg-gradient-to-br hover:from-sky-500 hover:to-blue-500 hover:shadow-[0_12px_40px_rgba(56,189,248,0.6)] text-xs sm:text-sm md:text-base lg:text-lg transform hover:-translate-y-1"
                   onClick={() => {
                     const pricingSection = document.getElementById('pricing');
                     if (pricingSection) {
