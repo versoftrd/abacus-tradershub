@@ -421,15 +421,23 @@ export default function Home() {
           <div className="flex min-h-screen items-center justify-center py-20 sm:py-24 md:py-0">
             <div className="text-center space-y-7 sm:space-y-10 relative z-10 w-full">
               
-              {/* Main Headline - 20% larger than original */}
+              {/* Main Headline - 20% larger with Blacklisted font */}
               <h1 
-                className="text-white tracking-wide blacklisted-font leading-tight px-2 font-normal mt-[0px] mb-[0px]"
+                className="text-white tracking-wide px-2 font-normal mt-[0px] mb-[0px]"
                 style={{
-                  fontSize: 'clamp(3.5rem, 8vw, 10rem)',
-                  lineHeight: '1.1'
+                  fontFamily: "'Blacklisted', 'Arial Black', sans-serif",
+                  fontSize: '64px',
+                  lineHeight: '1.1',
+                  fontWeight: 'normal'
                 }}
                 data-testid="hero-headline"
-              >APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</h1>
+              >
+                <span className="block sm:hidden" style={{ fontSize: '48px' }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
+                <span className="hidden sm:block md:hidden" style={{ fontSize: '72px' }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
+                <span className="hidden md:block lg:hidden" style={{ fontSize: '88px' }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
+                <span className="hidden lg:block xl:hidden" style={{ fontSize: '112px' }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
+                <span className="hidden xl:block" style={{ fontSize: '144px' }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
+              </h1>
 
               {/* Subtitle */}
               <div className="space-y-1 sm:space-y-2 max-w-4xl sm:max-w-5xl mx-auto px-4 sm:px-6 md:px-8">

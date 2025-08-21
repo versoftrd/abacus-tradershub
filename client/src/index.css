@@ -2,13 +2,15 @@
 
 @font-face {
   font-family: 'Blacklisted';
-  src: url('../../attached_assets/Blacklisted_1755610560146.ttf') format('truetype');
+  src: url('/Blacklisted.ttf') format('truetype');
   font-display: swap;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .blacklisted-font {
   font-family: 'Blacklisted', Arial, sans-serif !important;
-  font-size: 30px !important;
+  /* Removed fixed font-size to allow dynamic sizing */
 }
 
 @tailwind base;
