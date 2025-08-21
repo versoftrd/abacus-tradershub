@@ -34,7 +34,7 @@ import { SiWhatsapp, SiDiscord, SiX } from "react-icons/si";
 import { useState, useEffect } from "react";
 
 // Animated Counter Component
-function AnimatedCounter({ target, duration = 2000, suffix = "%" }) {
+function AnimatedCounter({ target, duration = 2000, suffix = "%" }: { target: number; duration?: number; suffix?: string }) {
   const [count, setCount] = useState(0);
   const [hasAnimated, setHasAnimated] = useState(false);
 
@@ -83,6 +83,178 @@ function AnimatedCounter({ target, duration = 2000, suffix = "%" }) {
     <span id="win-rate-counter">
       {count.toFixed(6)}{suffix}
     </span>
+  );
+}
+
+// Animated Line Chart Component
+function AnimatedLineChart() {
+  const [animationProgress, setAnimationProgress] = useState(0);
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  // Chart data points (x, y coordinates)
+  const dataPoints = [
+    { x: 85, y: 280, value: 0 },      // Starting point at 0%
+    { x: 175, y: 250, value: 15 },    // Aug 3: 15%
+    { x: 265, y: 220, value: 30 },    // Aug 5: 30%
+    { x: 355, y: 200, value: 45 },    // Aug 7: 45%
+    { x: 445, y: 180, value: 60 },    // Aug 9: 60%
+    { x: 535, y: 160, value: 75 },    // Aug 11: 75%
+    { x: 625, y: 140, value: 98 },    // Aug 13: 98%
+    { x: 715, y: 72, value: 150.8 }   // Aug 15: 150.8%
+  ];
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasAnimated) {
+            setHasAnimated(true);
+            const startTime = Date.now();
+            const duration = 3500; // 3.5 seconds for full animation
+
+            const updateProgress = () => {
+              const now = Date.now();
+              const elapsed = now - startTime;
+              const progress = Math.min(elapsed / duration, 1);
+              
+              // Easing function
+              const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+              setAnimationProgress(easeOutQuart);
+              
+              if (progress < 1) {
+                requestAnimationFrame(updateProgress);
+              }
+            };
+            
+            requestAnimationFrame(updateProgress);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    const element = document.getElementById('animated-chart');
+    if (element) {
+      observer.observe(element);
+    }
+
+    return () => observer.disconnect();
+  }, [hasAnimated]);
+
+  // Calculate which points to show based on animation progress
+  const pointsToShow = Math.ceil(animationProgress * dataPoints.length);
+  const visiblePoints = dataPoints.slice(0, pointsToShow);
+  
+  // Generate path for the visible portion
+  const generatePath = (points: typeof dataPoints) => {
+    if (points.length === 0) return "";
+    if (points.length === 1) return `M ${points[0].x} ${points[0].y}`;
+    
+    let path = `M ${points[0].x} ${points[0].y}`;
+    for (let i = 1; i < points.length; i++) {
+      path += ` L ${points[i].x} ${points[i].y}`;
+    }
+    return path;
+  };
+
+  // Generate area fill path
+  const generateAreaPath = (points: typeof dataPoints) => {
+    if (points.length === 0) return "";
+    
+    let path = `M ${points[0].x} 280`; // Start from bottom
+    path += ` L ${points[0].x} ${points[0].y}`; // Go to first point
+    
+    for (let i = 1; i < points.length; i++) {
+      path += ` L ${points[i].x} ${points[i].y}`;
+    }
+    
+    if (points.length > 0) {
+      const lastPoint = points[points.length - 1];
+      path += ` L ${lastPoint.x} 280`; // Close to bottom
+    }
+    path += " Z"; // Close path
+    
+    return path;
+  };
+
+  return (
+    <div id="animated-chart" className="h-[20rem] sm:h-[24rem] md:h-[28rem] lg:h-[32rem] xl:h-[36rem] w-full group cursor-pointer flex items-center justify-center">
+      <svg viewBox="0 40 800 320" className="w-full h-full overflow-hidden" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="rgb(34, 197, 94)" stopOpacity="0.3"/>
+            <stop offset="100%" stopColor="rgb(34, 197, 94)" stopOpacity="0"/>
+          </linearGradient>
+        </defs>
+        
+        {/* Grid lines */}
+        <line x1="85" y1="280" x2="740" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+        <line x1="85" y1="210" x2="740" y2="210" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+        <line x1="85" y1="140" x2="740" y2="140" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+        <line x1="85" y1="70" x2="740" y2="70" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+        
+        {/* Vertical grid lines */}
+        <line x1="175" y1="70" x2="175" y2="280" stroke="rgba(255,255,255,0.05)" strokeWidth="1"/>
+        <line x1="265" y1="70" x2="265" y2="280" stroke="rgba(255,255,255,0.05)" strokeWidth="1"/>
+        <line x1="355" y1="70" x2="355" y2="280" stroke="rgba(255,255,255,0.05)" strokeWidth="1"/>
+        <line x1="445" y1="70" x2="445" y2="280" stroke="rgba(255,255,255,0.05)" strokeWidth="1"/>
+        <line x1="535" y1="70" x2="535" y2="280" stroke="rgba(255,255,255,0.05)" strokeWidth="1"/>
+        <line x1="625" y1="70" x2="625" y2="280" stroke="rgba(255,255,255,0.05)" strokeWidth="1"/>
+        
+        {/* Y-axis labels */}
+        <text x="65" y="285" fill="#9CA3AF" fontSize="12" textAnchor="end">0%</text>
+        <text x="65" y="215" fill="#9CA3AF" fontSize="12" textAnchor="end">50%</text>
+        <text x="65" y="145" fill="#9CA3AF" fontSize="12" textAnchor="end">100%</text>
+        <text x="65" y="75" fill="#9CA3AF" fontSize="12" textAnchor="end">150%</text>
+        
+        {/* Area fill - animated */}
+        <path
+          d={generateAreaPath(visiblePoints)}
+          fill="url(#chartGradient)"
+          opacity="0.6"
+        />
+        
+        {/* Main line - animated */}
+        <path
+          d={generatePath(visiblePoints)}
+          stroke="rgb(34, 197, 94)"
+          strokeWidth="3"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          filter="drop-shadow(0 0 8px rgba(34, 197, 94, 0.4))"
+        />
+        
+        {/* Data points - appear as line progresses */}
+        <g>
+          {visiblePoints.map((point, index) => (
+            <circle
+              key={index}
+              cx={point.x}
+              cy={point.y}
+              r="5"
+              fill="rgb(34, 197, 94)"
+              className="hover:r-7 transition-all cursor-pointer"
+              style={{
+                filter: 'drop-shadow(0 0 6px rgba(34, 197, 94, 0.6))',
+                opacity: animationProgress > (index / dataPoints.length) ? 1 : 0,
+                transition: 'opacity 0.3s ease'
+              }}
+            />
+          ))}
+        </g>
+
+        {/* X-axis labels */}
+        <text x="85" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 1</text>
+        <text x="175" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 3</text>
+        <text x="265" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 5</text>
+        <text x="355" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 7</text>
+        <text x="445" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 9</text>
+        <text x="535" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 11</text>
+        <text x="625" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 13</text>
+        <text x="715" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 15</text>
+      </svg>
+    </div>
   );
 }
 
@@ -559,88 +731,8 @@ export default function Home() {
                   <div className="font-bold sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[70px] text-[#ffffff] mt-[55px] mb-[55px]" style={{ filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))' }}>+150.8%</div>
                 </div>
 
-                {/* Chart SVG */}
-                <div className="h-[20rem] sm:h-[24rem] md:h-[28rem] lg:h-[32rem] xl:h-[36rem] w-full group cursor-pointer flex items-center justify-center">
-                  <svg viewBox="0 40 800 320" className="w-full h-full overflow-hidden" preserveAspectRatio="xMidYMid meet">
-                    {/* Grid lines */}
-                    <defs>
-                      <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                        <stop offset="0%" stopColor="rgb(34, 197, 94)" stopOpacity="0.3"/>
-                        <stop offset="100%" stopColor="rgb(34, 197, 94)" stopOpacity="0"/>
-                      </linearGradient>
-                    </defs>
-                    
-                    {/* Horizontal grid lines */}
-                    <line x1="85" y1="280" x2="740" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="85" y1="210" x2="740" y2="210" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="85" y1="140" x2="740" y2="140" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="85" y1="70" x2="740" y2="70" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    
-                    {/* Vertical grid lines */}
-                    <line x1="85" y1="70" x2="85" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="175" y1="70" x2="175" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="265" y1="70" x2="265" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="355" y1="70" x2="355" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="445" y1="70" x2="445" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="535" y1="70" x2="535" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="625" y1="70" x2="625" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <line x1="715" y1="70" x2="715" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-
-                    {/* Y-axis labels - Four main values */}
-                    <text x="80" y="285" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">0%</text>
-                    <text x="80" y="215" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">50%</text>
-                    <text x="80" y="145" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">100%</text>
-                    <text x="80" y="75" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">150%</text>
-
-                    {/* Chart line with area fill - Proportional to actual data */}
-                    <path
-                      d="M 85,270 L 175,240 L 265,260 L 355,220 L 445,180 L 535,200 L 625,140 L 715,72"
-                      fill="none"
-                      stroke="rgb(34, 197, 94)"
-                      strokeWidth="4"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="transition-all duration-300 group-hover:stroke-green-300 group-hover:drop-shadow-lg"
-                      style={{
-                        filter: 'drop-shadow(0 0 4px rgba(34, 197, 94, 0.3))',
-                        strokeDasharray: '2000',
-                        strokeDashoffset: '2000',
-                        animation: 'drawLine 2s ease-out forwards'
-                      }}
-                    />
-                    <path
-                      d="M 85,270 L 175,240 L 265,260 L 355,220 L 445,180 L 535,200 L 625,140 L 715,72 L 715,280 L 85,280 Z"
-                      fill="url(#chartGradient)"
-                      className="transition-all duration-300 group-hover:opacity-80"
-                      style={{
-                        opacity: '0',
-                        animation: 'fillArea 2s ease-out 1s forwards'
-                      }}
-                    />
-                    
-                    {/* Interactive data points - Realistic trading pattern */}
-                    <g className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <circle cx="85" cy="270" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="8%" data-date="Aug 1"/>
-                      <circle cx="175" cy="240" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="28%" data-date="Aug 3"/>
-                      <circle cx="265" cy="260" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="15%" data-date="Aug 5"/>
-                      <circle cx="355" cy="220" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="42%" data-date="Aug 7"/>
-                      <circle cx="445" cy="180" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="70%" data-date="Aug 9"/>
-                      <circle cx="535" cy="200" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="56%" data-date="Aug 11"/>
-                      <circle cx="625" cy="140" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="98%" data-date="Aug 13"/>
-                      <circle cx="715" cy="72" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="150.8%" data-date="Aug 15"/>
-                    </g>
-
-                    {/* X-axis labels - Proportionally spaced dates */}
-                    <text x="85" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 1</text>
-                    <text x="175" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 3</text>
-                    <text x="265" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 5</text>
-                    <text x="355" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 7</text>
-                    <text x="445" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 9</text>
-                    <text x="535" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 11</text>
-                    <text x="625" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 13</text>
-                    <text x="715" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 15</text>
-                  </svg>
-                </div>
+                {/* Animated Chart */}
+                <AnimatedLineChart />
 
                 {/* Chart Caption */}
                 <p className="text-center text-gray-500 text-xs mt-2">
