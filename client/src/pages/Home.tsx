@@ -574,7 +574,7 @@ export default function Home() {
               </div>
 
               {/* Stats Panel */}
-              <div className="border border-white/10 rounded-xl p-6 bg-black/20">
+              <div className="border border-white/10 rounded-xl p-6 bg-black/20 relative z-50">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   
                   {/* Left Column - Win/Loss Ratio */}
