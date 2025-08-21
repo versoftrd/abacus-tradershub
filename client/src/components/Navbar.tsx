@@ -7,7 +7,7 @@ const navigationItems = [
   { name: "Home", path: "/" },
   { name: "Abacus Experience", path: "https://abacusexchange.org", external: true },
   { name: "Market Open", path: "https://marketopen.ai", external: true },
-  { name: "Campus Virtual", path: "/campus-virtual" },
+  { name: "Campus Virtual", path: "https://campus.abacusexchange.org", external: true },
   { name: "Pricing", path: "/pricing" },
 ];
 
