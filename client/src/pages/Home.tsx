@@ -421,9 +421,13 @@ export default function Home() {
           <div className="flex min-h-screen items-center justify-center py-20 sm:py-24 md:py-0">
             <div className="text-center space-y-7 sm:space-y-10 relative z-10 w-full">
               
-              {/* Main Headline */}
+              {/* Main Headline - 20% larger than original */}
               <h1 
-                className="text-white tracking-wide blacklisted-font hero-headline-xl leading-tight px-2 font-normal mt-[0px] mb-[0px]"
+                className="text-white tracking-wide blacklisted-font leading-tight px-2 font-normal mt-[0px] mb-[0px]"
+                style={{
+                  fontSize: 'clamp(3.5rem, 8vw, 10rem)',
+                  lineHeight: '1.1'
+                }}
                 data-testid="hero-headline"
               >APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</h1>
 
