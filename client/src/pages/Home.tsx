@@ -432,11 +432,11 @@ export default function Home() {
                 }}
                 data-testid="hero-headline"
               >
-                <span className="block sm:hidden" style={{ fontSize: '48px' }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
-                <span className="hidden sm:block md:hidden" style={{ fontSize: '72px' }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
-                <span className="hidden md:block lg:hidden" style={{ fontSize: '88px' }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
-                <span className="hidden lg:block xl:hidden text-[34px]" style={{ fontSize: '112px' }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
-                <span className="hidden xl:block" style={{ fontSize: '144px' }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
+                <span className="block sm:hidden" style={{ fontSize: '34px', fontFamily: "'Blacklisted', 'Arial Black', sans-serif" }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
+                <span className="hidden sm:block md:hidden" style={{ fontSize: '48px', fontFamily: "'Blacklisted', 'Arial Black', sans-serif" }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
+                <span className="hidden md:block lg:hidden" style={{ fontSize: '64px', fontFamily: "'Blacklisted', 'Arial Black', sans-serif" }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
+                <span className="hidden lg:block xl:hidden" style={{ fontSize: '80px', fontFamily: "'Blacklisted', 'Arial Black', sans-serif" }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
+                <span className="hidden xl:block" style={{ fontSize: '96px', fontFamily: "'Blacklisted', 'Arial Black', sans-serif" }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
               </h1>
 
               {/* Subtitle */}
