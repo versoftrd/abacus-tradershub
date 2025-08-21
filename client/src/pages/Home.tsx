@@ -1272,13 +1272,13 @@ export default function Home() {
             
             {/* Social Media Icons */}
             <div className="flex space-x-4">
-              <a href="#" className="text-green-400 hover:text-green-500 transition-colors duration-200" data-testid="footer-twitter">
+              <a href="https://x.com/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-500 transition-colors duration-200" data-testid="footer-twitter">
                 <Twitter className="w-5 h-5" />
               </a>
               <a href="#" className="text-green-400 hover:text-green-500 transition-colors duration-200" data-testid="footer-discord">
                 <SiDiscord className="w-5 h-5" />
               </a>
-              <a href="#" className="text-green-400 hover:text-green-500 transition-colors duration-200" data-testid="footer-instagram">
+              <a href="https://instagram.com/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-500 transition-colors duration-200" data-testid="footer-instagram">
                 <Instagram className="w-5 h-5" />
               </a>
               <a href="#" className="text-green-400 hover:text-green-500 transition-colors duration-200" data-testid="footer-facebook">
