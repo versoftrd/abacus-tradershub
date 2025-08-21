@@ -1268,7 +1268,7 @@ export default function Home() {
             <p className="font-sans text-green-400 text-sm font-medium mb-4 tracking-wide" data-testid="faq-eyebrow">
               Preguntas Frecuentes
             </p>
-            <h2 className="font-sans text-white mb-6 font-semibold sm:text-3xl lg:text-4xl text-[32px]" data-testid="faq-headline">
+            <h2 className="font-sans text-white mb-6 font-semibold sm:text-3xl lg:text-4xl text-[24px]" data-testid="faq-headline">
               ¿Tienes preguntas? Aquí están las respuestas.
             </h2>
           </div>
