@@ -1305,7 +1305,7 @@ export default function Home() {
             
             {/* Right - Privacy Links */}
             <div className="flex space-x-4">
-              <a href="https://abacusexchange.org/políticadeprivacidad" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200 text-sm" data-testid="footer-privacy">
+              <a href="https://www.abacusexchange.org/politicas-de-privacidad" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200 text-sm" data-testid="footer-privacy">
                 Política de Privacidad
               </a>
               <span className="text-gray-600">|</span>
