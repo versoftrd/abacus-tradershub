@@ -1557,7 +1557,7 @@ export default function Home() {
             {/* Right - Register Button */}
             <div className="flex-shrink-0">
               <button 
-                className="px-6 py-2.5 bg-green-500 hover:bg-green-600 text-black font-semibold rounded-lg transition-all duration-200 text-sm"
+                className="font-sans w-full min-w-[160px] bg-gradient-to-b from-[#2ab46b] to-[#1b864e] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 text-sm sm:text-base"
                 data-testid="footer-register-button"
               >
                 Regístrate
