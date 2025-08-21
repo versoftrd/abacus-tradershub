@@ -1309,7 +1309,7 @@ export default function Home() {
                 Política de Privacidad
               </a>
               <span className="text-gray-600">|</span>
-              <a href="#" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200 text-sm" data-testid="footer-terms">
+              <a href="https://abacusexchange.org/terminosycondiciones" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200 text-sm" data-testid="footer-terms">
                 Términos y Condiciones
               </a>
             </div>
