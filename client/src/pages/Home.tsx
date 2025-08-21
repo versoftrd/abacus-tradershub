@@ -667,7 +667,7 @@ export default function Home() {
             <p className="font-sans text-green-400 text-sm font-medium mb-4" data-testid="sessions-eyebrow">
               Nuestras sesiones
             </p>
-            <h2 className="font-sans text-white mb-6 flex items-start justify-center gap-4 font-semibold" style={{ fontSize: '32px' }} data-testid="nucleos-headline">
+            <h2 className="font-sans text-white mb-6 flex items-start justify-center gap-4 font-semibold text-[24px] sm:text-3xl lg:text-4xl" data-testid="nucleos-headline">
               Los 5 núcleos del <img src={logo} alt="Traders Hub Logo" className="h-10 sm:h-14 md:h-16 inline-block mt-[4px] mb-[4px] pt-[3px] pb-[3px]" />
             </h2>
             <p className="font-sans text-gray-300 max-w-4xl mx-auto px-4" style={{ fontSize: '14px' }} data-testid="nucleos-description">No son clases: son 7 a 9 sesiones de trading en vivo cada semana, donde literalmente operas junto a nuestros mentores y observas su operativa en tiempo real.  Es la parte más práctica de todo el Abacus Experience, diseñada para que la comunidad siga, aprenda y ejecute exactamente lo que hacemos dentro del mercado. Se divide de en 5 núcleos.</p>
@@ -814,7 +814,7 @@ export default function Home() {
             <p className="font-sans text-green-400 text-sm font-medium mb-4 tracking-wide" data-testid="resultados-eyebrow">
               Resultados Expertos
             </p>
-            <h2 className="font-sans text-white mb-6 font-semibold" style={{ fontSize: '32px' }} data-testid="resultados-headline">
+            <h2 className="font-sans text-white mb-6 font-semibold text-[24px] sm:text-3xl lg:text-4xl" data-testid="resultados-headline">
               Resultados que hablan por sí solos
             </h2>
             <p className="font-sans text-gray-300 max-w-4xl mx-auto px-4 text-[14px]" style={{ fontSize: '16px' }} data-testid="resultados-description">
@@ -1040,7 +1040,7 @@ export default function Home() {
             <p className="font-sans text-green-400 text-sm font-medium mb-4 tracking-wide" data-testid="student-results-eyebrow">
               Resultados de Estudiantes
             </p>
-            <h2 className="font-sans text-white mb-6 font-semibold" style={{ fontSize: '32px' }} data-testid="student-results-headline">
+            <h2 className="font-sans text-white mb-6 font-semibold text-[24px] sm:text-3xl lg:text-4xl" data-testid="student-results-headline">
               Lo que aprendes aquí se convierte en resultados reales
             </h2>
             <p className="font-sans text-gray-300 max-w-4xl mx-auto px-4 text-[14px]" data-testid="student-results-description">
@@ -1079,7 +1079,7 @@ export default function Home() {
             <p className="font-sans text-green-400 text-sm font-medium mb-4 tracking-wide" data-testid="features-eyebrow">
               Lo que obtienes
             </p>
-            <h2 className="font-sans text-white mb-6 font-semibold" style={{ fontSize: '32px' }} data-testid="features-headline">
+            <h2 className="font-sans text-white mb-6 font-semibold text-[24px] sm:text-3xl lg:text-4xl" data-testid="features-headline">
               Características exclusivas de TradersHub
             </h2>
             <p className="font-sans text-gray-400 max-w-4xl mx-auto px-4 text-[14px]" data-testid="features-description">
@@ -1267,7 +1267,7 @@ export default function Home() {
             <p className="font-sans text-green-400 text-sm font-medium mb-4 tracking-wide" data-testid="faq-eyebrow">
               Preguntas Frecuentes
             </p>
-            <h2 className="font-sans text-white mb-6 font-semibold sm:text-3xl lg:text-4xl text-[32px]" data-testid="faq-headline">
+            <h2 className="font-sans text-white mb-6 font-semibold text-[24px] sm:text-3xl lg:text-4xl" data-testid="faq-headline">
               ¿Tienes preguntas? Aquí están las respuestas.
             </h2>
           </div>
