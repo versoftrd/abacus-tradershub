@@ -1308,7 +1308,7 @@ export default function Home() {
               {/* FAQ Item 1 */}
               <div className="group" data-testid="faq-item-1">
                 <button 
-                  className="w-full flex items-center justify-between py-6 text-left transition-colors duration-200 hover:text-green-400"
+                  className="w-full flex items-center justify-between py-6 text-left transition-all duration-300 hover:text-green-400 hover:pl-2"
                   onClick={() => {
                     const content = document.getElementById('faq-content-1');
                     const icon = document.getElementById('faq-icon-1');
@@ -1319,27 +1319,37 @@ export default function Home() {
                         icon.style.transform = 'rotate(0deg)';
                         icon.textContent = '+';
                       } else {
+                        // Close all other FAQs
+                        for (let i = 2; i <= 6; i++) {
+                          const otherContent = document.getElementById(`faq-content-${i}`);
+                          const otherIcon = document.getElementById(`faq-icon-${i}`);
+                          if (otherContent && otherIcon) {
+                            otherContent.classList.add('hidden');
+                            otherIcon.style.transform = 'rotate(0deg)';
+                            otherIcon.textContent = '+';
+                          }
+                        }
                         content.classList.remove('hidden');
-                        icon.style.transform = 'rotate(90deg)';
-                        icon.textContent = '–';
+                        icon.style.transform = 'rotate(45deg)';
+                        icon.textContent = '+';
                       }
                     }
                   }}
                 >
-                  <span className="font-sans text-white text-lg font-medium pr-4">
-                    ¿Qué incluye mi membresía a TradersHub?
+                  <span className="font-sans text-white text-lg font-medium pr-4 transition-all duration-300">
+                    ¿Qué es exactamente TradersHub y en qué se diferencia de un curso tradicional?
                   </span>
                   <span 
                     id="faq-icon-1"
-                    className="text-green-400 text-2xl font-bold transition-transform duration-300 flex-shrink-0"
+                    className="text-green-400 text-3xl font-light transition-all duration-300 flex-shrink-0 hover:scale-110"
                     style={{ transform: 'rotate(0deg)' }}
                   >
                     +
                   </span>
                 </button>
-                <div id="faq-content-1" className="hidden pb-4 pl-0">
-                  <p className="font-sans text-gray-400 text-[14px] leading-relaxed">
-                    Tu membresía incluye acceso a 7-9 sesiones semanales en vivo, grabaciones completas, análisis de mercado en tiempo real, acceso a la comunidad exclusiva de traders, y mentorías directas con nuestros expertos Jorge Valet, Carlos Amec, Ernesto Yunes y Jean Vizón.
+                <div id="faq-content-1" className="hidden pb-4 pl-0 animate-fade-in">
+                  <p className="font-sans text-gray-400 text-[15px] leading-relaxed pl-2 pr-8">
+                    TradersHub no es un curso. Es un espacio de entrenamiento práctico donde operas junto a nuestros mentores en sesiones en vivo. Aprendes observando cómo analizan, ejecutan y revisan sus operaciones reales, semana tras semana.
                   </p>
                 </div>
                 <div className="border-b border-white/10"></div>
@@ -1348,7 +1358,7 @@ export default function Home() {
               {/* FAQ Item 2 */}
               <div className="group" data-testid="faq-item-2">
                 <button 
-                  className="w-full flex items-center justify-between py-6 text-left transition-colors duration-200 hover:text-green-400"
+                  className="w-full flex items-center justify-between py-6 text-left transition-all duration-300 hover:text-green-400 hover:pl-2"
                   onClick={() => {
                     const content = document.getElementById('faq-content-2');
                     const icon = document.getElementById('faq-icon-2');
@@ -1359,27 +1369,39 @@ export default function Home() {
                         icon.style.transform = 'rotate(0deg)';
                         icon.textContent = '+';
                       } else {
+                        // Close all other FAQs
+                        for (let i = 1; i <= 6; i++) {
+                          if (i !== 2) {
+                            const otherContent = document.getElementById(`faq-content-${i}`);
+                            const otherIcon = document.getElementById(`faq-icon-${i}`);
+                            if (otherContent && otherIcon) {
+                              otherContent.classList.add('hidden');
+                              otherIcon.style.transform = 'rotate(0deg)';
+                              otherIcon.textContent = '+';
+                            }
+                          }
+                        }
                         content.classList.remove('hidden');
-                        icon.style.transform = 'rotate(90deg)';
-                        icon.textContent = '–';
+                        icon.style.transform = 'rotate(45deg)';
+                        icon.textContent = '+';
                       }
                     }
                   }}
                 >
-                  <span className="font-sans text-white text-lg font-medium pr-4">
-                    ¿Necesito experiencia previa en trading?
+                  <span className="font-sans text-white text-lg font-medium pr-4 transition-all duration-300">
+                    ¿Necesito experiencia previa para entrar a TradersHub?
                   </span>
                   <span 
                     id="faq-icon-2"
-                    className="text-green-400 text-2xl font-bold transition-transform duration-300 flex-shrink-0"
+                    className="text-green-400 text-3xl font-light transition-all duration-300 flex-shrink-0 hover:scale-110"
                     style={{ transform: 'rotate(0deg)' }}
                   >
                     +
                   </span>
                 </button>
-                <div id="faq-content-2" className="hidden pb-4 pl-0">
-                  <p className="font-sans text-gray-400 text-[14px] leading-relaxed">
-                    No es necesario tener experiencia previa. Nuestro programa está diseñado tanto para principiantes como para traders experimentados. Comenzamos desde lo básico y progresamos gradualmente, siempre con apoyo directo de nuestros mentores.
+                <div id="faq-content-2" className="hidden pb-4 pl-0 animate-fade-in">
+                  <p className="font-sans text-gray-400 text-[15px] leading-relaxed pl-2 pr-8">
+                    No. Puedes comenzar desde cero. Las sesiones están diseñadas para que incluso los principiantes entiendan el razonamiento detrás de cada trade y aprendan por observación, con explicaciones claras de parte de cada mentor.
                   </p>
                 </div>
                 <div className="border-b border-white/10"></div>
@@ -1388,7 +1410,7 @@ export default function Home() {
               {/* FAQ Item 3 */}
               <div className="group" data-testid="faq-item-3">
                 <button 
-                  className="w-full flex items-center justify-between py-6 text-left transition-colors duration-200 hover:text-green-400"
+                  className="w-full flex items-center justify-between py-6 text-left transition-all duration-300 hover:text-green-400 hover:pl-2"
                   onClick={() => {
                     const content = document.getElementById('faq-content-3');
                     const icon = document.getElementById('faq-icon-3');
@@ -1399,27 +1421,39 @@ export default function Home() {
                         icon.style.transform = 'rotate(0deg)';
                         icon.textContent = '+';
                       } else {
+                        // Close all other FAQs
+                        for (let i = 1; i <= 6; i++) {
+                          if (i !== 3) {
+                            const otherContent = document.getElementById(`faq-content-${i}`);
+                            const otherIcon = document.getElementById(`faq-icon-${i}`);
+                            if (otherContent && otherIcon) {
+                              otherContent.classList.add('hidden');
+                              otherIcon.style.transform = 'rotate(0deg)';
+                              otherIcon.textContent = '+';
+                            }
+                          }
+                        }
                         content.classList.remove('hidden');
-                        icon.style.transform = 'rotate(90deg)';
-                        icon.textContent = '–';
+                        icon.style.transform = 'rotate(45deg)';
+                        icon.textContent = '+';
                       }
                     }
                   }}
                 >
-                  <span className="font-sans text-white text-lg font-medium pr-4">
-                    ¿Cuánto capital necesito para empezar?
+                  <span className="font-sans text-white text-lg font-medium pr-4 transition-all duration-300">
+                    ¿Qué pasa si no puedo asistir a todas las sesiones en vivo?
                   </span>
                   <span 
                     id="faq-icon-3"
-                    className="text-green-400 text-2xl font-bold transition-transform duration-300 flex-shrink-0"
+                    className="text-green-400 text-3xl font-light transition-all duration-300 flex-shrink-0 hover:scale-110"
                     style={{ transform: 'rotate(0deg)' }}
                   >
                     +
                   </span>
                 </button>
-                <div id="faq-content-3" className="hidden pb-4 pl-0">
-                  <p className="font-sans text-gray-400 text-[14px] leading-relaxed">
-                    Puedes comenzar con tan poco como $500-$1,000 para aplicar las estrategias que aprendes. Sin embargo, recomendamos tener al menos $2,000-$5,000 para una gestión de riesgo más cómoda y mejores oportunidades de diversificación.
+                <div id="faq-content-3" className="hidden pb-4 pl-0 animate-fade-in">
+                  <p className="font-sans text-gray-400 text-[15px] leading-relaxed pl-2 pr-8">
+                    Cada sesión queda grabada y disponible para ti. Puedes verla cuando quieras, las veces que necesites. Incluso muchos miembros prefieren revisar las grabaciones con calma y tomar notas detalladas.
                   </p>
                 </div>
                 <div className="border-b border-white/10"></div>
@@ -1428,7 +1462,7 @@ export default function Home() {
               {/* FAQ Item 4 */}
               <div className="group" data-testid="faq-item-4">
                 <button 
-                  className="w-full flex items-center justify-between py-6 text-left transition-colors duration-200 hover:text-green-400"
+                  className="w-full flex items-center justify-between py-6 text-left transition-all duration-300 hover:text-green-400 hover:pl-2"
                   onClick={() => {
                     const content = document.getElementById('faq-content-4');
                     const icon = document.getElementById('faq-icon-4');
@@ -1439,36 +1473,48 @@ export default function Home() {
                         icon.style.transform = 'rotate(0deg)';
                         icon.textContent = '+';
                       } else {
+                        // Close all other FAQs
+                        for (let i = 1; i <= 6; i++) {
+                          if (i !== 4) {
+                            const otherContent = document.getElementById(`faq-content-${i}`);
+                            const otherIcon = document.getElementById(`faq-icon-${i}`);
+                            if (otherContent && otherIcon) {
+                              otherContent.classList.add('hidden');
+                              otherIcon.style.transform = 'rotate(0deg)';
+                              otherIcon.textContent = '+';
+                            }
+                          }
+                        }
                         content.classList.remove('hidden');
-                        icon.style.transform = 'rotate(90deg)';
-                        icon.textContent = '–';
+                        icon.style.transform = 'rotate(45deg)';
+                        icon.textContent = '+';
                       }
                     }
                   }}
                 >
-                  <span className="font-sans text-white text-lg font-medium pr-4">
-                    ¿Las sesiones están disponibles en horarios específicos?
+                  <span className="font-sans text-white text-lg font-medium pr-4 transition-all duration-300">
+                    ¿Qué incluye mi suscripción a TradersHub?
                   </span>
                   <span 
                     id="faq-icon-4"
-                    className="text-green-400 text-2xl font-bold transition-transform duration-300 flex-shrink-0"
+                    className="text-green-400 text-3xl font-light transition-all duration-300 flex-shrink-0 hover:scale-110"
                     style={{ transform: 'rotate(0deg)' }}
                   >
                     +
                   </span>
                 </button>
-                <div id="faq-content-4" className="hidden pb-4 pl-0">
-                  <p className="font-sans text-gray-400 text-[14px] leading-relaxed">
-                    Sí, tenemos un horario establecido para las sesiones en vivo que coincide con los horarios de mercado más activos. Todas las sesiones quedan grabadas y disponibles para verlas cuando te sea conveniente si no puedes asistir en vivo.
+                <div id="faq-content-4" className="hidden pb-4 pl-0 animate-fade-in">
+                  <p className="font-sans text-gray-400 text-[15px] leading-relaxed pl-2 pr-8">
+                    Acceso completo a todas las sesiones en vivo de los 5 núcleos, acceso a las grabaciones, frameworks operativos reales de los mentores, y una comunidad activa de traders con la que puedes interactuar, hacer preguntas y compartir ideas.
                   </p>
                 </div>
                 <div className="border-b border-white/10"></div>
               </div>
 
-              {/* FAQ Item 5 - Open by default */}
+              {/* FAQ Item 5 */}
               <div className="group" data-testid="faq-item-5">
                 <button 
-                  className="w-full flex items-center justify-between py-6 text-left transition-colors duration-200 hover:text-green-400 text-green-400"
+                  className="w-full flex items-center justify-between py-6 text-left transition-all duration-300 hover:text-green-400 hover:pl-2"
                   onClick={() => {
                     const content = document.getElementById('faq-content-5');
                     const icon = document.getElementById('faq-icon-5');
@@ -1479,27 +1525,91 @@ export default function Home() {
                         icon.style.transform = 'rotate(0deg)';
                         icon.textContent = '+';
                       } else {
+                        // Close all other FAQs
+                        for (let i = 1; i <= 6; i++) {
+                          if (i !== 5) {
+                            const otherContent = document.getElementById(`faq-content-${i}`);
+                            const otherIcon = document.getElementById(`faq-icon-${i}`);
+                            if (otherContent && otherIcon) {
+                              otherContent.classList.add('hidden');
+                              otherIcon.style.transform = 'rotate(0deg)';
+                              otherIcon.textContent = '+';
+                            }
+                          }
+                        }
                         content.classList.remove('hidden');
-                        icon.style.transform = 'rotate(90deg)';
-                        icon.textContent = '–';
+                        icon.style.transform = 'rotate(45deg)';
+                        icon.textContent = '+';
                       }
                     }
                   }}
                 >
-                  <span className="font-sans text-white text-lg font-medium pr-4">
-                    ¿Puedo cancelar mi membresía en cualquier momento?
+                  <span className="font-sans text-white text-lg font-medium pr-4 transition-all duration-300">
+                    ¿Qué herramientas necesito para seguir las sesiones?
                   </span>
                   <span 
                     id="faq-icon-5"
-                    className="text-green-400 text-2xl font-bold transition-transform duration-300 flex-shrink-0"
-                    style={{ transform: 'rotate(90deg)' }}
+                    className="text-green-400 text-3xl font-light transition-all duration-300 flex-shrink-0 hover:scale-110"
+                    style={{ transform: 'rotate(0deg)' }}
                   >
-                    –
+                    +
                   </span>
                 </button>
-                <div id="faq-content-5" className="pb-4 pl-0">
-                  <p className="font-sans text-gray-400 text-[14px]">
-                    Absolutamente. No hay compromisos a largo plazo ni penalizaciones por cancelación. Puedes cancelar tu membresía en cualquier momento desde tu panel de usuario, y mantendrás acceso hasta el final de tu período de facturación actual.
+                <div id="faq-content-5" className="hidden pb-4 pl-0 animate-fade-in">
+                  <p className="font-sans text-gray-400 text-[15px] leading-relaxed pl-2 pr-8">
+                    Solo necesitas conexión a internet. Las sesiones se transmiten por Zoom o dentro de la plataforma de Abacus. Los mentores usan plataformas como TradingView, Thinkorswim o Tastyworks, pero no necesitas tenerlas instaladas para aprender.
+                  </p>
+                </div>
+                <div className="border-b border-white/10"></div>
+              </div>
+
+              {/* FAQ Item 6 */}
+              <div className="group" data-testid="faq-item-6">
+                <button 
+                  className="w-full flex items-center justify-between py-6 text-left transition-all duration-300 hover:text-green-400 hover:pl-2"
+                  onClick={() => {
+                    const content = document.getElementById('faq-content-6');
+                    const icon = document.getElementById('faq-icon-6');
+                    if (content && icon) {
+                      const isOpen = !content.classList.contains('hidden');
+                      if (isOpen) {
+                        content.classList.add('hidden');
+                        icon.style.transform = 'rotate(0deg)';
+                        icon.textContent = '+';
+                      } else {
+                        // Close all other FAQs
+                        for (let i = 1; i <= 6; i++) {
+                          if (i !== 6) {
+                            const otherContent = document.getElementById(`faq-content-${i}`);
+                            const otherIcon = document.getElementById(`faq-icon-${i}`);
+                            if (otherContent && otherIcon) {
+                              otherContent.classList.add('hidden');
+                              otherIcon.style.transform = 'rotate(0deg)';
+                              otherIcon.textContent = '+';
+                            }
+                          }
+                        }
+                        content.classList.remove('hidden');
+                        icon.style.transform = 'rotate(45deg)';
+                        icon.textContent = '+';
+                      }
+                    }
+                  }}
+                >
+                  <span className="font-sans text-white text-lg font-medium pr-4 transition-all duration-300">
+                    ¿Puedo cancelar mi suscripción cuando quiera?
+                  </span>
+                  <span 
+                    id="faq-icon-6"
+                    className="text-green-400 text-3xl font-light transition-all duration-300 flex-shrink-0 hover:scale-110"
+                    style={{ transform: 'rotate(0deg)' }}
+                  >
+                    +
+                  </span>
+                </button>
+                <div id="faq-content-6" className="hidden pb-4 pl-0 animate-fade-in">
+                  <p className="font-sans text-gray-400 text-[15px] leading-relaxed pl-2 pr-8">
+                    Sí. No hay contratos ni ataduras. Puedes cancelar en cualquier momento desde tu perfil, sin penalizaciones ni cargos ocultos. Es una suscripción flexible, diseñada para que te unas cuando estés listo y salgas si lo necesitas.
                   </p>
                 </div>
               </div>
