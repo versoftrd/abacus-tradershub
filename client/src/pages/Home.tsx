@@ -740,7 +740,7 @@ export default function Home() {
         </div>
       </section>
       {/* Student Results/Testimonial Section */}
-      <section className="relative bg-[#141414] py-16 px-4 sm:px-6 overflow-hidden">
+      <section className="relative py-16 px-4 sm:px-6 overflow-hidden" style={{ background: 'linear-gradient(180deg, #141414 0%, #141414 60%, #0a0a0a 100%)' }}>
         {/* Green Gradient Background */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30 pointer-events-none"
@@ -752,7 +752,7 @@ export default function Home() {
         ></div>
         
         {/* Additional dark gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#141414]/80 via-transparent to-[#141414]/80 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#141414]/80 via-transparent to-[#0a0a0a]/80 pointer-events-none"></div>
         
         {/* Background decorative elements */}
         <div className="absolute inset-0">
