@@ -98,9 +98,9 @@ function AnimatedLineChart() {
     { x: 265, y: 270, value: 8 },     // Aug 5: Small dip to 8%
     { x: 355, y: 235, value: 28 },    // Aug 7: Recovery to 28%
     { x: 445, y: 250, value: 22 },    // Aug 9: Minor pullback to 22%
-    { x: 535, y: 200, value: 45 },    // Aug 11: Strong growth to 45%
-    { x: 625, y: 150, value: 80 },    // Aug 13: Major breakthrough to 80%
-    { x: 715, y: 72, value: 150.8 }   // Aug 15: Final surge to 150.8%
+    { x: 535, y: 140, value: 100 },   // Aug 11: Strong growth to 100%
+    { x: 625, y: 160, value: 75 },    // Aug 13: Pullback to 75%
+    { x: 715, y: 72, value: 150.8 }   // Aug 15: Straight line surge to 150.8%
   ];
 
   useEffect(() => {
@@ -172,10 +172,16 @@ function AnimatedLineChart() {
           const controlY = current.y - (current.y - previous.y) * 0.2;
           path += ` Q ${controlX} ${controlY} ${current.x} ${current.y}`;
         } else {
-          // Last point - smooth ending
-          const controlX = previous.x + (current.x - previous.x) * 0.7;
-          const controlY = previous.y + (current.y - previous.y) * 0.5;
-          path += ` Q ${controlX} ${controlY} ${current.x} ${current.y}`;
+          // Check if this is the final segment (from Aug 13 to Aug 15)
+          if (i === points.length - 1 && points.length >= 3) {
+            // Make final segment a straight line
+            path += ` L ${current.x} ${current.y}`;
+          } else {
+            // Last point - smooth ending for other segments
+            const controlX = previous.x + (current.x - previous.x) * 0.7;
+            const controlY = previous.y + (current.y - previous.y) * 0.5;
+            path += ` Q ${controlX} ${controlY} ${current.x} ${current.y}`;
+          }
         }
       }
     }
@@ -206,9 +212,15 @@ function AnimatedLineChart() {
             const controlY = current.y - (current.y - previous.y) * 0.2;
             path += ` Q ${controlX} ${controlY} ${current.x} ${current.y}`;
           } else {
-            const controlX = previous.x + (current.x - previous.x) * 0.7;
-            const controlY = previous.y + (current.y - previous.y) * 0.5;
-            path += ` Q ${controlX} ${controlY} ${current.x} ${current.y}`;
+            // Check if this is the final segment for area fill too
+            if (i === points.length - 1 && points.length >= 3) {
+              // Make final segment a straight line
+              path += ` L ${current.x} ${current.y}`;
+            } else {
+              const controlX = previous.x + (current.x - previous.x) * 0.7;
+              const controlY = previous.y + (current.y - previous.y) * 0.5;
+              path += ` Q ${controlX} ${controlY} ${current.x} ${current.y}`;
+            }
           }
         }
       }
