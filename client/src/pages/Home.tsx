@@ -818,7 +818,7 @@ export default function Home() {
             <div 
               className="rounded-2xl p-8 shadow-2xl border border-green-500/10"
               style={{
-                background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.08) 0%, rgba(16, 185, 129, 0.05) 50%, rgba(34, 197, 94, 0.08) 100%)',
+                background: 'linear-gradient(to top, #1c1c1c 0%, #225539 100%)',
                 boxShadow: '0 0 40px rgba(34, 197, 94, 0.1)'
               }}
               data-testid="features-card"
