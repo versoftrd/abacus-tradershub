@@ -86,6 +86,51 @@ function AnimatedCounter({ target, duration = 2000, suffix = "%" }: { target: nu
   );
 }
 
+// Animated Chart Percentage Display
+function AnimatedChartPercentage() {
+  const [isVisible, setIsVisible] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasAnimated) {
+            setHasAnimated(true);
+            // Delay the appearance to sync with chart completion (3.5s chart + 0.2s delay)
+            setTimeout(() => {
+              setIsVisible(true);
+            }, 3700);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    const element = document.getElementById('chart-percentage-trigger');
+    if (element) {
+      observer.observe(element);
+    }
+
+    return () => observer.disconnect();
+  }, [hasAnimated]);
+
+  return (
+    <div 
+      id="chart-percentage-trigger"
+      className={`font-bold sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[70px] text-[#ffffff] mt-[55px] mb-[55px] transition-all duration-1000 ${
+        isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+      }`}
+      style={{ 
+        filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))',
+        transform: isVisible ? 'translateY(0)' : 'translateY(10px)'
+      }}
+    >
+      +150.8%
+    </div>
+  );
+}
+
 // Animated Line Chart Component
 function AnimatedLineChart() {
   const [animationProgress, setAnimationProgress] = useState(0);
@@ -784,9 +829,9 @@ export default function Home() {
               
               {/* Chart Container */}
               <div className="relative mb-2">
-                {/* +61% Metric */}
+                {/* +150.8% Metric - Animated */}
                 <div className="absolute top-0 right-4 sm:right-8 md:right-12 z-10">
-                  <div className="font-bold sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[70px] text-[#ffffff] mt-[55px] mb-[55px]" style={{ filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))' }}>+150.8%</div>
+                  <AnimatedChartPercentage />
                 </div>
 
                 {/* Animated Chart */}
