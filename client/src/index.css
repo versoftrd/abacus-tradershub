@@ -44,14 +44,14 @@ img, video, iframe, svg {
 
 /* Logo responsive sizing */
 .logo-responsive {
-  height: 16px;
-  max-height: 16px;
+  height: 32px;
+  max-height: 32px;
 }
 
 @media (min-width: 475px) {
   .logo-responsive {
-    height: 20px;
-    max-height: 20px;
+    height: 40px;
+    max-height: 40px;
   }
   .xs\:h-12 { height: 3rem; }
   .xs\:gap-2 { gap: 0.5rem; }
@@ -59,15 +59,15 @@ img, video, iframe, svg {
 
 @media (min-width: 640px) {
   .logo-responsive {
-    height: 24px;
-    max-height: 24px;
+    height: 48px;
+    max-height: 48px;
   }
 }
 
 @media (min-width: 768px) {
   .logo-responsive {
-    height: 28px;
-    max-height: 28px;
+    height: 56px;
+    max-height: 56px;
   }
 }
 
