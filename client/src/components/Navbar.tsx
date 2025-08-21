@@ -5,8 +5,8 @@ import logoPath from "@assets/logo_1755607335061.png";
 
 const navigationItems = [
   { name: "Home", path: "/" },
-  { name: "Abacus Experience", path: "/abacus-experience" },
-  { name: "Market Open", path: "/market-open" },
+  { name: "Abacus Experience", path: "https://abacusexchange.org", external: true },
+  { name: "Market Open", path: "https://marketopen.ai", external: true },
   { name: "Campus Virtual", path: "/campus-virtual" },
   { name: "Pricing", path: "/pricing" },
 ];
@@ -53,6 +53,8 @@ export default function Navbar() {
                 <a
                   key={item.path}
                   href={item.path}
+                  target={item.external ? "_blank" : undefined}
+                  rel={item.external ? "noopener noreferrer" : undefined}
                   onClick={item.name === 'Pricing' ? handlePricingClick : undefined}
                   className={`px-3 py-1.5 rounded-[10px] text-xs transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 text-white ${
                     isActive(item.path) ? "font-medium" : "font-light"
@@ -108,6 +110,8 @@ export default function Navbar() {
               <a
                 key={item.path}
                 href={item.path}
+                target={item.external ? "_blank" : undefined}
+                rel={item.external ? "noopener noreferrer" : undefined}
                 className={`block px-3 py-2 rounded-[10px] text-xs transition-colors duration-200 ${
                   isActive(item.path)
                     ? "text-white font-medium"
