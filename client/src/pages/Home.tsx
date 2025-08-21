@@ -1198,7 +1198,7 @@ export default function Home() {
         <div className="relative max-w-6xl mx-auto">
           {/* CTA Card */}
           <div 
-            className="relative"
+            className="relative group cursor-pointer transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_80px_rgba(59,130,246,0.25)] hover:drop-shadow-[0_0_80px_rgba(59,130,246,0.2)]"
             style={{
               backgroundImage: `url(${chart})`,
               backgroundSize: '100% 100%',
@@ -1213,7 +1213,7 @@ export default function Home() {
               
               {/* Heading */}
               <h2 
-                className="font-sans text-white mb-4 sm:mb-6 sm:text-3xl lg:text-4xl xl:text-5xl max-w-2xl font-semibold text-[29px]"
+                className="font-sans text-white mb-4 sm:mb-6 sm:text-3xl lg:text-4xl xl:text-5xl max-w-2xl font-semibold text-[29px] group-hover:text-blue-50 transition-colors duration-300"
                 data-testid="cta-heading"
               >
                 Invierte con confianza, aprende en tiempo real
@@ -1221,7 +1221,7 @@ export default function Home() {
               
               {/* Subheading */}
               <p 
-                className="font-sans text-gray-300 mb-6 sm:mb-10 sm:text-base lg:text-lg max-w-xl lg:max-w-2xl text-[18px]"
+                className="font-sans text-gray-300 mb-6 sm:mb-10 sm:text-base lg:text-lg max-w-xl lg:max-w-2xl text-[18px] group-hover:text-gray-200 transition-colors duration-300"
                 data-testid="cta-subheading"
               >
                 Accede al hub de trading más completo en español y transforma la forma en que entiendes e inviertes en la bolsa de valores.
@@ -1230,7 +1230,7 @@ export default function Home() {
               {/* CTA Button */}
               <div className="flex justify-start">
                 <button 
-                  className="group font-sans font-bold text-white px-4 sm:px-6 lg:px-8 py-3 sm:py-4 rounded-[20px] transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-sky-400/30 hover:bg-gradient-to-br hover:from-sky-600 hover:to-blue-600 hover:shadow-[0_8px_30px_rgba(56,189,248,0.5)] text-sm sm:text-base lg:text-lg"
+                  className="group/button font-sans font-bold text-white px-4 sm:px-6 lg:px-8 py-3 sm:py-4 rounded-[20px] transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-sky-400/30 hover:bg-gradient-to-br hover:from-sky-500 hover:to-blue-500 hover:shadow-[0_12px_40px_rgba(56,189,248,0.6)] text-sm sm:text-base lg:text-lg transform hover:-translate-y-1"
                   onClick={() => {
                     const pricingSection = document.getElementById('pricing');
                     if (pricingSection) {
@@ -1243,7 +1243,9 @@ export default function Home() {
                   }}
                   data-testid="cta-button"
                 >
-                  Quiero mi acceso a TradersHub 🔥
+                  <span className="group-hover/button:scale-105 transition-transform duration-200 inline-block">
+                    Quiero mi acceso a TradersHub 🔥
+                  </span>
                 </button>
               </div>
               
