@@ -99,7 +99,7 @@ function AnimatedLineChart() {
     { x: 355, y: 235, value: 28 },    // Aug 7: Recovery to 28%
     { x: 445, y: 250, value: 22 },    // Aug 9: Minor pullback to 22%
     { x: 535, y: 200, value: 45 },    // Aug 11: Strong growth to 45%
-    { x: 625, y: 140, value: 85 },    // Aug 13: Major breakthrough to 85%
+    { x: 625, y: 150, value: 80 },    // Aug 13: Major breakthrough to 80%
     { x: 715, y: 72, value: 150.8 }   // Aug 15: Final surge to 150.8%
   ];
 
