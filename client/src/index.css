@@ -26,14 +26,172 @@ html, body {
   box-sizing: border-box;
 }
 
-/* Ensure all containers respect viewport width */
+/* Global responsive image classes */
+img, video, iframe, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive container system */
 .container, .max-w-6xl, .max-w-7xl, .max-w-4xl, .max-w-5xl {
-  max-width: calc(100vw - 2rem);
+  max-width: calc(100vw - 1rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 @media (min-width: 640px) {
   .container, .max-w-6xl, .max-w-7xl, .max-w-4xl, .max-w-5xl {
+    max-width: calc(100vw - 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container, .max-w-6xl, .max-w-7xl, .max-w-4xl, .max-w-5xl {
     max-width: calc(100vw - 4rem);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .max-w-4xl { max-width: 56rem; }
+  .max-w-5xl { max-width: 64rem; }
+  .max-w-6xl { max-width: 72rem; }
+  .max-w-7xl { max-width: 80rem; }
+  .container, .max-w-6xl, .max-w-7xl, .max-w-4xl, .max-w-5xl {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Responsive grid system */
+.responsive-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .responsive-grid { gap: 1.5rem; }
+}
+
+@media (min-width: 768px) {
+  .responsive-grid { gap: 2rem; }
+  .responsive-grid-2 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .responsive-grid { gap: 2.5rem; }
+  .responsive-grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .responsive-grid-4 { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Flexible spacing utilities */
+.responsive-padding {
+  padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  .responsive-padding { padding: 1.5rem; }
+}
+
+@media (min-width: 768px) {
+  .responsive-padding { padding: 2rem; }
+}
+
+@media (min-width: 1024px) {
+  .responsive-padding { padding: 3rem; }
+}
+
+/* Responsive text scaling */
+.responsive-text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.responsive-text-base {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.responsive-text-lg {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.responsive-text-xl {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.responsive-text-2xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.responsive-text-3xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 640px) {
+  .responsive-text-base { font-size: 1rem; line-height: 1.5rem; }
+  .responsive-text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+  .responsive-text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+  .responsive-text-2xl { font-size: 1.5rem; line-height: 2rem; }
+  .responsive-text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+}
+
+@media (min-width: 768px) {
+  .responsive-text-base { font-size: 1rem; line-height: 1.5rem; }
+  .responsive-text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+  .responsive-text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+  .responsive-text-2xl { font-size: 1.5rem; line-height: 2rem; }
+  .responsive-text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+}
+
+@media (min-width: 1024px) {
+  .responsive-text-base { font-size: 1rem; line-height: 1.5rem; }
+  .responsive-text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+  .responsive-text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+  .responsive-text-2xl { font-size: 1.5rem; line-height: 2rem; }
+  .responsive-text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+}
+
+/* Responsive aspect ratios */
+.aspect-responsive {
+  aspect-ratio: 16/9;
+}
+
+@media (min-width: 768px) {
+  .aspect-responsive { aspect-ratio: 16/7.4; }
+}
+
+/* Flexible button sizing */
+.btn-responsive {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .btn-responsive {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .btn-responsive {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    border-radius: 1rem;
   }
 }
 

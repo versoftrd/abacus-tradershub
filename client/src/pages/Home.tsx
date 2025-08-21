@@ -381,6 +381,7 @@ export default function Home() {
             loop
             muted
             playsInline
+            style={{ maxWidth: '100%', height: 'auto', minHeight: '100vh' }}
           >
             <source src={desktopLoopVideo} type="video/mp4" />
           </video>
@@ -392,6 +393,7 @@ export default function Home() {
             loop
             muted
             playsInline
+            style={{ maxWidth: '100%', height: 'auto', minHeight: '100vh' }}
           >
             <source src={mobileLoopVideo} type="video/mp4" />
           </video>
@@ -415,26 +417,26 @@ export default function Home() {
         
         {/* Green Glow */}
         <div className="absolute bottom-1/2 left-1/2 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] bg-green-500/10 rounded-full blur-3xl pointer-events-none z-5 transform -translate-x-1/2 -translate-y-1/2"></div>
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 w-full">
-          <div className="flex min-h-screen items-center justify-center">
-            <div className="text-center space-y-8 relative z-10">
+        <div className="mx-auto max-w-6xl px-3 sm:px-4 md:px-6 w-full">
+          <div className="flex min-h-screen items-center justify-center py-20 sm:py-24 md:py-0">
+            <div className="text-center space-y-6 sm:space-y-8 relative z-10 w-full">
               
               {/* Main Headline */}
               <h1 
-                className="font-bold text-white tracking-wide blacklisted-font text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+                className="font-bold text-white tracking-wide blacklisted-font text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight px-2"
                 data-testid="hero-headline"
               >APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</h1>
 
               {/* Subtitle */}
-              <div className="space-y-2 max-w-3xl mx-auto px-4 sm:px-6">
+              <div className="space-y-2 max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
                 <p 
-                  className="text-sm sm:text-base md:text-lg text-zinc-300 font-medium"
+                  className="text-xs sm:text-sm md:text-base lg:text-lg text-zinc-300 font-medium leading-relaxed"
                   data-testid="hero-subtitle-1"
                 >
                   Acceso directo a la sala de trading de Abacus: 7 a 9 sesiones en vivo
                 </p>
                 <p 
-                  className="text-sm sm:text-base md:text-lg text-zinc-300 font-medium"
+                  className="text-xs sm:text-sm md:text-base lg:text-lg text-zinc-300 font-medium leading-relaxed"
                   data-testid="hero-subtitle-2"
                 >
                   semanales con mentores que operan y explican en tiempo real.
@@ -442,7 +444,7 @@ export default function Home() {
               </div>
 
               {/* Email Capture */}
-              <div className="pt-8 pb-20">
+              <div className="pt-6 sm:pt-8 pb-16 sm:pb-20">
                 <EmailCta />
               </div>
 
@@ -473,7 +475,7 @@ export default function Home() {
           </div>
 
           {/* Pricing Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto px-2 sm:px-0">
+          <div className="responsive-grid responsive-grid-3 max-w-6xl mx-auto px-2 sm:px-4 md:px-6">
             
             {/* Pase Semanal */}
             <div className="group relative bg-[linear-gradient(to_bottom,#151e19_0%,#141414_20%)] border border-green-500/10 rounded-3xl p-4 sm:p-6 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-weekly">
@@ -678,20 +680,20 @@ export default function Home() {
             <div className="group border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl hover:shadow-green-500/10 hover:border-green-500/20 transition-all duration-300" style={{ background: 'linear-gradient(to bottom, transparent 0%, rgba(27, 27, 27, 0.3) 10%, rgba(27, 27, 27, 1) 15%, rgba(27, 27, 27, 1) 100%)' }}>
               
               {/* Card 1 - Portafolio & Wealth con Ernesto Yunes */}
-              <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 mb-12 group cursor-pointer transition-all duration-500 hover:bg-white/[0.02] hover:shadow-lg rounded-3xl p-4 -m-4" data-testid="card-ernesto-yunes">
-                <div className="w-full lg:w-1/2 flex-shrink-0 overflow-hidden rounded-2xl">
-                  <img src={image3} alt="Ernesto Yunes portfolio session" className="w-full h-64 lg:h-80 object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12 group cursor-pointer transition-all duration-500 hover:bg-white/[0.02] hover:shadow-lg rounded-2xl sm:rounded-3xl p-3 sm:p-4 -m-3 sm:-m-4" data-testid="card-ernesto-yunes">
+                <div className="w-full lg:w-1/2 flex-shrink-0 overflow-hidden rounded-xl sm:rounded-2xl">
+                  <img src={image3} alt="Ernesto Yunes portfolio session" className="w-full h-48 sm:h-64 lg:h-80 object-cover transition-transform duration-700 group-hover:scale-110" style={{ maxWidth: '100%', height: 'auto' }} />
                 </div>
-                <div className="w-full lg:w-1/2 text-center lg:text-left">
+                <div className="w-full lg:w-1/2 text-center lg:text-left px-2 sm:px-0">
                   <div className="flex justify-center lg:justify-start mb-4">
                     <img src={circleChartIcon} alt="Portfolio Chart" className="w-8 h-8 transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
                   </div>
-                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-green-100" style={{ fontSize: '24px' }}>
+                  <h3 className="font-sans text-white mb-3 sm:mb-4 font-semibold transition-colors duration-300 group-hover:text-green-100 text-lg sm:text-xl md:text-2xl leading-tight">
                     Portafolio & Wealth con Ernesto Yunes
                   </h3>
-                  <p className="font-sans text-gray-400 mb-6 text-[14px] transition-colors duration-300 group-hover:text-gray-300" style={{ fontSize: '14px' }}>Construye un portafolio sólido y a largo plazo. 
+                  <p className="font-sans text-gray-400 mb-4 sm:mb-6 text-sm sm:text-base transition-colors duration-300 group-hover:text-gray-300 leading-relaxed">Construye un portafolio sólido y a largo plazo. 
                   Ernesto comparte su enfoque de inversión en valor, gestión de portafolios y estrategias para hacer crecer tu capital de manera sostenible. Aprende a tomar decisiones financieras con fundamentos y visión estratégica.</p>
-                  <p className="font-sans text-green-400 font-semibold text-lg transition-all duration-300 group-hover:text-green-300 group-hover:scale-105">
+                  <p className="font-sans text-green-400 font-semibold text-base sm:text-lg transition-all duration-300 group-hover:text-green-300 group-hover:scale-105">
                     Invierte con lógica. Crece con disciplina.
                   </p>
                 </div>
@@ -823,8 +825,8 @@ export default function Home() {
           </div>
 
           {/* Main Stats Card */}
-          <div className="max-w-6xl mx-auto relative z-[90]">
-            <div className="relative border border-white/10 rounded-2xl p-3 shadow-2xl" style={{ 
+          <div className="max-w-6xl mx-auto relative z-[90] px-2 sm:px-4">
+            <div className="relative border border-white/10 rounded-xl sm:rounded-2xl p-2 sm:p-3 shadow-2xl" style={{ 
               background: 'linear-gradient(135deg, rgba(27, 27, 27, 0.9) 0%, rgba(34, 34, 34, 0.8) 50%, rgba(27, 27, 27, 0.9) 100%)',
               backdropFilter: 'blur(10px)'
             }}>
@@ -846,8 +848,8 @@ export default function Home() {
               </div>
 
               {/* Stats Panel */}
-              <div className="border border-white/10 rounded-xl p-6 bg-black/20 relative z-[200]">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="border border-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-6 bg-black/20 relative z-[200]">
+                <div className="responsive-grid responsive-grid-2 gap-4 sm:gap-6 md:gap-8">
                   
                   {/* Left Column - Win/Loss Ratio */}
                   <div>
@@ -871,8 +873,8 @@ export default function Home() {
 
                   {/* Right Column - Win Rate */}
                   <div className="text-center">
-                    <h3 className="text-white font-semibold mb-6 text-lg">Win Rate</h3>
-                    <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-green-400 mb-2" style={{ filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))' }}>
+                    <h3 className="text-white font-semibold mb-4 sm:mb-6 text-base sm:text-lg">Win Rate</h3>
+                    <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-green-400 mb-2" style={{ filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))' }}>
                       <AnimatedCounter target={83.333333} duration={2500} suffix="%" />
                     </div>
                     <div className="text-right">
@@ -1489,25 +1491,26 @@ export default function Home() {
         </div>
       </section>
       {/* Footer Section */}
-      <footer className="relative bg-[#080808] pt-16 pb-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <footer className="relative bg-[#080808] pt-12 sm:pt-16 pb-6 sm:pb-8">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6">
           
           {/* Main Footer Content */}
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 mb-12">
+          <div className="responsive-grid gap-6 sm:gap-8 mb-8 sm:mb-12">
             
             {/* Logo Section */}
-            <div className="lg:col-span-1">
+            <div className="col-span-full sm:col-span-1">
               <img 
                 src={abacusLogo} 
                 alt="Abacus Logo" 
-                className="h-12 w-auto mb-4"
+                className="h-10 sm:h-12 w-auto mb-4 mx-auto sm:mx-0"
+                style={{ maxWidth: '100%', height: 'auto' }}
                 data-testid="footer-logo"
               />
             </div>
             
             {/* Navigation Columns */}
-            <div className="lg:col-span-3">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="col-span-full sm:col-span-2 md:col-span-3">
+              <div className="responsive-grid responsive-grid-4 gap-4 sm:gap-6 md:gap-8">
                 
                 {/* Column 1 - Abacus */}
                 <div data-testid="footer-column-abacus">
@@ -1552,9 +1555,9 @@ export default function Home() {
             </div>
             
             {/* Right Section - Register Button */}
-            <div className="lg:col-span-1 flex justify-start lg:justify-end items-start">
+            <div className="col-span-full sm:col-span-1 flex justify-center sm:justify-start lg:justify-end items-start">
               <button 
-                className="font-sans bg-gradient-to-b from-[#2ab46b] to-[#1b864e] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 text-sm mt-0"
+                className="btn-responsive font-sans bg-gradient-to-b from-[#2ab46b] to-[#1b864e] text-white font-semibold hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mt-0"
                 data-testid="footer-register-button"
               >
                 Regístrate
@@ -1564,14 +1567,14 @@ export default function Home() {
           </div>
           
           {/* Headquarters Info */}
-          <div className="flex flex-col sm:flex-row justify-center items-center mb-8 space-y-4 sm:space-y-0 sm:space-x-12">
-            <p className="font-sans text-[12px] text-[#9da3ae] text-center">
+          <div className="flex flex-col sm:flex-row justify-center items-center mb-6 sm:mb-8 space-y-3 sm:space-y-0 sm:space-x-8 md:space-x-12">
+            <p className="font-sans text-xs sm:text-sm text-[#9da3ae] text-center">
               <span className="font-bold text-[#9da3a9]">Headquarters:</span>{" "}
               <span className="text-gray-400">Toronto, ON, Canada | Santo Domingo, Dominican Republic</span>
             </p>
             
             {/* Social Media Icons */}
-            <div className="flex space-x-4">
+            <div className="flex space-x-3 sm:space-x-4">
               <a href="https://x.com/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-500 transition-colors duration-200" data-testid="footer-x">
                 <SiX className="w-5 h-5" />
               </a>

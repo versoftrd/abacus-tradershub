@@ -49,7 +49,8 @@ export default function Navbar() {
             <img 
               src={logoPath} 
               alt="TRADERS Hub"
-              className="h-[54px] w-auto mt-2"
+              className="h-12 sm:h-[54px] w-auto mt-2"
+              style={{ maxWidth: '100%', height: 'auto' }}
               data-testid="logo-traders-hub"
             />
           </div>
@@ -64,7 +65,7 @@ export default function Navbar() {
                   target={item.external ? "_blank" : undefined}
                   rel={item.external ? "noopener noreferrer" : undefined}
                   onClick={item.name === 'Pricing' ? handlePricingClick : undefined}
-                  className={`px-3 py-1.5 rounded-[10px] text-xs transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 text-white hover:font-semibold ${
+                  className={`px-2 sm:px-3 py-1.5 rounded-[10px] text-xs sm:text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 text-white hover:font-semibold ${
                     isActive(item.path) ? "font-medium" : "font-light"
                   }`}
                   data-testid={`nav-link-${item.name.toLowerCase().replace(/\s+/g, "-")}`}
