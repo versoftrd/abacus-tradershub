@@ -31,6 +31,60 @@ import desktopLoopVideo from "@assets/Loop dekstop_1755737411238.mp4";
 import mobileLoopVideo from "@assets/Loop Movil_1755737411240.mp4";
 import { Check, ArrowLeftRight, Zap, PieChart, TrendingUp, Instagram, Facebook, MessageSquare } from "lucide-react";
 import { SiWhatsapp, SiDiscord, SiX } from "react-icons/si";
+import { useState, useEffect } from "react";
+
+// Animated Counter Component
+function AnimatedCounter({ target, duration = 2000, suffix = "%" }) {
+  const [count, setCount] = useState(0);
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasAnimated) {
+            setHasAnimated(true);
+            const startTime = Date.now();
+            const startValue = 0;
+            const endValue = target;
+
+            const updateCount = () => {
+              const now = Date.now();
+              const elapsed = now - startTime;
+              const progress = Math.min(elapsed / duration, 1);
+              
+              // Easing function for smooth animation
+              const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+              const currentValue = startValue + (endValue - startValue) * easeOutQuart;
+              
+              setCount(currentValue);
+              
+              if (progress < 1) {
+                requestAnimationFrame(updateCount);
+              }
+            };
+            
+            requestAnimationFrame(updateCount);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    const element = document.getElementById('win-rate-counter');
+    if (element) {
+      observer.observe(element);
+    }
+
+    return () => observer.disconnect();
+  }, [target, duration, hasAnimated]);
+
+  return (
+    <span id="win-rate-counter">
+      {count.toFixed(6)}{suffix}
+    </span>
+  );
+}
 
 export default function Home() {
 
@@ -621,7 +675,9 @@ export default function Home() {
                   {/* Right Column - Win Rate */}
                   <div className="text-center">
                     <h3 className="text-white font-semibold mb-6 text-lg">Win Rate</h3>
-                    <div className="text-6xl font-bold text-green-400 mb-2" style={{ filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))' }}>83.333333%</div>
+                    <div className="text-6xl font-bold text-green-400 mb-2" style={{ filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))' }}>
+                      <AnimatedCounter target={83.333333} duration={2500} suffix="%" />
+                    </div>
                     <div className="text-right">
                       <span className="text-xs px-2 py-1 rounded text-[#000000] relative z-10 bg-[#ffffff] font-bold">
                         Resultados de 1 semana
