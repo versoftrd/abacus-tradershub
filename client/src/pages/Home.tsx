@@ -1209,11 +1209,11 @@ export default function Home() {
             data-testid="cta-card"
           >
             {/* Content overlay */}
-            <div className="relative z-10 flex flex-col items-start justify-center min-h-[400px] sm:min-h-[480px] text-left pl-4 sm:pl-8 md:pl-[12%] lg:pl-[15%] pr-4 sm:pr-8 md:pr-12 lg:pr-16">
+            <div className="relative z-10 flex flex-col items-start justify-center min-h-[320px] sm:min-h-[400px] md:min-h-[480px] text-left px-6 sm:pl-8 sm:pr-8 md:pl-[12%] lg:pl-[15%] md:pr-12 lg:pr-16 py-8 sm:py-0">
               
               {/* Heading */}
               <h2 
-                className="font-sans text-white mb-4 sm:mb-6 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl max-w-2xl font-semibold group-hover:text-blue-50 transition-colors duration-300"
+                className="font-sans text-white mb-3 sm:mb-4 md:mb-6 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl max-w-full sm:max-w-2xl font-semibold group-hover:text-blue-50 transition-colors duration-300 leading-tight"
                 data-testid="cta-heading"
               >
                 Invierte con confianza, aprende en tiempo real
@@ -1221,16 +1221,16 @@ export default function Home() {
               
               {/* Subheading */}
               <p 
-                className="font-sans text-gray-300 mb-6 sm:mb-10 text-sm sm:text-base lg:text-lg max-w-xl lg:max-w-2xl group-hover:text-gray-200 transition-colors duration-300"
+                className="font-sans text-gray-300 mb-4 sm:mb-6 md:mb-8 text-xs sm:text-sm md:text-base lg:text-lg max-w-full sm:max-w-xl lg:max-w-2xl group-hover:text-gray-200 transition-colors duration-300 leading-relaxed"
                 data-testid="cta-subheading"
               >
                 Accede al hub de trading más completo en español y transforma la forma en que entiendes e inviertes en la bolsa de valores.
               </p>
               
               {/* CTA Button */}
-              <div className="flex justify-start">
+              <div className="flex justify-start w-full">
                 <button 
-                  className="group/button font-sans font-bold text-white px-4 sm:px-6 lg:px-8 py-3 sm:py-4 rounded-[20px] transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-sky-400/30 hover:bg-gradient-to-br hover:from-sky-500 hover:to-blue-500 hover:shadow-[0_12px_40px_rgba(56,189,248,0.6)] text-sm sm:text-base lg:text-lg transform hover:-translate-y-1"
+                  className="group/button font-sans font-bold text-white px-3 sm:px-4 md:px-6 lg:px-8 py-2.5 sm:py-3 md:py-4 rounded-[16px] sm:rounded-[20px] transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-sky-400/30 hover:bg-gradient-to-br hover:from-sky-500 hover:to-blue-500 hover:shadow-[0_12px_40px_rgba(56,189,248,0.6)] text-xs sm:text-sm md:text-base lg:text-lg transform hover:-translate-y-1"
                   onClick={() => {
                     const pricingSection = document.getElementById('pricing');
                     if (pricingSection) {
