@@ -419,32 +419,32 @@ export default function Home() {
         <div className="absolute bottom-1/2 left-1/2 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] bg-green-500/10 rounded-full blur-3xl pointer-events-none z-5 transform -translate-x-1/2 -translate-y-1/2"></div>
         <div className="mx-auto max-w-6xl px-3 sm:px-4 md:px-6 w-full">
           <div className="flex min-h-screen items-center justify-center py-20 sm:py-24 md:py-0">
-            <div className="text-center space-y-6 sm:space-y-8 relative z-10 w-full">
+            <div className="text-center space-y-7 sm:space-y-10 relative z-10 w-full">
               
               {/* Main Headline */}
               <h1 
-                className="text-white tracking-wide blacklisted-font text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight px-2 font-normal mt-[0px] mb-[0px]"
+                className="text-white tracking-wide blacklisted-font text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight px-2 font-normal mt-[0px] mb-[0px]"
                 data-testid="hero-headline"
               >APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</h1>
 
               {/* Subtitle */}
-              <div className="space-y-1 sm:space-y-2 max-w-3xl sm:max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
+              <div className="space-y-1 sm:space-y-2 max-w-4xl sm:max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
                 <p 
-                  className="text-xs sm:text-sm md:text-base lg:text-lg text-zinc-300 font-medium leading-snug sm:leading-relaxed"
+                  className="text-sm sm:text-base md:text-lg lg:text-xl text-zinc-300 font-medium leading-snug sm:leading-relaxed"
                   data-testid="hero-subtitle-1"
                 >
                   <span className="sm:hidden">Acceso directo a la sala de trading de Abacus:</span>
                   <span className="hidden sm:inline">Acceso directo a la sala de trading de Abacus: 7 a 9 sesiones en vivo semanales</span>
                 </p>
                 <p 
-                  className="text-xs sm:text-sm md:text-base lg:text-lg text-zinc-300 font-medium leading-snug sm:leading-relaxed"
+                  className="text-sm sm:text-base md:text-lg lg:text-xl text-zinc-300 font-medium leading-snug sm:leading-relaxed"
                   data-testid="hero-subtitle-2"
                 >
                   <span className="sm:hidden">7 a 9 sesiones en vivo semanales con mentores</span>
                   <span className="hidden sm:inline">con mentores que operan y explican en tiempo real.</span>
                 </p>
                 <p 
-                  className="text-xs sm:text-sm md:text-base lg:text-lg text-zinc-300 font-medium leading-snug sm:leading-relaxed sm:hidden"
+                  className="text-sm sm:text-base md:text-lg lg:text-xl text-zinc-300 font-medium leading-snug sm:leading-relaxed sm:hidden"
                   data-testid="hero-subtitle-3"
                 >
                   que operan y explican en tiempo real.
