@@ -465,7 +465,7 @@ export default function Home() {
             <p className="font-sans text-green-400 text-[12px] font-medium mb-4 animate-fade-in" data-testid="pricing-eyebrow">
               Precio simple y flexible
             </p>
-            <h2 className="font-sans text-[24px] sm:text-3xl md:text-[32px] text-white mb-6 animate-fade-in-up font-semibold" data-testid="pricing-headline">
+            <h2 className="font-sans text-2xl sm:text-3xl md:text-[32px] text-white mb-6 animate-fade-in-up font-semibold" data-testid="pricing-headline">
               Elige el plan que se adapta a tu camino.
             </h2>
             <p className="font-sans text-white max-w-4xl mx-auto animate-fade-in-up-delay text-sm md:text-[14px] px-4" data-testid="pricing-subtitle">Suscríbete de forma mensual o anual — sin cargos ocultos, sin contratos, sin rodeos.<br />
@@ -668,7 +668,7 @@ export default function Home() {
               Nuestras sesiones
             </p>
             <h2 className="font-sans text-white mb-6 flex items-start justify-center gap-4 font-semibold text-[24px] sm:text-3xl lg:text-4xl" data-testid="nucleos-headline">
-              Los 5 núcleos del <img src={logo} alt="Traders Hub Logo" className="h-10 sm:h-14 md:h-16 inline-block pt-[3px] pb-[3px] mt-[0px] mb-[0px]" />
+              Los 5 núcleos del <img src={logo} alt="Traders Hub Logo" className="h-10 sm:h-14 md:h-16 inline-block mt-[4px] mb-[4px] pt-[3px] pb-[3px]" />
             </h2>
             <p className="font-sans text-gray-300 max-w-4xl mx-auto px-4" style={{ fontSize: '14px' }} data-testid="nucleos-description">No son clases: son 7 a 9 sesiones de trading en vivo cada semana, donde literalmente operas junto a nuestros mentores y observas su operativa en tiempo real.  Es la parte más práctica de todo el Abacus Experience, diseñada para que la comunidad siga, aprenda y ejecute exactamente lo que hacemos dentro del mercado. Se divide de en 5 núcleos.</p>
           </div>
@@ -1205,12 +1205,12 @@ export default function Home() {
               backgroundPosition: 'center center',
               backgroundRepeat: 'no-repeat',
               filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3))',
-              aspectRatio: '16/10.75'
+              aspectRatio: '16/8.5'
             }}
             data-testid="cta-card"
           >
             {/* Content overlay */}
-            <div className="absolute inset-y-[10%] inset-x-0 z-10 flex flex-col items-start justify-center text-left pl-[15%] pr-6 sm:pl-[15%] sm:pr-8 md:pl-[15%] md:pr-12 lg:pl-[15%] lg:pr-16">
+            <div className="absolute inset-0 z-10 flex flex-col items-start justify-center text-left pl-[20%] pr-6 py-6 sm:pl-[22%] sm:pr-8 sm:py-8 md:pl-[20%] md:pr-12 md:py-10 lg:pl-[20%] lg:pr-16 lg:py-12">
               
               {/* Heading */}
               <h2 
@@ -1268,7 +1268,7 @@ export default function Home() {
             <p className="font-sans text-green-400 text-sm font-medium mb-4 tracking-wide" data-testid="faq-eyebrow">
               Preguntas Frecuentes
             </p>
-            <h2 className="font-sans text-white mb-6 font-semibold sm:text-3xl lg:text-4xl text-[24px]" data-testid="faq-headline">
+            <h2 className="font-sans text-white mb-6 font-semibold text-[24px] sm:text-3xl lg:text-4xl" data-testid="faq-headline">
               ¿Tienes preguntas? Aquí están las respuestas.
             </h2>
           </div>
