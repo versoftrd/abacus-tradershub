@@ -118,7 +118,7 @@ function AnimatedChartPercentage() {
   return (
     <div 
       id="chart-percentage-trigger"
-      className={`font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#ffffff] mt-2 sm:mt-4 md:mt-8 lg:mt-12 mb-2 sm:mb-4 md:mb-8 lg:mb-12 transition-all duration-700 ${
+      className={`font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#ffffff] mt-8 sm:mt-12 md:mt-[55px] mb-8 sm:mb-12 md:mb-[55px] transition-all duration-700 ${
         isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
       }`}
       style={{ 
@@ -283,8 +283,8 @@ function AnimatedLineChart() {
 
 
   return (
-    <div id="animated-chart" className="h-[16rem] sm:h-[20rem] md:h-[24rem] lg:h-[28rem] xl:h-[32rem] w-full group cursor-pointer flex items-center justify-center">
-      <svg viewBox="0 40 800 320" className="w-full h-full max-w-full overflow-visible" preserveAspectRatio="xMidYMid meet" style={{ maxWidth: '100%' }}>
+    <div id="animated-chart" className="h-[20rem] sm:h-[24rem] md:h-[28rem] lg:h-[32rem] xl:h-[36rem] w-full group cursor-pointer flex items-center justify-center">
+      <svg viewBox="0 40 800 320" className="w-full h-full overflow-hidden" preserveAspectRatio="xMidYMid meet">
         <defs>
           <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="0%" stopColor="rgb(34, 197, 94)" stopOpacity="0.3"/>
@@ -307,10 +307,10 @@ function AnimatedLineChart() {
         <line x1="625" y1="70" x2="625" y2="280" stroke="rgba(255,255,255,0.05)" strokeWidth="1"/>
         
         {/* Y-axis labels */}
-        <text x="65" y="285" fill="#9CA3AF" fontSize="10" textAnchor="end" className="text-[10px] sm:text-xs">0%</text>
-        <text x="65" y="215" fill="#9CA3AF" fontSize="10" textAnchor="end" className="text-[10px] sm:text-xs">50%</text>
-        <text x="65" y="145" fill="#9CA3AF" fontSize="10" textAnchor="end" className="text-[10px] sm:text-xs">100%</text>
-        <text x="65" y="75" fill="#9CA3AF" fontSize="10" textAnchor="end" className="text-[10px] sm:text-xs">150%</text>
+        <text x="65" y="285" fill="#9CA3AF" fontSize="12" textAnchor="end">0%</text>
+        <text x="65" y="215" fill="#9CA3AF" fontSize="12" textAnchor="end">50%</text>
+        <text x="65" y="145" fill="#9CA3AF" fontSize="12" textAnchor="end">100%</text>
+        <text x="65" y="75" fill="#9CA3AF" fontSize="12" textAnchor="end">150%</text>
         
         {/* Area fill - animated */}
         <path
@@ -350,14 +350,14 @@ function AnimatedLineChart() {
         </g>
 
         {/* X-axis labels */}
-        <text x="85" y="300" fill="#9CA3AF" fontSize="9" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium text-[8px] sm:text-[9px]">Aug 1</text>
-        <text x="175" y="300" fill="#9CA3AF" fontSize="9" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium text-[8px] sm:text-[9px]">Aug 3</text>
-        <text x="265" y="300" fill="#9CA3AF" fontSize="9" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium text-[8px] sm:text-[9px]">Aug 5</text>
-        <text x="355" y="300" fill="#9CA3AF" fontSize="9" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium text-[8px] sm:text-[9px]">Aug 7</text>
-        <text x="445" y="300" fill="#9CA3AF" fontSize="9" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium text-[8px] sm:text-[9px]">Aug 9</text>
-        <text x="535" y="300" fill="#9CA3AF" fontSize="9" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium text-[8px] sm:text-[9px]">Aug 11</text>
-        <text x="625" y="300" fill="#9CA3AF" fontSize="9" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium text-[8px] sm:text-[9px]">Aug 13</text>
-        <text x="715" y="300" fill="#9CA3AF" fontSize="9" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium text-[8px] sm:text-[9px]">Aug 15</text>
+        <text x="85" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 1</text>
+        <text x="175" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 3</text>
+        <text x="265" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 5</text>
+        <text x="355" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 7</text>
+        <text x="445" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 9</text>
+        <text x="535" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 11</text>
+        <text x="625" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 13</text>
+        <text x="715" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 15</text>
       </svg>
     </div>
   );
@@ -823,26 +823,24 @@ export default function Home() {
           </div>
 
           {/* Main Stats Card */}
-          <div className="max-w-6xl mx-auto px-4 relative z-[90]">
-            <div className="relative border border-white/10 rounded-2xl p-3 sm:p-4 shadow-2xl overflow-hidden" style={{ 
+          <div className="max-w-6xl mx-auto relative z-[90]">
+            <div className="relative border border-white/10 rounded-2xl p-3 shadow-2xl" style={{ 
               background: 'linear-gradient(135deg, rgba(27, 27, 27, 0.9) 0%, rgba(34, 34, 34, 0.8) 50%, rgba(27, 27, 27, 0.9) 100%)',
               backdropFilter: 'blur(10px)'
             }}>
               
               {/* Chart Container */}
-              <div className="relative mb-2 overflow-hidden">
-                {/* +150.8% Metric - Animated - Responsive positioning */}
-                <div className="absolute top-2 right-1 sm:top-4 sm:right-4 md:right-8 lg:right-12 z-10">
+              <div className="relative mb-2">
+                {/* +150.8% Metric - Animated */}
+                <div className="absolute top-0 right-2 sm:right-4 md:right-8 lg:right-12 z-10">
                   <AnimatedChartPercentage />
                 </div>
 
-                {/* Animated Chart - Contained within bounds */}
-                <div className="w-full overflow-hidden">
-                  <AnimatedLineChart />
-                </div>
+                {/* Animated Chart */}
+                <AnimatedLineChart />
 
                 {/* Chart Caption */}
-                <p className="text-center text-gray-500 text-xs mt-2 px-2">
+                <p className="text-center text-gray-500 text-xs mt-2">
                   (Valor de la cuenta de Jorge Valet en 15 días)
                 </p>
               </div>
