@@ -1,0 +1,134 @@
+# CI/CD para MarketOpen Production
+# Este workflow se ejecuta en cada push a la rama main y despliega la aplicación en producción
+
+name: CI-CD
+env:
+  DEPLOY_PACKAGE_NAME_FILE: "${{ github.sha }}.zip"
+  DEPLOY_PACKAGE_NAME: "${{ github.sha }}"
+  PM2_APP_NAME: "tradershub"
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: AbacusAppsProduction
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v3
+
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Cache node modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
+
+      - name: Create deployment package
+        run: |
+          # Crear directorio temporal para el paquete
+          mkdir -p deploy-temp
+
+          # Copiar archivos compilados del frontend
+          cp -r dist/ deploy-temp/dist/
+
+          # Copiar archivos de configuración de Node.js
+          cp package.json deploy-temp/
+          cp package-lock.json deploy-temp/
+
+          # Crear archivo ecosystem.config.cjs desde la variable
+          echo '${{ vars.ECOSYSTEM }}' > deploy-temp/ecosystem.config.cjs
+
+          # Crear el ZIP desde el directorio temporal
+          cd deploy-temp
+          zip -r ../${{ env.DEPLOY_PACKAGE_NAME_FILE }} . -x *.git*
+
+          # Mostrar contenido del ZIP para verificar
+          echo "Package created: ${{ env.DEPLOY_PACKAGE_NAME_FILE }}"
+          echo "Contents:"
+          unzip -l ../${{ env.DEPLOY_PACKAGE_NAME_FILE }}
+
+      - name: Copy file via ssh password
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.AWS_IP }}
+          username: ${{ secrets.AWS_USERNAME }}
+          key: ${{ secrets.AWS_KEY }}
+          password: ""
+          passphrase: ""
+          port: 22
+          source: ${{ env.DEPLOY_PACKAGE_NAME_FILE }}
+          target: "${{ vars.AWS_PACKAGE_FOLDER }}"
+
+      - name: Deploy to AWS production server
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{ secrets.AWS_IP }}
+          username: ${{ secrets.AWS_USERNAME }}
+          key: ${{ secrets.AWS_KEY }}
+          password: ""
+          passphrase: ""
+          port: 22
+          command_timeout: 20m
+          script: |
+            # Crear backup del deployment anterior
+            if [ -d "${{ vars.AWS_ROOT_DIR }}" ]; then
+              sudo cp -r ${{ vars.AWS_ROOT_DIR }} ${{ vars.AWS_ROOT_DIR }}.backup.$(date +%Y%m%d_%H%M%S)
+            fi
+
+            # Limpiar directorio de destino
+            sudo rm -rf ${{ vars.AWS_ROOT_DIR }}
+            sudo mkdir -p ${{ vars.AWS_ROOT_DIR }}
+
+            # Extraer archivos
+            sudo unzip -q -o ${{ vars.AWS_PACKAGE_FOLDER }}/${{ env.DEPLOY_PACKAGE_NAME_FILE }} -d ${{ vars.AWS_ROOT_DIR }}
+
+            # Cambiar permisos
+            sudo chown -R ${{ secrets.AWS_USERNAME }}:${{ secrets.AWS_USERNAME }} ${{ vars.AWS_ROOT_DIR }}
+
+            # Navegar al directorio
+            cd ${{ vars.AWS_ROOT_DIR }}
+
+            # Instalar dependencias de producción
+            npm install
+
+            # Reiniciar PM2 con validación
+            if sudo pm2 list | grep -q "${{ env.PM2_APP_NAME }}"; then
+              echo "Restarting PM2 process: ${{ env.PM2_APP_NAME }}"
+              sudo pm2 restart ${{ env.PM2_APP_NAME }}
+              sudo pm2 save
+            else
+              echo "PM2 process '${{ env.PM2_APP_NAME }}' not found, creating new process..."
+              sudo pm2 start ecosystem.config.cjs
+              sudo pm2 save
+            fi
+
+            # Limpiar archivo zip temporal
+            rm -f ${{ vars.AWS_PACKAGE_FOLDER }}/${{ env.DEPLOY_PACKAGE_NAME_FILE }}
+
+            # Limpiar backups antiguos (mantener solo los últimos 3)
+            sudo find ${{ vars.AWS_ROOT_DIR }}.backup.* -type d -mtime +7 -exec rm -rf {} \; 2>/dev/null || true
+
+            echo "Deployment completed successfully!"
