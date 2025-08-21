@@ -97,10 +97,10 @@ function AnimatedChartPercentage() {
         entries.forEach((entry) => {
           if (entry.isIntersecting && !hasAnimated) {
             setHasAnimated(true);
-            // Delay the appearance to sync with chart completion (3.5s chart + 0.2s delay)
+            // Delay the appearance to sync with chart completion (5s chart + 0.2s delay)
             setTimeout(() => {
               setIsVisible(true);
-            }, 3700);
+            }, 5200);
           }
         });
       },
@@ -155,7 +155,7 @@ function AnimatedLineChart() {
           if (entry.isIntersecting && !hasAnimated) {
             setHasAnimated(true);
             const startTime = Date.now();
-            const duration = 3500; // 3.5 seconds for full animation
+            const duration = 5000; // 5 seconds for full animation (slower)
 
             const updateProgress = () => {
               const now = Date.now();
@@ -280,28 +280,25 @@ function AnimatedLineChart() {
     return path;
   };
 
-  // Calculate rocket position based on animation progress
+  // Calculate rocket position - positioned at the leading edge of the line
   const getRocketPosition = () => {
-    if (visiblePoints.length === 0) return { x: 85, y: 280 };
-    if (visiblePoints.length === 1) return { x: visiblePoints[0].x, y: visiblePoints[0].y };
+    if (animationProgress === 0) return { x: 85, y: 280 };
     
-    const lastPoint = visiblePoints[visiblePoints.length - 1];
-    const progress = animationProgress * dataPoints.length;
-    const currentIndex = Math.floor(progress);
-    const segmentProgress = progress - currentIndex;
+    // Calculate the exact position along the line progression
+    const totalProgress = animationProgress * (dataPoints.length - 1);
+    const currentSegmentIndex = Math.floor(totalProgress);
+    const segmentProgress = totalProgress - currentSegmentIndex;
     
-    if (currentIndex >= visiblePoints.length - 1) {
-      return { x: lastPoint.x, y: lastPoint.y };
-    }
+    // Ensure we don't go beyond the available points
+    const fromIndex = Math.min(currentSegmentIndex, dataPoints.length - 2);
+    const toIndex = Math.min(fromIndex + 1, dataPoints.length - 1);
     
-    const current = visiblePoints[currentIndex];
-    const next = visiblePoints[currentIndex + 1];
+    const fromPoint = dataPoints[fromIndex];
+    const toPoint = dataPoints[toIndex];
     
-    if (!next) return { x: current.x, y: current.y };
-    
-    // Interpolate position for smooth rocket movement
-    const x = current.x + (next.x - current.x) * segmentProgress;
-    const y = current.y + (next.y - current.y) * segmentProgress;
+    // Interpolate position for smooth rocket movement along the line
+    const x = fromPoint.x + (toPoint.x - fromPoint.x) * segmentProgress;
+    const y = fromPoint.y + (toPoint.y - fromPoint.y) * segmentProgress;
     
     return { x, y };
   };
@@ -390,15 +387,15 @@ function AnimatedLineChart() {
       {/* Rocket Loading Indicator */}
       {isAnimating && (
         <div 
-          className="absolute pointer-events-none transition-all duration-100"
+          className="absolute pointer-events-none transition-all duration-200"
           style={{
             left: `${(rocketPosition.x / 800) * 100}%`,
             top: `${((rocketPosition.y - 40) / 320) * 100}%`,
-            transform: 'translate(-50%, -50%)',
-            zIndex: 20
+            transform: 'translate(-50%, -120%)', // Position rocket above the line
+            zIndex: 25
           }}
         >
-          <div className="text-2xl animate-bounce">🚀</div>
+          <div className="text-2xl animate-bounce drop-shadow-lg">🚀</div>
         </div>
       )}
     </div>
