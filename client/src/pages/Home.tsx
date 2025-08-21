@@ -91,16 +91,16 @@ function AnimatedLineChart() {
   const [animationProgress, setAnimationProgress] = useState(0);
   const [hasAnimated, setHasAnimated] = useState(false);
 
-  // Chart data points (x, y coordinates)
+  // Chart data points (x, y coordinates) - More realistic trading pattern
   const dataPoints = [
-    { x: 85, y: 280, value: 0 },      // Starting point at 0%
-    { x: 175, y: 250, value: 15 },    // Aug 3: 15%
-    { x: 265, y: 220, value: 30 },    // Aug 5: 30%
-    { x: 355, y: 200, value: 45 },    // Aug 7: 45%
-    { x: 445, y: 180, value: 60 },    // Aug 9: 60%
-    { x: 535, y: 160, value: 75 },    // Aug 11: 75%
-    { x: 625, y: 140, value: 98 },    // Aug 13: 98%
-    { x: 715, y: 72, value: 150.8 }   // Aug 15: 150.8%
+    { x: 85, y: 280, value: 0 },      // Aug 1: Starting point at 0%
+    { x: 175, y: 260, value: 12 },    // Aug 3: Small gain 12%
+    { x: 265, y: 270, value: 8 },     // Aug 5: Small dip to 8%
+    { x: 355, y: 235, value: 28 },    // Aug 7: Recovery to 28%
+    { x: 445, y: 250, value: 22 },    // Aug 9: Minor pullback to 22%
+    { x: 535, y: 200, value: 45 },    // Aug 11: Strong growth to 45%
+    { x: 625, y: 140, value: 85 },    // Aug 13: Major breakthrough to 85%
+    { x: 715, y: 72, value: 150.8 }   // Aug 15: Final surge to 150.8%
   ];
 
   useEffect(() => {
@@ -145,27 +145,73 @@ function AnimatedLineChart() {
   const pointsToShow = Math.ceil(animationProgress * dataPoints.length);
   const visiblePoints = dataPoints.slice(0, pointsToShow);
   
-  // Generate path for the visible portion
+  // Generate smooth curved path for the visible portion
   const generatePath = (points: typeof dataPoints) => {
     if (points.length === 0) return "";
     if (points.length === 1) return `M ${points[0].x} ${points[0].y}`;
+    if (points.length === 2) return `M ${points[0].x} ${points[0].y} L ${points[1].x} ${points[1].y}`;
     
     let path = `M ${points[0].x} ${points[0].y}`;
+    
+    // Create smooth curves using quadratic bezier curves
     for (let i = 1; i < points.length; i++) {
-      path += ` L ${points[i].x} ${points[i].y}`;
+      const current = points[i];
+      const previous = points[i - 1];
+      
+      if (i === 1) {
+        // First curve - start smoothly
+        const controlX = previous.x + (current.x - previous.x) * 0.5;
+        const controlY = previous.y + (current.y - previous.y) * 0.3;
+        path += ` Q ${controlX} ${controlY} ${current.x} ${current.y}`;
+      } else {
+        // Subsequent curves - create smooth transitions
+        const next = points[i + 1];
+        if (next) {
+          // Use the midpoint between current and next for smooth continuation
+          const controlX = current.x - (current.x - previous.x) * 0.2;
+          const controlY = current.y - (current.y - previous.y) * 0.2;
+          path += ` Q ${controlX} ${controlY} ${current.x} ${current.y}`;
+        } else {
+          // Last point - smooth ending
+          const controlX = previous.x + (current.x - previous.x) * 0.7;
+          const controlY = previous.y + (current.y - previous.y) * 0.5;
+          path += ` Q ${controlX} ${controlY} ${current.x} ${current.y}`;
+        }
+      }
     }
     return path;
   };
 
-  // Generate area fill path
+  // Generate smooth area fill path
   const generateAreaPath = (points: typeof dataPoints) => {
     if (points.length === 0) return "";
     
     let path = `M ${points[0].x} 280`; // Start from bottom
     path += ` L ${points[0].x} ${points[0].y}`; // Go to first point
     
-    for (let i = 1; i < points.length; i++) {
-      path += ` L ${points[i].x} ${points[i].y}`;
+    // Use the same smooth curve logic as the line
+    if (points.length > 1) {
+      for (let i = 1; i < points.length; i++) {
+        const current = points[i];
+        const previous = points[i - 1];
+        
+        if (i === 1) {
+          const controlX = previous.x + (current.x - previous.x) * 0.5;
+          const controlY = previous.y + (current.y - previous.y) * 0.3;
+          path += ` Q ${controlX} ${controlY} ${current.x} ${current.y}`;
+        } else {
+          const next = points[i + 1];
+          if (next) {
+            const controlX = current.x - (current.x - previous.x) * 0.2;
+            const controlY = current.y - (current.y - previous.y) * 0.2;
+            path += ` Q ${controlX} ${controlY} ${current.x} ${current.y}`;
+          } else {
+            const controlX = previous.x + (current.x - previous.x) * 0.7;
+            const controlY = previous.y + (current.y - previous.y) * 0.5;
+            path += ` Q ${controlX} ${controlY} ${current.x} ${current.y}`;
+          }
+        }
+      }
     }
     
     if (points.length > 0) {
