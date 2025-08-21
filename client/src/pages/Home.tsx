@@ -1198,14 +1198,13 @@ export default function Home() {
         <div className="relative max-w-6xl mx-auto px-2 sm:px-4 md:px-6">
           {/* CTA Card */}
           <div 
-            className="relative group cursor-pointer transition-all duration-500 hover:scale-[1.02] rounded-2xl overflow-hidden"
+            className="relative group cursor-pointer transition-all duration-500 hover:scale-[1.02] rounded-2xl overflow-hidden [aspect-ratio:16/6] sm:[aspect-ratio:16/7.4]"
             style={{
               backgroundImage: `url(${chart})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center center',
               backgroundRepeat: 'no-repeat',
-              filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3))',
-              aspectRatio: '16/7.4'
+              filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3))'
             }}
             data-testid="cta-card"
           >
