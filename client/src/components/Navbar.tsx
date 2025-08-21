@@ -42,14 +42,14 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50">
       <div className="mx-auto max-w-6xl px-2 sm:px-4">
-        <div className="flex h-12 xs:h-14 sm:h-16 items-center justify-between gap-1 xs:gap-2 sm:gap-3">
+        <div className="flex h-10 xs:h-12 sm:h-14 items-center justify-between gap-1 xs:gap-2 sm:gap-3">
           
           {/* Logo Section */}
           <div className="flex items-center">
             <img 
               src={logoPath} 
               alt="TRADERS Hub"
-              className="h-8 xs:h-10 sm:h-12 md:h-[54px] w-auto mt-1 sm:mt-2"
+              className="h-4 xs:h-5 sm:h-6 md:h-[27px] w-auto mt-0.5 sm:mt-1"
               style={{ maxWidth: '100%', height: 'auto' }}
               data-testid="logo-traders-hub"
             />
