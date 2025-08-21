@@ -488,14 +488,14 @@ export default function Home() {
                     <line x1="715" y1="70" x2="715" y2="280" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
 
                     {/* Y-axis labels - Four main values */}
-                    <text x="80" y="285" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">$0</text>
-                    <text x="80" y="215" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">US$1,000</text>
-                    <text x="80" y="145" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">US$2,000</text>
-                    <text x="80" y="75" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">US$3,000</text>
+                    <text x="80" y="285" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">0%</text>
+                    <text x="80" y="215" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">50%</text>
+                    <text x="80" y="145" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">100%</text>
+                    <text x="80" y="75" fill="#fff" fontSize="12" textAnchor="end" className="font-medium">150%</text>
 
                     {/* Chart line with area fill - Proportional to actual data */}
                     <path
-                      d="M 85,245 L 175,240 L 265,240 L 355,210 L 445,195 L 535,195 L 625,190 L 715,175"
+                      d="M 85,270 L 175,250 L 265,230 L 355,190 L 445,160 L 535,130 L 625,100 L 715,72"
                       fill="none"
                       stroke="rgb(34, 197, 94)"
                       strokeWidth="4"
@@ -510,7 +510,7 @@ export default function Home() {
                       }}
                     />
                     <path
-                      d="M 85,245 L 175,240 L 265,240 L 355,210 L 445,195 L 535,195 L 625,190 L 715,175 L 715,280 L 85,280 Z"
+                      d="M 85,270 L 175,250 L 265,230 L 355,190 L 445,160 L 535,130 L 625,100 L 715,72 L 715,280 L 85,280 Z"
                       fill="url(#chartGradient)"
                       className="transition-all duration-300 group-hover:opacity-80"
                       style={{
@@ -519,16 +519,16 @@ export default function Home() {
                       }}
                     />
                     
-                    {/* Interactive data points - Proportional positioning */}
+                    {/* Interactive data points - Percentage based positioning */}
                     <g className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <circle cx="85" cy="245" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$1,800" data-date="Aug 1"/>
-                      <circle cx="175" cy="240" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$1,900" data-date="Aug 3"/>
-                      <circle cx="265" cy="240" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$1,900" data-date="Aug 5"/>
-                      <circle cx="355" cy="210" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,100" data-date="Aug 7"/>
-                      <circle cx="445" cy="195" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,250" data-date="Aug 9"/>
-                      <circle cx="535" cy="195" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,250" data-date="Aug 11"/>
-                      <circle cx="625" cy="190" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,300" data-date="Aug 13"/>
-                      <circle cx="715" cy="175" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="$2,400" data-date="Aug 15"/>
+                      <circle cx="85" cy="270" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="8%" data-date="Aug 1"/>
+                      <circle cx="175" cy="250" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="22%" data-date="Aug 3"/>
+                      <circle cx="265" cy="230" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="35%" data-date="Aug 5"/>
+                      <circle cx="355" cy="190" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="65%" data-date="Aug 7"/>
+                      <circle cx="445" cy="160" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="85%" data-date="Aug 9"/>
+                      <circle cx="535" cy="130" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="108%" data-date="Aug 11"/>
+                      <circle cx="625" cy="100" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="128%" data-date="Aug 13"/>
+                      <circle cx="715" cy="72" r="5" fill="rgb(34, 197, 94)" className="hover:r-7 transition-all cursor-pointer" data-value="150.8%" data-date="Aug 15"/>
                     </g>
 
                     {/* X-axis labels - Proportionally spaced dates */}
