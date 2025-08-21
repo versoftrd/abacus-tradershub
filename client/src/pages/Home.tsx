@@ -1491,73 +1491,73 @@ export default function Home() {
         </div>
       </section>
       {/* Footer Section */}
-      <footer className="relative bg-[#080808] pt-12 sm:pt-16 pb-6 sm:pb-8">
-        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6">
+      <footer className="relative bg-[#0a0a0a] pt-16 pb-8 border-t border-gray-900">
+        <div className="max-w-7xl mx-auto px-6">
           
           {/* Main Footer Content */}
-          <div className="responsive-grid gap-6 sm:gap-8 mb-8 sm:mb-12">
+          <div className="flex flex-col lg:flex-row justify-between gap-12 mb-12">
             
-            {/* Logo Section */}
-            <div className="col-span-full sm:col-span-1">
+            {/* Left - Logo */}
+            <div className="flex-shrink-0">
               <img 
                 src={abacusLogo} 
                 alt="Abacus Logo" 
-                className="h-10 sm:h-12 w-auto mb-4 mx-auto sm:mx-0"
-                style={{ maxWidth: '100%', height: 'auto' }}
+                className="h-8 w-auto"
+                style={{ filter: 'brightness(0) invert(1)' }}
                 data-testid="footer-logo"
               />
             </div>
             
-            {/* Navigation Columns */}
-            <div className="col-span-full sm:col-span-2 md:col-span-3">
-              <div className="responsive-grid responsive-grid-4 gap-4 sm:gap-6 md:gap-8">
+            {/* Center - Navigation Columns */}
+            <div className="flex-1 max-w-3xl">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
                 
                 {/* Column 1 - Abacus */}
                 <div data-testid="footer-column-abacus">
-                  <h3 className="font-sans text-gray-400 font-semibold mb-4" style={{ fontSize: '14px' }}>Abacus</h3>
-                  <ul className="space-y-3">
-                    <li><a href="#" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-home">Home</a></li>
-                    <li><a href="https://youtube.com/c/abacusexchange" target="_blank" rel="noopener noreferrer" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-videos">Videos</a></li>
-                    <li><a href="https://www.trustpilot.com/review/abacusexchange.org" target="_blank" rel="noopener noreferrer" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-reviews">Reviews</a></li>
-                    <li><a href="https://www.youtube.com/@TheDailyWinnerPodcast" target="_blank" rel="noopener noreferrer" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-testimonials">Testimonials</a></li>
+                  <h3 className="font-sans text-gray-500 text-sm font-normal mb-4">Abacus</h3>
+                  <ul className="space-y-2">
+                    <li><a href="#" className="font-sans text-gray-300 hover:text-white transition-colors duration-200 text-sm" data-testid="footer-link-home">Home</a></li>
+                    <li><a href="https://youtube.com/c/abacusexchange" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-300 hover:text-white transition-colors duration-200 text-sm" data-testid="footer-link-videos">Videos</a></li>
+                    <li><a href="https://www.trustpilot.com/review/abacusexchange.org" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-300 hover:text-white transition-colors duration-200 text-sm" data-testid="footer-link-reviews">Reviews</a></li>
+                    <li><a href="https://www.youtube.com/@TheDailyWinnerPodcast" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-300 hover:text-white transition-colors duration-200 text-sm" data-testid="footer-link-testimonials">Testimonials</a></li>
                   </ul>
                 </div>
                 
                 {/* Column 2 - Aprende */}
                 <div data-testid="footer-column-aprende">
-                  <h3 className="font-sans text-gray-400 font-semibold mb-4" style={{ fontSize: '14px' }}>Aprende</h3>
-                  <ul className="space-y-3">
-                    <li><a href="https://abacusexchange.org" target="_blank" rel="noopener noreferrer" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-experience">Abacus Experience</a></li>
-                    <li><a href="https://campus.abacusexchange.org" target="_blank" rel="noopener noreferrer" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-campus">Campus Virtual</a></li>
-                    <li><a href="https://marketopen.ai" target="_blank" rel="noopener noreferrer" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-market">Market Open</a></li>
+                  <h3 className="font-sans text-gray-500 text-sm font-normal mb-4">Aprende</h3>
+                  <ul className="space-y-2">
+                    <li><a href="https://abacusexchange.org" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-300 hover:text-white transition-colors duration-200 text-sm" data-testid="footer-link-experience">Abacus Experience</a></li>
+                    <li><a href="https://campus.abacusexchange.org" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-300 hover:text-white transition-colors duration-200 text-sm" data-testid="footer-link-campus">Campus Virtual</a></li>
+                    <li><a href="https://marketopen.ai" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-300 hover:text-white transition-colors duration-200 text-sm" data-testid="footer-link-market">Market Open</a></li>
                   </ul>
                 </div>
                 
                 {/* Column 3 - Conoce más */}
                 <div data-testid="footer-column-conoce">
-                  <h3 className="font-sans text-gray-400 font-semibold mb-4" style={{ fontSize: '14px' }}>Conoce más</h3>
-                  <ul className="space-y-3">
-                    <li><a href="https://abacusexchange.org/tradestation" target="_blank" rel="noopener noreferrer" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-tradestation">TradeStation</a></li>
-                    <li><a href="https://abacusexchange.org/tradersync" target="_blank" rel="noopener noreferrer" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-tradersync">TraderSync</a></li>
+                  <h3 className="font-sans text-gray-500 text-sm font-normal mb-4">Conoce más</h3>
+                  <ul className="space-y-2">
+                    <li><a href="https://abacusexchange.org/tradestation" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-300 hover:text-white transition-colors duration-200 text-sm" data-testid="footer-link-tradestation">TradeStation</a></li>
+                    <li><a href="https://abacusexchange.org/tradersync" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-300 hover:text-white transition-colors duration-200 text-sm" data-testid="footer-link-tradersync">TraderSync</a></li>
                   </ul>
                 </div>
                 
                 {/* Column 4 - Ayuda */}
                 <div data-testid="footer-column-ayuda">
-                  <h3 className="font-sans text-gray-400 font-semibold mb-4" style={{ fontSize: '14px' }}>Ayuda</h3>
-                  <ul className="space-y-3">
-                    <li><a href="https://abacusexchange.org/calendly" target="_blank" rel="noopener noreferrer" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-contact">Contáctanos</a></li>
-                    <li><a href="https://abacusexchange.org/referral" target="_blank" rel="noopener noreferrer" className="font-sans text-white hover:text-green-400 transition-colors duration-200" style={{ fontSize: '12px' }} data-testid="footer-link-refer">Refiere a un Amigo</a></li>
+                  <h3 className="font-sans text-gray-500 text-sm font-normal mb-4">Ayuda</h3>
+                  <ul className="space-y-2">
+                    <li><a href="https://abacusexchange.org/calendly" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-300 hover:text-white transition-colors duration-200 text-sm" data-testid="footer-link-contact">Contáctanos</a></li>
+                    <li><a href="https://abacusexchange.org/referral" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-300 hover:text-white transition-colors duration-200 text-sm" data-testid="footer-link-refer">Refiere a un Amigo</a></li>
                   </ul>
                 </div>
                 
               </div>
             </div>
             
-            {/* Right Section - Register Button */}
-            <div className="col-span-full sm:col-span-1 flex justify-center sm:justify-start lg:justify-end items-start">
+            {/* Right - Register Button */}
+            <div className="flex-shrink-0">
               <button 
-                className="btn-responsive font-sans bg-gradient-to-b from-[#2ab46b] to-[#1b864e] text-white font-semibold hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mt-0"
+                className="px-6 py-2.5 bg-green-500 hover:bg-green-600 text-black font-semibold rounded-lg transition-all duration-200 text-sm"
                 data-testid="footer-register-button"
               >
                 Regístrate
@@ -1566,53 +1566,50 @@ export default function Home() {
             
           </div>
           
-          {/* Headquarters Info */}
-          <div className="flex flex-col sm:flex-row justify-center items-center mb-6 sm:mb-8 space-y-3 sm:space-y-0 sm:space-x-8 md:space-x-12">
-            <p className="font-sans text-xs sm:text-sm text-[#9da3ae] text-center">
-              <span className="font-bold text-[#9da3a9]">Headquarters:</span>{" "}
-              <span className="text-gray-400">Toronto, ON, Canada | Santo Domingo, Dominican Republic</span>
-            </p>
+          {/* Middle Section - Headquarters and Social */}
+          <div className="flex flex-col lg:flex-row justify-between items-center gap-6 py-8 border-t border-gray-800">
+            
+            {/* Headquarters Info */}
+            <div className="flex items-center gap-2">
+              <span className="font-sans text-gray-500 text-sm">Headquarters:</span>
+              <span className="font-sans text-gray-400 text-sm">Toronto, ON, Canada | Santo Domingo, Dominican Republic.</span>
+            </div>
             
             {/* Social Media Icons */}
-            <div className="flex space-x-3 sm:space-x-4">
-              <a href="https://x.com/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-500 transition-colors duration-200" data-testid="footer-x">
+            <div className="flex items-center gap-4">
+              <a href="https://x.com/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-400 transition-colors duration-200" data-testid="footer-x">
                 <SiX className="w-5 h-5" />
               </a>
-              <a href="#" className="text-green-400 hover:text-green-500 transition-colors duration-200" data-testid="footer-discord">
+              <a href="#" className="text-green-500 hover:text-green-400 transition-colors duration-200" data-testid="footer-discord">
                 <SiDiscord className="w-5 h-5" />
               </a>
-              <a href="https://instagram.com/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-500 transition-colors duration-200" data-testid="footer-instagram">
+              <a href="https://instagram.com/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-400 transition-colors duration-200" data-testid="footer-instagram">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="text-green-400 hover:text-green-500 transition-colors duration-200" data-testid="footer-facebook">
+              <a href="#" className="text-green-500 hover:text-green-400 transition-colors duration-200" data-testid="footer-facebook">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="text-green-400 hover:text-green-500 transition-colors duration-200" data-testid="footer-whatsapp">
+              <a href="#" className="text-green-500 hover:text-green-400 transition-colors duration-200" data-testid="footer-whatsapp">
                 <SiWhatsapp className="w-5 h-5" />
               </a>
             </div>
+            
           </div>
           
-          {/* Divider Line */}
-          <div className="border-t border-gray-800 mb-8"></div>
-          
           {/* Bottom Section */}
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-6 border-t border-gray-800">
             
-            {/* Left - Copyright */}
-            <div>
-              <p className="font-sans text-gray-400 text-sm" data-testid="footer-copyright">
-                © 2025 Abacus Exchange. All rights reserved.
-              </p>
-            </div>
+            {/* Copyright */}
+            <p className="font-sans text-gray-500 text-sm" data-testid="footer-copyright">
+              © 2025 Abacus Exchange. All rights reserved.
+            </p>
             
-            {/* Right - Privacy Links */}
-            <div className="flex space-x-4">
-              <a href="https://www.abacusexchange.org/politicas-de-privacidad" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200 text-sm" data-testid="footer-privacy">
+            {/* Privacy Links */}
+            <div className="flex items-center gap-6">
+              <a href="https://www.abacusexchange.org/politicas-de-privacidad" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-500 hover:text-gray-300 transition-colors duration-200 text-sm" data-testid="footer-privacy">
                 Política de Privacidad
               </a>
-              <span className="text-gray-600">|</span>
-              <a href="https://www.abacusexchange.org/terms-and-conditions" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-400 hover:text-green-400 transition-colors duration-200 text-sm" data-testid="footer-terms">
+              <a href="https://www.abacusexchange.org/terms-and-conditions" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-500 hover:text-gray-300 transition-colors duration-200 text-sm" data-testid="footer-terms">
                 Términos y Condiciones
               </a>
             </div>
