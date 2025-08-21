@@ -31,6 +31,14 @@ export default function Navbar() {
     }
   };
 
+  const handleGetStartedClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const pricingSection = document.getElementById('pricing');
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="sticky top-0 z-50">
       <div className="mx-auto max-w-6xl px-4">
@@ -77,6 +85,7 @@ export default function Navbar() {
               </button>
               <button 
                 className="px-4 py-1.5 rounded-[10px] bg-gradient-to-r from-gradient-start to-gradient-end text-white shadow-sm hover:opacity-95 transition-opacity duration-200 focus:outline-none focus:ring-2 focus:ring-sky-300/60 text-xs font-semibold"
+                onClick={handleGetStartedClick}
                 data-testid="button-get-started"
               >
                 Get Started
@@ -138,6 +147,10 @@ export default function Navbar() {
               </button>
               <button 
                 className="w-full px-4 py-2 rounded-[10px] bg-gradient-to-r from-gradient-start to-gradient-end text-white shadow-sm hover:opacity-95 transition-opacity duration-200 text-xs font-semibold"
+                onClick={(e) => {
+                  handleGetStartedClick(e);
+                  setIsMobileMenuOpen(false);
+                }}
                 data-testid="mobile-button-get-started"
               >
                 Get Started
