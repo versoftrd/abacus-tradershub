@@ -64,7 +64,7 @@ export default function Navbar() {
                   target={item.external ? "_blank" : undefined}
                   rel={item.external ? "noopener noreferrer" : undefined}
                   onClick={item.name === 'Pricing' ? handlePricingClick : undefined}
-                  className={`px-3 py-1.5 rounded-[10px] text-xs transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 text-white ${
+                  className={`px-3 py-1.5 rounded-[10px] text-xs transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 text-white hover:font-semibold ${
                     isActive(item.path) ? "font-medium" : "font-light"
                   }`}
                   data-testid={`nav-link-${item.name.toLowerCase().replace(/\s+/g, "-")}`}
@@ -121,7 +121,7 @@ export default function Navbar() {
                 href={item.path}
                 target={item.external ? "_blank" : undefined}
                 rel={item.external ? "noopener noreferrer" : undefined}
-                className={`block px-3 py-2 rounded-[10px] text-xs transition-colors duration-200 ${
+                className={`block px-3 py-2 rounded-[10px] text-xs transition-all duration-200 hover:font-semibold ${
                   isActive(item.path)
                     ? "text-white font-medium"
                     : "text-zinc-300 font-light hover:bg-tab-hover"
