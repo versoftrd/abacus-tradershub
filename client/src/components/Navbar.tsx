@@ -8,7 +8,6 @@ const navigationItems = [
   { name: "Abacus Experience", path: "/abacus-experience" },
   { name: "Market Open", path: "/market-open" },
   { name: "Campus Virtual", path: "/campus-virtual" },
-  { name: "Traders Hub", path: "/traders-hub" },
   { name: "Pricing", path: "/pricing" },
 ];
 
