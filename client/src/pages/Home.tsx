@@ -1198,7 +1198,7 @@ export default function Home() {
         <div className="relative max-w-6xl mx-auto px-2 sm:px-4 md:px-6">
           {/* CTA Card */}
           <div 
-            className="relative group cursor-pointer transition-all duration-500 hover:scale-[1.02] rounded-2xl overflow-hidden h-[400px] sm:h-auto"
+            className="relative group cursor-pointer transition-all duration-500 hover:scale-[1.02] rounded-2xl overflow-hidden"
             style={{
               backgroundImage: `url(${chart})`,
               backgroundSize: 'cover',
