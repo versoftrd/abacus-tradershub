@@ -423,7 +423,7 @@ export default function Home() {
               
               {/* Main Headline */}
               <h1 
-                className="text-white tracking-wide blacklisted-font text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight px-2 font-normal mt-[0px] mb-[0px]"
+                className="text-white tracking-wide blacklisted-font text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-tight px-2 font-normal mt-[0px] mb-[0px]"
                 data-testid="hero-headline"
               >APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</h1>
 
