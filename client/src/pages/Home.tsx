@@ -1090,7 +1090,7 @@ export default function Home() {
           {/* Features Card */}
           <div className="max-w-4xl mx-auto">
             <div 
-              className="rounded-2xl p-8 shadow-2xl border border-green-500/10"
+              className="rounded-2xl p-8 shadow-2xl border border-green-500/10 transition-all duration-500 hover:border-green-500/20 hover:shadow-[0_0_60px_rgba(34,197,94,0.2)] hover:scale-[1.02]"
               style={{
                 background: 'linear-gradient(to top, #1c1c1c 0%, #225539 100%)',
                 boxShadow: '0 0 40px rgba(34, 197, 94, 0.1)'
@@ -1099,86 +1099,86 @@ export default function Home() {
             >
               <div className="space-y-4">
                 
-                <div className="flex items-start space-x-4" data-testid="feature-1">
-                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
-                  <p className="text-white text-[15px] leading-relaxed">
+                <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-1">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
                     Sesiones en vivo de trading en tiempo real con los mentores de Abacus
                   </p>
                 </div>
                 
-                <div className="flex items-start space-x-4" data-testid="feature-2">
-                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
-                  <p className="text-white text-[15px] leading-relaxed">
+                <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-2">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
                     7 a 9 sesiones semanales de práctica divididas en diferentes núcleos de especialización
                   </p>
                 </div>
                 
-                <div className="flex items-start space-x-4" data-testid="feature-3">
-                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
-                  <p className="text-white text-[15px] leading-relaxed">
+                <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-3">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
                     Live Day Trading con Jorge Valet: Aprende a leer y ejecutar operaciones intradía en vivo
                   </p>
                 </div>
                 
-                <div className="flex items-start space-x-4" data-testid="feature-4">
-                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
-                  <p className="text-white text-[15px] leading-relaxed">
+                <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-4">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
                     Opciones Avanzadas con Carlos Amec: Estrategias con opciones para rentabilizar tu portafolio
                   </p>
                 </div>
                 
-                <div className="flex items-start space-x-4" data-testid="feature-5">
-                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
-                  <p className="text-white text-[15px] leading-relaxed">
+                <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-5">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
                     Portafolio & Wealth con Ernesto Yunes: Construcción de portafolios diversificados a largo plazo
                   </p>
                 </div>
                 
-                <div className="flex items-start space-x-4" data-testid="feature-6">
-                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
-                  <p className="text-white text-[15px] leading-relaxed">
+                <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-6">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
                     Charting de la semana con Jean Vizón: Análisis técnico y estructuración de escenarios de mercado
                   </p>
                 </div>
                 
-                <div className="flex items-start space-x-4" data-testid="feature-7">
-                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
-                  <p className="text-white text-[15px] leading-relaxed">
+                <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-7">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
                     Acceso a grabaciones completas de todas las sesiones en español
                   </p>
                 </div>
                 
-                <div className="flex items-start space-x-4" data-testid="feature-8">
-                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
-                  <p className="text-white text-[15px] leading-relaxed">
+                <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-8">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
                     Metodología práctica: Aprendes mientras operas junto a traders expertos
                   </p>
                 </div>
                 
-                <div className="flex items-start space-x-4" data-testid="feature-9">
-                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
-                  <p className="text-white text-[15px] leading-relaxed">
+                <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-9">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
                     Acceso exclusivo a la comunidad de traders e inversionistas de Abacus
                   </p>
                 </div>
                 
-                <div className="flex items-start space-x-4" data-testid="feature-10">
-                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
-                  <p className="text-white text-[15px] leading-relaxed">
+                <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-10">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
                     Acompañamiento directo: Pregunta y recibe respuestas en vivo de los mentores
                   </p>
                 </div>
                 
-                <div className="flex items-start space-x-4" data-testid="feature-11">
-                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
-                  <p className="text-white text-[15px] leading-relaxed">
+                <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-11">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
                     Clases temáticas y actualizaciones constantes sobre tendencias y noticias del mercado
                   </p>
                 </div>
                 
-                <div className="flex items-start space-x-4" data-testid="feature-12">
-                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
-                  <p className="text-white text-[15px] leading-relaxed">
+                <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-12">
+                  <Check className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
                     Entorno de trading seguro y guiado, ideal para aplicar estrategias sin estar solo
                   </p>
                 </div>
