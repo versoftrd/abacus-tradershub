@@ -719,7 +719,7 @@ export default function Home() {
                   <div className="flex justify-center lg:justify-start mb-4">
                     <img src={candlestickIcon} alt="Candlestick Chart" className="w-8 h-8 transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
                   </div>
-                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-green-100" style={{ fontSize: '24px' }}>
+                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-green-100 text-lg sm:text-xl md:text-2xl leading-tight">
                     Live Trading con Jorge Valet
                   </h3>
                   <p className="font-sans text-gray-400 mb-6 text-[14px] transition-colors duration-300 group-hover:text-gray-300" style={{ fontSize: '14px' }}>Acompaña a Jorge en sesiones de trading en vivo, donde analiza el mercado, ejecuta operaciones y explica paso a paso su proceso de decisión. Aprende a identificar oportunidades reales y a gestionar el riesgo mientras observas la acción del mercado minuto a minuto.</p>
@@ -741,7 +741,7 @@ export default function Home() {
                   <div className="flex justify-center lg:justify-start mb-4">
                     <img src={optionsIcon} alt="Options Trading Icon" className="w-8 h-8 transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
                   </div>
-                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-green-100" style={{ fontSize: '24px' }}>
+                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-green-100 text-lg sm:text-xl md:text-2xl leading-tight">
                     Live Options Trading con Winston Cordero
                   </h3>
                   <p className="font-sans text-gray-400 mb-6 text-[14px] transition-colors duration-300 group-hover:text-gray-300" style={{ fontSize: '14px' }}>Winston te lleva al siguiente nivel en el manejo de opciones, combinando análisis de contexto, estructura del mercado y ejecución práctica. Aprende desde day trading, hasta cómo crear un portafolio flexible con opciones que se adapte al movimiento del mercado y potencie tu rendimiento con control de riesgo.</p>
@@ -763,7 +763,7 @@ export default function Home() {
                   <div className="flex justify-center lg:justify-start mb-4">
                     <img src={conflictIcon} alt="Options Strategy" className="w-8 h-8 transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
                   </div>
-                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-green-100" style={{ fontSize: '24px' }}>
+                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-green-100 text-lg sm:text-xl md:text-2xl leading-tight">
                     Opciones Avanzadas con Carlos Amec
                   </h3>
                   <p className="font-sans text-gray-400 mb-6 text-[14px] transition-colors duration-300 group-hover:text-gray-300" style={{ fontSize: '14px' }}>Domina las estrategias que usan los profesionales. Carlos te guía en el mundo de las opciones con tácticas avanzadas como covered calls, puts y spreads. Descubre cómo generar ingresos consistentes y proteger tu portafolio en distintos escenarios de mercado.</p>
@@ -785,7 +785,7 @@ export default function Home() {
                   <div className="flex justify-center lg:justify-start mb-4">
                     <img src={stocksIcon} alt="Stock Analysis" className="w-8 h-8 transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
                   </div>
-                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-green-100" style={{ fontSize: '24px' }}>
+                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-green-100 text-lg sm:text-xl md:text-2xl leading-tight">
                     Charting de la Semana con Jean Vizón
                   </h3>
                   <p className="font-sans text-gray-400 mb-6 text-[14px] transition-colors duration-300 group-hover:text-gray-300" style={{ fontSize: '14px' }}>Análisis técnico aplicado a lo que importa.  
