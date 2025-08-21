@@ -791,19 +791,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
-      {/* Smooth Transition Section */}
-      <section className="relative h-32">
-        <div 
-          className="absolute inset-0"
-          style={{
-            background: 'linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.8) 25%, rgba(16, 16, 16, 0.6) 50%, rgba(12, 12, 12, 0.8) 75%, #0a0a0a 100%)'
-          }}
-        ></div>
-        {/* Subtle green glow transition */}
-        <div className="absolute inset-0 bg-gradient-to-b from-green-500/5 via-green-400/3 to-transparent"></div>
-      </section>
-      
       {/* Feature Highlights Section */}
       <section className="relative bg-[#0a0a0a] py-16 px-4 sm:px-6">
         {/* Background decorative elements */}
