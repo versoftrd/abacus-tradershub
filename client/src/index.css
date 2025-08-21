@@ -42,6 +42,13 @@ img, video, iframe, svg {
   padding-right: 0.5rem;
 }
 
+/* Extra small breakpoint for logo and navbar responsiveness */
+@media (min-width: 475px) {
+  .xs\:h-10 { height: 2.5rem; }
+  .xs\:h-14 { height: 3.5rem; }
+  .xs\:gap-2 { gap: 0.5rem; }
+}
+
 @media (min-width: 640px) {
   .container, .max-w-6xl, .max-w-7xl, .max-w-4xl, .max-w-5xl {
     max-width: calc(100vw - 2rem);
