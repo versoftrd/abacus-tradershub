@@ -1205,7 +1205,7 @@ export default function Home() {
               backgroundPosition: 'center center',
               backgroundRepeat: 'no-repeat',
               filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3))',
-              aspectRatio: '16/8.5'
+              aspectRatio: '16/7.4'
             }}
             data-testid="cta-card"
           >
