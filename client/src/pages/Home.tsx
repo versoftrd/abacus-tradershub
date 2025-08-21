@@ -471,7 +471,7 @@ export default function Home() {
           </div>
 
           {/* Main Stats Card */}
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-6xl mx-auto relative z-[90]">
             <div className="relative border border-white/10 rounded-2xl p-3 shadow-2xl" style={{ 
               background: 'linear-gradient(135deg, rgba(27, 27, 27, 0.9) 0%, rgba(34, 34, 34, 0.8) 50%, rgba(27, 27, 27, 0.9) 100%)',
               backdropFilter: 'blur(10px)'
@@ -574,7 +574,7 @@ export default function Home() {
               </div>
 
               {/* Stats Panel */}
-              <div className="border border-white/10 rounded-xl p-6 bg-black/20 relative z-50">
+              <div className="border border-white/10 rounded-xl p-6 bg-black/20 relative z-[200]">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   
                   {/* Left Column - Win/Loss Ratio */}
@@ -622,7 +622,7 @@ export default function Home() {
           <div className="relative max-w-6xl mx-auto mt-16">
             {/* Gradient Overlay on top of the cards */}
             <div 
-              className="absolute bg-cover bg-center bg-no-repeat pointer-events-none z-50"
+              className="absolute bg-cover bg-center bg-no-repeat pointer-events-none z-10"
               style={{ 
                 backgroundImage: `url(${backgroundGradient})`,
                 borderRadius: '1rem',
