@@ -435,7 +435,7 @@ export default function Home() {
                 <span className="block sm:hidden" style={{ fontSize: '48px' }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
                 <span className="hidden sm:block md:hidden" style={{ fontSize: '72px' }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
                 <span className="hidden md:block lg:hidden" style={{ fontSize: '88px' }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
-                <span className="hidden lg:block xl:hidden" style={{ fontSize: '112px' }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
+                <span className="hidden lg:block xl:hidden text-[34px]" style={{ fontSize: '112px' }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
                 <span className="hidden xl:block" style={{ fontSize: '144px' }}>APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
               </h1>
 
