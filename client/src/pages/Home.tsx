@@ -97,10 +97,10 @@ function AnimatedChartPercentage() {
         entries.forEach((entry) => {
           if (entry.isIntersecting && !hasAnimated) {
             setHasAnimated(true);
-            // Delay the appearance to sync with chart completion (5s chart + 0.2s delay)
+            // Show text immediately when chart completes (5s chart duration)
             setTimeout(() => {
               setIsVisible(true);
-            }, 5200);
+            }, 5000);
           }
         });
       },
@@ -118,7 +118,7 @@ function AnimatedChartPercentage() {
   return (
     <div 
       id="chart-percentage-trigger"
-      className={`font-bold sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[70px] text-[#ffffff] mt-[55px] mb-[55px] transition-all duration-1000 ${
+      className={`font-bold sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[70px] text-[#ffffff] mt-[55px] mb-[55px] transition-all duration-700 ${
         isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
       }`}
       style={{ 
