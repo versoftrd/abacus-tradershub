@@ -872,7 +872,7 @@ export default function Home() {
                   {/* Right Column - Win Rate */}
                   <div className="text-center">
                     <h3 className="text-white font-semibold mb-6 text-lg">Win Rate</h3>
-                    <div className="text-6xl font-bold text-green-400 mb-2" style={{ filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))' }}>
+                    <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-green-400 mb-2" style={{ filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))' }}>
                       <AnimatedCounter target={83.333333} duration={2500} suffix="%" />
                     </div>
                     <div className="text-right">
