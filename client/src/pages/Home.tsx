@@ -428,21 +428,23 @@ export default function Home() {
               >APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</h1>
 
               {/* Subtitle */}
-              <div className="space-y-1 max-w-3xl mx-auto px-4 sm:px-6 md:px-8">
+              <div className="space-y-1 sm:space-y-2 max-w-3xl sm:max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
                 <p 
                   className="text-xs sm:text-sm md:text-base lg:text-lg text-zinc-300 font-medium leading-snug sm:leading-relaxed"
                   data-testid="hero-subtitle-1"
                 >
-                  Acceso directo a la sala de trading de Abacus:
+                  <span className="sm:hidden">Acceso directo a la sala de trading de Abacus:</span>
+                  <span className="hidden sm:inline">Acceso directo a la sala de trading de Abacus: 7 a 9 sesiones en vivo semanales</span>
                 </p>
                 <p 
                   className="text-xs sm:text-sm md:text-base lg:text-lg text-zinc-300 font-medium leading-snug sm:leading-relaxed"
                   data-testid="hero-subtitle-2"
                 >
-                  7 a 9 sesiones en vivo semanales con mentores
+                  <span className="sm:hidden">7 a 9 sesiones en vivo semanales con mentores</span>
+                  <span className="hidden sm:inline">con mentores que operan y explican en tiempo real.</span>
                 </p>
                 <p 
-                  className="text-xs sm:text-sm md:text-base lg:text-lg text-zinc-300 font-medium leading-snug sm:leading-relaxed"
+                  className="text-xs sm:text-sm md:text-base lg:text-lg text-zinc-300 font-medium leading-snug sm:leading-relaxed sm:hidden"
                   data-testid="hero-subtitle-3"
                 >
                   que operan y explican en tiempo real.
