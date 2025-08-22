@@ -489,7 +489,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto">
           {/* Headline Section */}
           <div className="text-center mb-8 relative z-10">
-            <p className="font-sans text-green-400 text-[12px] font-medium mb-4 animate-fade-in" data-testid="pricing-eyebrow">
+            <p className="font-sans text-[#0055FF] text-[12px] font-medium mb-4 animate-fade-in" data-testid="pricing-eyebrow">
               Precio simple y flexible
             </p>
             <h2 className="font-sans text-[24px] sm:text-3xl md:text-[32px] lg:text-[36px] text-white mb-6 animate-fade-in-up font-semibold" data-testid="pricing-headline">
@@ -633,7 +633,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-16">
-            <p className="font-sans text-green-400 text-sm font-medium mb-4" data-testid="sessions-eyebrow">
+            <p className="font-sans text-[#0055FF] text-sm font-medium mb-4" data-testid="sessions-eyebrow">
               Nuestras sesiones
             </p>
             <h2 className="font-sans text-white mb-6 flex items-start justify-center gap-4 font-semibold text-[24px] sm:text-3xl lg:text-4xl" data-testid="nucleos-headline">
@@ -780,7 +780,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-6">
-            <p className="font-sans text-green-400 text-sm font-medium mb-4 tracking-wide" data-testid="resultados-eyebrow">
+            <p className="font-sans text-[#0055FF] text-sm font-medium mb-4 tracking-wide" data-testid="resultados-eyebrow">
               Resultados Expertos
             </p>
             <h2 className="font-sans text-white mb-6 font-semibold text-[24px] sm:text-3xl lg:text-4xl" data-testid="resultados-headline">
@@ -1006,7 +1006,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-16">
-            <p className="font-sans text-green-400 text-sm font-medium mb-4 tracking-wide" data-testid="student-results-eyebrow">
+            <p className="font-sans text-[#0055FF] text-sm font-medium mb-4 tracking-wide" data-testid="student-results-eyebrow">
               Resultados de Estudiantes
             </p>
             <h2 className="font-sans text-white mb-6 font-semibold text-[24px] sm:text-3xl lg:text-4xl" data-testid="student-results-headline">
@@ -1045,7 +1045,7 @@ export default function Home() {
         <div className="relative max-w-5xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-12">
-            <p className="font-sans text-green-400 text-sm font-medium mb-4 tracking-wide" data-testid="features-eyebrow">
+            <p className="font-sans text-[#0055FF] text-sm font-medium mb-4 tracking-wide" data-testid="features-eyebrow">
               Lo que obtienes
             </p>
             <h2 className="font-sans text-white mb-6 font-semibold text-[24px] sm:text-3xl lg:text-4xl" data-testid="features-headline">
@@ -1235,7 +1235,7 @@ export default function Home() {
         <div className="relative max-w-4xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-12">
-            <p className="font-sans text-green-400 text-sm font-medium mb-4 tracking-wide" data-testid="faq-eyebrow">
+            <p className="font-sans text-[#0055FF] text-sm font-medium mb-4 tracking-wide" data-testid="faq-eyebrow">
               Preguntas Frecuentes
             </p>
             <h2 className="font-sans text-white mb-6 font-semibold text-[24px] sm:text-3xl lg:text-4xl" data-testid="faq-headline">
