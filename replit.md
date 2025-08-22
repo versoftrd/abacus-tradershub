@@ -47,6 +47,7 @@ Preferred communication style: Simple, everyday language.
 ## UI and Styling
 - **Radix UI**: Comprehensive set of accessible React primitives for building the user interface
 - **Tailwind CSS**: Utility-first CSS framework with custom dark theme configuration
+- **DM Sans Font**: Primary typography using DM Sans from Google Fonts for improved readability and modern appearance
 - **Lucide React**: Icon library for consistent iconography throughout the application
 
 ## Development and Build Tools
