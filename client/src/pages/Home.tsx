@@ -1086,7 +1086,7 @@ export default function Home() {
             <div 
               className="rounded-2xl p-8 shadow-2xl border border-blue-500/10 transition-all duration-500 hover:border-blue-500/20 hover:shadow-[0_0_60px_rgba(0,85,255,0.2)] hover:scale-[1.02]"
               style={{
-                background: 'linear-gradient(to top, #1a1a1b 0%, #0022c5 100%)',
+                background: 'linear-gradient(to top, #1a1a1b 0%, #122c5d 100%)',
                 boxShadow: '0 0 40px rgba(0, 85, 255, 0.1)'
               }}
               data-testid="features-card"
