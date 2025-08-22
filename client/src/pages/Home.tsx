@@ -500,7 +500,7 @@ export default function Home() {
           </div>
 
           {/* Pricing Cards */}
-          <div className="responsive-grid responsive-grid-2 max-w-5xl mx-auto px-2 sm:px-4 md:px-6">
+          <div className="responsive-grid responsive-grid-2 max-w-6xl mx-auto px-2 sm:px-4 md:px-6">
             
             {/* Pase Semanal */}
             <div className="group relative bg-[linear-gradient(to_bottom,#151e19_0%,#141414_20%)] border border-green-500/10 rounded-3xl p-4 sm:p-6 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-weekly">
