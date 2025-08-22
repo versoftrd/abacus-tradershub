@@ -27,7 +27,7 @@ import circleChartIcon from "@assets/Circle Chart_1755878792034.png";
 import stocksIcon from "@assets/Stocks_1755878792037.png";
 import transactionListIcon from "@assets/Transaction List_1755878792039.png";
 import winstonTradingImage from "@assets/winston-cordero-new.png";
-import optionsIcon from "@assets/options-icon.png";
+import optionsIcon from "@assets/Transaction List_1755878895062.png";
 import hacheImage from "@assets/hache_1755878688239.png";
 import exchangeIcon from "@assets/Exchange_1755878683886.png";
 import desktopLoopVideo from "@assets/Loop dekstop_1755737411238.mp4";
