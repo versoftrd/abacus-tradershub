@@ -25,7 +25,10 @@ export default function EmailCta() {
           />
           <button
             type="submit"
-            className="rounded-[12px] xs:rounded-[14px] sm:rounded-[16px] bg-gradient-to-r from-[#98f7b0] via-[#79e39e] to-[#3a8a5f] px-2.5 xs:px-3 sm:px-4 md:px-6 lg:px-8 py-1.5 xs:py-2 sm:py-2 md:py-3 text-white font-semibold shadow hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-emerald-300/60 transition-opacity duration-200 text-[10px] xs:text-xs sm:text-sm md:text-base whitespace-nowrap flex-shrink-0"
+            className="rounded-[12px] xs:rounded-[14px] sm:rounded-[16px] px-2.5 xs:px-3 sm:px-4 md:px-6 lg:px-8 py-1.5 xs:py-2 sm:py-2 md:py-3 text-white font-semibold shadow hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-sky-300/60 transition-opacity duration-200 text-[10px] xs:text-xs sm:text-sm md:text-base whitespace-nowrap flex-shrink-0"
+            style={{
+              background: 'linear-gradient(to top, #0943bb, #0759fb)'
+            }}
             data-testid="button-submit-email"
           >
             Join our email list
