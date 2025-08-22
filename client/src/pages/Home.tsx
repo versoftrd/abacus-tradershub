@@ -125,7 +125,7 @@ function AnimatedChartPercentage() {
         isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
       }`}
       style={{ 
-        filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))',
+        filter: 'drop-shadow(0 0 12px rgba(0, 85, 255, 0.4))',
         transform: isVisible ? 'translateY(0)' : 'translateY(10px)'
       }}
     >
@@ -290,8 +290,8 @@ function AnimatedLineChart() {
       <svg viewBox="0 40 800 320" className="w-full h-full overflow-hidden" preserveAspectRatio="xMidYMid meet">
         <defs>
           <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="rgb(34, 197, 94)" stopOpacity="0.3"/>
-            <stop offset="100%" stopColor="rgb(34, 197, 94)" stopOpacity="0"/>
+            <stop offset="0%" stopColor="rgb(0, 85, 255)" stopOpacity="0.3"/>
+            <stop offset="100%" stopColor="rgb(0, 85, 255)" stopOpacity="0"/>
           </linearGradient>
         </defs>
         
@@ -325,12 +325,12 @@ function AnimatedLineChart() {
         {/* Main line - animated */}
         <path
           d={generatePath(visiblePoints)}
-          stroke="rgb(34, 197, 94)"
+          stroke="rgb(0, 85, 255)"
           strokeWidth="3"
           fill="none"
           strokeLinecap="round"
           strokeLinejoin="round"
-          filter="drop-shadow(0 0 8px rgba(34, 197, 94, 0.4))"
+          filter="drop-shadow(0 0 8px rgba(0, 85, 255, 0.4))"
         />
         
         {/* Data points - appear as line progresses */}
@@ -341,10 +341,10 @@ function AnimatedLineChart() {
               cx={point.x}
               cy={point.y}
               r="5"
-              fill="rgb(34, 197, 94)"
+              fill="rgb(0, 85, 255)"
               className="hover:r-7 transition-all cursor-pointer"
               style={{
-                filter: 'drop-shadow(0 0 6px rgba(34, 197, 94, 0.6))',
+                filter: 'drop-shadow(0 0 6px rgba(0, 85, 255, 0.6))',
                 opacity: animationProgress > (index / dataPoints.length) ? 1 : 0,
                 transition: 'opacity 0.3s ease'
               }}
@@ -353,14 +353,14 @@ function AnimatedLineChart() {
         </g>
 
         {/* X-axis labels */}
-        <text x="85" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 1</text>
-        <text x="175" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 3</text>
-        <text x="265" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 5</text>
-        <text x="355" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 7</text>
-        <text x="445" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 9</text>
-        <text x="535" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 11</text>
-        <text x="625" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 13</text>
-        <text x="715" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-green-300 transition-colors font-medium">Aug 15</text>
+        <text x="85" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-blue-300 transition-colors font-medium">Aug 1</text>
+        <text x="175" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-blue-300 transition-colors font-medium">Aug 3</text>
+        <text x="265" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-blue-300 transition-colors font-medium">Aug 5</text>
+        <text x="355" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-blue-300 transition-colors font-medium">Aug 7</text>
+        <text x="445" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-blue-300 transition-colors font-medium">Aug 9</text>
+        <text x="535" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-blue-300 transition-colors font-medium">Aug 11</text>
+        <text x="625" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-blue-300 transition-colors font-medium">Aug 13</text>
+        <text x="715" y="300" fill="#9CA3AF" fontSize="11" textAnchor="middle" className="group-hover:fill-blue-300 transition-colors font-medium">Aug 15</text>
       </svg>
     </div>
   );
@@ -798,8 +798,8 @@ export default function Home() {
         
         {/* Background decorative elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-green-500/5 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-green-400/8 rounded-full blur-2xl"></div>
+          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-blue-400/8 rounded-full blur-2xl"></div>
         </div>
 
         <div className="relative max-w-7xl mx-auto">
@@ -853,7 +853,7 @@ export default function Home() {
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-400">Ganancias</span>
-                        <span className="text-green-400 font-medium">10</span>
+                        <span className="text-[#0055FF] font-medium">10</span>
                       </div>
                       <hr className="border-white/10"/>
                       <div className="flex justify-between items-center">
@@ -866,7 +866,7 @@ export default function Home() {
                   {/* Right Column - Win Rate */}
                   <div className="text-center">
                     <h3 className="text-white font-semibold mb-4 sm:mb-6 text-base sm:text-lg">Win Rate</h3>
-                    <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-green-400 mb-2" style={{ filter: 'drop-shadow(0 0 12px rgba(34, 197, 94, 0.4))' }}>
+                    <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#0055FF] mb-2" style={{ filter: 'drop-shadow(0 0 12px rgba(0, 85, 255, 0.4))' }}>
                       <AnimatedCounter target={83.333333} duration={2500} suffix="%" />
                     </div>
                     <div className="text-right">
@@ -906,11 +906,11 @@ export default function Home() {
               {/* Left Panel - Frame 1934 */}
               <div className="group relative h-full">
                 <div 
-                  className="relative border border-white/20 rounded-2xl p-6 shadow-2xl backdrop-blur-lg transition-all duration-300 hover:border-green-400/40 hover:shadow-green-400/20 h-full flex flex-col"
+                  className="relative border border-white/20 rounded-2xl p-6 shadow-2xl backdrop-blur-lg transition-all duration-300 hover:border-blue-400/40 hover:shadow-blue-400/20 h-full flex flex-col"
                   style={{ 
-                    background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(16, 32, 16, 0.6) 50%, rgba(0, 0, 0, 0.8) 100%)',
+                    background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 32, 64, 0.6) 50%, rgba(0, 0, 0, 0.8) 100%)',
                     backdropFilter: 'blur(20px)',
-                    boxShadow: '0 0 30px rgba(34, 197, 94, 0.1)'
+                    boxShadow: '0 0 30px rgba(0, 85, 255, 0.1)'
                   }}
                 >
                   
@@ -942,11 +942,11 @@ export default function Home() {
               {/* Right Panel - Frame 1933 */}
               <div className="group relative h-full">
                 <div 
-                  className="relative border border-white/20 rounded-2xl p-6 shadow-2xl backdrop-blur-lg transition-all duration-300 hover:border-purple-400/40 hover:shadow-purple-400/20 h-full flex flex-col"
+                  className="relative border border-white/20 rounded-2xl p-6 shadow-2xl backdrop-blur-lg transition-all duration-300 hover:border-blue-400/40 hover:shadow-blue-400/20 h-full flex flex-col"
                   style={{ 
-                    background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(32, 16, 32, 0.6) 50%, rgba(0, 0, 0, 0.8) 100%)',
+                    background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 32, 64, 0.6) 50%, rgba(0, 0, 0, 0.8) 100%)',
                     backdropFilter: 'blur(20px)',
-                    boxShadow: '0 0 30px rgba(147, 51, 234, 0.1)'
+                    boxShadow: '0 0 30px rgba(0, 85, 255, 0.1)'
                   }}
                 >
                   
@@ -1050,7 +1050,7 @@ export default function Home() {
                 alt="Student Trading Results" 
                 className="w-full h-auto transition-transform duration-300 hover:scale-[1.02]"
                 style={{
-                  filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 20px rgba(34, 197, 94, 0.1))',
+                  filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 20px rgba(0, 85, 255, 0.1))',
                   maxWidth: '100%'
                 }}
                 data-testid="student-results-boxes"
