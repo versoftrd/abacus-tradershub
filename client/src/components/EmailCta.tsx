@@ -6,7 +6,7 @@ export default function EmailCta() {
 
   return (
     <div className="w-full max-w-lg mx-auto mt-[-16px] mb-[-16px] px-3 xs:px-4 sm:px-0">
-      <div className="mx-auto w-full max-w-lg backdrop-blur-2xl bg-white/5 border border-white/5 px-4 xs:px-5 sm:px-6 md:px-8 py-1.5 xs:py-2 rounded-[20px] xs:rounded-[22px] sm:rounded-[24px]">
+      <div className="mx-auto w-fit backdrop-blur-2xl bg-white/5 border border-white/5 px-2 xs:px-2.5 sm:px-3 py-1 xs:py-1.5 rounded-[20px] xs:rounded-[22px] sm:rounded-[24px]">
         <div className="flex items-center justify-center h-10 xs:h-11 sm:h-12 md:h-14">
           <button
             type="button"
