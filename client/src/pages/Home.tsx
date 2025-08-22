@@ -421,10 +421,18 @@ export default function Home() {
           <div className="flex min-h-screen items-center justify-center py-20 sm:py-24 md:py-0">
             <div className="text-center space-y-7 sm:space-y-10 relative z-10 w-full">
               
-              {/* Main Headline with Blacklisted font at 34px on mobile - Safari compatible */}
+              {/* Main Headline with Blacklisted font at 34px - Safari compatible */}
               <h1 
-                className="text-white tracking-wide px-2 font-normal mt-[0px] mb-[0px] overflow-visible"
+                className="text-white tracking-wide px-2 font-normal mt-[0px] mb-[0px] overflow-visible blacklisted-font"
                 style={{
+                  fontSize: '34px !important', 
+                  fontFamily: "'Blacklisted', sans-serif !important",
+                  display: 'block',
+                  paddingTop: '0.1em',
+                  paddingBottom: '0.1em',
+                  minHeight: '40px',
+                  overflow: 'visible',
+                  WebkitTextStroke: '0.1px transparent',
                   lineHeight: '1.3',
                   fontWeight: 'normal',
                   WebkitFontSmoothing: 'antialiased',
@@ -433,81 +441,7 @@ export default function Home() {
                 }}
                 data-testid="hero-headline"
               >
-                <span 
-                  className="block sm:hidden blacklisted-font" 
-                  style={{ 
-                    fontSize: '34px !important', 
-                    fontFamily: "'Blacklisted', sans-serif !important",
-                    display: 'inline-block',
-                    paddingTop: '0.1em',
-                    paddingBottom: '0.1em',
-                    minHeight: '40px',
-                    overflow: 'visible',
-                    WebkitTextStroke: '0.1px transparent'
-                  }}
-                >
-                  APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.
-                </span>
-                <span 
-                  className="hidden sm:block md:hidden blacklisted-font" 
-                  style={{ 
-                    fontSize: '34px !important', 
-                    fontFamily: "'Blacklisted', sans-serif !important",
-                    display: 'inline-block',
-                    paddingTop: '0.1em',
-                    paddingBottom: '0.1em',
-                    minHeight: '40px',
-                    overflow: 'visible',
-                    WebkitTextStroke: '0.1px transparent'
-                  }}
-                >
-                  APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.
-                </span>
-                <span 
-                  className="hidden md:block lg:hidden blacklisted-font" 
-                  style={{ 
-                    fontSize: '34px !important', 
-                    fontFamily: "'Blacklisted', sans-serif !important",
-                    display: 'inline-block',
-                    paddingTop: '0.1em',
-                    paddingBottom: '0.1em',
-                    minHeight: '40px',
-                    overflow: 'visible',
-                    WebkitTextStroke: '0.1px transparent'
-                  }}
-                >
-                  APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.
-                </span>
-                <span 
-                  className="hidden lg:block xl:hidden blacklisted-font" 
-                  style={{ 
-                    fontSize: '34px !important', 
-                    fontFamily: "'Blacklisted', sans-serif !important",
-                    display: 'inline-block',
-                    paddingTop: '0.1em',
-                    paddingBottom: '0.1em',
-                    minHeight: '40px',
-                    overflow: 'visible',
-                    WebkitTextStroke: '0.1px transparent'
-                  }}
-                >
-                  APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.
-                </span>
-                <span 
-                  className="hidden xl:block blacklisted-font" 
-                  style={{ 
-                    fontSize: '34px !important', 
-                    fontFamily: "'Blacklisted', sans-serif !important",
-                    display: 'inline-block',
-                    paddingTop: '0.1em',
-                    paddingBottom: '0.1em',
-                    minHeight: '40px',
-                    overflow: 'visible',
-                    WebkitTextStroke: '0.1px transparent'
-                  }}
-                >
-                  APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.
-                </span>
+                APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.
               </h1>
 
               {/* Subtitle */}
