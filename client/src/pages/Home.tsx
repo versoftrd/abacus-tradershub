@@ -1252,8 +1252,8 @@ export default function Home() {
       <section id="faq" className="relative bg-[#0a0a0a] py-16 px-4 sm:px-6" aria-labelledby="faq-headline">
         {/* Background decorative elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-green-500/2 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-green-400/1 rounded-full blur-2xl"></div>
+          <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-blue-500/2 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-blue-400/1 rounded-full blur-2xl"></div>
         </div>
 
         <div className="relative max-w-4xl mx-auto">
@@ -1281,7 +1281,7 @@ export default function Home() {
               {/* FAQ Item 1 */}
               <div className="group" data-testid="faq-item-1">
                 <button 
-                  className="w-full flex items-center justify-between py-6 text-left transition-all duration-300 hover:text-green-400 hover:pl-2"
+                  className="w-full flex items-center justify-between py-6 text-left transition-all duration-300 hover:text-[#0055FF] hover:pl-2"
                   onClick={() => {
                     const content = document.getElementById('faq-content-1');
                     const icon = document.getElementById('faq-icon-1');
@@ -1314,7 +1314,7 @@ export default function Home() {
                   </span>
                   <span 
                     id="faq-icon-1"
-                    className="text-green-400 text-3xl font-light transition-all duration-300 flex-shrink-0 hover:scale-110"
+                    className="text-[#0055FF] text-3xl font-light transition-all duration-300 flex-shrink-0 hover:scale-110"
                     style={{ transform: 'rotate(0deg)' }}
                   >
                     +
@@ -1331,7 +1331,7 @@ export default function Home() {
               {/* FAQ Item 2 */}
               <div className="group" data-testid="faq-item-2">
                 <button 
-                  className="w-full flex items-center justify-between py-6 text-left transition-all duration-300 hover:text-green-400 hover:pl-2"
+                  className="w-full flex items-center justify-between py-6 text-left transition-all duration-300 hover:text-[#0055FF] hover:pl-2"
                   onClick={() => {
                     const content = document.getElementById('faq-content-2');
                     const icon = document.getElementById('faq-icon-2');
@@ -1366,7 +1366,7 @@ export default function Home() {
                   </span>
                   <span 
                     id="faq-icon-2"
-                    className="text-green-400 text-3xl font-light transition-all duration-300 flex-shrink-0 hover:scale-110"
+                    className="text-[#0055FF] text-3xl font-light transition-all duration-300 flex-shrink-0 hover:scale-110"
                     style={{ transform: 'rotate(0deg)' }}
                   >
                     +
@@ -1383,7 +1383,7 @@ export default function Home() {
               {/* FAQ Item 3 */}
               <div className="group" data-testid="faq-item-3">
                 <button 
-                  className="w-full flex items-center justify-between py-6 text-left transition-all duration-300 hover:text-green-400 hover:pl-2"
+                  className="w-full flex items-center justify-between py-6 text-left transition-all duration-300 hover:text-[#0055FF] hover:pl-2"
                   onClick={() => {
                     const content = document.getElementById('faq-content-3');
                     const icon = document.getElementById('faq-icon-3');
@@ -1418,7 +1418,7 @@ export default function Home() {
                   </span>
                   <span 
                     id="faq-icon-3"
-                    className="text-green-400 text-3xl font-light transition-all duration-300 flex-shrink-0 hover:scale-110"
+                    className="text-[#0055FF] text-3xl font-light transition-all duration-300 flex-shrink-0 hover:scale-110"
                     style={{ transform: 'rotate(0deg)' }}
                   >
                     +
@@ -1435,7 +1435,7 @@ export default function Home() {
               {/* FAQ Item 4 */}
               <div className="group" data-testid="faq-item-4">
                 <button 
-                  className="w-full flex items-center justify-between py-6 text-left transition-all duration-300 hover:text-green-400 hover:pl-2"
+                  className="w-full flex items-center justify-between py-6 text-left transition-all duration-300 hover:text-[#0055FF] hover:pl-2"
                   onClick={() => {
                     const content = document.getElementById('faq-content-4');
                     const icon = document.getElementById('faq-icon-4');
@@ -1470,7 +1470,7 @@ export default function Home() {
                   </span>
                   <span 
                     id="faq-icon-4"
-                    className="text-green-400 text-3xl font-light transition-all duration-300 flex-shrink-0 hover:scale-110"
+                    className="text-[#0055FF] text-3xl font-light transition-all duration-300 flex-shrink-0 hover:scale-110"
                     style={{ transform: 'rotate(0deg)' }}
                   >
                     +
@@ -1487,7 +1487,7 @@ export default function Home() {
               {/* FAQ Item 5 */}
               <div className="group" data-testid="faq-item-5">
                 <button 
-                  className="w-full flex items-center justify-between py-6 text-left transition-all duration-300 hover:text-green-400 hover:pl-2"
+                  className="w-full flex items-center justify-between py-6 text-left transition-all duration-300 hover:text-[#0055FF] hover:pl-2"
                   onClick={() => {
                     const content = document.getElementById('faq-content-5');
                     const icon = document.getElementById('faq-icon-5');
@@ -1522,7 +1522,7 @@ export default function Home() {
                   </span>
                   <span 
                     id="faq-icon-5"
-                    className="text-green-400 text-3xl font-light transition-all duration-300 flex-shrink-0 hover:scale-110"
+                    className="text-[#0055FF] text-3xl font-light transition-all duration-300 flex-shrink-0 hover:scale-110"
                     style={{ transform: 'rotate(0deg)' }}
                   >
                     +
@@ -1539,7 +1539,7 @@ export default function Home() {
               {/* FAQ Item 6 */}
               <div className="group" data-testid="faq-item-6">
                 <button 
-                  className="w-full flex items-center justify-between py-6 text-left transition-all duration-300 hover:text-green-400 hover:pl-2"
+                  className="w-full flex items-center justify-between py-6 text-left transition-all duration-300 hover:text-[#0055FF] hover:pl-2"
                   onClick={() => {
                     const content = document.getElementById('faq-content-6');
                     const icon = document.getElementById('faq-icon-6');
@@ -1574,7 +1574,7 @@ export default function Home() {
                   </span>
                   <span 
                     id="faq-icon-6"
-                    className="text-green-400 text-3xl font-light transition-all duration-300 flex-shrink-0 hover:scale-110"
+                    className="text-[#0055FF] text-3xl font-light transition-all duration-300 flex-shrink-0 hover:scale-110"
                     style={{ transform: 'rotate(0deg)' }}
                   >
                     +
