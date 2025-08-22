@@ -6,17 +6,40 @@
   font-display: swap;
   font-weight: normal;
   font-style: normal;
+  /* Safari-specific font rendering fixes */
+  text-rendering: optimizeLegibility;
+  font-synthesis: none;
 }
 
 .blacklisted-font {
   font-family: 'Blacklisted', Arial, sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Safari-specific fixes for text clipping */
+  text-rendering: optimizeLegibility !important;
+  -webkit-text-size-adjust: 100% !important;
+  -webkit-text-stroke: 0.1px transparent !important; /* Helps with Safari rendering */
+  overflow: visible !important;
+  display: inline-block !important;
+  padding-top: 0.1em !important; /* Add small padding to prevent top cutoff */
+  padding-bottom: 0.1em !important; /* Add small padding to prevent bottom cutoff */
+  line-height: 1.3 !important; /* Increased line-height for Safari */
 }
 
 /* Specific rule for headline with Blacklisted font at 34px on all screen sizes */
 .blacklisted-font {
   font-size: 34px !important;
+  /* Safari-specific height adjustments */
+  min-height: 40px !important;
+}
+
+/* Safari-specific overrides */
+@supports (-webkit-appearance: none) and (stroke-color: transparent) {
+  .blacklisted-font {
+    padding-top: 0.15em !important;
+    padding-bottom: 0.15em !important;
+    line-height: 1.4 !important;
+  }
 }
 
 @tailwind base;
