@@ -17,7 +17,7 @@ export default function EmailCta() {
             }}
             data-testid="button-submit-email"
           >
-Join our email list
+Quiero ser parte
           </button>
         </div>
       </div>
