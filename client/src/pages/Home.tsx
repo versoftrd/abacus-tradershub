@@ -1596,10 +1596,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           
           {/* Main Footer Content */}
-          <div className="flex flex-col lg:flex-row justify-between gap-12 mb-12">
+          <div className="flex justify-center mb-12">
             
-            {/* Left - Logo */}
-            <div className="flex-shrink-0">
+            {/* Logo */}
+            <div>
               <a href="https://www.abacusexchange.org/" target="_blank" rel="noopener noreferrer" data-testid="footer-logo-link">
                 <img 
                   src="/tradershub-logo.png" 
@@ -1608,62 +1608,6 @@ export default function Home() {
                   data-testid="footer-logo"
                 />
               </a>
-            </div>
-            
-            {/* Center - Navigation Columns */}
-            <div className="flex-1 max-w-3xl">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
-                
-                {/* Column 1 - Abacus */}
-                <div data-testid="footer-column-abacus">
-                  <h3 className="font-sans text-gray-500 text-sm font-bold mb-4">Abacus</h3>
-                  <ul className="space-y-2">
-                    <li><a href="#" className="font-sans text-gray-300 hover:text-white transition-colors duration-200 text-sm" data-testid="footer-link-home">Home</a></li>
-                    <li><a href="https://youtube.com/c/abacusexchange" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-300 hover:text-white transition-colors duration-200 text-sm" data-testid="footer-link-videos">Videos</a></li>
-                    <li><a href="https://www.trustpilot.com/review/abacusexchange.org" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-300 hover:text-white transition-colors duration-200 text-sm" data-testid="footer-link-reviews">Reviews</a></li>
-                    <li><a href="https://www.youtube.com/@TheDailyWinnerPodcast" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-300 hover:text-white transition-colors duration-200 text-sm" data-testid="footer-link-testimonials">Testimonials</a></li>
-                  </ul>
-                </div>
-                
-                {/* Column 2 - Aprende */}
-                <div data-testid="footer-column-aprende">
-                  <h3 className="font-sans text-gray-500 text-sm font-bold mb-4">Aprende</h3>
-                  <ul className="space-y-2">
-                    <li><a href="https://abacusexchange.org" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-300 hover:text-white transition-colors duration-200 text-sm" data-testid="footer-link-experience">Abacus Experience</a></li>
-                    <li><a href="https://campus.abacusexchange.org" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-300 hover:text-white transition-colors duration-200 text-sm" data-testid="footer-link-campus">Campus Virtual</a></li>
-                    <li><a href="https://marketopen.ai" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-300 hover:text-white transition-colors duration-200 text-sm" data-testid="footer-link-market">Market Open</a></li>
-                  </ul>
-                </div>
-                
-                {/* Column 3 - Conoce más */}
-                <div data-testid="footer-column-conoce">
-                  <h3 className="font-sans text-gray-500 text-sm font-bold mb-4">Conoce más</h3>
-                  <ul className="space-y-2">
-                    <li><a href="https://abacusexchange.org/tradestation" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-300 hover:text-white transition-colors duration-200 text-sm" data-testid="footer-link-tradestation">TradeStation</a></li>
-                    <li><a href="https://abacusexchange.org/tradersync" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-300 hover:text-white transition-colors duration-200 text-sm" data-testid="footer-link-tradersync">TraderSync</a></li>
-                  </ul>
-                </div>
-                
-                {/* Column 4 - Ayuda */}
-                <div data-testid="footer-column-ayuda">
-                  <h3 className="font-sans text-gray-500 text-sm font-bold mb-4">Ayuda</h3>
-                  <ul className="space-y-2">
-                    <li><a href="https://abacusexchange.org/calendly" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-300 hover:text-white transition-colors duration-200 text-sm" data-testid="footer-link-contact">Contáctanos</a></li>
-                    <li><a href="https://abacusexchange.org/referral" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-300 hover:text-white transition-colors duration-200 text-sm" data-testid="footer-link-refer">Refiere a un Amigo</a></li>
-                  </ul>
-                </div>
-                
-              </div>
-            </div>
-            
-            {/* Right - Register Button */}
-            <div className="flex-shrink-0">
-              <button 
-                className="font-sans w-full min-w-[160px] bg-gradient-to-b from-[#2ab46b] to-[#1b864e] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 text-sm sm:text-base"
-                data-testid="footer-register-button"
-              >
-                Regístrate
-              </button>
             </div>
             
           </div>
@@ -1709,7 +1653,7 @@ export default function Home() {
             
             {/* Copyright */}
             <p className="font-sans text-gray-500 text-sm" data-testid="footer-copyright">
-              © 2025 Abacus Exchange. All rights reserved.
+              © 2025 TradersHub. All rights reserved.
             </p>
             
             {/* Privacy Links */}
