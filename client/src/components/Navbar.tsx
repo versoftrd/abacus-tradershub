@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
-import logoPath from "@assets/logo_1755607335061.png";
+import logoPath from "/tradershub-logo.png";
 
 const navigationItems = [
   { name: "Home", path: "/" },

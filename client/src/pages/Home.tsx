@@ -1636,10 +1636,9 @@ export default function Home() {
             <div className="flex-shrink-0">
               <a href="https://www.abacusexchange.org/" target="_blank" rel="noopener noreferrer" data-testid="footer-logo-link">
                 <img 
-                  src={abacusLogo} 
-                  alt="Abacus Logo" 
+                  src="/tradershub-logo.png" 
+                  alt="TradersHub Logo" 
                   className="h-8 w-auto hover:opacity-80 transition-opacity duration-200"
-                  style={{ filter: 'brightness(0) invert(1)' }}
                   data-testid="footer-logo"
                 />
               </a>
