@@ -93,7 +93,7 @@ export default function Navbar() {
                 onClick={handleGetStartedClick}
                 data-testid="button-get-started"
               >
-                Get Started
+                Iniciar Ahora
               </button>
             </div>
           </div>
@@ -157,7 +157,7 @@ export default function Navbar() {
                 }}
                 data-testid="mobile-button-get-started"
               >
-                Get Started
+                Iniciar Ahora
               </button>
             </div>
           </div>
