@@ -371,7 +371,7 @@ export default function Home() {
         <Navbar />
       </div>
       {/* Hero Section */}
-      <main className="relative overflow-hidden min-h-screen" role="banner" aria-label="TradersHub - Plataforma de Trading en Vivo">
+      <main id="hero" className="relative overflow-hidden min-h-screen" role="banner" aria-label="TradersHub - Plataforma de Trading en Vivo">
         {/* Background Video */}
         <div className="absolute inset-0">
           {/* Desktop Video */}
@@ -1093,7 +1093,7 @@ export default function Home() {
         </div>
       </section>
       {/* Feature Highlights Section */}
-      <section className="relative bg-[#0a0a0a] py-16 px-4 sm:px-6">
+      <section id="beneficios" className="relative bg-[#0a0a0a] py-16 px-4 sm:px-6">
         {/* Background decorative elements */}
         <div className="absolute inset-0">
           <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-green-500/3 rounded-full blur-3xl"></div>

@@ -4,11 +4,12 @@ import { Menu, X } from "lucide-react";
 import logoPath from "/tradershub-logo.png";
 
 const navigationItems = [
-  { name: "Home", path: "/" },
-  { name: "Abacus Experience", path: "https://abacusexchange.org", external: true },
-  { name: "Market Open", path: "https://marketopen.ai", external: true },
-  { name: "Campus Virtual", path: "https://campus.abacusexchange.org", external: true },
-  { name: "Pricing", path: "/pricing" },
+  { name: "Home", path: "/", section: "hero" },
+  { name: "Precios", path: "/precios", section: "pricing" },
+  { name: "Nucleos", path: "/nucleos", section: "nucleos" },
+  { name: "Resultados", path: "/resultados", section: "resultados" },
+  { name: "Lo que obtienes", path: "/beneficios", section: "beneficios" },
+  { name: "FAQ", path: "/faq", section: "faq" },
 ];
 
 export default function Navbar() {
@@ -21,13 +22,11 @@ export default function Navbar() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const handlePricingClick = (e: React.MouseEvent) => {
-    if (location === '/') {
-      e.preventDefault();
-      const pricingSection = document.getElementById('pricing');
-      if (pricingSection) {
-        pricingSection.scrollIntoView({ behavior: 'smooth' });
-      }
+  const handleSectionClick = (e: React.MouseEvent, sectionId: string) => {
+    e.preventDefault();
+    const targetSection = document.getElementById(sectionId);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -66,9 +65,7 @@ export default function Navbar() {
                 <a
                   key={item.path}
                   href={item.path}
-                  target={item.external ? "_blank" : undefined}
-                  rel={item.external ? "noopener noreferrer" : undefined}
-                  onClick={item.name === 'Pricing' ? handlePricingClick : undefined}
+                  onClick={(e) => handleSectionClick(e, item.section)}
                   className={`px-2 sm:px-2.5 md:px-4 py-2 rounded-[12px] text-sm whitespace-nowrap transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 text-white hover:font-semibold ${
                     isActive(item.path) ? "font-medium" : "font-light"
                   }`}
@@ -124,8 +121,6 @@ export default function Navbar() {
               <a
                 key={item.path}
                 href={item.path}
-                target={item.external ? "_blank" : undefined}
-                rel={item.external ? "noopener noreferrer" : undefined}
                 className={`block px-4 py-2.5 rounded-[12px] text-sm transition-all duration-200 hover:font-semibold ${
                   isActive(item.path)
                     ? "text-white font-medium"
@@ -133,9 +128,7 @@ export default function Navbar() {
                 }`}
                 data-testid={`mobile-nav-link-${item.name.toLowerCase().replace(/\s+/g, "-")}`}
                 onClick={(e) => {
-                  if (item.name === 'Pricing') {
-                    handlePricingClick(e);
-                  }
+                  handleSectionClick(e, item.section);
                   setIsMobileMenuOpen(false);
                 }}
               >
