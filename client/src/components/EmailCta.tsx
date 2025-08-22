@@ -1,7 +1,9 @@
 export default function EmailCta() {
   const handleClick = () => {
-    console.log("Join email list clicked");
-    // TODO: Implement email subscription logic
+    const pricingSection = document.getElementById('pricing');
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
