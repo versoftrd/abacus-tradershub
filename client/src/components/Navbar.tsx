@@ -86,7 +86,10 @@ export default function Navbar() {
                 Login
               </button>
               <button 
-                className="px-2.5 sm:px-4 md:px-5 py-2 rounded-[12px] bg-gradient-to-r from-gradient-start to-gradient-end text-white shadow-sm hover:opacity-95 transition-opacity duration-200 focus:outline-none focus:ring-2 focus:ring-sky-300/60 text-sm font-semibold whitespace-nowrap"
+                className="px-2.5 sm:px-4 md:px-5 py-2 rounded-[12px] text-white shadow-sm hover:opacity-95 transition-opacity duration-200 focus:outline-none focus:ring-2 focus:ring-sky-300/60 text-sm font-semibold whitespace-nowrap"
+                style={{
+                  background: 'linear-gradient(to top, #0943bb, #0759fb)'
+                }}
                 onClick={handleGetStartedClick}
                 data-testid="button-get-started"
               >
@@ -144,7 +147,10 @@ export default function Navbar() {
                 Login
               </button>
               <button 
-                className="w-full px-5 py-2.5 rounded-[12px] bg-gradient-to-r from-gradient-start to-gradient-end text-white shadow-sm hover:opacity-95 transition-opacity duration-200 text-sm font-semibold"
+                className="w-full px-5 py-2.5 rounded-[12px] text-white shadow-sm hover:opacity-95 transition-opacity duration-200 text-sm font-semibold"
+                style={{
+                  background: 'linear-gradient(to top, #0943bb, #0759fb)'
+                }}
                 onClick={(e) => {
                   handleGetStartedClick(e);
                   setIsMobileMenuOpen(false);
