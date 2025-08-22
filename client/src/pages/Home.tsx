@@ -504,7 +504,7 @@ export default function Home() {
           </div>
 
           {/* Pricing Cards */}
-          <div className="responsive-grid responsive-grid-2 max-w-7xl mx-auto px-2 sm:px-4 md:px-6">
+          <div className="responsive-grid responsive-grid-2 mx-auto px-2 sm:px-4 md:px-6" style={{ maxWidth: '85%' }}>
             
             {/* Pase Semanal */}
             <div className="group relative bg-[linear-gradient(to_bottom,#141820_0%,#141414_20%)] rounded-3xl p-4 sm:p-6 shadow-2xl hover:scale-105 transition-transform duration-300" style={{ border: '1px solid rgba(0, 85, 255, 0.1)' }} data-testid="card-weekly">
