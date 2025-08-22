@@ -31,8 +31,8 @@ export default function PlanCircle({
         <defs>
           {variant === "filled" ? (
             <linearGradient id={gradientId} x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stopColor="#27b269" />
-              <stop offset="100%" stopColor="#2b6e4a" />
+              <stop offset="0%" stopColor="#0151f1" />
+              <stop offset="100%" stopColor="#013194" />
             </linearGradient>
           ) : (
             <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
