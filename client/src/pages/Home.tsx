@@ -500,7 +500,7 @@ export default function Home() {
           </div>
 
           {/* Pricing Cards */}
-          <div className="responsive-grid responsive-grid-3 max-w-6xl mx-auto px-2 sm:px-4 md:px-6">
+          <div className="responsive-grid responsive-grid-2 max-w-6xl mx-auto px-2 sm:px-4 md:px-6">
             
             {/* Pase Semanal */}
             <div className="group relative bg-[linear-gradient(to_bottom,#151e19_0%,#141414_20%)] border border-green-500/10 rounded-3xl p-4 sm:p-6 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-weekly">
@@ -544,64 +544,6 @@ export default function Home() {
                     Material educativo exclusivo
                   </li>
                   <li className="font-sans flex items-center text-gray-400 text-[12px] font-semibold" data-testid="feature-4-weekly">
-                    <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
-                    Ideas de trading y análisis de mercado
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Membresía Mensual - Most Popular */}
-            <div className="group relative bg-[linear-gradient(to_bottom,#183023_0%,#141414_50%)] border border-green-500/20 rounded-3xl p-4 sm:p-6 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-monthly">
-              
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center">
-                  <PlanCircle size={40} variant="neutral" className="sm:w-12 sm:h-12" />
-                  <span className="font-sans text-white text-xs font-semibold px-3 py-1 rounded-full" data-testid="badge-popular">
-                    Más popular
-                  </span>
-                </div>
-                <span className="font-sans bg-gradient-to-b from-[#227649] to-[#193829] text-green-400 text-xs font-medium px-2 py-1 rounded-full" data-testid="badge-discount-monthly">
-                  35% de descuento
-                </span>
-              </div>
-              
-              <h3 className="font-sans text-xl sm:text-2xl font-bold text-white mb-2" data-testid="title-monthly">
-                Membresía Mensual
-              </h3>
-              <p className="font-sans text-gray-400 mb-4 text-[12px] font-semibold" data-testid="subtitle-monthly">
-                Perfecta para traders comprometidos con mejorar.
-              </p>
-              
-              <div className="mb-6 flex items-start gap-2">
-                <span className="font-sans text-3xl sm:text-[40px] font-semibold text-white" data-testid="price-monthly">$700</span>
-                <div className="font-sans text-gray-400 text-sm sm:text-[16px] font-semibold pt-1">/ por mes</div>
-              </div>
-              
-              <button className="font-sans w-full bg-gradient-to-b from-[#19422d] to-[#17231b] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6 text-sm sm:text-base" data-testid="button-monthly">
-                Iniciar ahora
-              </button>
-              
-              <hr className="border-green-500/10 mb-4" />
-              
-              <div>
-                <h4 className="font-sans text-white font-semibold mb-3" data-testid="features-title-monthly">
-                  Que obtendrás:
-                </h4>
-                <ul className="space-y-2">
-                  <li className="font-sans flex items-center text-gray-400 text-[12px] font-semibold" data-testid="feature-1-monthly">
-                    <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
-                    Sesiones en vivo diarias
-                  </li>
-                  <li className="font-sans flex items-center text-gray-400 text-[12px] font-semibold" data-testid="feature-2-monthly">
-                    <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
-                    Comunidad privada en Discord
-                  </li>
-                  <li className="font-sans flex items-center text-gray-400 text-[12px] font-semibold" data-testid="feature-3-monthly">
-                    <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
-                    Material educativo exclusivo
-                  </li>
-                  <li className="font-sans flex items-center text-gray-400 text-[12px] font-semibold" data-testid="feature-4-monthly">
                     <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                     Ideas de trading y análisis de mercado
                   </li>
