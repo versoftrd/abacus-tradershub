@@ -1601,14 +1601,20 @@ export default function Home() {
             
             {/* Logo */}
             <div>
-              <a href="https://www.abacusexchange.org/" target="_blank" rel="noopener noreferrer" data-testid="footer-logo-link">
+              <button 
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+                className="hover:opacity-80 transition-opacity duration-200"
+                data-testid="footer-logo-link"
+              >
                 <img 
                   src={thFavicon} 
                   alt="TradersHub Logo" 
-                  className="h-8 w-auto hover:opacity-80 transition-opacity duration-200"
+                  className="h-8 w-auto"
                   data-testid="footer-logo"
                 />
-              </a>
+              </button>
             </div>
             
           </div>
