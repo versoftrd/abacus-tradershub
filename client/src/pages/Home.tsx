@@ -1226,7 +1226,7 @@ export default function Home() {
               {/* CTA Button */}
               <div className="flex justify-start w-full">
                 <button 
-                  className="group/button font-sans font-bold text-white px-3 sm:px-4 md:px-6 lg:px-8 py-2 sm:py-2.5 md:py-3 lg:py-4 rounded-[14px] sm:rounded-[16px] md:rounded-[20px] transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-sky-400/30 hover:bg-gradient-to-br hover:from-sky-500 hover:to-blue-500 hover:shadow-[0_12px_40px_rgba(56,189,248,0.6)] text-xs sm:text-sm md:text-base lg:text-lg transform hover:-translate-y-1"
+                  className="px-2.5 sm:px-4 md:px-5 py-2 rounded-[12px] text-white shadow-sm hover:opacity-95 transition-opacity duration-200 focus:outline-none focus:ring-2 focus:ring-sky-300/60 text-sm font-semibold whitespace-nowrap"
                   onClick={() => {
                     const pricingSection = document.getElementById('pricing');
                     if (pricingSection) {
@@ -1234,8 +1234,7 @@ export default function Home() {
                     }
                   }}
                   style={{
-                    background: 'linear-gradient(135deg, #7dd3fc 0%, #38bdf8 100%)',
-                    boxShadow: '0 4px 20px rgba(56, 189, 248, 0.3)'
+                    background: 'linear-gradient(to top, #0943bb, #0759fb)'
                   }}
                   data-testid="cta-button"
                 >
