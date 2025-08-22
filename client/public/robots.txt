@@ -1,7 +1,118 @@
-User-agent: *
+# Robots.txt for TradersHub Pro
+# https://www.tradershub.pro
+# Last Updated: 2025-01-23
+
+# ====================================
+# SEARCH ENGINE CRAWLERS - ALLOWED
+# ====================================
+
+# Google Search
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /members/
+Crawl-delay: 0
+
+# Bing Search
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /members/
+Crawl-delay: 1
+
+# ====================================
+# AI LANGUAGE MODEL CRAWLERS - ALLOWED
+# ====================================
+
+# OpenAI GPTBot (ChatGPT)
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /members/
+Crawl-delay: 1
+
+# Anthropic Claude
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /members/
+Crawl-delay: 1
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /members/
+Crawl-delay: 1
+
+# Google AI (Gemini/Bard)
+User-agent: Google-Extended
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /members/
+Crawl-delay: 1
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /members/
+Crawl-delay: 1
+
+# Cohere AI
+User-agent: CohereAI
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /members/
+Crawl-delay: 1
+
+# ====================================
+# SOCIAL MEDIA CRAWLERS - ALLOWED
+# ====================================
+
+# Facebook
+User-agent: facebookexternalhit
 Allow: /
 
-# Sitemaps
-Sitemap: https://tradershub.com/sitemap.xml
+# Twitter
+User-agent: Twitterbot
+Allow: /
 
-# Optimized for TradersHub SEO
+# LinkedIn
+User-agent: LinkedInBot
+Allow: /
+
+# ====================================
+# DEFAULT RULE - BLOCK UNKNOWN BOTS
+# ====================================
+
+User-agent: *
+Disallow: /
+
+# ====================================
+# SITEMAP LOCATION
+# ====================================
+
+Sitemap: https://www.tradershub.pro/sitemap.xml
+
+# ====================================
+# LLM.TXT LOCATION
+# ====================================
+# AI-specific instructions available at:
+# https://www.tradershub.pro/llm.txt

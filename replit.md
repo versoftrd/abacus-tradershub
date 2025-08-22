@@ -4,6 +4,8 @@ This is a full-stack trading platform application called "Traders Hub" built wit
 
 **Recent SEO Optimization (January 2025)**: Comprehensive SEO implementation including meta tags, structured data, semantic HTML, and Google discoverability features. Updated to use TradersHub branding with new logo for social media sharing, blue theme color (#0055FF), and independent domain structure.
 
+**LLM.TXT Implementation (January 2025)**: Created comprehensive LLM.TXT file for AI crawler optimization, enabling proper indexing by ChatGPT, Claude, Perplexity, Gemini, and other major language models. Includes explicit allow/disallow rules, sitemap references, and content guidelines for tradershub.pro domain.
+
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
