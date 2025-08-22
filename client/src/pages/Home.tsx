@@ -663,7 +663,7 @@ export default function Home() {
                   </h3>
                   <p className="font-sans text-gray-400 mb-4 sm:mb-6 text-sm sm:text-base transition-colors duration-300 group-hover:text-gray-300 leading-relaxed">Construye un portafolio sólido y a largo plazo. 
                   Ernesto comparte su enfoque de inversión en valor, gestión de portafolios y estrategias para hacer crecer tu capital de manera sostenible. Aprende a tomar decisiones financieras con fundamentos y visión estratégica.</p>
-                  <p className="font-sans text-green-400 font-semibold text-base sm:text-lg transition-all duration-300 group-hover:text-green-300 group-hover:scale-105">
+                  <p className="font-sans text-[#0055FF] font-semibold text-base sm:text-lg transition-all duration-300 group-hover:text-blue-300 group-hover:scale-105">
                     Invierte con lógica. Crece con disciplina.
                   </p>
                 </div>
@@ -685,7 +685,7 @@ export default function Home() {
                     Live Trading con Jorge Valet
                   </h3>
                   <p className="font-sans text-gray-400 mb-6 text-[14px] transition-colors duration-300 group-hover:text-gray-300" style={{ fontSize: '14px' }}>Acompaña a Jorge en sesiones de trading en vivo, donde analiza el mercado, ejecuta operaciones y explica paso a paso su proceso de decisión. Aprende a identificar oportunidades reales y a gestionar el riesgo mientras observas la acción del mercado minuto a minuto.</p>
-                  <p className="font-sans text-green-400 font-semibold text-lg transition-all duration-300 group-hover:text-green-300 group-hover:scale-105">
+                  <p className="font-sans text-[#0055FF] font-semibold text-lg transition-all duration-300 group-hover:text-blue-300 group-hover:scale-105">
                     Aprende mirando. Crece operando.
                   </p>
                 </div>
@@ -707,7 +707,7 @@ export default function Home() {
                     Live Options Trading con Winston Cordero
                   </h3>
                   <p className="font-sans text-gray-400 mb-6 text-[14px] transition-colors duration-300 group-hover:text-gray-300" style={{ fontSize: '14px' }}>Winston te lleva al siguiente nivel en el manejo de opciones, combinando análisis de contexto, estructura del mercado y ejecución práctica. Aprende desde day trading, hasta cómo crear un portafolio flexible con opciones que se adapte al movimiento del mercado y potencie tu rendimiento con control de riesgo.</p>
-                  <p className="font-sans text-green-400 font-semibold text-lg transition-all duration-300 group-hover:text-green-300 group-hover:scale-105">
+                  <p className="font-sans text-[#0055FF] font-semibold text-lg transition-all duration-300 group-hover:text-blue-300 group-hover:scale-105">
                     No solo aprendes a operar; aprenderás a pensar como un trader institucional.
                   </p>
                 </div>
@@ -729,7 +729,7 @@ export default function Home() {
                     Opciones Avanzadas con Carlos Amec
                   </h3>
                   <p className="font-sans text-gray-400 mb-6 text-[14px] transition-colors duration-300 group-hover:text-gray-300" style={{ fontSize: '14px' }}>Domina las estrategias que usan los profesionales. Carlos te guía en el mundo de las opciones con tácticas avanzadas como covered calls, puts y spreads. Descubre cómo generar ingresos consistentes y proteger tu portafolio en distintos escenarios de mercado.</p>
-                  <p className="font-sans text-green-400 font-semibold text-lg transition-all duration-300 group-hover:text-green-300 group-hover:scale-105">
+                  <p className="font-sans text-[#0055FF] font-semibold text-lg transition-all duration-300 group-hover:text-blue-300 group-hover:scale-105">
                     Expande tu visión. Crea impacto.
                   </p>
                 </div>
@@ -752,7 +752,7 @@ export default function Home() {
                   </h3>
                   <p className="font-sans text-gray-400 mb-6 text-[14px] transition-colors duration-300 group-hover:text-gray-300" style={{ fontSize: '14px' }}>Análisis técnico aplicado a lo que importa.  
                   Jean revisa los gráficos más relevantes de la semana y te muestra cómo leer el mercado con precisión. Identifica patrones, zonas clave y posibles escenarios para estar siempre un paso adelante.</p>
-                  <p className="font-sans text-green-400 font-semibold text-lg transition-all duration-300 group-hover:text-green-300 group-hover:scale-105">
+                  <p className="font-sans text-[#0055FF] font-semibold text-lg transition-all duration-300 group-hover:text-blue-300 group-hover:scale-105">
                     Lee los charts. Anticipa el mercado.
                   </p>
                 </div>
@@ -774,7 +774,7 @@ export default function Home() {
                     Live Trading con José Haché
                   </h3>
                   <p className="font-sans text-gray-400 mb-6 text-[14px] transition-colors duration-300 group-hover:text-gray-300" style={{ fontSize: '14px' }}>José Hache se especializa en operar opciones con enfoque en scalping y day trading. En sus sesiones en vivo verás cómo analiza, ejecuta y ajusta sus trades en cuestión de minutos. Aprende a identificar patrones de alta probabilidad, interpretar el flujo del mercado y actuar con precisión quirúrgica mientras operas junto a él en tiempo real.</p>
-                  <p className="font-sans text-green-400 font-semibold text-lg transition-all duration-300 group-hover:text-green-300 group-hover:scale-105">
+                  <p className="font-sans text-[#0055FF] font-semibold text-lg transition-all duration-300 group-hover:text-blue-300 group-hover:scale-105">
                     El margen de error es cero. Reacciona como un trader de élite.
                   </p>
                 </div>
