@@ -552,7 +552,7 @@ export default function Home() {
             </div>
 
             {/* Plan Pro Trimestral - Best Value */}
-            <div className="group relative bg-[linear-gradient(to_bottom,#183a2a_0%,#141414_80%)] border border-green-500/10 rounded-3xl p-4 sm:p-6 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-quarterly">
+            <div className="group relative bg-[linear-gradient(to_bottom,#0c1c3d_0%,#0f0f0f_80%)] border border-green-500/10 rounded-3xl p-4 sm:p-6 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-quarterly">
               
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center">
