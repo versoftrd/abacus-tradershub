@@ -27,6 +27,8 @@ import circleChartIcon from "@assets/Circle Chart_1755658307230.png";
 import stocksIcon from "@assets/Stocks_1755658381592.png";
 import winstonTradingImage from "@assets/winston-cordero-new.png";
 import optionsIcon from "@assets/options-icon.png";
+import hacheImage from "@assets/hache_1755878688239.png";
+import exchangeIcon from "@assets/Exchange_1755878683886.png";
 import desktopLoopVideo from "@assets/Loop dekstop_1755737411238.mp4";
 import mobileLoopVideo from "@assets/Loop Movil_1755737411240.mp4";
 import { Check, ArrowLeftRight, Zap, PieChart, TrendingUp, Instagram, Facebook, MessageSquare, Youtube } from "lucide-react";
@@ -637,9 +639,9 @@ export default function Home() {
               Nuestras sesiones
             </p>
             <h2 className="font-sans text-white mb-6 flex items-start justify-center gap-4 font-semibold text-[24px] sm:text-3xl lg:text-4xl" data-testid="nucleos-headline">
-              Los 5 núcleos del <img src={logo} alt="Traders Hub Logo" className="h-10 sm:h-14 md:h-16 inline-block mt-[4px] mb-[4px] pt-[3px] pb-[3px]" />
+              Los 6 núcleos del <img src={logo} alt="Traders Hub Logo" className="h-10 sm:h-14 md:h-16 inline-block mt-[4px] mb-[4px] pt-[3px] pb-[3px]" />
             </h2>
-            <p className="font-sans text-gray-300 max-w-4xl mx-auto px-4" style={{ fontSize: '14px' }} data-testid="nucleos-description">No son clases: son 7 a 9 sesiones de trading en vivo cada semana, donde literalmente operas junto a nuestros mentores y observas su operativa en tiempo real.  Es la parte más práctica de todo el Abacus Experience, diseñada para que la comunidad siga, aprenda y ejecute exactamente lo que hacemos dentro del mercado. Se divide de en 5 núcleos.</p>
+            <p className="font-sans text-gray-300 max-w-4xl mx-auto px-4" style={{ fontSize: '14px' }} data-testid="nucleos-description">No son clases: son 7 a 9 sesiones de trading en vivo cada semana, donde literalmente operas junto a nuestros mentores y observas su operativa en tiempo real.  Es la parte más práctica de todo el Abacus Experience, diseñada para que la comunidad siga, aprenda y ejecute exactamente lo que hacemos dentro del mercado. Se divide de en 6 núcleos.</p>
           </div>
 
           {/* Content Cards - Combined */}
@@ -736,7 +738,7 @@ export default function Home() {
               <hr className="border-white/10 mb-12" />
 
               {/* Card 5 - Charting de la Semana con Jean Vizón */}
-              <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 group cursor-pointer transition-all duration-500 hover:bg-white/[0.02] hover:shadow-lg rounded-3xl p-4 -m-4" data-testid="card-jean-vizon">
+              <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 mb-12 group cursor-pointer transition-all duration-500 hover:bg-white/[0.02] hover:shadow-lg rounded-3xl p-4 -m-4" data-testid="card-jean-vizon">
                 <div className="w-full lg:w-1/2 flex-shrink-0 overflow-hidden rounded-2xl">
                   <img src={image4} alt="Jean Vizón charting session" className="w-full h-64 lg:h-80 object-cover transition-transform duration-700 group-hover:scale-110" />
                 </div>
@@ -751,6 +753,28 @@ export default function Home() {
                   Jean revisa los gráficos más relevantes de la semana y te muestra cómo leer el mercado con precisión. Identifica patrones, zonas clave y posibles escenarios para estar siempre un paso adelante.</p>
                   <p className="font-sans text-green-400 font-semibold text-lg transition-all duration-300 group-hover:text-green-300 group-hover:scale-105">
                     Lee los charts. Anticipa el mercado.
+                  </p>
+                </div>
+              </div>
+
+              {/* Separator */}
+              <hr className="border-white/10 mb-12" />
+
+              {/* Card 6 - Live Trading con José Haché */}
+              <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 group cursor-pointer transition-all duration-500 hover:bg-white/[0.02] hover:shadow-lg rounded-3xl p-4 -m-4" data-testid="card-jose-hache">
+                <div className="w-full lg:w-1/2 flex-shrink-0 overflow-hidden rounded-2xl">
+                  <img src={hacheImage} alt="José Haché trading session" className="w-full h-64 lg:h-80 object-cover transition-transform duration-700 group-hover:scale-110" />
+                </div>
+                <div className="w-full lg:w-1/2 text-center lg:text-left">
+                  <div className="flex justify-center lg:justify-start mb-4">
+                    <img src={exchangeIcon} alt="Exchange Trading" className="w-8 h-8 transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
+                  </div>
+                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-green-100 text-lg sm:text-xl md:text-2xl leading-tight">
+                    Live Trading con José Haché
+                  </h3>
+                  <p className="font-sans text-gray-400 mb-6 text-[14px] transition-colors duration-300 group-hover:text-gray-300" style={{ fontSize: '14px' }}>José Hache se especializa en operar opciones con enfoque en scalping y day trading. En sus sesiones en vivo verás cómo analiza, ejecuta y ajusta sus trades en cuestión de minutos. Aprende a identificar patrones de alta probabilidad, interpretar el flujo del mercado y actuar con precisión quirúrgica mientras operas junto a él en tiempo real.</p>
+                  <p className="font-sans text-green-400 font-semibold text-lg transition-all duration-300 group-hover:text-green-300 group-hover:scale-105">
+                    El margen de error es cero. Reacciona como un trader de élite.
                   </p>
                 </div>
               </div>
