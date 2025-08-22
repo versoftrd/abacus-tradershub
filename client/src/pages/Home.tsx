@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import EmailCta from "@/components/EmailCta";
 import PlanCircle from "@/components/PlanCircle";
 import heroBackground from "@assets/Hero Background_1755619519675.png";
-import roundGradient from "@assets/Round Gradient_1755620690824.png";
+import roundGradient from "@assets/Round Gradient_1755877095797.png";
 import image1 from "@assets/image1_1755651733674.png";
 import image2 from "@assets/image2_1755651733676.png";
 import image3 from "@assets/image3_1755651733676.png";
