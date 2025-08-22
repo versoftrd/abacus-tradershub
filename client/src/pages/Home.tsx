@@ -561,8 +561,8 @@ export default function Home() {
                     Mejor valor
                   </span>
                 </div>
-                <span className="font-sans bg-gradient-to-b from-[#227649] to-[#193829] text-green-400 text-xs font-medium px-2 py-1 rounded-full" data-testid="badge-discount-quarterly">
-                  45% de descuento
+                <span className="font-sans bg-gradient-to-b from-[#082b72] to-[#0a1e45] text-green-400 text-xs font-medium px-2 py-1 rounded-full" data-testid="badge-discount-quarterly">
+                  20% de descuento
                 </span>
               </div>
               
