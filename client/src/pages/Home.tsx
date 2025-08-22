@@ -419,8 +419,8 @@ export default function Home() {
           }}
         ></div>
         
-        {/* Green Glow */}
-        <div className="absolute bottom-1/2 left-1/2 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] bg-green-500/10 rounded-full blur-3xl pointer-events-none z-5 transform -translate-x-1/2 -translate-y-1/2"></div>
+        {/* Blue Glow */}
+        <div className="absolute bottom-1/2 left-1/2 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] rounded-full blur-3xl pointer-events-none z-5 transform -translate-x-1/2 -translate-y-1/2" style={{ backgroundColor: 'rgba(0, 85, 255, 0.1)' }}></div>
         <div className="mx-auto max-w-6xl px-3 sm:px-4 md:px-6 w-full">
           <div className="flex min-h-screen items-center justify-center py-20 sm:py-24 md:py-0">
             <div className="text-center space-y-7 sm:space-y-10 relative z-10 w-full">
@@ -484,10 +484,10 @@ export default function Home() {
       </main>
       {/* Pricing Section */}
       <section id="pricing" className="relative bg-[#141414] pt-0 pb-12 px-4 sm:px-6" aria-labelledby="pricing-headline">
-        {/* Background with green glow */}
+        {/* Background with blue glow */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#141414] via-[#141414] to-[#141414]">
-          <div className="absolute top-0 left-1/4 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 bg-green-400/5 rounded-full blur-2xl"></div>
-          <div className="absolute bottom-32 left-1/3 w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 bg-green-500/8 rounded-full blur-3xl"></div>
+          <div className="absolute top-0 left-1/4 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-full blur-2xl" style={{ backgroundColor: 'rgba(0, 85, 255, 0.05)' }}></div>
+          <div className="absolute bottom-32 left-1/3 w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 rounded-full blur-3xl" style={{ backgroundColor: 'rgba(0, 85, 255, 0.08)' }}></div>
         </div>
         
         <div className="relative max-w-7xl mx-auto">
@@ -507,7 +507,7 @@ export default function Home() {
           <div className="responsive-grid responsive-grid-2 max-w-7xl mx-auto px-2 sm:px-4 md:px-6">
             
             {/* Pase Semanal */}
-            <div className="group relative bg-[linear-gradient(to_bottom,#141820_0%,#141414_20%)] border border-green-500/10 rounded-3xl p-4 sm:p-6 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-weekly">
+            <div className="group relative bg-[linear-gradient(to_bottom,#141820_0%,#141414_20%)] rounded-3xl p-4 sm:p-6 shadow-2xl hover:scale-105 transition-transform duration-300" style={{ border: '1px solid rgba(0, 85, 255, 0.1)' }} data-testid="card-weekly">
               <div className="flex items-start justify-between mb-4">
                 <PlanCircle size={40} variant="neutral" className="sm:w-12 sm:h-12" />
               </div>
@@ -524,11 +524,11 @@ export default function Home() {
                 <div className="font-sans text-gray-400 text-sm sm:text-[16px] font-semibold pt-1">/ por semana</div>
               </div>
               
-              <button className="font-sans w-full bg-gradient-to-b from-[#101f3c] to-[#131820] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6 text-sm sm:text-base" data-testid="button-weekly">
+              <button className="font-sans w-full bg-gradient-to-b from-[#101f3c] to-[#131820] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6 text-sm sm:text-base" style={{ focusRingColor: 'rgba(0, 85, 255, 1)' }} data-testid="button-weekly">
                 Iniciar ahora
               </button>
               
-              <hr className="border-green-500/10 mb-4" />
+              <hr className="mb-4" style={{ borderColor: 'rgba(0, 85, 255, 0.1)' }} />
               
               <div>
                 <h4 className="font-sans text-white font-semibold mb-3" data-testid="features-title-weekly">
@@ -556,7 +556,7 @@ export default function Home() {
             </div>
 
             {/* Plan Pro Trimestral - Best Value */}
-            <div className="group relative bg-[linear-gradient(to_bottom,#0c1c3d_0%,#0f0f0f_80%)] border border-green-500/10 rounded-3xl p-4 sm:p-6 shadow-2xl hover:scale-105 transition-transform duration-300" data-testid="card-quarterly">
+            <div className="group relative bg-[linear-gradient(to_bottom,#0c1c3d_0%,#0f0f0f_80%)] rounded-3xl p-4 sm:p-6 shadow-2xl hover:scale-105 transition-transform duration-300" style={{ border: '1px solid rgba(0, 85, 255, 0.1)' }} data-testid="card-quarterly">
               
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center">
@@ -586,7 +586,7 @@ export default function Home() {
                 Iniciar ahora
               </button>
               
-              <hr className="border-green-500/10 mb-4" />
+              <hr className="mb-4" style={{ borderColor: 'rgba(0, 85, 255, 0.1)' }} />
               
               <div>
                 <h4 className="font-sans text-white font-semibold mb-3" data-testid="features-title-quarterly">
@@ -630,8 +630,8 @@ export default function Home() {
         
         {/* Background decorative elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 right-1/3 w-64 h-64 bg-green-500/5 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-green-400/8 rounded-full blur-2xl"></div>
+          <div className="absolute top-1/4 right-1/3 w-64 h-64 rounded-full blur-3xl" style={{ backgroundColor: 'rgba(0, 85, 255, 0.05)' }}></div>
+          <div className="absolute bottom-1/4 left-1/4 w-80 h-80 rounded-full blur-2xl" style={{ backgroundColor: 'rgba(0, 85, 255, 0.08)' }}></div>
         </div>
 
         <div className="relative max-w-7xl mx-auto">
@@ -648,7 +648,15 @@ export default function Home() {
 
           {/* Content Cards - Combined */}
           <div className="max-w-6xl mx-auto">
-            <div className="group border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl hover:shadow-green-500/10 hover:border-green-500/20 transition-all duration-300" style={{ background: 'linear-gradient(to bottom, transparent 0%, rgba(27, 27, 27, 0.3) 10%, rgba(27, 27, 27, 1) 15%, rgba(27, 27, 27, 1) 100%)' }}>
+            <div className="group border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl transition-all duration-300" style={{ 
+              background: 'linear-gradient(to bottom, transparent 0%, rgba(27, 27, 27, 0.3) 10%, rgba(27, 27, 27, 1) 15%, rgba(27, 27, 27, 1) 100%)'
+            }} onMouseEnter={(e) => {
+              e.currentTarget.style.boxShadow = '0 0 30px rgba(0, 85, 255, 0.1)';
+              e.currentTarget.style.borderColor = 'rgba(0, 85, 255, 0.2)';
+            }} onMouseLeave={(e) => {
+              e.currentTarget.style.boxShadow = '';
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+            }}>
               
               {/* Card 1 - Portafolio & Wealth con Ernesto Yunes */}
               <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12 group cursor-pointer transition-all duration-500 hover:bg-white/[0.02] hover:shadow-lg rounded-2xl sm:rounded-3xl p-3 sm:p-4 -m-3 sm:-m-4" data-testid="card-ernesto-yunes">
@@ -657,9 +665,15 @@ export default function Home() {
                 </div>
                 <div className="w-full lg:w-1/2 text-center lg:text-left px-2 sm:px-0">
                   <div className="flex justify-center lg:justify-start mb-4">
-                    <img src={circleChartIcon} alt="Portfolio Chart" className="w-8 h-8 transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
+                    <img src={circleChartIcon} alt="Portfolio Chart" className="w-8 h-8 transition-all duration-500 group-hover:scale-125" style={{
+                      filter: 'drop-shadow(0 0 0px transparent)'
+                    }} onMouseEnter={(e) => {
+                      e.currentTarget.style.filter = 'drop-shadow(0 0 8px rgba(0, 85, 255, 0.6))';
+                    }} onMouseLeave={(e) => {
+                      e.currentTarget.style.filter = 'drop-shadow(0 0 0px transparent)';
+                    }} />
                   </div>
-                  <h3 className="font-sans text-white mb-3 sm:mb-4 font-semibold transition-colors duration-300 group-hover:text-green-100 text-lg sm:text-xl md:text-2xl leading-tight">
+                  <h3 className="font-sans text-white mb-3 sm:mb-4 font-semibold transition-colors duration-300 group-hover:text-blue-100 text-lg sm:text-xl md:text-2xl leading-tight">
                     Portafolio & Wealth con Ernesto Yunes
                   </h3>
                   <p className="font-sans text-gray-400 mb-4 sm:mb-6 text-sm sm:text-base transition-colors duration-300 group-hover:text-gray-300 leading-relaxed">Construye un portafolio sólido y a largo plazo. 
@@ -680,9 +694,15 @@ export default function Home() {
                 </div>
                 <div className="w-full lg:w-1/2 text-center lg:text-left">
                   <div className="flex justify-center lg:justify-start mb-4">
-                    <img src={candlestickIcon} alt="Candlestick Chart" className="w-8 h-8 transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
+                    <img src={candlestickIcon} alt="Candlestick Chart" className="w-8 h-8 transition-all duration-500 group-hover:scale-125" style={{
+                      filter: 'drop-shadow(0 0 0px transparent)'
+                    }} onMouseEnter={(e) => {
+                      e.currentTarget.style.filter = 'drop-shadow(0 0 8px rgba(0, 85, 255, 0.6))';
+                    }} onMouseLeave={(e) => {
+                      e.currentTarget.style.filter = 'drop-shadow(0 0 0px transparent)';
+                    }} />
                   </div>
-                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-green-100 text-lg sm:text-xl md:text-2xl leading-tight">
+                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-blue-100 text-lg sm:text-xl md:text-2xl leading-tight">
                     Live Trading con Jorge Valet
                   </h3>
                   <p className="font-sans text-gray-400 mb-6 text-[14px] transition-colors duration-300 group-hover:text-gray-300" style={{ fontSize: '14px' }}>Acompaña a Jorge en sesiones de trading en vivo, donde analiza el mercado, ejecuta operaciones y explica paso a paso su proceso de decisión. Aprende a identificar oportunidades reales y a gestionar el riesgo mientras observas la acción del mercado minuto a minuto.</p>
@@ -702,9 +722,9 @@ export default function Home() {
                 </div>
                 <div className="w-full lg:w-1/2 text-center lg:text-left">
                   <div className="flex justify-center lg:justify-start mb-4">
-                    <img src={optionsIcon} alt="Options Trading Icon" className="w-8 h-8 transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
+                    <img src={optionsIcon} alt="Options Trading Icon" className="w-8 h-8 transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-[0_0_8px_rgba(0, 85, 255, 0.6)]" />
                   </div>
-                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-green-100 text-lg sm:text-xl md:text-2xl leading-tight">
+                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-blue-100 text-lg sm:text-xl md:text-2xl leading-tight">
                     Live Options Trading con Winston Cordero
                   </h3>
                   <p className="font-sans text-gray-400 mb-6 text-[14px] transition-colors duration-300 group-hover:text-gray-300" style={{ fontSize: '14px' }}>Winston te lleva al siguiente nivel en el manejo de opciones, combinando análisis de contexto, estructura del mercado y ejecución práctica. Aprende desde day trading, hasta cómo crear un portafolio flexible con opciones que se adapte al movimiento del mercado y potencie tu rendimiento con control de riesgo.</p>
@@ -724,9 +744,9 @@ export default function Home() {
                 </div>
                 <div className="w-full lg:w-1/2 text-center lg:text-left">
                   <div className="flex justify-center lg:justify-start mb-4">
-                    <img src={conflictIcon} alt="Options Strategy" className="w-8 h-8 transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
+                    <img src={conflictIcon} alt="Options Strategy" className="w-8 h-8 transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-[0_0_8px_rgba(0, 85, 255, 0.6)]" />
                   </div>
-                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-green-100 text-lg sm:text-xl md:text-2xl leading-tight">
+                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-blue-100 text-lg sm:text-xl md:text-2xl leading-tight">
                     Opciones Avanzadas con Carlos Amec
                   </h3>
                   <p className="font-sans text-gray-400 mb-6 text-[14px] transition-colors duration-300 group-hover:text-gray-300" style={{ fontSize: '14px' }}>Domina las estrategias que usan los profesionales. Carlos te guía en el mundo de las opciones con tácticas avanzadas como covered calls, puts y spreads. Descubre cómo generar ingresos consistentes y proteger tu portafolio en distintos escenarios de mercado.</p>
@@ -746,9 +766,9 @@ export default function Home() {
                 </div>
                 <div className="w-full lg:w-1/2 text-center lg:text-left">
                   <div className="flex justify-center lg:justify-start mb-4">
-                    <img src={stocksIcon} alt="Stock Analysis" className="w-8 h-8 transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
+                    <img src={stocksIcon} alt="Stock Analysis" className="w-8 h-8 transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-[0_0_8px_rgba(0, 85, 255, 0.6)]" />
                   </div>
-                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-green-100 text-lg sm:text-xl md:text-2xl leading-tight">
+                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-blue-100 text-lg sm:text-xl md:text-2xl leading-tight">
                     Charting de la Semana con Jean Vizón
                   </h3>
                   <p className="font-sans text-gray-400 mb-6 text-[14px] transition-colors duration-300 group-hover:text-gray-300" style={{ fontSize: '14px' }}>Análisis técnico aplicado a lo que importa.  
@@ -769,9 +789,9 @@ export default function Home() {
                 </div>
                 <div className="w-full lg:w-1/2 text-center lg:text-left">
                   <div className="flex justify-center lg:justify-start mb-4">
-                    <img src={exchangeIcon} alt="Exchange Trading" className="w-8 h-8 transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
+                    <img src={exchangeIcon} alt="Exchange Trading" className="w-8 h-8 transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-[0_0_8px_rgba(0, 85, 255, 0.6)]" />
                   </div>
-                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-green-100 text-lg sm:text-xl md:text-2xl leading-tight">
+                  <h3 className="font-sans text-white mb-4 font-semibold transition-colors duration-300 group-hover:text-blue-100 text-lg sm:text-xl md:text-2xl leading-tight">
                     Live Trading con José Haché
                   </h3>
                   <p className="font-sans text-gray-400 mb-6 text-[14px] transition-colors duration-300 group-hover:text-gray-300" style={{ fontSize: '14px' }}>José Hache se especializa en operar opciones con enfoque en scalping y day trading. En sus sesiones en vivo verás cómo analiza, ejecuta y ajusta sus trades en cuestión de minutos. Aprende a identificar patrones de alta probabilidad, interpretar el flujo del mercado y actuar con precisión quirúrgica mientras operas junto a él en tiempo real.</p>
@@ -1025,8 +1045,8 @@ export default function Home() {
         
         {/* Background decorative elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-green-500/3 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-green-400/5 rounded-full blur-2xl"></div>
+          <div className="absolute top-1/4 right-1/4 w-96 h-96 rounded-full blur-3xl" style={{ backgroundColor: 'rgba(0, 85, 255, 0.03)' }}></div>
+          <div className="absolute bottom-1/4 left-1/4 w-80 h-80 rounded-full blur-2xl" style={{ backgroundColor: 'rgba(0, 85, 255, 0.05)' }}></div>
         </div>
 
         <div className="relative max-w-7xl mx-auto">
@@ -1064,8 +1084,8 @@ export default function Home() {
       <section id="beneficios" className="relative bg-[#0a0a0a] py-16 px-4 sm:px-6">
         {/* Background decorative elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-green-500/3 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-green-400/2 rounded-full blur-2xl"></div>
+          <div className="absolute top-1/3 right-1/4 w-80 h-80 rounded-full blur-3xl" style={{ backgroundColor: 'rgba(0, 85, 255, 0.03)' }}></div>
+          <div className="absolute bottom-1/3 left-1/4 w-96 h-96 rounded-full blur-2xl" style={{ backgroundColor: 'rgba(0, 85, 255, 0.02)' }}></div>
         </div>
 
         <div className="relative max-w-5xl mx-auto">
@@ -1096,84 +1116,84 @@ export default function Home() {
                 
                 <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-1">
                   <Check className="w-6 h-6 text-[#0055FF] flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
-                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-blue-50">
                     Sesiones en vivo de trading en tiempo real con los mentores de Abacus
                   </p>
                 </div>
                 
                 <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-2">
                   <Check className="w-6 h-6 text-[#0055FF] flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
-                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-blue-50">
                     7 a 9 sesiones semanales de práctica divididas en diferentes núcleos de especialización
                   </p>
                 </div>
                 
                 <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-3">
                   <Check className="w-6 h-6 text-[#0055FF] flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
-                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-blue-50">
                     Live Day Trading con Jorge Valet: Aprende a leer y ejecutar operaciones intradía en vivo
                   </p>
                 </div>
                 
                 <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-4">
                   <Check className="w-6 h-6 text-[#0055FF] flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
-                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-blue-50">
                     Opciones Avanzadas con Carlos Amec: Estrategias con opciones para rentabilizar tu portafolio
                   </p>
                 </div>
                 
                 <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-5">
                   <Check className="w-6 h-6 text-[#0055FF] flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
-                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-blue-50">
                     Portafolio & Wealth con Ernesto Yunes: Construcción de portafolios diversificados a largo plazo
                   </p>
                 </div>
                 
                 <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-6">
                   <Check className="w-6 h-6 text-[#0055FF] flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
-                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-blue-50">
                     Charting de la semana con Jean Vizón: Análisis técnico y estructuración de escenarios de mercado
                   </p>
                 </div>
                 
                 <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-7">
                   <Check className="w-6 h-6 text-[#0055FF] flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
-                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-blue-50">
                     Acceso a grabaciones completas de todas las sesiones en español
                   </p>
                 </div>
                 
                 <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-8">
                   <Check className="w-6 h-6 text-[#0055FF] flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
-                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-blue-50">
                     Metodología práctica: Aprendes mientras operas junto a traders expertos
                   </p>
                 </div>
                 
                 <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-9">
                   <Check className="w-6 h-6 text-[#0055FF] flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
-                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-blue-50">
                     Acceso exclusivo a la comunidad de traders e inversionistas de Abacus
                   </p>
                 </div>
                 
                 <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-10">
                   <Check className="w-6 h-6 text-[#0055FF] flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
-                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-blue-50">
                     Acompañamiento directo: Pregunta y recibe respuestas en vivo de los mentores
                   </p>
                 </div>
                 
                 <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-11">
                   <Check className="w-6 h-6 text-[#0055FF] flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
-                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-blue-50">
                     Clases temáticas y actualizaciones constantes sobre tendencias y noticias del mercado
                   </p>
                 </div>
                 
                 <div className="flex items-start space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:translate-x-2" data-testid="feature-12">
                   <Check className="w-6 h-6 text-[#0055FF] flex-shrink-0 mt-0.5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
-                  <p className="text-white text-[15px] leading-relaxed group-hover:text-green-50">
+                  <p className="text-white text-[15px] leading-relaxed group-hover:text-blue-50">
                     Entorno de trading seguro y guiado, ideal para aplicar estrategias sin estar solo
                   </p>
                 </div>
