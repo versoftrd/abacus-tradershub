@@ -1623,25 +1623,25 @@ export default function Home() {
             
             {/* Social Media Icons */}
             <div className="flex items-center gap-4">
-              <a href="https://discord.gg/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-400 transition-colors duration-200" data-testid="footer-discord">
+              <a href="https://discord.gg/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-[#0055FF] hover:text-blue-400 transition-colors duration-200" data-testid="footer-discord">
                 <SiDiscord className="w-5 h-5" />
               </a>
-              <a href="https://facebook.com/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-400 transition-colors duration-200" data-testid="footer-facebook">
+              <a href="https://facebook.com/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-[#0055FF] hover:text-blue-400 transition-colors duration-200" data-testid="footer-facebook">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="https://tiktok.com/@abacusexchange" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-400 transition-colors duration-200" data-testid="footer-tiktok">
+              <a href="https://tiktok.com/@abacusexchange" target="_blank" rel="noopener noreferrer" className="text-[#0055FF] hover:text-blue-400 transition-colors duration-200" data-testid="footer-tiktok">
                 <SiTiktok className="w-5 h-5" />
               </a>
-              <a href="https://youtube.com/c/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-400 transition-colors duration-200" data-testid="footer-youtube">
+              <a href="https://youtube.com/c/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-[#0055FF] hover:text-blue-400 transition-colors duration-200" data-testid="footer-youtube">
                 <SiYoutube className="w-5 h-5" />
               </a>
-              <a href="https://wa.me/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-400 transition-colors duration-200" data-testid="footer-whatsapp">
+              <a href="https://wa.me/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-[#0055FF] hover:text-blue-400 transition-colors duration-200" data-testid="footer-whatsapp">
                 <SiWhatsapp className="w-5 h-5" />
               </a>
-              <a href="https://x.com/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-400 transition-colors duration-200" data-testid="footer-x">
+              <a href="https://x.com/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-[#0055FF] hover:text-blue-400 transition-colors duration-200" data-testid="footer-x">
                 <SiX className="w-5 h-5" />
               </a>
-              <a href="https://instagram.com/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-400 transition-colors duration-200" data-testid="footer-instagram">
+              <a href="https://instagram.com/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-[#0055FF] hover:text-blue-400 transition-colors duration-200" data-testid="footer-instagram">
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
