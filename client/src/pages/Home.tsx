@@ -483,7 +483,7 @@ export default function Home() {
 
       </main>
       {/* Pricing Section */}
-      <section id="pricing" className="relative bg-[#141414] pt-0 pb-12 px-4 sm:px-6" aria-labelledby="pricing-headline">
+      <section id="pricing" className="relative bg-[#141414] pt-0 pb-4 px-4 sm:px-6" aria-labelledby="pricing-headline">
         {/* Background with blue glow */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#141414] via-[#141414] to-[#141414]">
           <div className="absolute top-0 left-1/4 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-full blur-2xl" style={{ backgroundColor: 'rgba(0, 85, 255, 0.05)' }}></div>
@@ -504,7 +504,7 @@ export default function Home() {
           </div>
 
           {/* Pricing Cards */}
-          <div className="responsive-grid responsive-grid-2 max-w-7xl mx-auto px-2 sm:px-4 md:px-6">
+          <div className="responsive-grid responsive-grid-2 max-w-7xl mx-auto px-2 sm:px-4 md:px-6" style={{ transform: 'scale(0.85)', transformOrigin: 'center top' }}>
             
             {/* Pase Semanal */}
             <div className="group relative bg-[linear-gradient(to_bottom,#141820_0%,#141414_20%)] rounded-3xl p-4 sm:p-6 shadow-2xl hover:scale-105 transition-transform duration-300" style={{ border: '1px solid rgba(0, 85, 255, 0.1)' }} data-testid="card-weekly">
@@ -524,7 +524,7 @@ export default function Home() {
                 <div className="font-sans text-gray-400 text-sm sm:text-[16px] font-semibold pt-1">/ por semana</div>
               </div>
               
-              <button className="font-sans w-full bg-gradient-to-b from-[#101f3c] to-[#131820] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6 text-sm sm:text-base" style={{ focusRingColor: 'rgba(0, 85, 255, 1)' }} data-testid="button-weekly">
+              <button className="font-sans w-full bg-gradient-to-b from-[#101f3c] to-[#131820] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-[#0055FF] focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6 text-sm sm:text-base" data-testid="button-weekly">
                 Iniciar ahora
               </button>
               
