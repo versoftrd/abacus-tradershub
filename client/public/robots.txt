@@ -2,15 +2,6 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://tradershub.abacusexchange.org/sitemap.xml
+Sitemap: https://tradershub.com/sitemap.xml
 
-# Block access to admin or private areas (if any exist in the future)
-Disallow: /admin/
-Disallow: /private/
-Disallow: /.env
-
-# Allow access to important pages
-Allow: /
-Allow: /pricing
-Allow: /about
-Allow: /contact
+# Optimized for TradersHub SEO
