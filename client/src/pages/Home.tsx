@@ -18,7 +18,7 @@ import img0222 from "@assets/img0222_1755728146438.png";
 import backgroundGradient from "@assets/Background gradient_1755728624523.png";
 import gree from "@assets/gree_1755729513904.png";
 import boxes from "@assets/boxes_1755729518901.png";
-import chart from "@assets/chart_1755730233734.png";
+import chart from "@assets/chart_1755879421618.png";
 import logo from "@assets/logo_1755875965253.png";
 import abacusLogo from "@assets/abacus_1755732410058.png";
 import candlestickIcon from "@assets/Candlestick Chart_1755878792031.png";
