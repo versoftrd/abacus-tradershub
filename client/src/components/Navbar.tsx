@@ -79,12 +79,15 @@ export default function Navbar() {
               <div className="w-px h-7 bg-white/10 mx-1 sm:mx-2"></div>
               
               {/* Login and Get Started buttons */}
-              <button 
+              <a 
+                href="http://abacusexchange.org/tradershub"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-2.5 sm:px-4 md:px-5 py-2 rounded-[12px] bg-[#393939] text-zinc-200 hover:bg-[#4a4a4a] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50 text-sm font-semibold whitespace-nowrap"
                 data-testid="button-login"
               >
                 Login
-              </button>
+              </a>
               <button 
                 className="px-2.5 sm:px-4 md:px-5 py-2 rounded-[12px] text-white shadow-sm hover:opacity-95 transition-opacity duration-200 focus:outline-none focus:ring-2 focus:ring-sky-300/60 text-sm font-semibold whitespace-nowrap"
                 style={{
@@ -140,12 +143,15 @@ export default function Navbar() {
             ))}
             
             <div className="pt-4 space-y-2">
-              <button 
-                className="w-full px-5 py-2.5 rounded-[12px] bg-[#393939] text-zinc-200 hover:bg-[#4a4a4a] transition-colors duration-200 text-sm font-semibold"
+              <a 
+                href="http://abacusexchange.org/tradershub"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full block text-center px-5 py-2.5 rounded-[12px] bg-[#393939] text-zinc-200 hover:bg-[#4a4a4a] transition-colors duration-200 text-sm font-semibold"
                 data-testid="mobile-button-login"
               >
                 Login
-              </button>
+              </a>
               <button 
                 className="w-full px-5 py-2.5 rounded-[12px] text-white shadow-sm hover:opacity-95 transition-opacity duration-200 text-sm font-semibold"
                 style={{
