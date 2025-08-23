@@ -33,8 +33,7 @@ import hacheImage from "@assets/hache_1755878688239.png";
 import exchangeIcon from "@assets/Exchange_1755878683886.png";
 import desktopLoopVideo from "@assets/Loop dekstop_1755737411238.mp4";
 import mobileLoopVideo from "@assets/Loop Movil_1755737411240.mp4";
-import { Check, ArrowLeftRight, Zap, PieChart, TrendingUp, Instagram, Facebook, MessageSquare, Youtube } from "lucide-react";
-import { SiWhatsapp, SiDiscord, SiX, SiTiktok, SiYoutube } from "react-icons/si";
+import { Check, ArrowLeftRight, Zap, PieChart, TrendingUp } from "lucide-react";
 import { useState, useEffect } from "react";
 
 // Animated Counter Component
@@ -1639,8 +1638,8 @@ export default function Home() {
             
           </div>
           
-          {/* Middle Section - Headquarters and Social */}
-          <div className="flex flex-col lg:flex-row justify-between items-center gap-6 py-8 border-t border-gray-800">
+          {/* Middle Section - Headquarters */}
+          <div className="flex justify-center items-center py-8 border-t border-gray-800">
             
             {/* Headquarters Info */}
             <div className="flex items-center gap-2">
@@ -1648,50 +1647,15 @@ export default function Home() {
               <span className="font-sans text-gray-400 text-sm">Toronto, ON, Canada | Santo Domingo, Dominican Republic.</span>
             </div>
             
-            {/* Social Media Icons */}
-            <div className="flex items-center gap-4">
-              <a href="https://discord.gg/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-[#0055FF] hover:text-blue-400 transition-colors duration-200" data-testid="footer-discord">
-                <SiDiscord className="w-5 h-5" />
-              </a>
-              <a href="https://facebook.com/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-[#0055FF] hover:text-blue-400 transition-colors duration-200" data-testid="footer-facebook">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="https://tiktok.com/@abacusexchange" target="_blank" rel="noopener noreferrer" className="text-[#0055FF] hover:text-blue-400 transition-colors duration-200" data-testid="footer-tiktok">
-                <SiTiktok className="w-5 h-5" />
-              </a>
-              <a href="https://youtube.com/c/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-[#0055FF] hover:text-blue-400 transition-colors duration-200" data-testid="footer-youtube">
-                <SiYoutube className="w-5 h-5" />
-              </a>
-              <a href="https://wa.me/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-[#0055FF] hover:text-blue-400 transition-colors duration-200" data-testid="footer-whatsapp">
-                <SiWhatsapp className="w-5 h-5" />
-              </a>
-              <a href="https://x.com/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-[#0055FF] hover:text-blue-400 transition-colors duration-200" data-testid="footer-x">
-                <SiX className="w-5 h-5" />
-              </a>
-              <a href="https://instagram.com/abacusexchange" target="_blank" rel="noopener noreferrer" className="text-[#0055FF] hover:text-blue-400 transition-colors duration-200" data-testid="footer-instagram">
-                <Instagram className="w-5 h-5" />
-              </a>
-            </div>
-            
           </div>
           
           {/* Bottom Section */}
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-6 border-t border-gray-800">
+          <div className="flex justify-center items-center pt-6 border-t border-gray-800">
             
             {/* Copyright */}
             <p className="font-sans text-gray-500 text-sm" data-testid="footer-copyright">
               © 2025 TradersHub. All rights reserved.
             </p>
-            
-            {/* Privacy Links */}
-            <div className="flex items-center gap-6">
-              <a href="https://www.abacusexchange.org/politicas-de-privacidad" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-500 hover:text-gray-300 transition-colors duration-200 text-sm" data-testid="footer-privacy">
-                Política de Privacidad
-              </a>
-              <a href="https://www.abacusexchange.org/terms-and-conditions" target="_blank" rel="noopener noreferrer" className="font-sans text-gray-500 hover:text-gray-300 transition-colors duration-200 text-sm" data-testid="footer-terms">
-                Términos y Condiciones
-              </a>
-            </div>
             
           </div>
           
