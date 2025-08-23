@@ -3,7 +3,7 @@ import EmailCta from "@/components/EmailCta";
 import PlanCircle from "@/components/PlanCircle";
 import heroBackground from "@assets/Hero Background_1755619519675.png";
 import image1 from "@assets/image1_1755651733674.png";
-import image2 from "@assets/image2_1755651733676.png";
+import carlosAmecImage from "@assets/DSC09661 1_1755961673396.png";
 import image3 from "@assets/image3_1755651733676.png";
 import image4 from "@assets/image4_1755651733677.png";
 import img7 from "@assets/image7_1755728146437.png";
@@ -740,7 +740,7 @@ export default function Home() {
               {/* Card 4 - Opciones Avanzadas con Carlos Amec */}
               <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 mb-12 group cursor-pointer transition-all duration-500 hover:bg-white/[0.02] hover:shadow-lg rounded-3xl p-4 -m-4" data-testid="card-carlos-amec">
                 <div className="w-full lg:w-1/2 flex-shrink-0 overflow-hidden rounded-2xl">
-                  <img src={image2} alt="Carlos Amec options session" className="w-full h-64 lg:h-80 object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <img src={carlosAmecImage} alt="Carlos Amec options session" className="w-full h-64 lg:h-80 object-cover transition-transform duration-700 group-hover:scale-110" />
                 </div>
                 <div className="w-full lg:w-1/2 text-center lg:text-left">
                   <div className="flex justify-center lg:justify-start mb-4">
