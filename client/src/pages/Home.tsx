@@ -444,7 +444,12 @@ export default function Home() {
                 }}
                 data-testid="hero-headline"
               >
-                APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.
+                <span className="hidden sm:inline">APRENDE VIENDO. MEJORA HACIENDO. GANA ENTENDIENDO.</span>
+                <span className="block sm:hidden">
+                  APRENDE VIENDO.<br />
+                  MEJORA HACIENDO.<br />
+                  GANA ENTENDIENDO.
+                </span>
               </h1>
 
               {/* Subtitle */}
