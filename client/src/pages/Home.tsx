@@ -859,7 +859,7 @@ export default function Home() {
                 <AnimatedLineChart />
                 
                 {/* Chart Caption - Overlay on chart */}
-                <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-50">
+                <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 z-50">
                   <p className="text-center text-gray-500 text-xs bg-black/40 px-2 py-1 rounded">
                     (Valor de la cuenta de Jorge Valet en 15 días)
                   </p>
