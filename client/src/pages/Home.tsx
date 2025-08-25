@@ -512,7 +512,7 @@ export default function Home() {
               </div>
               
               <h3 className="font-sans text-xl sm:text-2xl font-bold text-white mb-2" data-testid="title-weekly">
-                Pase Semanal
+                Membresía Mensual
               </h3>
               <p className="font-sans text-gray-400 mb-4 text-[12px] font-semibold" data-testid="subtitle-weekly">
                 Ideal para quienes prueban el trading por primera vez.
@@ -520,7 +520,7 @@ export default function Home() {
               
               <div className="mb-6 flex items-start gap-2">
                 <span className="font-sans text-3xl sm:text-[40px] font-semibold text-white" data-testid="price-weekly">$250</span>
-                <div className="font-sans text-gray-400 text-sm sm:text-[16px] font-semibold pt-1">/ por semana</div>
+                <div className="font-sans text-gray-400 text-sm sm:text-[16px] font-semibold pt-1">/ por mes</div>
               </div>
               
               <button className="font-sans w-full bg-gradient-to-b from-[#101f3c] to-[#131820] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6 text-sm sm:text-base" style={{ focusRingColor: 'rgba(0, 85, 255, 1)' }} data-testid="button-weekly">
