@@ -33,7 +33,7 @@ import hacheImage from "@assets/hache_1755878688239.png";
 import exchangeIcon from "@assets/Exchange_1755878683886.png";
 import desktopLoopVideo from "@assets/Loop dekstop_1755737411238.mp4";
 import mobileLoopVideo from "@assets/Loop Movil_1755737411240.mp4";
-import { Check, ArrowLeftRight, Zap, PieChart, TrendingUp } from "lucide-react";
+import { Check, ArrowLeftRight, Zap, PieChart, TrendingUp, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
 // Animated Counter Component
@@ -367,6 +367,15 @@ function AnimatedLineChart() {
 }
 
 export default function Home() {
+  const [expandedImage, setExpandedImage] = useState<string | null>(null);
+  
+  const handleImageClick = (imageSrc: string) => {
+    setExpandedImage(imageSrc);
+  };
+  
+  const closeModal = () => {
+    setExpandedImage(null);
+  };
 
   return (
     <div className="min-h-screen bg-page-bg overflow-x-hidden">
@@ -942,21 +951,35 @@ export default function Home() {
                 >
                   
                   {/* Trading Table - img1 */}
-                  <div className="relative mb-6 rounded-xl overflow-hidden">
+                  <div className="relative mb-6 rounded-xl overflow-hidden cursor-pointer" onClick={() => handleImageClick(img1)}>
                     <img 
                       src={img1} 
                       alt="Trading Portfolio Table" 
                       className="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
                     />
+                    <div className="absolute inset-0 bg-black/0 hover:bg-black/10 transition-colors duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
+                      <div className="bg-white/20 rounded-full p-2 backdrop-blur-sm">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                   
                   {/* Growth Chart - img2 */}
-                  <div className="relative mb-4 rounded-xl overflow-hidden">
+                  <div className="relative mb-4 rounded-xl overflow-hidden cursor-pointer" onClick={() => handleImageClick(img2)}>
                     <img 
                       src={img2} 
                       alt="Portfolio Growth Chart" 
                       className="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
                     />
+                    <div className="absolute inset-0 bg-black/0 hover:bg-black/10 transition-colors duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
+                      <div className="bg-white/20 rounded-full p-2 backdrop-blur-sm">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                   
                   {/* Caption */}
@@ -978,12 +1001,19 @@ export default function Home() {
                 >
                   
                   {/* Trading Chart - img3 */}
-                  <div className="relative mb-4 rounded-xl overflow-hidden">
+                  <div className="relative mb-4 rounded-xl overflow-hidden cursor-pointer" onClick={() => handleImageClick(img3)}>
                     <img 
                       src={img3} 
                       alt="Trading Results Chart" 
                       className="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
                     />
+                    <div className="absolute inset-0 bg-black/0 hover:bg-black/10 transition-colors duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
+                      <div className="bg-white/20 rounded-full p-2 backdrop-blur-sm">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                   
                   {/* Caption for img3 */}
@@ -997,29 +1027,50 @@ export default function Home() {
                     
                     {/* Additional Trading Data */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                      <div className="relative rounded-xl overflow-hidden">
+                      <div className="relative rounded-xl overflow-hidden cursor-pointer" onClick={() => handleImageClick(img7)}>
                         <img 
                           src={img7} 
                           alt="P/L Performance" 
                           className="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
                         />
+                        <div className="absolute inset-0 bg-black/0 hover:bg-black/10 transition-colors duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
+                          <div className="bg-white/20 rounded-full p-2 backdrop-blur-sm">
+                            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                            </svg>
+                          </div>
+                        </div>
                       </div>
-                      <div className="relative rounded-xl overflow-hidden">
+                      <div className="relative rounded-xl overflow-hidden cursor-pointer" onClick={() => handleImageClick(img0209)}>
                         <img 
                           src={img0209} 
                           alt="Single Position Details" 
                           className="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
                         />
+                        <div className="absolute inset-0 bg-black/0 hover:bg-black/10 transition-colors duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
+                          <div className="bg-white/20 rounded-full p-2 backdrop-blur-sm">
+                            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                            </svg>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     
                     {/* Portfolio Summary */}
-                    <div className="relative rounded-xl overflow-hidden">
+                    <div className="relative rounded-xl overflow-hidden cursor-pointer" onClick={() => handleImageClick(img0222)}>
                       <img 
                         src={img0222} 
                         alt="Portfolio Summary" 
                         className="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
                       />
+                      <div className="absolute inset-0 bg-black/0 hover:bg-black/10 transition-colors duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
+                        <div className="bg-white/20 rounded-full p-2 backdrop-blur-sm">
+                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                          </svg>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   
@@ -1666,6 +1717,26 @@ export default function Home() {
           
         </div>
       </footer>
+      
+      {/* Image Expansion Modal */}
+      {expandedImage && (
+        <div className="fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center p-4" onClick={closeModal}>
+          <div className="relative max-w-[95vw] max-h-[95vh] overflow-hidden rounded-lg">
+            <button 
+              onClick={closeModal}
+              className="absolute top-4 right-4 z-50 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors duration-200"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            <img 
+              src={expandedImage} 
+              alt="Expanded trading chart" 
+              className="w-full h-full object-contain"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
