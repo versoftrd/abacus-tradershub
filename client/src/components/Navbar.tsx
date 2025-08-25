@@ -6,7 +6,7 @@ import logoPath from "/tradershub-logo.png";
 const navigationItems = [
   { name: "Home", path: "/", section: "hero" },
   { name: "Precios", path: "/precios", section: "pricing" },
-  { name: "Nucleos", path: "/nucleos", section: "nucleos" },
+  { name: "Núcleos", path: "/nucleos", section: "nucleos" },
   { name: "Resultados", path: "/resultados", section: "resultados" },
   { name: "Lo que obtienes", path: "/beneficios", section: "beneficios" },
   { name: "FAQ", path: "/faq", section: "faq" },
