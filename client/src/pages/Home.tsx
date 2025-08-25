@@ -1219,12 +1219,9 @@ export default function Home() {
         <div className="relative max-w-6xl mx-auto px-1 sm:px-2 md:px-4 lg:px-6">
           {/* CTA Card */}
           <div 
-            className="relative group cursor-pointer transition-all duration-500 hover:scale-[1.02] rounded-2xl sm:rounded-3xl overflow-hidden w-full"
+            className="relative group cursor-pointer transition-all duration-500 hover:scale-[1.02] rounded-2xl sm:rounded-3xl overflow-hidden w-full bg-contain sm:bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage: `url(${chart})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center center',
-              backgroundRepeat: 'no-repeat',
               filter: 'drop-shadow(0 8px 24px rgba(0, 0, 0, 0.3))',
               aspectRatio: '16/7.4',
               minHeight: '280px'
