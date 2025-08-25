@@ -860,7 +860,7 @@ export default function Home() {
               </div>
 
               {/* Chart Caption */}
-              <p className="text-center text-gray-500 text-xs mb-2" style={{ marginTop: '-15px' }}>
+              <p className="text-center text-gray-500 text-xs mb-2 relative z-50" style={{ marginTop: '-15px' }}>
                 (Valor de la cuenta de Jorge Valet en 15 días)
               </p>
 
