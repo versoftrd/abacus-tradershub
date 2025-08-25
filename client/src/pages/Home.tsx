@@ -570,7 +570,7 @@ export default function Home() {
               </div>
               
               <h3 className="font-sans text-xl sm:text-2xl font-bold text-white mb-2" data-testid="title-quarterly">
-                Plan Pro Trimestral
+                Plan Pro Anual
               </h3>
               <p className="font-sans text-gray-400 mb-4 text-[12px] font-semibold" data-testid="subtitle-quarterly">
                 Ideal para traders enfocados en el largo plazo.
@@ -578,7 +578,7 @@ export default function Home() {
               
               <div className="mb-6 flex items-start gap-2">
                 <span className="font-sans text-3xl sm:text-[40px] font-semibold text-white" data-testid="price-quarterly">$2,500</span>
-                <div className="font-sans text-gray-400 text-sm sm:text-[16px] font-semibold pt-1">/ por 3 meses</div>
+                <div className="font-sans text-gray-400 text-sm sm:text-[16px] font-semibold pt-1">/ por año</div>
               </div>
               
               <button className="font-sans w-full bg-gradient-to-b from-[#0759fb] to-[#0943bb] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6 text-sm sm:text-base" data-testid="button-quarterly">
