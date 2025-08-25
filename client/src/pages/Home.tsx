@@ -537,7 +537,7 @@ export default function Home() {
                 <div className="font-sans text-gray-400 text-sm sm:text-[16px] font-semibold pt-1">/ por mes</div>
               </div>
               
-              <button className="font-sans w-full bg-gradient-to-b from-[#101f3c] to-[#131820] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6 text-sm sm:text-base" style={{ focusRingColor: 'rgba(0, 85, 255, 1)' }} data-testid="button-weekly">
+              <button className="font-sans w-full bg-gradient-to-b from-[#101f3c] to-[#131820] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6 text-sm sm:text-base" style={{ '--tw-ring-color': 'rgba(0, 85, 255, 1)' } as React.CSSProperties} data-testid="button-weekly">
                 Iniciar ahora
               </button>
               
@@ -1281,11 +1281,11 @@ export default function Home() {
             data-testid="cta-card"
           >
             {/* Content overlay */}
-            <div className="absolute inset-0 z-10 flex flex-col items-start justify-center text-left px-4 py-6 sm:pl-[15%] sm:pr-8 sm:py-8 md:pl-[15%] md:pr-12 md:py-10 lg:pl-[15%] lg:pr-16 lg:py-12">
+            <div className="absolute inset-0 z-10 flex flex-col items-start justify-center text-left px-6 py-8 sm:pl-[15%] sm:pr-8 sm:py-8 md:pl-[15%] md:pr-12 md:py-10 lg:pl-[15%] lg:pr-16 lg:py-12">
               
               {/* Heading */}
               <h2 
-                className="font-sans text-white mb-6 sm:mb-3 md:mb-4 lg:mb-6 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl max-w-full sm:max-w-2xl font-semibold group-hover:text-blue-50 transition-colors duration-300 leading-tight"
+                className="font-sans text-white mb-6 sm:mb-3 md:mb-4 lg:mb-6 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl max-w-[85%] sm:max-w-2xl font-semibold group-hover:text-blue-50 transition-colors duration-300 leading-tight"
                 data-testid="cta-heading"
               >
                 Invierte con confianza, aprende en tiempo real
@@ -1293,16 +1293,16 @@ export default function Home() {
               
               {/* Subheading */}
               <p 
-                className="font-sans text-gray-300 mb-8 sm:mb-4 md:mb-6 lg:mb-8 text-xs sm:text-sm md:text-base lg:text-lg max-w-full sm:max-w-xl lg:max-w-2xl group-hover:text-gray-200 transition-colors duration-300 leading-relaxed"
+                className="font-sans text-gray-300 mb-8 sm:mb-4 md:mb-6 lg:mb-8 text-xs sm:text-sm md:text-base lg:text-lg max-w-[85%] sm:max-w-xl lg:max-w-2xl group-hover:text-gray-200 transition-colors duration-300 leading-relaxed"
                 data-testid="cta-subheading"
               >
                 Accede al hub de trading más completo en español y transforma la forma en que entiendes e inviertes en la bolsa de valores.
               </p>
               
               {/* CTA Button */}
-              <div className="flex justify-start w-full">
+              <div className="flex justify-start w-full max-w-[85%] sm:max-w-full">
                 <button 
-                  className="px-2.5 sm:px-4 md:px-5 py-2 rounded-[12px] text-white shadow-sm hover:opacity-95 transition-opacity duration-200 focus:outline-none focus:ring-2 focus:ring-sky-300/60 text-sm font-semibold whitespace-nowrap"
+                  className="px-3 sm:px-4 md:px-5 py-2.5 rounded-[12px] text-white shadow-sm hover:opacity-95 transition-opacity duration-200 focus:outline-none focus:ring-2 focus:ring-sky-300/60 text-sm font-semibold whitespace-nowrap"
                   onClick={() => {
                     const pricingSection = document.getElementById('pricing');
                     if (pricingSection) {
