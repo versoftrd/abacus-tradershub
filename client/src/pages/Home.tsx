@@ -20,7 +20,7 @@ import img3 from "@assets/img3_1755880155916.png";
 import boxes from "@assets/boxes_1755729518901.png";
 import chart from "@assets/chart_1755879421618.png";
 import logo from "@assets/logotipo white@2x_1756142000438.png";
-import thFavicon from "@assets/logotipo white@2x_1756142000438.png";
+import thFavicon from "@assets/isotipo white@2x_1756142168776.png";
 import abacusLogo from "@assets/abacus_1755732410058.png";
 import candlestickIcon from "@assets/Candlestick Chart_1755878792031.png";
 import conflictIcon from "@assets/Conflict_1755878792036.png";
