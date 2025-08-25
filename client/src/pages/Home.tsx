@@ -678,7 +678,7 @@ export default function Home() {
                     }} />
                   </div>
                   <h3 className="font-sans text-white mb-3 sm:mb-4 font-semibold transition-colors duration-300 group-hover:text-blue-100 text-lg sm:text-xl md:text-2xl leading-tight">
-                    Portafolio & Wealth con Ernesto Yunes
+                    Portfolio & Wealth con Ernesto Yunes
                   </h3>
                   <p className="font-sans text-gray-400 mb-4 sm:mb-6 text-sm sm:text-base transition-colors duration-300 group-hover:text-gray-300 leading-relaxed">Construye un portafolio sólido y a largo plazo. 
                   Ernesto comparte su enfoque de inversión en valor, gestión de portafolios y estrategias para hacer crecer tu capital de manera sostenible. Aprende a tomar decisiones financieras con fundamentos y visión estratégica.</p>
