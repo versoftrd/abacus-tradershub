@@ -1275,7 +1275,7 @@ export default function Home() {
               backgroundImage: `url(${chart})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              filter: 'drop-shadow(0 8px 24px rgba(0, 0, 0, 0.3))',
+              filter: 'drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15))',
               aspectRatio: '16/7.4',
               minHeight: '280px'
             }}
