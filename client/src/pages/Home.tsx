@@ -860,7 +860,7 @@ export default function Home() {
               </div>
 
               {/* Chart Caption */}
-              <p className="text-center text-gray-500 text-xs mt-0 mb-2">
+              <p className="text-center text-gray-500 text-xs -mt-2 mb-2">
                 (Valor de la cuenta de Jorge Valet en 15 días)
               </p>
 
