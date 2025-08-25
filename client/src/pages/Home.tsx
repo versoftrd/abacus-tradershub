@@ -849,7 +849,7 @@ export default function Home() {
             }}>
               
               {/* Chart Container */}
-              <div className="relative mb-2">
+              <div className="relative mb-0">
                 {/* +150.8% Metric - Animated */}
                 <div className="absolute top-0 right-2 sm:right-4 md:right-8 lg:right-12 z-10">
                   <AnimatedChartPercentage />
@@ -860,7 +860,7 @@ export default function Home() {
               </div>
 
               {/* Chart Caption */}
-              <p className="text-center text-gray-500 text-xs mt-1 mb-2">
+              <p className="text-center text-gray-500 text-xs mt-0 mb-2">
                 (Valor de la cuenta de Jorge Valet en 15 días)
               </p>
 
