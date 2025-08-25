@@ -1232,11 +1232,11 @@ export default function Home() {
             data-testid="cta-card"
           >
             {/* Content overlay */}
-            <div className="absolute inset-0 z-10 flex flex-col items-start justify-center text-left px-4 py-6 sm:pl-[15%] sm:pr-8 sm:py-8 md:pl-[15%] md:pr-12 md:py-10 lg:pl-[15%] lg:pr-16 lg:py-12">
+            <div className="absolute inset-0 z-10 flex flex-col items-start justify-center text-left pl-[15%] pr-8 py-8 sm:pr-12 sm:py-10 lg:pr-16 lg:py-12">
               
               {/* Heading */}
               <h2 
-                className="font-sans text-white mb-2 sm:mb-3 md:mb-4 lg:mb-6 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl max-w-full sm:max-w-2xl font-semibold group-hover:text-blue-50 transition-colors duration-300 leading-tight"
+                className="font-sans text-white mb-4 lg:mb-6 text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl max-w-2xl font-semibold group-hover:text-blue-50 transition-colors duration-300 leading-tight"
                 data-testid="cta-heading"
               >
                 Invierte con confianza, aprende en tiempo real
@@ -1244,7 +1244,7 @@ export default function Home() {
               
               {/* Subheading */}
               <p 
-                className="font-sans text-gray-300 mb-3 sm:mb-4 md:mb-6 lg:mb-8 text-xs sm:text-sm md:text-base lg:text-lg max-w-full sm:max-w-xl lg:max-w-2xl group-hover:text-gray-200 transition-colors duration-300 leading-relaxed"
+                className="font-sans text-gray-300 mb-6 lg:mb-8 text-base lg:text-lg max-w-xl lg:max-w-2xl group-hover:text-gray-200 transition-colors duration-300 leading-relaxed"
                 data-testid="cta-subheading"
               >
                 Accede al hub de trading más completo en español y transforma la forma en que entiendes e inviertes en la bolsa de valores.
