@@ -855,15 +855,14 @@ export default function Home() {
                   <AnimatedChartPercentage />
                 </div>
 
-                {/* Chart Caption */}
-                <p className="text-center text-gray-500 text-xs -mt-8 mb-2">
-                  (Valor de la cuenta de Jorge Valet en 15 días)
-                </p>
-
                 {/* Animated Chart */}
                 <AnimatedLineChart />
               </div>
 
+              {/* Chart Caption */}
+              <p className="text-center text-gray-500 text-xs -mt-8 mb-2">
+                (Valor de la cuenta de Jorge Valet en 15 días)
+              </p>
 
               {/* Stats Panel */}
               <div className="border border-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-6 bg-black/20 relative z-[200]">
