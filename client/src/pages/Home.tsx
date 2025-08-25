@@ -1222,7 +1222,7 @@ export default function Home() {
             className="relative group cursor-pointer transition-all duration-500 hover:scale-[1.02] rounded-2xl sm:rounded-3xl overflow-hidden w-full bg-center bg-no-repeat sm:[background-size:cover]"
             style={{
               backgroundImage: `url(${chart})`,
-              backgroundSize: '120%',
+              backgroundSize: '115%',
               filter: 'drop-shadow(0 8px 24px rgba(0, 0, 0, 0.3))',
               aspectRatio: '16/7.4',
               minHeight: '280px'
