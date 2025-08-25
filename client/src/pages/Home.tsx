@@ -18,7 +18,7 @@ import img1 from "@assets/img1_1756142351359.png";
 import img2 from "@assets/img2_1756142351357.png";
 import img3 from "@assets/img3_1756142351360.png";
 import boxes from "@assets/boxes_1755729518901.png";
-import chart from "@assets/chart_1755879421618.png";
+import chart from "@assets/chart_1756152829753.png";
 import logo from "@assets/logotipo white@2x_1756142000438.png";
 import thFavicon from "@assets/isotipo white@2x_1756142168776.png";
 import abacusLogo from "@assets/abacus_1755732410058.png";
