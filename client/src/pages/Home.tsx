@@ -849,7 +849,7 @@ export default function Home() {
             }}>
               
               {/* Chart Container */}
-              <div className="relative mb-0">
+              <div className="relative mb-2">
                 {/* +150.8% Metric - Animated */}
                 <div className="absolute top-0 right-2 sm:right-4 md:right-8 lg:right-12 z-10">
                   <AnimatedChartPercentage />
@@ -857,12 +857,14 @@ export default function Home() {
 
                 {/* Animated Chart */}
                 <AnimatedLineChart />
+                
+                {/* Chart Caption - Overlay on chart */}
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-50">
+                  <p className="text-center text-gray-500 text-xs bg-black/40 px-2 py-1 rounded">
+                    (Valor de la cuenta de Jorge Valet en 15 días)
+                  </p>
+                </div>
               </div>
-
-              {/* Chart Caption */}
-              <p className="text-center text-gray-500 text-xs mb-2 relative z-50" style={{ marginTop: '-15px' }}>
-                (Valor de la cuenta de Jorge Valet en 15 días)
-              </p>
 
               {/* Stats Panel */}
               <div className="border border-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-6 bg-black/20 relative z-[200]">
