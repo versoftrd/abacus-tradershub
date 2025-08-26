@@ -810,7 +810,7 @@ export default function Home() {
                   </h3>
                   <p className="font-sans text-gray-400 mb-6 text-[14px] transition-colors duration-300 group-hover:text-gray-300" style={{ fontSize: '14px' }}>José Hache se especializa en operar opciones con enfoque en scalping y day trading. En sus sesiones en vivo verás cómo analiza, ejecuta y ajusta sus trades en cuestión de minutos. Aprende a identificar patrones de alta probabilidad, interpretar el flujo del mercado y actuar con precisión quirúrgica mientras operas junto a él en tiempo real.</p>
                   <p className="font-sans text-[#0055FF] font-semibold text-sm sm:text-base transition-all duration-300 group-hover:text-blue-300 group-hover:scale-105">
-                    El margen de error es cero. Reacciona como un trader de élite.
+                    Reacciona al mercado como un trader élite.
                   </p>
                 </div>
               </div>
