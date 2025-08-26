@@ -35,6 +35,7 @@ import desktopLoopVideo from "@assets/Loop dekstop_1755737411238.mp4";
 import mobileLoopVideo from "@assets/Loop Movil_1755737411240.mp4";
 import { Check, ArrowLeftRight, Zap, PieChart, TrendingUp, X } from "lucide-react";
 import { useState, useEffect } from "react";
+import { Link } from "wouter";
 
 // Animated Counter Component
 function AnimatedCounter({ target, duration = 2000, suffix = "%" }: { target: number; duration?: number; suffix?: string }) {
@@ -1715,13 +1716,13 @@ export default function Home() {
             </p>
             
             {/* Terms and Conditions */}
-            <a 
-              href="#" 
+            <Link 
+              href="/terminos-y-condiciones" 
               className="font-sans text-gray-500 hover:text-gray-300 text-sm transition-colors duration-200"
               data-testid="footer-terms"
             >
               Términos y Condiciones
-            </a>
+            </Link>
             
           </div>
           
