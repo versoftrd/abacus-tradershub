@@ -1707,12 +1707,21 @@ export default function Home() {
           </div>
           
           {/* Bottom Section */}
-          <div className="flex justify-center items-center pt-6 border-t border-gray-800">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 pt-6 border-t border-gray-800">
             
             {/* Copyright */}
             <p className="font-sans text-gray-500 text-sm" data-testid="footer-copyright">
               © 2025 TradersHub. All rights reserved.
             </p>
+            
+            {/* Terms and Conditions */}
+            <a 
+              href="#" 
+              className="font-sans text-gray-500 hover:text-gray-300 text-sm transition-colors duration-200"
+              data-testid="footer-terms"
+            >
+              Términos y Condiciones
+            </a>
             
           </div>
           
