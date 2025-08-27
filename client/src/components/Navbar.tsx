@@ -102,7 +102,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="lg:hidden">
+          <div className="lg:hidden relative z-[200]">
             <button
               onClick={toggleMobileMenu}
               className="inline-flex items-center justify-center rounded-[12px] p-2 sm:p-2.5 hover:bg-tab-hover transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/50"
