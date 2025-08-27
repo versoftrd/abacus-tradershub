@@ -1726,6 +1726,29 @@ export default function Home() {
             
           </div>
           
+          {/* Disclaimer Section */}
+          <div className="pt-8 border-t border-gray-800">
+            <div className="max-w-4xl mx-auto">
+              <h3 className="font-sans text-gray-400 text-sm font-semibold mb-4 text-center">
+                Disclaimer
+              </h3>
+              <div className="font-sans text-gray-500 text-xs leading-relaxed space-y-3">
+                <p>
+                  The content provided by Abacus Exchange Ltd., whether through Abacus TradersHub or any other academic program, course, or educational content offered by Abacus, is strictly for educational and informational purposes only. Nothing presented constitutes investment, financial, tax, accounting, or legal advice, nor does it represent a solicitation or recommendation to buy, sell, or hold any financial instrument or other asset.
+                </p>
+                <p>
+                  Abacus Exchange Ltd., its directors, officers, instructors, employees, contractors, consultants, affiliates, and representatives shall not be responsible or liable for any trading, investment, or financial decisions made by Participants, including the use of margin, leverage, or borrowed funds.
+                </p>
+                <p>
+                  Participation is voluntary, and all investment or trading activity is undertaken solely at the Participant's own risk.
+                </p>
+                <p>
+                  By participating, you acknowledge and agree to the full Terms and Conditions – Abacus TradersHub, which govern all Abacus programs.
+                </p>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </footer>
       
