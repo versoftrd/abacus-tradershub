@@ -580,7 +580,7 @@ export default function Home() {
                   </span>
                 </div>
                 <span className="font-sans bg-gradient-to-b from-[#082b72] to-[#0a1e45] text-white text-xs font-medium px-2 py-1 rounded-full" data-testid="badge-discount-quarterly">
-                  20% de descuento
+                  25% de descuento
                 </span>
               </div>
               
