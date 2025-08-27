@@ -413,7 +413,7 @@ export default function Home() {
         </div>
         
         {/* Background overlay for depth */}
-        <div className="absolute inset-0 bg-black/40 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-black/50 pointer-events-none"></div>
         
         {/* Gradient transition overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60 pointer-events-none"></div>
