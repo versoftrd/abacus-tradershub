@@ -538,9 +538,9 @@ export default function Home() {
                 <div className="font-sans text-gray-400 text-sm sm:text-[16px] font-semibold pt-1">/ por mes</div>
               </div>
               
-              <button className="font-sans w-full bg-gradient-to-b from-[#101f3c] to-[#131820] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6 text-sm sm:text-base" style={{ '--tw-ring-color': 'rgba(0, 85, 255, 1)' } as React.CSSProperties} data-testid="button-weekly">
+              <a href="https://buy.stripe.com/dRmbJ05YA2L4f6L0dK1Fe2K" target="_blank" rel="noopener noreferrer" className="font-sans w-full bg-gradient-to-b from-[#101f3c] to-[#131820] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6 text-sm sm:text-base inline-flex items-center justify-center" style={{ '--tw-ring-color': 'rgba(0, 85, 255, 1)' } as React.CSSProperties} data-testid="button-weekly">
                 Iniciar ahora
-              </button>
+              </a>
               
               <hr className="mb-4" style={{ borderColor: 'rgba(0, 85, 255, 0.1)' }} />
               
@@ -596,9 +596,9 @@ export default function Home() {
                 <div className="font-sans text-gray-400 text-sm sm:text-[16px] font-semibold pt-1">/ por 4 meses</div>
               </div>
               
-              <button className="font-sans w-full bg-gradient-to-b from-[#0759fb] to-[#0943bb] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6 text-sm sm:text-base" data-testid="button-quarterly">
+              <a href="https://buy.stripe.com/4gMbJ03Qs2L48In4u01Fe2L" target="_blank" rel="noopener noreferrer" className="font-sans w-full bg-gradient-to-b from-[#0759fb] to-[#0943bb] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6 text-sm sm:text-base inline-flex items-center justify-center" data-testid="button-quarterly">
                 Iniciar ahora
-              </button>
+              </a>
               
               <hr className="mb-4" style={{ borderColor: 'rgba(0, 85, 255, 0.1)' }} />
               
