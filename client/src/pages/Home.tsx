@@ -1743,7 +1743,7 @@ export default function Home() {
                   Participation is voluntary, and all investment or trading activity is undertaken solely at the Participant's own risk.
                 </p>
                 <p>
-                  By participating, you acknowledge and agree to the full Terms and Conditions – Abacus TradersHub, which govern all Abacus programs.
+                  By participating, you acknowledge and agree to the full <Link href="/terminos-y-condiciones" className="text-[#0055FF] hover:text-blue-300 transition-colors duration-200">Terms and Conditions</Link> – Abacus TradersHub, which govern all Abacus programs.
                 </p>
               </div>
             </div>
