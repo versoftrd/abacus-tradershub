@@ -121,7 +121,7 @@ export default function Navbar() {
       </div>
       {/* Mobile Menu Panel */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden border-t border-border-subtle bg-mobile-panel" data-testid="mobile-menu-panel">
+        <div className="lg:hidden absolute top-full left-0 right-0 border-t border-border-subtle bg-mobile-panel z-40" data-testid="mobile-menu-panel">
           <div className="px-4 py-4 space-y-2">
             {navigationItems.map((item) => (
               <a
