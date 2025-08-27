@@ -592,8 +592,8 @@ export default function Home() {
               </p>
               
               <div className="mb-6 flex items-start gap-2">
-                <span className="font-sans text-3xl sm:text-[40px] font-semibold text-white" data-testid="price-quarterly">$2,500</span>
-                <div className="font-sans text-gray-400 text-sm sm:text-[16px] font-semibold pt-1">/ por año</div>
+                <span className="font-sans text-3xl sm:text-[40px] font-semibold text-white" data-testid="price-quarterly">$750</span>
+                <div className="font-sans text-gray-400 text-sm sm:text-[16px] font-semibold pt-1">/ por 4 meses</div>
               </div>
               
               <button className="font-sans w-full bg-gradient-to-b from-[#0759fb] to-[#0943bb] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6 text-sm sm:text-base" data-testid="button-quarterly">
