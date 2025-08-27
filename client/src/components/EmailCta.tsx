@@ -13,7 +13,7 @@ export default function EmailCta() {
           <button
             type="button"
             onClick={handleClick}
-            className="rounded-[12px] xs:rounded-[14px] sm:rounded-[16px] px-3 xs:px-3.5 sm:px-5 md:px-7 lg:px-10 py-2 xs:py-2.5 sm:py-2.5 md:py-4 text-white font-semibold shadow hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-sky-300/60 transition-opacity duration-200 text-[12px] xs:text-sm sm:text-base md:text-lg whitespace-nowrap flex-shrink-0"
+            className="rounded-[12px] xs:rounded-[14px] sm:rounded-[16px] px-3 xs:px-3.5 sm:px-5 md:px-7 lg:px-10 py-2 xs:py-2.5 sm:py-2.5 md:py-4 text-white font-semibold shadow hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-sky-300/60 transition-opacity duration-200 text-[14px] xs:text-base sm:text-lg md:text-xl whitespace-nowrap flex-shrink-0"
             style={{
               background: 'linear-gradient(to top, #0943bb, #0759fb)'
             }}
