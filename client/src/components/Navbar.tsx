@@ -39,7 +39,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="sticky top-12 z-50">
+    <nav className="sticky top-12 z-50 relative">
       <div className="mx-auto max-w-6xl px-6 sm:px-8">
         <div className="flex h-12 xs:h-14 sm:h-17 items-center justify-between gap-1 xs:gap-2 sm:gap-4">
           
@@ -121,7 +121,7 @@ export default function Navbar() {
       </div>
       {/* Mobile Menu Panel */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 border-t border-border-subtle bg-mobile-panel z-40" data-testid="mobile-menu-panel">
+        <div className="lg:hidden fixed left-0 right-0 border-t border-border-subtle bg-mobile-panel z-[100]" style={{ top: '0' }} data-testid="mobile-menu-panel">
           <div className="px-4 py-4 space-y-2">
             {navigationItems.map((item) => (
               <a
