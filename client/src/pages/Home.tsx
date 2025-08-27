@@ -1730,20 +1730,20 @@ export default function Home() {
           <div className="pt-8 border-t border-gray-800">
             <div className="max-w-4xl mx-auto">
               <h3 className="font-sans text-gray-400 text-sm font-semibold mb-4 text-center">
-                Disclaimer
+                Descargo de Responsabilidad
               </h3>
               <div className="font-sans text-gray-500 text-xs leading-relaxed space-y-3">
                 <p>
-                  The content provided by Abacus Exchange Ltd., whether through Abacus TradersHub or any other academic program, course, or educational content offered by Abacus, is strictly for educational and informational purposes only. Nothing presented constitutes investment, financial, tax, accounting, or legal advice, nor does it represent a solicitation or recommendation to buy, sell, or hold any financial instrument or other asset.
+                  El contenido proporcionado por Abacus Exchange Ltd., ya sea a través de Abacus TradersHub o cualquier otro programa académico, curso o contenido educativo ofrecido por Abacus, es estrictamente para fines educativos e informativos únicamente. Nada de lo presentado constituye asesoramiento de inversión, financiero, fiscal, contable o legal, ni representa una solicitud o recomendación para comprar, vender o mantener cualquier instrumento financiero u otro activo.
                 </p>
                 <p>
-                  Abacus Exchange Ltd., its directors, officers, instructors, employees, contractors, consultants, affiliates, and representatives shall not be responsible or liable for any trading, investment, or financial decisions made by Participants, including the use of margin, leverage, or borrowed funds.
+                  Abacus Exchange Ltd., sus directores, funcionarios, instructores, empleados, contratistas, consultores, afiliados y representantes no serán responsables de ninguna decisión comercial, de inversión o financiera tomada por los Participantes, incluyendo el uso de margen, apalancamiento o fondos prestados.
                 </p>
                 <p>
-                  Participation is voluntary, and all investment or trading activity is undertaken solely at the Participant's own risk.
+                  La participación es voluntaria, y toda actividad de inversión o trading se realiza únicamente bajo el propio riesgo del Participante.
                 </p>
                 <p>
-                  By participating, you acknowledge and agree to the full <Link href="/terminos-y-condiciones" className="text-[#0055FF] hover:text-blue-300 transition-colors duration-200">Terms and Conditions</Link> – Abacus TradersHub, which govern all Abacus programs.
+                  Al participar, usted reconoce y acepta los <Link href="/terminos-y-condiciones" className="text-[#0055FF] hover:text-blue-300 transition-colors duration-200">Términos y Condiciones</Link> completos – Abacus TradersHub, que rigen todos los programas de Abacus.
                 </p>
               </div>
             </div>
