@@ -585,7 +585,7 @@ export default function Home() {
               </div>
               
               <h3 className="font-sans text-xl sm:text-2xl font-bold text-white mb-2" data-testid="title-quarterly">
-                Plan Pro Anual
+                Plan Pro Cuatrimestral
               </h3>
               <p className="font-sans text-gray-400 mb-4 text-[12px] font-semibold" data-testid="subtitle-quarterly">
                 Ideal para traders enfocados en el largo plazo.
