@@ -534,7 +534,7 @@ export default function Home() {
               </p>
               
               <div className="mb-6 flex items-start gap-2">
-                <span className="font-sans text-3xl sm:text-[40px] font-semibold text-white" data-testid="price-weekly">$250</span>
+                <span className="font-sans text-3xl sm:text-[40px] font-semibold text-white" data-testid="price-weekly">$300</span>
                 <div className="font-sans text-gray-400 text-sm sm:text-[16px] font-semibold pt-1">/ por mes</div>
               </div>
               
@@ -592,7 +592,7 @@ export default function Home() {
               </p>
               
               <div className="mb-6 flex items-start gap-2">
-                <span className="font-sans text-3xl sm:text-[40px] font-semibold text-white" data-testid="price-quarterly">$750</span>
+                <span className="font-sans text-3xl sm:text-[40px] font-semibold text-white" data-testid="price-quarterly">$900</span>
                 <div className="font-sans text-gray-400 text-sm sm:text-[16px] font-semibold pt-1">/ por 4 meses</div>
               </div>
               
