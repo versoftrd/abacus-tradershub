@@ -538,7 +538,7 @@ export default function Home() {
                 <div className="font-sans text-gray-400 text-sm sm:text-[16px] font-semibold pt-1">/ por mes</div>
               </div>
               
-              <a href="https://buy.stripe.com/dRmbJ05YA2L4f6L0dK1Fe2K" target="_blank" rel="noopener noreferrer" className="font-sans w-full bg-gradient-to-b from-[#101f3c] to-[#131820] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6 text-sm sm:text-base inline-flex items-center justify-center" style={{ '--tw-ring-color': 'rgba(0, 85, 255, 1)' } as React.CSSProperties} data-testid="button-weekly">
+              <a href="https://buy.stripe.com/00weVc5YA85o4s7f8E1Fe2N" target="_blank" rel="noopener noreferrer" className="font-sans w-full bg-gradient-to-b from-[#101f3c] to-[#131820] text-white font-semibold py-3 px-6 rounded-[16px] hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 mb-6 text-sm sm:text-base inline-flex items-center justify-center" style={{ '--tw-ring-color': 'rgba(0, 85, 255, 1)' } as React.CSSProperties} data-testid="button-weekly">
                 Iniciar ahora
               </a>
               
